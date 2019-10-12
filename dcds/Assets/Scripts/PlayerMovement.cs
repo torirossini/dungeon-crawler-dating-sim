@@ -11,6 +11,12 @@ public class PlayerMovement : MonoBehaviour
     float moveHorizontal;
     float moveVertical;
 
+
+    public float PlayerSpeed
+    {
+        get { return pSpeed; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
