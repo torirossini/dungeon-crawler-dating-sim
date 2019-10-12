@@ -2,28 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     //variables
-
+    [SerializeField]
     float pSpeed = 0.15f;
-    Rigidbody playerObject;
-    float moveHorizontal = Input.GetAxis("Horizontal");
-    float moveVertical = Input.GetAxis("Vertical");
+
+    float moveHorizontal;
+    float moveVertical;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerObject.position = Vector3.zero;
-        
+        gameObject.transform.position = Vector3.zero;
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       pMove(pSpeed);
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
+        pMove(pSpeed);
     }
-
 
     //moveMethod
     public void pMove(float speed)
@@ -32,27 +36,26 @@ public class NewBehaviourScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            moveVertical += movement.z * speed;
+            moveVertical += movement.z;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            moveVertical -= movement.z * speed;
+            moveVertical -= movement.z;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            moveHorizontal -= movement.x * speed;
+            moveHorizontal -= movement.x;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            moveHorizontal += movement.x * speed;
+            moveHorizontal += movement.x;
         }
 
-        
-        
+        gameObject.transform.position += movement * speed * Time.deltaTime;
+
     }
 
-    
 }
