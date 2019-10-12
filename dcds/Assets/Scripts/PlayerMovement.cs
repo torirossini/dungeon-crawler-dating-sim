@@ -40,26 +40,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            moveVertical += movement.z;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveVertical -= movement.z;
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveHorizontal -= movement.x;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveHorizontal += movement.x;
-        }
-
         gameObject.transform.position += movement * speed * Time.deltaTime;
 
     }
