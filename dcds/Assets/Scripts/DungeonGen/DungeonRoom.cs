@@ -11,8 +11,8 @@ namespace Assets.Scripts.DungeonGen
     {
         const int MAX_HEIGHT = 20;
         const int MAX_WIDTH = 30;
-        const int MIN_HEIGHT = 10;
-        const int MIN_WIDTH = 10;
+        const int MIN_HEIGHT = 3;
+        const int MIN_WIDTH = 3;
         int roomWidth;
         int roomHeight;
 
@@ -37,7 +37,10 @@ namespace Assets.Scripts.DungeonGen
             roomRigidBody = roomCube.AddComponent<Rigidbody>();
             roomRigidBody.useGravity = false;
             roomRigidBody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
-            roomRigidBody.drag = 5;
+            sphereCollider = roomCube.AddComponent<SphereCollider>();
+            sphereCollider.radius = sphereCollider.radius;
+            roomRigidBody.drag = 50f;
+            roomRigidBody.mass = 20f;
 
         }
 
@@ -53,7 +56,7 @@ namespace Assets.Scripts.DungeonGen
             roomRigidBody.useGravity = false;
             roomRigidBody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
             sphereCollider = roomCube.AddComponent<SphereCollider>();
-            sphereCollider.radius = sphereCollider.radius * 2;
+            sphereCollider.radius = sphereCollider.radius;
             roomRigidBody.drag = 50f;
             roomRigidBody.mass = 20f;
         }

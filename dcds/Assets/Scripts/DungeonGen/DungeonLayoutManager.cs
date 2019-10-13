@@ -10,19 +10,22 @@ public class DungeonLayoutManager : MonoBehaviour
 
     List<DungeonRoom> dungeonRooms = new List<DungeonRoom>();
     const int MIN_NUM_OF_ROOMS = 3;
-    const int MAX_NUM_OF_ROOMS = 20;
+    const int MAX_NUM_OF_ROOMS = 50;
 
     [SerializeField]
-    int roomSpawnX = 10;
+    int roomSpawnX = 5;
     [SerializeField]
-    int roomSpawnY = 10;
+    int roomSpawnZ = 20;
+
+    [SerializeField]
+    Material mainMaterial;
 
     public GameObject BaseCube { get => baseCube; set => baseCube = value; }
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(GenerateRooms(10));
+        StartCoroutine(GenerateRooms(50));
     }
 
     // Update is called once per frame
@@ -45,7 +48,7 @@ public class DungeonLayoutManager : MonoBehaviour
         }
         for( int i = 0; i < numRooms; i++)
         {
-            dungeonRooms.Add(new DungeonRoom(RandomLocationInBox(roomSpawnY, roomSpawnX), baseCube));
+            dungeonRooms.Add(new DungeonRoom(RandomLocationInBox(roomSpawnZ, roomSpawnX), baseCube));
             dungeonRooms[dungeonRooms.Count - 1].RoomCube.transform.SetParent(roomsObject.transform);
             avgHeight += dungeonRooms[dungeonRooms.Count - 1].RoomHeight;
             avgWidth += dungeonRooms[dungeonRooms.Count - 1].RoomWidth;
@@ -58,22 +61,21 @@ public class DungeonLayoutManager : MonoBehaviour
         
         for(int i = 0; i < dungeonRooms.Count - 1; i++)
         {
-            if (dungeonRooms[i].RoomHeight < avgHeight || dungeonRooms[i].RoomWidth < avgWidth)
+            if (dungeonRooms[i].RoomHeight > avgHeight && dungeonRooms[i].RoomWidth > avgWidth)
             {
-                Destroy(dungeonRooms[i].RoomCube);
-                dungeonRooms.RemoveAt(i);
-                i--;
+                dungeonRooms[i].RoomCube.GetComponent<Renderer>().material = mainMaterial;
             }
-            else
-            {
-                dungeonRooms[i].RoomCube.transform.position = new Vector3(Mathf.RoundToInt(dungeonRooms[i].RoomCube.transform.position.x),
-                    0,
-                    Mathf.RoundToInt(dungeonRooms[i].RoomCube.transform.position.z));
-            }
+
+            dungeonRooms[i].RoomRigidBody.isKinematic = true;
+            dungeonRooms[i].RoomCube.transform.position = new Vector3(Mathf.RoundToInt(dungeonRooms[i].RoomCube.transform.position.x),
+                0,
+                Mathf.RoundToInt(dungeonRooms[i].RoomCube.transform.position.z));
+
         }
 
     }
 
+    //TODO Add Timeout: if it takes too long, retry. 
     private bool RoomsSettled()
     {
         foreach(DungeonRoom room in dungeonRooms)
