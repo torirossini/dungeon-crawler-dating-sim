@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     float moveHorizontal;
     float moveVertical;
 
+    private Combatant combatScript;
+
 
     public float PlayerSpeed
     {
@@ -21,19 +23,22 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = Vector3.zero;
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
-
-
+        //  These aren't necessarry afaik
+        //  moveHorizontal = Input.GetAxis("Horizontal");
+        //  moveVertical = Input.GetAxis("Vertical");
+        combatScript = GetComponent<Combatant>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
-        pMove(pSpeed);
+        //  If player is in combat, use combat movement methods instead
+        if(!combatScript.IsInCombat) 
+        {
+            moveHorizontal = Input.GetAxis("Horizontal");
+            moveVertical = Input.GetAxis("Vertical");
+            pMove(pSpeed);
+        }
     }
 
     //moveMethod

@@ -39,7 +39,7 @@ public sealed class CombatantManager : MonoBehaviour {
 #region METHODS
 
     /// <summary>
-    /// Loops through alliedCombatants decides if a combat should be initialized
+    /// Loops through alliedCombatants decides if a combat should start
     /// </summary>
     private void CheckForCombats() {
         Combatant closestEnemy;
@@ -101,19 +101,18 @@ public sealed class CombatantManager : MonoBehaviour {
 
     /// <summary>
     /// Initializes an instance of a Combat, including the provided ally and enemy.
-    /// Combat area is a circle, centered on the enemy.
     /// </summary>
     /// <param name="ally">Target ally to be participating</param>
     /// <param name="enemy">Target enemy to be participating</param>
     private void AddCombat(Combatant ally, Combatant enemy) {
-        Combat newCombat = new Combat();
+        GameObject newCombatObject = new GameObject();
+        newCombatObject.AddComponent<Combat>();
+        Combat newCombat = newCombatObject.GetComponent<Combat>();
 
         //  Add provided combatants to the combat
         newCombat.AddParticipant(ally);
         newCombat.AddParticipant(enemy);
 
-        //  Add all other combatants in range to the combat as well
-        newCombat.SetCombatCenter(enemy.transform.position);
         //  Combine allied and enemy combatants to reduce repitition
         List<Combatant> allCombatants = new List<Combatant>(alliedCombatants.Count + enemyCombatants.Count);
         allCombatants.AddRange(alliedCombatants);
@@ -129,8 +128,7 @@ public sealed class CombatantManager : MonoBehaviour {
         }
 
         //  Instantiate a new combat object and script
-        GameObject newCombatObject = new GameObject();
-        newCombatObject.AddComponent<Combat>();
+        
 
         activeCombats.Add(newCombatObject);
     }
