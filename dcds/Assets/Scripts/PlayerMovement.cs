@@ -40,8 +40,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         
-      
-
         gameObject.transform.position += movement * speed * Time.deltaTime;
 
     }
