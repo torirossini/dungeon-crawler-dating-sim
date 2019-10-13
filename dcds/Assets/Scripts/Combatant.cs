@@ -9,7 +9,10 @@ public abstract class Combatant : MonoBehaviour {
     private CombatantManager ManagerScript = GameObject.Find("CombatantManager").GetComponent<CombatantManager>();
 
     private bool isInCombat = false;
-    public bool IsInCombat { get { return IsInCombat; } }
+    public bool IsInCombat { get { return isInCombat; } }
+
+    private bool isSnappedToGrid = false;
+    public bool IsSnappedToGrid { get { return isSnappedToGrid; } }
 #endregion
 
 #region STATS
@@ -80,6 +83,13 @@ public abstract class Combatant : MonoBehaviour {
     /// </summary>
     public void ExitCombat() {
         isInCombat = false;
+    }
+
+    /// <summary>
+    /// Snaps 
+    /// </summary>
+    public void SnapToGrid() {
+
     }
 
 #endregion
