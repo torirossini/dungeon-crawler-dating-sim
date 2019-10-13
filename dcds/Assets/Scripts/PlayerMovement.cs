@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     //variables
     [SerializeField]
     float pSpeed = 0.15f;
-
+    bool inRange = false;
+    bool interacted = false;
     float moveHorizontal;
     float moveVertical;
 
@@ -47,18 +48,46 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Interact>())
         {
-            Debug.Log("You can interact with me.");
+            if (inRange == false)
+            {
+                Debug.Log("You can interact with me.");
+
+                inRange = true;
+            }
+            
         }
     }
-    /*
+    
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.GetComponent<Interact>())
+        {
+            if(interacted == false)
+            {
+                if (Input.GetKey(KeyCode.E) == true)
+                {
+                    Debug.Log("You have interacted with me.");
+                    interacted = true;
+                }
+            }
+
+            if (Input.GetKey(KeyCode.E) == false)
+            {
+                interacted = false;
+            }
+
+
+
+        }
+    }
+
+    //
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
-        {
-            Console.WriteLine("Object out of range.");
-        }
+        inRange = false;
+        interacted = false;
     }
-    8*/
+    
 
 
 }
