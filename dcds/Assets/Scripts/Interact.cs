@@ -17,6 +17,7 @@ using UnityEngine;
     {
         interactRadius = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
         interactRadius.radius = 2.5f;
+        interactRadius.isTrigger = true;
     }
 
     void Start()
@@ -61,21 +62,7 @@ using UnityEngine;
         }
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            Console.WriteLine("You can interact with me.");
-        }
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            Console.WriteLine("Object out of range.");
-        }
-    }
+    
 
 }
 

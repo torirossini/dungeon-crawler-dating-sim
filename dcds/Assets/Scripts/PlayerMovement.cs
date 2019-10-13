@@ -43,8 +43,22 @@ public class PlayerMovement : MonoBehaviour
         gameObject.transform.position += movement * speed * Time.deltaTime;
 
     }
-
-   
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Interact>())
+        {
+            Debug.Log("You can interact with me.");
+        }
+    }
+    /*
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Console.WriteLine("Object out of range.");
+        }
+    }
+    8*/
 
 
 }

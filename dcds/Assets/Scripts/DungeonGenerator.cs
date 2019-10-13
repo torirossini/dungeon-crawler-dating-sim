@@ -47,6 +47,7 @@ public class DungeonGenerator
                 room[coordForHall[0]-1, coordForHall[1]] = objects["Hallway"];
             }
         }
+        return null;
 
     }
 

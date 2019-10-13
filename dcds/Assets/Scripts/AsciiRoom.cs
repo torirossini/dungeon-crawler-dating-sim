@@ -1,8 +1,9 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -49,14 +50,14 @@ namespace Assets.Scripts
             for (int i = 0; i < connections; i++)
             {
                 int[] coordForHall = borderCoordinates[Random.Range(0, borderCoordinates.Count - 1)];
-                room[coordForHall[0], coordForHall[1]] = objects["Hallway"];
+                room[coordForHall[0], coordForHall[1]] = DungeonObjects["Hallway"];
                 if (coordForHall[0] == 0)
                 {
-                    room[coordForHall[0], coordForHall[1] - 1] = objects["Hallway"];
+                    room[coordForHall[0], coordForHall[1] - 1] = DungeonObjects["Hallway"];
                 }
                 else
                 {
-                    room[coordForHall[0] - 1, coordForHall[1]] = objects["Hallway"];
+                    room[coordForHall[0] - 1, coordForHall[1]] = DungeonObjects["Hallway"];
                 }
             }
 
