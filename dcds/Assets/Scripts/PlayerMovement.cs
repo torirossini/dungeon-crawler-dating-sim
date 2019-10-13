@@ -11,7 +11,10 @@ public class PlayerMovement : MonoBehaviour
     bool interacted = false;
     float moveHorizontal;
     float moveVertical;
+    Vector3 playerLoc;
 
+    //Collector
+    
 
     public float PlayerSpeed
     {
@@ -21,11 +24,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = Vector3.zero;
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
-
-
     }
 
     // Update is called once per frame
@@ -45,12 +45,15 @@ public class PlayerMovement : MonoBehaviour
         {
             speed += speed * .6f;
             gameObject.transform.position += movement * speed * Time.deltaTime;
+            playerLoc = gameObject.transform.position;
         }
         else
         {
             gameObject.transform.position += movement * speed * Time.deltaTime;
+            playerLoc = gameObject.transform.position;
         }
     }
+    
 
     //###################################################### Interaction Stuff
     public void OnTriggerEnter(Collider other)
@@ -63,15 +66,15 @@ public class PlayerMovement : MonoBehaviour
 
                 inRange = true;
             }
-            
+
         }
     }
-    
+
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.GetComponent<Interact>())
         {
-            if(interacted == false)
+            if (interacted == false)
             {
                 if (Input.GetKey(KeyCode.E) == true)
                 {
@@ -96,7 +99,16 @@ public class PlayerMovement : MonoBehaviour
         inRange = false;
         interacted = false;
     }
-    
 
 
+    public Vector3 PlayerLoc
+    {
+        get { return playerLoc; }
+
+    }
+
+    public float PSpeed
+    {
+        get { return pSpeed; }
+    }
 }
