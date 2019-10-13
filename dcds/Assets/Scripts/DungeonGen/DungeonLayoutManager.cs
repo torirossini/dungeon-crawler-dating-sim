@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HullDelaunayVoronoi.Delaunay;
+using HullDelaunayVoronoi.Primitives;
+
 
 public class DungeonLayoutManager : MonoBehaviour
 {
@@ -22,10 +25,12 @@ public class DungeonLayoutManager : MonoBehaviour
 
     public GameObject BaseCube { get => baseCube; set => baseCube = value; }
 
+    private DelaunayTriangulation2 delaunay;
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(GenerateRooms(50));
+        StartCoroutine(GenerateMap(50));
     }
 
     // Update is called once per frame
@@ -34,7 +39,7 @@ public class DungeonLayoutManager : MonoBehaviour
 
     }
 
-    private IEnumerator GenerateRooms(int numRooms)
+    private IEnumerator GenerateMap(int numRooms)
     {
         int avgWidth = 0;
         int avgHeight = 0;
@@ -58,20 +63,31 @@ public class DungeonLayoutManager : MonoBehaviour
         avgWidth = avgWidth / numRooms;
 
         yield return new WaitWhile(() => !RoomsSettled());
+
+        List<DungeonRoom> mainRooms = new List<DungeonRoom>();
         
         for(int i = 0; i < dungeonRooms.Count - 1; i++)
         {
             if (dungeonRooms[i].RoomHeight > avgHeight && dungeonRooms[i].RoomWidth > avgWidth)
             {
                 dungeonRooms[i].RoomCube.GetComponent<Renderer>().material = mainMaterial;
+                mainRooms.Add(dungeonRooms[i]);
             }
 
             dungeonRooms[i].RoomRigidBody.isKinematic = true;
             dungeonRooms[i].RoomCube.transform.position = new Vector3(Mathf.RoundToInt(dungeonRooms[i].RoomCube.transform.position.x),
                 0,
                 Mathf.RoundToInt(dungeonRooms[i].RoomCube.transform.position.z));
-
         }
+
+        List<Vertex2> vertices = new List<Vertex2>();
+        foreach (DungeonRoom room in dungeonRooms)
+        {
+            vertices.Add(new Vertex2(room.RoomCube.transform.position.x, room.RoomCube.transform.position.z));
+        }
+        delaunay = new DelaunayTriangulation2();
+        delaunay.Generate(vertices);
+
 
     }
 
