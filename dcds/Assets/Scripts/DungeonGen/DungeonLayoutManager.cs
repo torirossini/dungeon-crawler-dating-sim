@@ -24,6 +24,7 @@ public class DungeonLayoutManager : MonoBehaviour
     Material mainMaterial;
 
     public GameObject BaseCube { get => baseCube; set => baseCube = value; }
+    public DelaunayTriangulation2 Delaunay { get => delaunay; set => delaunay = value; }
 
     private DelaunayTriangulation2 delaunay;
 
