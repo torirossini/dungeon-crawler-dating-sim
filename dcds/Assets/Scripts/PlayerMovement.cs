@@ -40,10 +40,19 @@ public class PlayerMovement : MonoBehaviour
     public void pMove(float speed)
     {
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        
-        gameObject.transform.position += movement * speed * Time.deltaTime;
 
+        if(Input.GetKey(KeyCode.LeftShift) == true)
+        {
+            speed += speed * .6f;
+            gameObject.transform.position += movement * speed * Time.deltaTime;
+        }
+        else
+        {
+            gameObject.transform.position += movement * speed * Time.deltaTime;
+        }
     }
+
+    //###################################################### Interaction Stuff
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Interact>())
