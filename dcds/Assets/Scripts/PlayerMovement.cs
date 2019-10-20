@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 namespace Assets
 {
     //variables
@@ -125,3 +125,4 @@ namespace Assets
         get { return pSpeed; }
     }
 }
+*/
