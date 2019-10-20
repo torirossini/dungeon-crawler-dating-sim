@@ -17,15 +17,5 @@ namespace Assets
         [SerializeField]
         GameObject playerCamera;
 
-
-        [Header("1st to 2nd Floor Portals")]
-        [SerializeField]
-        GameObject firstFloorPortal;
-
-        [SerializeField]
-        GameObject secondFloorPortal;
-
-
-
     }
 }
