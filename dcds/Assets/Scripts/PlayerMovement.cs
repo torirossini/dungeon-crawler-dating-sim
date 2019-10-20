@@ -4,31 +4,29 @@ using UnityEngine;
 
 namespace Assets
 {
-    public class PlayerMovement : MonoBehaviour
-    {
-        //variables
-        [SerializeField]
-        float playerSpeed = 0.15f;
-        bool inRange = false;
-        bool interacted = false;
-        float moveHorizontal;
-        float moveVertical;
+    //variables
+    [SerializeField]
+    float pSpeed = 0.15f;
+    bool inRange = false;
+    bool interacted = false;
+    float moveHorizontal;
+    float moveVertical;
+    Vector3 playerLoc;
 
+    //Collector
+    
 
         public float PlayerSpeed
         {
             get { return playerSpeed; }
         }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            gameObject.transform.position = Vector3.zero;
-            moveHorizontal = Input.GetAxis("Horizontal");
-            moveVertical = Input.GetAxis("Vertical");
-
-
-        }
+    // Start is called before the first frame update
+    void Start()
+    {
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
+    }
 
         // Update is called once per frame
         void FixedUpdate()
@@ -38,15 +36,29 @@ namespace Assets
             pMove(playerSpeed);
         }
 
-        //moveMethod
-        public void pMove(float speed)
+    //moveMethod
+    public void pMove(float speed)
+    {
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        if(Input.GetKey(KeyCode.LeftShift) == true)
         {
-            Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
+            speed += speed * .6f;
             gameObject.transform.position += movement * speed * Time.deltaTime;
-
+            playerLoc = gameObject.transform.position;
         }
-        public void OnTriggerEnter(Collider other)
+        else
+        {
+            gameObject.transform.position += movement * speed * Time.deltaTime;
+            playerLoc = gameObject.transform.position;
+        }
+    }
+    
+
+    //###################################################### Interaction Stuff
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Interact>())
         {
             if (other.gameObject.GetComponent<Interact>())
             {
@@ -58,11 +70,15 @@ namespace Assets
                 }
 
             }
-        }
 
-        public void OnTriggerStay(Collider other)
+        }
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.GetComponent<Interact>())
         {
-            if (other.gameObject.GetComponent<Interact>())
+            if (interacted == false)
             {
                 if (interacted == false)
                 {
@@ -89,5 +105,17 @@ namespace Assets
             inRange = false;
             interacted = false;
         }
+    }
+
+
+    public Vector3 PlayerLoc
+    {
+        get { return playerLoc; }
+
+    }
+
+    public float PSpeed
+    {
+        get { return pSpeed; }
     }
 }
