@@ -13,8 +13,8 @@ namespace Assets
     float moveVertical;
     Vector3 playerLoc;
 
-    //Collector
-    
+    private Combatant combatScript;
+
 
         public float PlayerSpeed
         {
@@ -24,17 +24,23 @@ namespace Assets
     // Start is called before the first frame update
     void Start()
     {
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
+        //  These aren't necessarry afaik
+        //  moveHorizontal = Input.GetAxis("Horizontal");
+        //  moveVertical = Input.GetAxis("Vertical");
+        combatScript = GetComponent<Combatant>();
     }
 
-        // Update is called once per frame
-        void FixedUpdate()
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        //  If player is in combat, use combat movement methods instead
+        if(!combatScript.IsInCombat) 
         {
             moveHorizontal = Input.GetAxis("Horizontal");
             moveVertical = Input.GetAxis("Vertical");
-            pMove(playerSpeed);
+            pMove(pSpeed);
         }
+    }
 
     //moveMethod
     public void pMove(float speed)
