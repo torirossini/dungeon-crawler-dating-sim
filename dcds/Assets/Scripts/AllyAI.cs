@@ -31,7 +31,7 @@ namespace Assets.Scripts
             goalLoc = playerObj.transform.position + new Vector3(0.0f, 1.0f, 0.0f);
            
             transform.LookAt(goalLoc);
-            allySpd = playerObj.GetComponent<PlayerMovement>().PSpeed;
+            allySpd = playerObj.GetComponent<Player>().PlayerSpeed;
            
             followPlayer();
            // gameObject.transform.position += transform.forward * allySpd * Time.deltaTime;

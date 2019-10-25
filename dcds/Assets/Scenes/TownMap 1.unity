@@ -705,7 +705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPortal: {fileID: 1168015736}
   zOffset: 0
-  xOffset: -5
+  xOffset: -4
   yOffset: -2.5
 --- !u!1 &288106899
 GameObject:
@@ -2692,8 +2692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 1759532800}
-  cameraOffsetX: -7
-  cameraOffsetY: 5
+  cameraOffsetX: -5
+  cameraOffsetY: 3
   cameraOffsetZ: 0
 --- !u!4 &905535279 stripped
 Transform:
@@ -4329,7 +4329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPortal: {fileID: 277710386}
   zOffset: 0
-  xOffset: -5
+  xOffset: -4
   yOffset: -2.5
 --- !u!1 &1171656032 stripped
 GameObject:
