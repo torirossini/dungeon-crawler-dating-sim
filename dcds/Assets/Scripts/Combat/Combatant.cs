@@ -13,6 +13,7 @@ public abstract class Combatant : MonoBehaviour {
     //  FIELDS
 
     private CombatantManager ManagerScript;
+    private Renderer componentRenderer;
 
     [SerializeField]
     private basicAttacks basic = basicAttacks.defaultBasicAttack;
@@ -52,6 +53,7 @@ public abstract class Combatant : MonoBehaviour {
     void Start() {
         currentHp = maxHp;
         currentMana = maxMana;
+        componentRenderer = gameObject.GetComponent<Renderer>();
         ManagerScript = GameObject.Find("CombatantManager").GetComponent<CombatantManager>();
     }
 
@@ -88,6 +90,7 @@ public abstract class Combatant : MonoBehaviour {
     /// Sets isInCombat to true, calls SnapToGrid
     /// </summary>
     public void EnterCombat(Combat c) {
+        componentRenderer.material.SetColor("_Color", Color.red);
         isInCombat = true;
         currentCombat = c;
         SnapToGrid();
@@ -97,6 +100,7 @@ public abstract class Combatant : MonoBehaviour {
     /// Sets isInCombat to false, may be used for other things later
     /// </summary>
     public void ExitCombat() {
+        componentRenderer.material.SetColor("_Color", Color.white);
         isInCombat = false;
         currentCombat = null;
     }

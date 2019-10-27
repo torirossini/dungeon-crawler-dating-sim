@@ -11,7 +11,6 @@ public class Combat : MonoBehaviour {
     //  TODO: Turn order, timed delays between turns
 
 #region FIELDS
-    //  FIELDS
     private readonly List<Combatant> combatants = new List<Combatant>();
     private readonly Queue<Combatant> turnOrder = new Queue<Combatant>();
     private readonly Queue<Combatant> futureTurns = new Queue<Combatant>();

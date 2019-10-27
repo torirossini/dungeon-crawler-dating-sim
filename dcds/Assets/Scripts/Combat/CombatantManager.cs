@@ -39,15 +39,12 @@ public sealed class CombatantManager : MonoBehaviour {
 #region METHODS
 
     /// <summary>
-    /// Loops through alliedCombatants decides if a combat should start
+    /// Loops through alliedCombatants and decides if a combat should start
     /// </summary>
     private void CheckForCombats() {
-        Combatant closestEnemy;
-        float closestDistance;
-
         foreach(Combatant ally in alliedCombatants) {
-            closestEnemy = null;
-            closestDistance = float.MaxValue;
+            Combatant closestEnemy = null;
+            float closestDistance = float.MaxValue;
             //  Continue if ally is already in combat
             if (ally.IsInCombat)
                 continue;
@@ -78,6 +75,7 @@ public sealed class CombatantManager : MonoBehaviour {
             //  If the closest enemy is too close
             if(closestDistance <= MIN_COMBAT_DISTANCE) {
                 //  Initialize a combat
+                Debug.Log("Combat found!");
                 AddCombat(ally, closestEnemy);
             }
         }
