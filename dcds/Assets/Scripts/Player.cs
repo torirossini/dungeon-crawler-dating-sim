@@ -54,7 +54,6 @@ namespace Assets
 
                     inRange = true;
                 }
-
             }
         }
 
@@ -75,9 +74,10 @@ namespace Assets
                 {
                     interacted = false;
                 }
-
-
-
+            }
+            if (other.gameObject.GetComponent<CameraViewCollider>())
+            {
+                other.gameObject.GetComponent<CameraViewCollider>().ChangeView();
             }
         }
 

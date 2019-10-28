@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Utility
 {
+    [System.Serializable]
     public enum CurrentView
     {
         Forward = 0,

@@ -7,8 +7,11 @@ namespace Assets
 {
     public class PlayerFollowCamera : MonoBehaviour
     {
-        public GameObject playerObject;
-        public CurrentView currentlyFacing;
+        [SerializeField]
+        GameObject playerObject;
+
+        [SerializeField]
+        CurrentView currentlyFacing;
 
         public Vector3 rightCameraOffset;
         public Vector3 centerCameraOffset;
@@ -27,15 +30,19 @@ namespace Assets
         Quaternion newRot;
 
         bool isTransitioning;
-        float timeToRotate = 1.0f;
-        
-        void Awake()
-        {
-            
-        }
+
+        [SerializeField]
+        float timeToRotate = 2.0f;
+
+        [SerializeField]
+        float transitionTimeScalar = .2f;
+
+        public bool IsTransitioning { get => isTransitioning; }
+        public CurrentView CurrentlyFacing { get => currentlyFacing; set => currentlyFacing = value; }
 
         void Start()
         {
+            isTransitioning = false;
             positionSmoothTime = playerObject.GetComponent<Player>().PlayerSpeed * Time.deltaTime;
             currentPositionOffset = rightCameraOffset;
             currentRotationOffset = defaultCameraRotation;
@@ -44,7 +51,6 @@ namespace Assets
 
         void FixedUpdate()
         {
-
             switch(currentlyFacing)
             {
                 case CurrentView.Forward:
@@ -66,7 +72,7 @@ namespace Assets
             newPosZ = Mathf.Lerp(gameObject.transform.position.z, playerObject.transform.position.z + currentPositionOffset.z, positionSmoothTime);
             newPosX = Mathf.Lerp(gameObject.transform.position.x, playerObject.transform.position.x + currentPositionOffset.x, positionSmoothTime);
             newPosY = Mathf.Lerp(gameObject.transform.position.y, playerObject.transform.position.y + currentPositionOffset.y, positionSmoothTime);
-           
+
             gameObject.transform.position = new Vector3(newPosX, newPosY, newPosZ);
 
             Vector3 lookPos = playerObject.transform.position - gameObject.transform.position;
@@ -77,21 +83,26 @@ namespace Assets
            
         }
 
-        /*
+        public void ChangeView(CurrentView toView)
+        {
+            if (currentlyFacing != toView && !isTransitioning)
+            {
+                currentlyFacing = toView;
+                StartCoroutine(Rotate(toView));
+            }
+        }
+
         IEnumerator Rotate(CurrentView toView)
         {
             isTransitioning = true;
-            float i = 0;
-            float rate = 1 / timeToRotate;
-            while (i < 1)
-            {
-                i += Time.deltaTime * rate;
-                gameObject.transform.position = Vector3.Lerp(gameObject.transform, , i);
-                gameObject.transform.rotation = Quaternion.Slerp(startRot, endRot, i);
-                yield return 0;
-            }
-
+            positionSmoothTime *= transitionTimeScalar;
+            timeToRotate *= transitionTimeScalar;
+            currentlyFacing = toView;
+            yield return new WaitForSeconds(positionSmoothTime);
+            isTransitioning = false;
+            positionSmoothTime /= transitionTimeScalar;
+            timeToRotate /= transitionTimeScalar;
         }
-        */
+        
     }
 }
