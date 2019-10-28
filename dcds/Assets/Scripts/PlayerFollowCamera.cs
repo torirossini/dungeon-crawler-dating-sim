@@ -1,16 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Utility;
 
 namespace Assets
 {
-    public enum CurrentView
-    {
-        Forward = 0,
-        Right = 1,
-        Left = 2,
-    }
-
     public class PlayerFollowCamera : MonoBehaviour
     {
         public GameObject playerObject;
@@ -33,6 +27,7 @@ namespace Assets
         Quaternion newRot;
 
         bool isTransitioning;
+        float timeToRotate = 1.0f;
         
         void Awake()
         {
@@ -82,9 +77,21 @@ namespace Assets
            
         }
 
-        void Rotate()
+        /*
+        IEnumerator Rotate(CurrentView toView)
         {
+            isTransitioning = true;
+            float i = 0;
+            float rate = 1 / timeToRotate;
+            while (i < 1)
+            {
+                i += Time.deltaTime * rate;
+                gameObject.transform.position = Vector3.Lerp(gameObject.transform, , i);
+                gameObject.transform.rotation = Quaternion.Slerp(startRot, endRot, i);
+                yield return 0;
+            }
 
         }
+        */
     }
 }
