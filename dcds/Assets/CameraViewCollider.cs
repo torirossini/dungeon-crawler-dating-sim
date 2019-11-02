@@ -25,7 +25,7 @@ namespace Assets
             // If the camera is currently on the first view, switch to the second view. 
             // Otherwise, switch to the first view.
             CurrentView toView = camera.CurrentlyFacing == OuterView ? CenterView : OuterView;
-            camera.ChangeView(toView);
+
         }
     }
 }

@@ -9121,6 +9121,11 @@ PrefabInstance:
       propertyPath: currentlyFacing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: transitionTimeScalar
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc, type: 3}
 --- !u!1001 &7062032218641698414

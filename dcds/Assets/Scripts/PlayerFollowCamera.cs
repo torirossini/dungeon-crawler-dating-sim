@@ -13,6 +13,8 @@ namespace Assets
         [SerializeField]
         CurrentView currentlyFacing;
 
+        Camera currentCamera;
+
         public Vector3 rightCameraOffset;
         public Vector3 centerCameraOffset;
         public Vector3 leftCameraOffset;
@@ -22,30 +24,27 @@ namespace Assets
         private Vector3 currentPositionOffset;
         private Quaternion currentRotationOffset;
 
+        private Vector3 targetPositionOffset;
+        private Quaternion targetRotationOffset;
+
+        private bool isTransitioning;
 
         float positionSmoothTime = .03f;
-        float rotationSmoothTime = 1f;
 
         float newPosY, newPosZ, newPosX;
-        Quaternion newRot;
 
-        bool isTransitioning;
-
-        [SerializeField]
-        float timeToRotate = 2.0f;
-
-        [SerializeField]
-        float transitionTimeScalar = .2f;
-
-        public bool IsTransitioning { get => isTransitioning; }
         public CurrentView CurrentlyFacing { get => currentlyFacing; set => currentlyFacing = value; }
+        public bool IsTransitioning { get => isTransitioning; set => isTransitioning = value; }
 
         void Start()
         {
-            isTransitioning = false;
             positionSmoothTime = playerObject.GetComponent<Player>().PlayerSpeed * Time.deltaTime;
             currentPositionOffset = rightCameraOffset;
             currentRotationOffset = defaultCameraRotation;
+            targetPositionOffset = rightCameraOffset;
+            targetRotationOffset = defaultCameraRotation;
+            currentCamera = gameObject.GetComponent<Camera>();
+
 
         }
 
@@ -54,18 +53,18 @@ namespace Assets
             switch(currentlyFacing)
             {
                 case CurrentView.Forward:
-                    currentPositionOffset = centerCameraOffset;
-                    currentRotationOffset = centerCameraRotation;
+                    targetPositionOffset = centerCameraOffset;
+                    targetRotationOffset = centerCameraRotation;
                     break;
 
                 case CurrentView.Right:
-                    currentPositionOffset = rightCameraOffset;
-                    currentRotationOffset = defaultCameraRotation;
+                    targetPositionOffset = rightCameraOffset;
+                    targetRotationOffset = defaultCameraRotation;
                     break;
 
                 case CurrentView.Left:
-                    currentPositionOffset = leftCameraOffset;
-                    currentRotationOffset = defaultCameraRotation;
+                    targetPositionOffset = leftCameraOffset;
+                    targetRotationOffset = defaultCameraRotation;
                     break;
             }
 
@@ -74,34 +73,9 @@ namespace Assets
             newPosY = Mathf.Lerp(gameObject.transform.position.y, playerObject.transform.position.y + currentPositionOffset.y, positionSmoothTime);
 
             gameObject.transform.position = new Vector3(newPosX, newPosY, newPosZ);
-
-            Vector3 lookPos = playerObject.transform.position - gameObject.transform.position;
-            lookPos.y = currentRotationOffset.y;
-            newRot = Quaternion.LookRotation(lookPos);
-
-            transform.rotation = Quaternion.Lerp(transform.rotation, newRot, rotationSmoothTime);
+            gameObject.transform.LookAt(playerObject.transform);
+            
            
-        }
-
-        public void ChangeView(CurrentView toView)
-        {
-            if (currentlyFacing != toView && !isTransitioning)
-            {
-                currentlyFacing = toView;
-                StartCoroutine(Rotate(toView));
-            }
-        }
-
-        IEnumerator Rotate(CurrentView toView)
-        {
-            isTransitioning = true;
-            positionSmoothTime *= transitionTimeScalar;
-            timeToRotate *= transitionTimeScalar;
-            currentlyFacing = toView;
-            yield return new WaitForSeconds(positionSmoothTime);
-            isTransitioning = false;
-            positionSmoothTime /= transitionTimeScalar;
-            timeToRotate /= transitionTimeScalar;
         }
         
     }
