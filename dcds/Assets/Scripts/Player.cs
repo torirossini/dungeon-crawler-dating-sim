@@ -55,6 +55,10 @@ namespace Assets
                     inRange = true;
                 }
             }
+            if (other.gameObject.GetComponent<CameraViewCollider>())
+            {
+                TownManager.Instance.PlayerCamera.IsTransitioning = !TownManager.Instance.PlayerCamera.IsTransitioning;
+            }
         }
 
         public void OnTriggerStay(Collider other)

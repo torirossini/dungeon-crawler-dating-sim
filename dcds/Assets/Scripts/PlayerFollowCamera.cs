@@ -70,7 +70,6 @@ namespace Assets
 
             newPosZ = Mathf.Lerp(gameObject.transform.position.z, playerObject.transform.position.z + currentPositionOffset.z, positionSmoothTime);
             newPosX = Mathf.Lerp(gameObject.transform.position.x, playerObject.transform.position.x + currentPositionOffset.x, positionSmoothTime);
-            newPosY = Mathf.Lerp(gameObject.transform.position.y, playerObject.transform.position.y + currentPositionOffset.y, positionSmoothTime);
 
             gameObject.transform.position = new Vector3(newPosX, newPosY, newPosZ);
             gameObject.transform.LookAt(playerObject.transform);
