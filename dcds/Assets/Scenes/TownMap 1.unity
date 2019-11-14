@@ -3439,7 +3439,7 @@ MonoBehaviour:
   leftCameraOffset: {x: 0, y: 0, z: 0}
   xzPositionSmoothTime: 0.1
   yPositionSmoothTime: 0.03
-  cameraRotationSmoothTime: 0.9
+  cameraRotationSmoothTime: 0.05
 --- !u!4 &905535279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4702229198241056, guid: 0ba258545da721e488ecb71ffd143b6f,
