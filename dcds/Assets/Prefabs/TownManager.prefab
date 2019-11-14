@@ -45,6 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   playerCamera: {fileID: 0}
-  firstFloorPortal: {fileID: 0}
-  secondFloorPortal: {fileID: 0}
-  cam: {fileID: 4800000, guid: 386f960af87f44e56a543f3a0d79d0cc, type: 3}
+  rightBridge: {fileID: 0}
+  leftBridge: {fileID: 0}

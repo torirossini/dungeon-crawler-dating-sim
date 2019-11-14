@@ -55,10 +55,11 @@ namespace Assets
                     inRange = true;
                 }
             }
-            if (other.gameObject.GetComponent<CameraViewCollider>())
+            if(other.gameObject.CompareTag("Bridge"))
             {
-                TownManager.Instance.PlayerCamera.IsTransitioning = !TownManager.Instance.PlayerCamera.IsTransitioning;
+                TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Forward);
             }
+            
         }
 
         public void OnTriggerStay(Collider other)
@@ -79,10 +80,6 @@ namespace Assets
                     interacted = false;
                 }
             }
-            if (other.gameObject.GetComponent<CameraViewCollider>())
-            {
-                other.gameObject.GetComponent<CameraViewCollider>().ChangeView();
-            }
         }
 
         //
@@ -90,6 +87,18 @@ namespace Assets
         {
             inRange = false;
             interacted = false;
+            if (other.gameObject.CompareTag("Bridge"))
+            {
+                if (TownManager.Instance.getCloserObject(TownManager.Instance.LeftBridge, TownManager.Instance.RightBridge) == TownManager.Instance.LeftBridge)
+                {
+                    TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
+                }
+                else
+                {
+                    TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
+
+                }
+            }
         }
 
     }

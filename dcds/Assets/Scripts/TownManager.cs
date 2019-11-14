@@ -8,50 +8,29 @@ namespace Assets
     {
 
         public Player Player { get => player; set => player = value; }
-        public PlayerFollowCamera PlayerCamera { get => playerCamera; set => playerCamera = value; }
-        public float DistanceBetween { get => distanceBetween; set => distanceBetween = value; }
+        public CameraManager PlayerCamera { get => playerCamera; set => playerCamera = value; }
+        public GameObject RightBridge { get => rightBridge; set => rightBridge = value; }
+        public GameObject LeftBridge { get => leftBridge; set => leftBridge = value; }
 
         [Header("Important Objects")]
         [SerializeField]
         Player player;
 
         [SerializeField]
-        PlayerFollowCamera playerCamera;
+        CameraManager playerCamera;
 
         [SerializeField]
-        GameObject[] bridgeColliders;
+        GameObject rightBridge;
+        [SerializeField]
+        GameObject leftBridge;
 
-        float distanceBetween;
-        float distanceFromNearest;
-
-        void Start()
+        public GameObject getCloserObject(GameObject one, GameObject two)
         {
-            distanceBetween = Vector3.Distance(bridgeColliders[0].transform.position, bridgeColliders[1].transform.position);
-        }
-
-        void Update()
-        {
-            if(playerCamera.IsTransitioning)
+            if(Vector3.Distance(gameObject.transform.position, one.transform.position) > Vector3.Distance(gameObject.transform.position, two.transform.position))
             {
-                GameObject closest = GetClosestObject(bridgeColliders);
+                return two;
             }
-        }
-
-        private GameObject GetClosestObject(GameObject[] objectTransforms)
-        {
-            GameObject tMin = null;
-            float minDist = Mathf.Infinity;
-            Vector3 currentPos = transform.position;
-            foreach (GameObject t in objectTransforms)
-            {
-                float dist = Vector3.Distance(t.transform.position, currentPos);
-                if (dist < minDist)
-                {
-                    tMin = t;
-                    minDist = dist;
-                }
-            }
-            return tMin;
+            return one;
         }
 
 
