@@ -50,13 +50,14 @@ namespace Assets
 
         private void Start()
         {
+            isTransitioning = false;
             rightCameraOffset = new Vector3(-11, 5, 0);
             centerCameraOffset = new Vector3(0, 5, -10);
             leftCameraOffset = new Vector3(11, 5, 0);
             currentPositionOffset = rightCameraOffset;
             cameraScriptReference = gameObject.GetComponent<Camera>();
-            ChangeCameraFocusTo(playerObject);
-            isTransitioning = false;
+            StartCoroutine(ChangeCameraFocusTo(playerObject));
+            
         }
 
         private void FixedUpdate()

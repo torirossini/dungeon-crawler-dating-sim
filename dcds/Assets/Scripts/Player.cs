@@ -85,11 +85,14 @@ namespace Assets
         //
         public void OnTriggerExit(Collider other)
         {
-            inRange = false;
-            interacted = false;
+            if (other.gameObject.GetComponent<Interact>())
+            {
+                inRange = false;
+                interacted = false;
+            }
             if (other.gameObject.CompareTag("Bridge"))
             {
-                if (TownManager.Instance.getCloserObject(TownManager.Instance.LeftBridge, TownManager.Instance.RightBridge) == TownManager.Instance.LeftBridge)
+                if (TownManager.Instance.FacingRight(TownManager.Instance.LeftBridge, TownManager.Instance.RightBridge))
                 {
                     TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
                 }

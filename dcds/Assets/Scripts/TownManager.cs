@@ -24,13 +24,16 @@ namespace Assets
         [SerializeField]
         GameObject leftBridge;
 
-        public GameObject getCloserObject(GameObject one, GameObject two)
+        public bool FacingRight(GameObject one, GameObject two)
         {
-            if(Vector3.Distance(gameObject.transform.position, one.transform.position) > Vector3.Distance(gameObject.transform.position, two.transform.position))
+            if(Vector3.Distance(player.transform.position, one.transform.position) < Vector3.Distance(player.transform.position, two.transform.position))
             {
-                return two;
+                Debug.Log("One is closer");
+                return true;
+                
             }
-            return one;
+            Debug.Log("Two is closer");
+            return false;
         }
 
 

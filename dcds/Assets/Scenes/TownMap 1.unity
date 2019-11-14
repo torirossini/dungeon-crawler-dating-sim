@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 573640917}
   m_Layer: 0
   m_Name: ChangeView (1)
-  m_TagString: Bridge
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2427,7 +2427,7 @@ GameObject:
   - component: {fileID: 582472912}
   m_Layer: 0
   m_Name: ChangeView (2)
-  m_TagString: Bridge
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
