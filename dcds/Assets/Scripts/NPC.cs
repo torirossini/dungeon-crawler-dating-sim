@@ -21,6 +21,7 @@ namespace Assets.Scripts
         [SerializeField]
         public NPCRoutine routine;
         bool followRoutine;
+        private bool startedRoutine;
 
         public bool FollowPlayer { get => followPlayer; set => followPlayer = value; }
         public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
@@ -30,6 +31,8 @@ namespace Assets.Scripts
         {
             followAgent = GetComponent<NavMeshAgent>();
             followAgent.speed = movementSpeed;
+            followRoutine = true;
+            startedRoutine = false;
         }
 
         // Update is called once per frame
@@ -38,11 +41,13 @@ namespace Assets.Scripts
             if (followPlayer)
             {
                 //Follow the player
+                startedRoutine = false;
                 followAgent.destination = transformToFollow.position;
             }
-            else if (followRoutine)
+            else if (followRoutine && !startedRoutine)
             {
-               
+                StartCoroutine(routine.FollowRoutineStep());
+                startedRoutine = true;
             }
         }
 

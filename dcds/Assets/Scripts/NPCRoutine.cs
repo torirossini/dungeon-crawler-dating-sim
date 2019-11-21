@@ -15,7 +15,7 @@ namespace Assets.Scripts
         private NPC myNPC;
         private GameObject npcObject;
 
-        public List<NPCRoutineStep> routineSteps = new List<NPCRoutineStep>(1);
+        public List<NPCRoutineStep> routineSteps;
 
         [SerializeField]
         float defaultMoveSpeed = 5f;
@@ -82,6 +82,7 @@ namespace Assets.Scripts
 
         public IEnumerator FollowRoutineStep()
         {
+            Debug.Log("Moving to next step");
             myNPC.FollowAgent.destination = currentStep.TargetLocation;
             transitioning = true;
 
@@ -89,15 +90,16 @@ namespace Assets.Scripts
             && (myNPC.FollowAgent.remainingDistance <= myNPC.FollowAgent.stoppingDistance)
             && (!myNPC.FollowAgent.hasPath || myNPC.FollowAgent.velocity.sqrMagnitude == 0f));
 
+            Debug.Log("Arrived! Now waiting for transition condition.");
             transitioning = false;
-            paused = true;
 
             if (currentStep.TransitionCondition.ConditionToTransition == Condition.TimeElapsed)
             {
                 yield return new WaitForSeconds(currentStep.TransitionCondition.ConditionThreshold);
             }
 
-            paused = false;
+            TransitionToNextStep();
+
 
         }
 
