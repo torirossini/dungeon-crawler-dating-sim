@@ -11,4 +11,13 @@ public class Utility
         Right = 1,
         Left = 2,
     }
+
+    [System.Serializable]
+    public enum Condition
+    {
+        TimeElapsed,
+        DistanceFromPlayer,
+        TimeOfDay,
+    }
+
 }

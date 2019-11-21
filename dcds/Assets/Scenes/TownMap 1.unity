@@ -9817,7 +9817,7 @@ PrefabInstance:
     - target: {fileID: 63637088145337672, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.5433331
       objectReference: {fileID: 0}
     - target: {fileID: 63637088145337672, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
@@ -9912,6 +9912,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformToFollow: {fileID: 1759532806}
+  routine:
+    routine:
+    - targetLocation: {x: 0, y: 0, z: 0}
+    - targetLocation: {x: 0, y: 0, z: 0}
 --- !u!1001 &8831628785724218652
 PrefabInstance:
   m_ObjectHideFlags: 0

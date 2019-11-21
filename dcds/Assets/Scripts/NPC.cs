@@ -11,22 +11,39 @@ namespace Assets.Scripts
     class NPC:MonoBehaviour
     {
         float movementSpeed = 5f;
+        bool followPlayer = false;
 
         //Transform that NPC has to follow
         public Transform transformToFollow;
         //NavMesh Agent variable
-        NavMeshAgent agent;
+        NavMeshAgent followAgent;
+
+        [SerializeField]
+        public NPCRoutine routine;
+        bool followRoutine;
+
+        public bool FollowPlayer { get => followPlayer; set => followPlayer = value; }
+        public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
+        public NavMeshAgent FollowAgent { get => followAgent; set => followAgent = value; }
 
         void Start()
         {
-            agent = GetComponent<NavMeshAgent>();
+            followAgent = GetComponent<NavMeshAgent>();
+            followAgent.speed = movementSpeed;
         }
 
         // Update is called once per frame
         void Update()
         {
-            //Follow the player
-            agent.destination = transformToFollow.position;
+            if (followPlayer)
+            {
+                //Follow the player
+                followAgent.destination = transformToFollow.position;
+            }
+            else if (followRoutine)
+            {
+               
+            }
         }
 
         public void Move()
@@ -35,5 +52,17 @@ namespace Assets.Scripts
 
             gameObject.transform.position += movement * movementSpeed * Time.deltaTime;
         }
+        public void ToggleFollowPlayer()
+        {
+            followPlayer = !followPlayer;
+            followRoutine = !followPlayer;
+        }
+
+        public void ToggleRoutine()
+        {
+            followRoutine = routine.TogglePauseRoutine();
+        }
+
+
     }
 }
