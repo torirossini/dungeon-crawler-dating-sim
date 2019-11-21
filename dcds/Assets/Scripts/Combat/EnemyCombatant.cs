@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCombatant : MonoBehaviour
+public class EnemyCombatant : Combatant
 {
+    public override bool IsAlly() { return false; }
+
+    public override void TakeTurn(Combat c) {
+        return;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

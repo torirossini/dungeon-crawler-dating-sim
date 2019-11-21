@@ -7,7 +7,7 @@ public sealed class CombatantManager : MonoBehaviour {
 #region FIELDS
     //  Minimum distance between two enemies for combat to initiate
     [SerializeField]
-    private const float MIN_COMBAT_DISTANCE = 1.0f;
+    private const float MIN_COMBAT_DISTANCE = 3.0f;
 
     /// <summary>
     /// Allied combatants, both in and out of combat
@@ -67,7 +67,7 @@ public sealed class CombatantManager : MonoBehaviour {
 
                 //  Calculate the closest enemy combatant to the current ally
                 float distanceBetween = Vector3.Distance(enemy.transform.position, ally.transform.position);
-                if(distanceBetween > closestDistance) {
+                if(distanceBetween < closestDistance) {
                     closestEnemy = enemy;
                     closestDistance = distanceBetween;
                 }
@@ -88,10 +88,11 @@ public sealed class CombatantManager : MonoBehaviour {
     private void LocateCombatants() {
         //  Grabs every instance of the Combatant script and throws it into an array
         Combatant[] combatants = FindObjectsOfType<Combatant>();
+        Debug.Log("Found " + combatants.Length + " combatants.");
 
         //  Loops through all combatants and assigns them to their respective lists
         for(int i = 0; i < combatants.Length; i++)
-            if (combatants[i].IsAlly())
+            if (combatants[i].IsAlly()) 
                 alliedCombatants.Add(combatants[i]);
             else
                 enemyCombatants.Add(combatants[i]);
@@ -103,6 +104,7 @@ public sealed class CombatantManager : MonoBehaviour {
     /// <param name="ally">Target ally to be participating</param>
     /// <param name="enemy">Target enemy to be participating</param>
     private void AddCombat(Combatant ally, Combatant enemy) {
+        Debug.Log("NEW COMBAT!");
         GameObject newCombatObject = new GameObject();
         newCombatObject.AddComponent<Combat>();
         Combat newCombat = newCombatObject.GetComponent<Combat>();
