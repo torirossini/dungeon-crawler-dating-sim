@@ -17,8 +17,7 @@ namespace Assets
         [SerializeField]
         float playerZMultipler = 1f;
 
-        bool inRange = false;
-        bool interacted = false;
+
         float moveZAxis;
         float moveXAxis;
 
@@ -48,12 +47,8 @@ namespace Assets
         {
             if (other.gameObject.GetComponent<Interact>())
             {
-                if (inRange == false)
-                {
-                    Debug.Log("You can interact with me.");
-
-                    inRange = true;
-                }
+                Interact interactable = other.gameObject.GetComponent<Interact>();
+                interactable.SetAblilityToInteract(true);
             }
             if(other.gameObject.CompareTag("Bridge"))
             {
@@ -66,19 +61,8 @@ namespace Assets
         {
             if (other.gameObject.GetComponent<Interact>())
             {
-                if (interacted == false)
-                {
-                    if (Input.GetKey(KeyCode.E) == true)
-                    {
-                        Debug.Log("You have interacted with me.");
-                        interacted = true;
-                    }
-                }
-
-                if (Input.GetKey(KeyCode.E) == false)
-                {
-                    interacted = false;
-                }
+                Interact interactable = other.gameObject.GetComponent<Interact>();
+                interactable.TriggerInteract();
             }
         }
 
@@ -87,8 +71,8 @@ namespace Assets
         {
             if (other.gameObject.GetComponent<Interact>())
             {
-                inRange = false;
-                interacted = false;
+                Interact interactable = other.gameObject.GetComponent<Interact>();
+                interactable.SetAblilityToInteract(false);
             }
             if (other.gameObject.CompareTag("Bridge"))
             {
