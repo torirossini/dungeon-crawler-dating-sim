@@ -11,6 +11,7 @@ namespace Assets
         public CameraManager PlayerCamera { get => playerCamera; set => playerCamera = value; }
         public GameObject RightBridge { get => rightBridge; set => rightBridge = value; }
         public GameObject LeftBridge { get => leftBridge; set => leftBridge = value; }
+        public Canvas ScreenCanvas { get => screenCanvas;}
 
         [Header("Important Objects")]
         [SerializeField]
@@ -23,6 +24,9 @@ namespace Assets
         GameObject rightBridge;
         [SerializeField]
         GameObject leftBridge;
+
+        [SerializeField]
+        Canvas screenCanvas;
 
         public bool FacingRight(GameObject one, GameObject two)
         {
