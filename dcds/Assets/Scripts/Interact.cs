@@ -18,9 +18,15 @@ namespace Assets
         [SerializeField]
         Image interactIcon;
         Image interactIconObject;
+
+        [Header("UI Position Variables")]
         [SerializeField]
         float bobSpeed = 3.0f;
-        float bobAmplitude = .5f;
+        [SerializeField]
+        float bobAmplitude = 6f;
+
+        [SerializeField]
+        Vector3 offset = new Vector3(0, 100, 0);
 
         void Awake()
         {
@@ -57,7 +63,9 @@ namespace Assets
                 {
                     Debug.Log("You have interacted with me.");
                     interacted = true;
+                    DoPulse();
                     return true;
+                    
                 }
             }
             else if (interacted)
@@ -73,9 +81,18 @@ namespace Assets
             {
                 Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
                 float newY = Mathf.Sin(Time.time * bobSpeed);
-                pos = new Vector3(pos.x, newY, pos.z) * bobAmplitude;
+                pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
                 interactIconObject.transform.position = pos;
             }
+        }
+
+        public void DoPulse()
+        {
+            System.Collections.Hashtable hash =
+                      new System.Collections.Hashtable();
+            hash.Add("amount", new Vector3(1f, 1f, 0f));
+            hash.Add("time", 1f);
+            iTween.PunchScale(interactIconObject.gameObject, hash);
         }
 
     }
