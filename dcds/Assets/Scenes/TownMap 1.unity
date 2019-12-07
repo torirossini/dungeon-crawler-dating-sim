@@ -5434,12 +5434,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1176458528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28569ac4f70f6f43b1cdf822c277857, type: 3}
+  m_Script: {fileID: 11500000, guid: bc6241df79aa19941871707c8f33e269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
     type: 3}
   bobSpeed: 3
+  bobAmplitude: 6
+  offset: {x: 0, y: 100, z: 0}
 --- !u!65 &1176458530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10206,7 +10208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8631733642265642415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 745b4d131c51c764282e4502e1ccf6ec, type: 3}
+  m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transformToFollow: {fileID: 1759532806}

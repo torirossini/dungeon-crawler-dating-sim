@@ -16,7 +16,6 @@ namespace Assets
         GameObject playerObject;
         [SerializeField]
         GameObject dungeonEntrance;
-        Camera cameraScriptReference;
 
         [Header("Camera Offsets")]
         public Vector3 rightCameraOffset;
@@ -52,7 +51,6 @@ namespace Assets
         {
             isTransitioning = false;
             currentPositionOffset = rightCameraOffset;
-            cameraScriptReference = gameObject.GetComponent<Camera>();
             StartCoroutine(ChangeCameraFocusTo(playerObject));
             
         }

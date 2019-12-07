@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Assets
 {
-    public class Interact : MonoBehaviour
+    public class InteractionObject : MonoBehaviour
     {
 
         SphereCollider interactRadius;
@@ -65,7 +65,7 @@ namespace Assets
                     interacted = true;
                     DoPulse();
                     return true;
-                    
+
                 }
             }
             else if (interacted)
@@ -77,7 +77,7 @@ namespace Assets
 
         void Update()
         {
-            if(inRange)
+            if (inRange)
             {
                 Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
                 float newY = Mathf.Sin(Time.time * bobSpeed);
