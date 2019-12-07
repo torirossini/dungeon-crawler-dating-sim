@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Assets
 {
-    public class InteractionObject : MonoBehaviour
+    public abstract class InteractionObject : MonoBehaviour
     {
 
         SphereCollider interactRadius;
@@ -55,7 +55,7 @@ namespace Assets
             }
         }
 
-        public bool TriggerInteract()
+        protected bool TriggerInteract()
         {
             if (Input.GetKey(KeyCode.E))
             {
@@ -94,6 +94,8 @@ namespace Assets
             hash.Add("time", 1f);
             iTween.PunchScale(interactIconObject.gameObject, hash);
         }
+
+        public abstract void Interact();
 
     }
 }

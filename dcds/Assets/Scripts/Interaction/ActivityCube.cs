@@ -7,11 +7,11 @@ using UnityEngine;
 
 namespace Assets.Scripts.Interaction
 {
-    class ActivityCube : InteractionObject, Interaction
-    {
-        public void Interact()
+    class ActivityCube : InteractionObject
+    { 
+        public override void Interact()
         {
-
+            TriggerInteract();
         }
     }
 }

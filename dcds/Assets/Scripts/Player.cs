@@ -62,11 +62,10 @@ namespace Assets
             if (other.gameObject.GetComponent<InteractionObject>())
             {
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
-                interactable.TriggerInteract();
+                interactable.Interact();
             }
         }
 
-        //
         public void OnTriggerExit(Collider other)
         {
             if (other.gameObject.GetComponent<InteractionObject>())
