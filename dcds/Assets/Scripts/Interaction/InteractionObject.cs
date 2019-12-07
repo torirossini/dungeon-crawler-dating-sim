@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Assets
 
         SphereCollider interactRadius;
         bool inRange = false;
-        bool interacted = false;
+        private bool interacted = false;
 
         [SerializeField]
         Image interactIcon;
@@ -27,6 +28,8 @@ namespace Assets
 
         [SerializeField]
         Vector3 offset = new Vector3(0, 100, 0);
+
+        public bool Interacted { get => interacted; set => interacted = value; }
 
         void Awake()
         {
@@ -42,37 +45,23 @@ namespace Assets
         {
             if (able)
             {
-                Debug.Log("You can interact with me");
                 inRange = able;
                 interactIconObject.gameObject.SetActive(true);
             }
             else
             {
-                Debug.Log("You can no longer interact with me");
                 inRange = false;
                 interacted = false;
                 interactIconObject.gameObject.SetActive(false);
             }
         }
 
-        protected bool TriggerInteract()
+        protected IEnumerator TriggerInteract()
         {
-            if (Input.GetKey(KeyCode.E))
-            {
-                if (!interacted)
-                {
-                    Debug.Log("You have interacted with me.");
-                    interacted = true;
-                    DoPulse();
-                    return true;
-
-                }
-            }
-            else if (interacted)
-            {
-                interacted = false;
-            }
-            return false;
+            interacted = true;
+            DoPulse();
+            yield return new WaitForSeconds(1);
+            interacted = false;
         }
 
         void Update()

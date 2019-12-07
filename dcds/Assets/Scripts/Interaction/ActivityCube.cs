@@ -11,7 +11,8 @@ namespace Assets.Scripts.Interaction
     { 
         public override void Interact()
         {
-            TriggerInteract();
+            TownManager.Instance.ExpendTimePoints(1);
+            StartCoroutine(TriggerInteract());
         }
     }
 }

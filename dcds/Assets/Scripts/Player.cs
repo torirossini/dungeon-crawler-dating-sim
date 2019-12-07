@@ -62,7 +62,12 @@ namespace Assets
             if (other.gameObject.GetComponent<InteractionObject>())
             {
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
-                interactable.Interact();
+                
+                if (Input.GetKey(KeyCode.E) && !interactable.Interacted)
+                {
+                    interactable.Interact();
+                    interactable.DoPulse();
+                }
             }
         }
 
