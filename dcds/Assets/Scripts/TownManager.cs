@@ -77,7 +77,7 @@ namespace Assets
                 if (currentTime == TimeOfDay.Night)
                 {
                     ChangeTimeOfDay(TimeOfDay.Morning);
-                    timePoints = 0;
+                    timePoints = 0; 
                 }
                 else
                 {
@@ -98,7 +98,9 @@ namespace Assets
 
         public void ChangeTimeOfDay(TimeOfDay toTime)
         {
+            lightManager.UpdateLighting((int)toTime);
             currentTime = toTime;
+
         }
         void Update()
         {

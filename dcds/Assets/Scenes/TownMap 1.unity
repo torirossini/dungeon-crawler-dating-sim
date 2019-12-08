@@ -3164,12 +3164,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 144403e0e442d2a448335e0c845d665b, type: 3}
---- !u!4 &726189287 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8831628787036816509, guid: 93624a1034fa02c449c01f442a14f65d,
-    type: 3}
-  m_PrefabInstance: {fileID: 8831628785724218652}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &730991731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6191,59 +6185,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.411444, y: 9.649782, z: 9.731955}
   m_Center: {x: 0.017864691, y: 3.5851107, z: 0.0028619913}
---- !u!1 &1341201529
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1341201530}
-  - component: {fileID: 1341201531}
-  m_Layer: 0
-  m_Name: LightManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1341201530
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341201529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 726189287}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1341201531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341201529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f51523a479d8fc14098ec8103f2d0f7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  directionalLight1: {fileID: 1663992198}
-  currentState: 1
-  morningLight: {x: 28, y: 0, z: 0, w: 0}
-  transitionTimeMorning: 3
-  middayLight: {x: 90, y: 0, z: 0, w: 0}
-  transitionTimeMidday: 3
-  eveningLight: {x: 155, y: 0, z: 0, w: 0}
-  transitionTimeEvening: 3
-  nightLight: {x: 250, y: 0, z: 0, w: 0}
-  transitionTimeNight: 3
 --- !u!1001 &1344037421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10396,10 +10337,29 @@ PrefabInstance:
       propertyPath: screenCanvas
       value: 
       objectReference: {fileID: 319851390}
-    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
-      propertyPath: lightManager
+    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
+      propertyPath: directionalLight1
       value: 
-      objectReference: {fileID: 1341201531}
+      objectReference: {fileID: 1663992198}
+    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
+      propertyPath: sunDirLight
+      value: 
+      objectReference: {fileID: 1663992198}
+    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
+      propertyPath: transitionTimeMorning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
+      propertyPath: transitionTimeMidday
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
+      propertyPath: transitionTimeNight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
+      propertyPath: transitionTimeEvening
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}

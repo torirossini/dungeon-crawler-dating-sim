@@ -11,7 +11,7 @@ namespace Assets
     class LightManager:MonoBehaviour
     {
         [SerializeField]
-        Light directionalLight1;
+        Light sunDirLight;
 
         float dayIncrements;
         [SerializeField]
@@ -50,7 +50,7 @@ namespace Assets
 
         void Awake()
         {
-            directionalLight1.transform.rotation = morningLight;
+            sunDirLight.transform.rotation = morningLight;
             allowTransition = true;
         }
         void Start()
@@ -63,22 +63,48 @@ namespace Assets
             
         }
 
-        private void UpdateLighting(int state)
-        { 
+        public void UpdateLighting(int state)
+        {
+            if (allowTransition)
+            {
+                if (state == 1)
+                {
+                    StartCoroutine(LerpRotation(sunDirLight, morningLight, middayLight, transitionTimeMidday));
+                }
+                else if (state == 2)
+                {
+                    StartCoroutine(LerpRotation(sunDirLight, middayLight, eveningLight, transitionTimeEvening));
+
+                }
+                else if (state == 3)
+                {
+                    StartCoroutine(LerpRotation(sunDirLight, eveningLight, nightLight, transitionTimeNight));
+
+                }
+                else if (state == 4)
+                {
+                    StartCoroutine(LerpRotation(sunDirLight, nightLight, morningLight, transitionTimeMorning));
+
+                }
+            }
         }
 
-        IEnumerator LerpRotation(Light light1, Quaternion startRotation, Quaternion endRotation, float lerpTime)
+        // TODO THIS IS BROKE
+        IEnumerator LerpRotation(Light light, Quaternion startRotation, Quaternion endRotation, float lerpTime)
         {
-            float startTime = Time.time;
-            float endTime = startTime + lerpTime;
-            allowTransition = false;
 
-            while (Time.time < endTime)
+            Quaternion startingRotation = light.transform.rotation; // have a startingRotation as well
+            Quaternion targetRotation = endRotation;
+            allowTransition = false;
+            float percent = 0;
+            while (percent < lerpTime)
             {
-                float timeProgressed = (Time.time - startTime) / lerpTime;  // this will be 0 at the beginning and 1 at the end.
-                light1.transform.rotation = Quaternion.Lerp(startRotation, endRotation, timeProgressed);
-                yield return null;
+                percent += Time.deltaTime; // <- move elapsedTime increment here
+                // Rotations
+                transform.rotation = Quaternion.Slerp(startingRotation, targetRotation, (percent / lerpTime));
+                yield return new WaitForEndOfFrame();
             }
+
             allowTransition = true;
         }
 
