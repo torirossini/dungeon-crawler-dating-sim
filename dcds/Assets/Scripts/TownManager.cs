@@ -100,6 +100,7 @@ namespace Assets
         {
             lightManager.UpdateLighting((int)toTime);
             currentTime = toTime;
+            CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString());
 
         }
         void Update()

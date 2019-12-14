@@ -11,7 +11,7 @@ namespace Assets.Scripts
     class NPC:MonoBehaviour
     {
         float movementSpeed = 5f;
-        bool followPlayer = false;
+        bool followPlayer = true;
 
         //Transform that NPC has to follow
         public Transform transformToFollow;
