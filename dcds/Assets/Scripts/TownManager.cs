@@ -98,9 +98,10 @@ namespace Assets
 
         public void ChangeTimeOfDay(TimeOfDay toTime)
         {
-            lightManager.UpdateLighting((int)toTime);
             currentTime = toTime;
             CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString());
+            Debug.Log((int)toTime);
+            lightManager.UpdateLighting((int)toTime);
 
         }
         void Update()

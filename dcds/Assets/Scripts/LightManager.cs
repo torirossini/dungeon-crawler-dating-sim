@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Assets
 {
-    class LightManager:MonoBehaviour
+    public class LightManager:MonoBehaviour
     {
         [SerializeField]
         Light sunDirLight;
@@ -16,97 +16,86 @@ namespace Assets
         float dayIncrements;
         [SerializeField]
         int currentState = 1;
-        bool allowTransition;
-
-        [Header("Morning Lighting")]
-        [SerializeField]
-        Quaternion morningLight;
-
-        [SerializeField]
-        float transitionTimeMorning = 3f;
-
-        [Header("Midday Lighting")]
-        [SerializeField]
-        Quaternion middayLight;
-
-        [SerializeField]
-        float transitionTimeMidday = 3f;
-
-        [Header("Evening Lighting")]
-        [SerializeField]
-        Quaternion eveningLight;
-
-        [SerializeField]
-        float transitionTimeEvening = 3f;
-
-        [Header("Night Lighting")]
-        [SerializeField]
-        Quaternion nightLight;
-
-        [SerializeField]
-        float transitionTimeNight = 3f;
+        bool transitioning = false;
+        bool startTransition = false;
+        Vector3 targetRotation;
+        Vector3 prevRotation;
 
 
+        public float currentLerpTime;
+        public float totalLerpTime;
+        public float percentage;
+        Vector3 newRot;
+
+        public bool AllowTransition { get => transitioning; set => transitioning = value; }
+        public float QuaternionThirdParameter = 0;
 
         void Awake()
         {
-            sunDirLight.transform.rotation = morningLight;
-            allowTransition = true;
         }
         void Start()
         {
-           
+            currentLerpTime = 0.0f;
+            percentage = 0.0f;
         }
 
         void Update()
         {
-            
+            if (transitioning)
+            {
+                currentLerpTime += Time.deltaTime;
+                if (currentLerpTime > totalLerpTime)
+                {
+                    currentLerpTime = totalLerpTime;
+                }
+
+                percentage = currentLerpTime / totalLerpTime;
+                if (percentage < 1)
+                {
+                    newRot = Vector3.Lerp(prevRotation, targetRotation, percentage);
+
+                    sunDirLight.transform.rotation = Quaternion.Euler(newRot);
+
+                }
+                else
+                {
+                    sunDirLight.transform.rotation = Quaternion.Euler(targetRotation);
+                    transitioning = false;
+                }
+            }
         }
 
         public void UpdateLighting(int state)
         {
-            if (allowTransition)
+            prevRotation = sunDirLight.transform.rotation.eulerAngles;
+            SetupRotation(sunDirLight, 20f);
+            if (state == 1)
             {
-                if (state == 1)
-                {
-                    StartCoroutine(LerpRotation(sunDirLight, morningLight, middayLight, transitionTimeMidday));
-                }
-                else if (state == 2)
-                {
-                    StartCoroutine(LerpRotation(sunDirLight, middayLight, eveningLight, transitionTimeEvening));
-
-                }
-                else if (state == 3)
-                {
-                    StartCoroutine(LerpRotation(sunDirLight, eveningLight, nightLight, transitionTimeNight));
-
-                }
-                else if (state == 4)
-                {
-                    StartCoroutine(LerpRotation(sunDirLight, nightLight, morningLight, transitionTimeMorning));
-
-                }
+                targetRotation = new Vector3(20, 0, 0);
             }
+            else if (state == 2)
+            {
+                targetRotation = new Vector3(90, 0, 0);
+             
+            }
+            else if (state == 3)
+            {
+                targetRotation = new Vector3(138, 0, 0);
+            }
+            else if (state == 4)
+            {
+                targetRotation = new Vector3(0, 0, 0);
+            }
+            startTransition = true;
+            transitioning = true;
         }
 
-        // TODO THIS IS BROKE
-        IEnumerator LerpRotation(Light light, Quaternion startRotation, Quaternion endRotation, float lerpTime)
+        void SetupRotation(Light sun, float time)
         {
-
-            Quaternion startingRotation = light.transform.rotation; // have a startingRotation as well
-            Quaternion targetRotation = endRotation;
-            allowTransition = false;
-            float percent = 0;
-            while (percent < lerpTime)
-            {
-                percent += Time.deltaTime; // <- move elapsedTime increment here
-                // Rotations
-                transform.rotation = Quaternion.Slerp(startingRotation, targetRotation, (percent / lerpTime));
-                yield return new WaitForEndOfFrame();
-            }
-
-            allowTransition = true;
+            currentLerpTime = 0.0f;
+            float AmountToTurn = Vector3.SignedAngle(prevRotation, targetRotation, Vector3.up);
+            totalLerpTime = AmountToTurn / time;
+            Debug.Log("Turning this many degrees: " + AmountToTurn + " starting with " + (currentLerpTime / totalLerpTime));
         }
-
     }
 }

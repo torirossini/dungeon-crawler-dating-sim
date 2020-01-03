@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51523a479d8fc14098ec8103f2d0f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionalLight1: {fileID: 0}
+  sunDirLight: {fileID: 0}
   currentState: 1
   morningLight: {x: 28, y: 0, z: 0, w: 0}
   transitionTimeMorning: 3
