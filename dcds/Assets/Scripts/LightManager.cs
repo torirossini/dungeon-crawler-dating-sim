@@ -17,7 +17,6 @@ namespace Assets
         [SerializeField]
         int currentState = 1;
         bool transitioning = false;
-        bool startTransition = false;
         Vector3 targetRotation;
         Vector3 prevRotation;
 
@@ -68,7 +67,7 @@ namespace Assets
         public void UpdateLighting(int state)
         {
             prevRotation = sunDirLight.transform.rotation.eulerAngles;
-            SetupRotation(sunDirLight, 20f);
+            SetupRotation(sunDirLight, 1f);
             if (state == 1)
             {
                 targetRotation = new Vector3(20, 0, 0);
@@ -84,18 +83,16 @@ namespace Assets
             }
             else if (state == 4)
             {
-                targetRotation = new Vector3(0, 0, 0);
+                targetRotation = new Vector3(170, 0, 0);
             }
-            startTransition = true;
             transitioning = true;
         }
 
         void SetupRotation(Light sun, float time)
         {
             currentLerpTime = 0.0f;
-            float AmountToTurn = Vector3.SignedAngle(prevRotation, targetRotation, Vector3.up);
-            totalLerpTime = AmountToTurn / time;
-            Debug.Log("Turning this many degrees: " + AmountToTurn + " starting with " + (currentLerpTime / totalLerpTime));
+            
+            totalLerpTime = time;
         }
     }
 }

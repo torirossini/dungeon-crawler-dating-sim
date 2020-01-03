@@ -99,8 +99,7 @@ namespace Assets
         public void ChangeTimeOfDay(TimeOfDay toTime)
         {
             currentTime = toTime;
-            CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString());
-            Debug.Log((int)toTime);
+            CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime));
             lightManager.UpdateLighting((int)toTime);
 
         }
