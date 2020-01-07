@@ -66,10 +66,10 @@ namespace Assets
 
         public void UpdateLighting(int state)
         {
-            prevRotation = sunDirLight.transform.rotation.eulerAngles;
-            SetupRotation(sunDirLight, 1f);
+
             if (state == 1)
             {
+                sunDirLight.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 targetRotation = new Vector3(20, 0, 0);
             }
             else if (state == 2)
@@ -79,12 +79,14 @@ namespace Assets
             }
             else if (state == 3)
             {
-                targetRotation = new Vector3(138, 0, 0);
+                targetRotation = new Vector3(130, 0, 0);
             }
             else if (state == 4)
             {
                 targetRotation = new Vector3(170, 0, 0);
             }
+            prevRotation = sunDirLight.transform.rotation.eulerAngles;
+            SetupRotation(sunDirLight, 1f);
             transitioning = true;
         }
 
