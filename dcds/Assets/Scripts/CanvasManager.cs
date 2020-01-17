@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// Contributors: Tori
 namespace Assets
 {
     class CanvasManager:Singleton<CanvasManager>
