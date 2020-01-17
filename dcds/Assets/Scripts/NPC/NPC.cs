@@ -10,6 +10,16 @@ namespace Assets.Scripts
 {
     class NPC:MonoBehaviour
     {
+        string name;
+
+        #region Relationship Variables
+        float stance;
+        int mood;
+
+        bool romanceable;
+        #endregion
+
+        #region Movement and Pathing
         float movementSpeed = 5f;
         bool followPlayer = true;
 
@@ -17,10 +27,14 @@ namespace Assets.Scripts
         public Transform transformToFollow;
         //NavMesh Agent variable
         NavMeshAgent followAgent;
+        #endregion
 
         public bool FollowPlayer { get => followPlayer; set => followPlayer = value; }
         public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
         public NavMeshAgent FollowAgent { get => followAgent; set => followAgent = value; }
+
+        public float Stance { get => stance; set => stance = value; }
+        public int Mood { get => mood; set => mood = value; }
 
         void Start()
         {
