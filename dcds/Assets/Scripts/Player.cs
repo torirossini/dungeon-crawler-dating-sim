@@ -45,9 +45,9 @@ namespace Assets
         }
         public void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.GetComponent<Interact>())
+            if (other.gameObject.GetComponent<InteractionObject>())
             {
-                Interact interactable = other.gameObject.GetComponent<Interact>();
+                InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(true);
             }
             if(other.gameObject.CompareTag("Bridge"))
@@ -59,19 +59,23 @@ namespace Assets
 
         public void OnTriggerStay(Collider other)
         {
-            if (other.gameObject.GetComponent<Interact>())
+            if (other.gameObject.GetComponent<InteractionObject>())
             {
-                Interact interactable = other.gameObject.GetComponent<Interact>();
-                interactable.TriggerInteract();
+                InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
+                
+                if (Input.GetKey(KeyCode.E) && !interactable.Interacted)
+                {
+                    interactable.Interact();
+                    interactable.DoPulse();
+                }
             }
         }
 
-        //
         public void OnTriggerExit(Collider other)
         {
-            if (other.gameObject.GetComponent<Interact>())
+            if (other.gameObject.GetComponent<InteractionObject>())
             {
-                Interact interactable = other.gameObject.GetComponent<Interact>();
+                InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(false);
             }
             if (other.gameObject.CompareTag("Bridge"))
