@@ -10,7 +10,7 @@ using static Utility;
 namespace Assets.Scripts
 {
     [Serializable]
-    public class NPCRoutine
+    public class NPCRoutine:MonoBehaviour
     {
         private NPC myNPC;
         private GameObject npcObject;
@@ -34,12 +34,9 @@ namespace Assets.Scripts
         public NPCRoutineStep CurrentStep { get => currentStep; set => currentStep = value; }
         public bool Transitioning { get => transitioning; set => transitioning = value; }
 
-        public NPCRoutine(GameObject npc, NPCRoutineStep firstStep)
+        public NPCRoutine()
         {
-            myNPC = npc.GetComponent<NPC>();
-            npcObject = npc;
-            defaultMoveSpeed = myNPC.MovementSpeed;
-            routineSteps[0] = firstStep;
+            myNPC = gameObject.GetComponent<NPC>();
         }
         public bool TogglePauseRoutine()
         {
@@ -86,9 +83,7 @@ namespace Assets.Scripts
             myNPC.FollowAgent.destination = currentStep.TargetLocation;
             transitioning = true;
 
-            yield return new WaitUntil(() => !myNPC.FollowAgent.pathPending
-            && (myNPC.FollowAgent.remainingDistance <= myNPC.FollowAgent.stoppingDistance)
-            && (!myNPC.FollowAgent.hasPath || myNPC.FollowAgent.velocity.sqrMagnitude == 0f));
+            yield return new WaitUntil(() => currentStep.TransitionCondition.ConditionMet);
 
             Debug.Log("Arrived! Now waiting for transition condition.");
             transitioning = false;
@@ -103,7 +98,28 @@ namespace Assets.Scripts
 
         }
 
-        
+        private void UpdateRoutineState()
+        {
+            if (currentStep.TransitionCondition.ConditionToTransition == Condition.DistanceFromFollowTarget)
+            {
+                currentStep.TransitionCondition.CurrentProgress = Vector3.Distance(myNPC.gameObject.transform.position, myNPC.TransformToFollow.position);
+            }
+            else if (currentStep.TransitionCondition.ConditionToTransition == Condition.TimeElapsed)
+            {
+                currentStep.TransitionCondition.CurrentProgress = currentStep.TransitionCondition.CurrentProgress + Time.deltaTime;
+            }
+            else if (currentStep.TransitionCondition.ConditionToTransition == Condition.CurrentTimePoints)
+            {
+                currentStep.TransitionCondition.CurrentProgress = TownManager.Instance.TimePoints;
+            }
+        }
+
+        public void Update()
+        {
+            currentStep.TransitionCondition.CheckCondition();
+        }
+
+
 
     }
 }

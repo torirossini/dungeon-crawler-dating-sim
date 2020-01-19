@@ -8,8 +8,9 @@ using UnityEngine.AI;
 
 namespace Assets.Scripts
 {
-    class NPC:MonoBehaviour
+    public class NPC:MonoBehaviour
     {
+        [SerializeField]
         string name;
 
         #region Relationship Variables
@@ -20,13 +21,22 @@ namespace Assets.Scripts
         #endregion
 
         #region Movement and Pathing
+        [SerializeField]
         float movementSpeed = 5f;
+
+        [SerializeField]
         bool followPlayer = true;
 
         //Transform that NPC has to follow
-        public Transform transformToFollow;
+        private Transform transformToFollow;
         //NavMesh Agent variable
         NavMeshAgent followAgent;
+        #endregion
+
+        #region Routine
+        [SerializeField]
+        NPCRoutine routine;
+        bool isFollowingRoutine;
         #endregion
 
         public bool FollowPlayer { get => followPlayer; set => followPlayer = value; }
@@ -35,6 +45,9 @@ namespace Assets.Scripts
 
         public float Stance { get => stance; set => stance = value; }
         public int Mood { get => mood; set => mood = value; }
+        public string Name { get => name; set => name = value; }
+        public bool IsFollowingRoutine { get => isFollowingRoutine; set => isFollowingRoutine = value; }
+        public Transform TransformToFollow { get => transformToFollow; set => transformToFollow = value; }
 
         void Start()
         {
@@ -51,7 +64,6 @@ namespace Assets.Scripts
                 //Follow the player
                 followAgent.destination = transformToFollow.position;
             }
-
         }
 
         public void Move()
@@ -63,6 +75,10 @@ namespace Assets.Scripts
         public void ToggleFollowPlayer()
         {
             followPlayer = !followPlayer;
+            if(followPlayer)
+            {
+                isFollowingRoutine = false;
+            }
         }
 
     }

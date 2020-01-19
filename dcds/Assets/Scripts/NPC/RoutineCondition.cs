@@ -11,31 +11,39 @@ namespace Assets.Scripts
     [Serializable]
     public class RoutineCondition
     {
-
         [SerializeField]
         Condition conditionToTransition;
-
         [SerializeField]
-        private float distanceToPlayer;
-        [SerializeField]
-        private float timeElapsed;
-
         float conditionThreshold;
+
+        float currentProgress;
+
+        bool conditionMet;
 
         public float ConditionThreshold { get => conditionThreshold; }
         public Condition ConditionToTransition { get => conditionToTransition; set => conditionToTransition = value; }
+        public float CurrentProgress { get => currentProgress; set => currentProgress = value; }
+        public bool ConditionMet { get => conditionMet; set => conditionMet = value; }
 
         public RoutineCondition()
         {
-            if (conditionToTransition == Condition.DistanceFromPlayer)
-            {
-                conditionThreshold = distanceToPlayer;
-            }
-            else if (conditionToTransition == Condition.TimeElapsed)
-            {
-                conditionThreshold = timeElapsed;
-            }
+            conditionMet = false;
         }
+        /// <summary>
+        /// Called in update in NPCRoutine
+        /// </summary>
+        /// <returns>True if transition condition is met, false otherwise</returns>
+        public bool CheckCondition()
+        {
+            if (currentProgress >= conditionThreshold)
+            {
+                conditionMet = true;
+            }
+            return conditionMet;
+        }
+        
+
+
 
 
 

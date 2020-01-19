@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets
+namespace Assets.Scripts
 {
     public enum TimeOfDay
     {
@@ -45,6 +45,7 @@ namespace Assets
         float timeIncrements;
 
         TimeOfDay currentTime;
+        public List<NPC> npcs = new List<NPC>();
 
         void Awake()
         {

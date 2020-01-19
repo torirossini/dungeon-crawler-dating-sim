@@ -16,8 +16,8 @@ public class Utility
     public enum Condition
     {
         TimeElapsed,
-        DistanceFromPlayer,
-        TimeOfDay,
+        DistanceFromFollowTarget,
+        CurrentTimePoints,
     }
 
 }

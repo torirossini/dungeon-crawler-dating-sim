@@ -28,6 +28,13 @@ namespace Assets.Scripts
         public float MovementSpeedToNextStep { get => movementSpeedToNextStep; set => movementSpeedToNextStep = value; }
         internal RoutineCondition TransitionCondition { get => transitionCondition; set => transitionCondition = value; }
 
+        public NPCRoutineStep()
+        {
+            targetLocation = TownManager.Instance.Player.transform.position;
+            movementSpeedToNextStep = 5f;
+            nextStep = null;
+        }
+
         public NPCRoutineStep(Vector3 target, float moveSpeed, NPCRoutineStep next)
         {
             targetLocation = target;
