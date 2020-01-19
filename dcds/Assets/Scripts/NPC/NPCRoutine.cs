@@ -98,6 +98,9 @@ namespace Assets.Scripts
 
         }
 
+        /// <summary>
+        /// Updates CurrentProgress in RoutineCondition of currentStep
+        /// </summary>
         private void UpdateRoutineState()
         {
             if (currentStep.TransitionCondition.ConditionToTransition == Condition.DistanceFromFollowTarget)

@@ -50,7 +50,6 @@ namespace Assets.Scripts
         float timeIncrements;
 
         TimeOfDay currentTime;
-        public List<NPC> npcs = new List<NPC>();
 
         void Awake()
         {

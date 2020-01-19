@@ -12,7 +12,10 @@ namespace Assets.Scripts.Interaction
         public override void Interact()
         {
             TownManager.Instance.ExpendTimePoints(1);
+
+            //VVVVV End all Interact methods with this VVVVVV
             StartCoroutine(TriggerInteract());
+            ///^^^ This thing ^^^
         }
     }
 }
