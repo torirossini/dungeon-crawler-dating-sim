@@ -8,13 +8,18 @@ using UnityEngine.AI;
 
 namespace Assets.Scripts
 {
-    class NPC:MonoBehaviour
+    public class NPC:MonoBehaviour
     {
         string name;
 
         #region Relationship Variables
-        float stance;
-        int mood;
+        // Enum for NPC's stance
+        public enum Mood { Good, Neutral, Bad };
+
+        // -20 to 20 point scale 
+        public int stance;
+        // var for this NPC's mood
+        public Mood currentMood;
 
         bool romanceable;
         #endregion
@@ -33,8 +38,8 @@ namespace Assets.Scripts
         public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
         public NavMeshAgent FollowAgent { get => followAgent; set => followAgent = value; }
 
-        public float Stance { get => stance; set => stance = value; }
-        public int Mood { get => mood; set => mood = value; }
+        public int Stance { get => stance; set => stance = value; }
+        public Mood CurrentMood { get => currentMood; set => currentMood = value; }
 
         void Start()
         {
@@ -65,5 +70,62 @@ namespace Assets.Scripts
             followPlayer = !followPlayer;
         }
 
+        // Helper function for rolling the Mood Of The Day modifier if it hasn't been rolled for today yet
+        public void MoodOfTheDay()
+        {
+            float rng = UnityEngine.Random.value;
+
+            if(rng < 0.2)
+            {
+                currentMood = Mood.Bad;
+            } else if( rng < 0.8)
+            {
+                currentMood = Mood.Neutral;
+            } else
+            {
+                currentMood = Mood.Good;
+            }
+        }
+
+        // Helper function for calculating stance change based on player actions
+        public void StanceChange(int ammt)
+        {
+            stance += ammt; // change stance by passed ammount
+            stance = Mathf.Max(stance, -20); // stance can't be less than -20
+            stance = Mathf.Min(stance, 20); // stance can't be greater than 20
+        }
+
+        // Helper function for changing a character's mood (false means go down, true means go up)
+        public void MoodChange(bool positiveChange)
+        {
+            if (positiveChange)
+            {
+                switch (currentMood)
+                {
+                    case Mood.Bad:
+                        currentMood = Mood.Neutral;
+                        break;
+                    case Mood.Neutral:
+                        currentMood = Mood.Good;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                switch (currentMood)
+                {
+                    case Mood.Good:
+                        currentMood = Mood.Neutral;
+                        break;
+                    case Mood.Neutral:
+                        currentMood = Mood.Bad;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
     }
 }
