@@ -2986,6 +2986,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6173592, y: 2.012907, z: 2.1517613}
   m_Center: {x: 0.14191061, y: 0.12104565, z: 0.038137436}
+--- !u!1 &682794398
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682794400}
+  - component: {fileID: 682794399}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &682794399
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682794398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
+--- !u!4 &682794400
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682794398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &683369014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6278,6 +6322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Routine NPC
+  stance: 0
+  currentMood: 0
   movementSpeed: 5
   followPlayer: 0
   routine: {fileID: 0}
@@ -11602,6 +11648,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  stance: 0
+  currentMood: 0
   movementSpeed: 5
   followPlayer: 1
   routine: {fileID: 0}
