@@ -9,7 +9,8 @@ namespace Assets.Scripts
 {
     public abstract class Accessory : Item
     {
-        abstract bool Equip();
+        public abstract bool Equip();
+        public abstract bool Unequip();
     }
 
 }

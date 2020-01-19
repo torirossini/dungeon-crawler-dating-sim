@@ -13,7 +13,9 @@ namespace Assets.Scripts
     public abstract class Consumable:Item
     {
         int numberInStack;
-        abstract bool Consume(int number = 1);
+        public int NumberInStack { get => numberInStack; set => numberInStack = value; }
+
+        public abstract bool Consume(int number = 1);
     }
     
 }
