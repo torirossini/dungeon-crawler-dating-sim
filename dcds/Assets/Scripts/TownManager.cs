@@ -18,6 +18,7 @@ namespace Assets.Scripts
         public GameObject LeftBridge { get => leftBridge; set => leftBridge = value; }
         public Canvas ScreenCanvas { get => screenCanvas;}
         public int TimePoints { get => timePoints; set => timePoints = value; }
+        public List<NPC> Npcs { get => npcs; set => npcs = value; }
 
         [Header("Important Objects")]
         [SerializeField]
@@ -25,6 +26,10 @@ namespace Assets.Scripts
 
         [SerializeField]
         CameraManager playerCamera;
+
+        // List of NPCs to be managed
+        [SerializeField]
+        List<NPC> npcs;
 
         [SerializeField]
         GameObject rightBridge;
@@ -91,6 +96,11 @@ namespace Assets.Scripts
             {
                 Debug.Log("Day ended. Resetting time points...");
                 timePoints = 0;
+                // Reroll each npc's mood for the new day
+                foreach(NPC npc in npcs)
+                {
+                    npc.MoodOfTheDay();
+                }
             }
             return true;
 

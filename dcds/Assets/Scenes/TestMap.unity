@@ -6280,7 +6280,7 @@ MonoBehaviour:
   name: Routine NPC
   movementSpeed: 5
   followPlayer: 0
-  transformToFollow: {fileID: 1759532806}
+  routine: {fileID: 0}
 --- !u!195 &1222979861
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9293,12 +9293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af70e974809834f44975c95c2b02c37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1759532806 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7062032216894789994, guid: fa1fbc4e65514e4479c68305f63d4c4f,
-    type: 3}
-  m_PrefabInstance: {fileID: 7062032218641698414}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1764821856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11610,7 +11604,7 @@ MonoBehaviour:
   name: 
   movementSpeed: 5
   followPlayer: 1
-  transformToFollow: {fileID: 1759532806}
+  routine: {fileID: 0}
 --- !u!1001 &8831628785724218652
 PrefabInstance:
   m_ObjectHideFlags: 0
