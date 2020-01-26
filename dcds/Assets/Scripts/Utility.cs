@@ -15,8 +15,8 @@ public class Utility
     [System.Serializable]
     public enum Condition
     {
-        TimeElapsed,
-        DistanceFromFollowTarget,
+        //TimeElapsed,
+        //DistanceFromFollowTarget,
         CurrentTimePoints,
     }
 

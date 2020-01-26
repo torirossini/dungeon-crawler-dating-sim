@@ -17,7 +17,7 @@ namespace Assets.Scripts
         public GameObject RightBridge { get => rightBridge; set => rightBridge = value; }
         public GameObject LeftBridge { get => leftBridge; set => leftBridge = value; }
         public Canvas ScreenCanvas { get => screenCanvas;}
-        public int TimePoints { get => timePoints; set => timePoints = value; }
+        public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
         public List<NPC> Npcs { get => npcs; set => npcs = value; }
 
         [Header("Important Objects")]
@@ -46,14 +46,14 @@ namespace Assets.Scripts
         [SerializeField]
         const int MAX_TIME_POINTS = 5;
         [SerializeField]
-        int timePoints;
+        int m_currentTimePoints;
         float timeIncrements;
 
         TimeOfDay currentTime;
 
         void Awake()
         {
-            timePoints = 0;
+            m_currentTimePoints = 0;
             currentTime = TimeOfDay.Morning;
             timeIncrements = MAX_TIME_POINTS / Enum.GetNames(typeof(TimeOfDay)).Length;
         }
@@ -70,19 +70,19 @@ namespace Assets.Scripts
 
         public bool ExpendTimePoints(int numberToUse)
         {
-            if(timePoints+numberToUse > MAX_TIME_POINTS)
+            if(m_currentTimePoints+numberToUse > MAX_TIME_POINTS)
             {
                 Debug.Log("Cannot perform this action - Not enough time left!");
                 return false;
             }
-            timePoints += numberToUse;
+            m_currentTimePoints += numberToUse;
 
-            if (timePoints >= timeIncrements * (int)currentTime)
+            if (m_currentTimePoints >= timeIncrements * (int)currentTime)
             {
                 if (currentTime == TimeOfDay.Night)
                 {
                     ChangeTimeOfDay(TimeOfDay.Morning);
-                    timePoints = 0; 
+                    m_currentTimePoints = 0; 
                 }
                 else
                 {
@@ -91,10 +91,10 @@ namespace Assets.Scripts
                 Debug.Log("Changing time to " + currentTime);
             }
 
-            if (timePoints >= MAX_TIME_POINTS)
+            if (m_currentTimePoints >= MAX_TIME_POINTS)
             {
                 Debug.Log("Day ended. Resetting time points...");
-                timePoints = 0;
+                m_currentTimePoints = 0;
                 // Reroll each npc's mood for the new day
                 foreach(NPC npc in npcs)
                 {
