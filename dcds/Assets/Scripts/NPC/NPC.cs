@@ -95,6 +95,50 @@ namespace Assets.Scripts
 
         #endregion
 
+        void Start()
+        {
+            followAgent = GetComponent<NavMeshAgent>();
+            followAgent.speed = movementSpeed;
+            followAgent.isStopped = false;
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (m_followPlayer)
+            {
+                //Follow the player
+                followAgent.destination = transformToFollow.position;
+            }
+            else if (!m_routinePaused && routineSteps.Count != 0)
+            {
+                //If we were transitioning to the next step and we've arrived, update current step.
+                if (m_transitioningToNextStep
+                    && !followAgent.pathPending
+                    && followAgent.remainingDistance <= followAgent.stoppingDistance
+                    && (!followAgent.hasPath || followAgent.velocity.sqrMagnitude == 0f))
+                {
+                    BeginIdleInRoutine();
+                }
+                //If we aren't transitioning, check to see if we need to transition.
+                else
+                {
+                    UpdateTransitionCondition();
+                    m_currentStep.TransitionCondition.CheckCondition();
+                }
+            }
+
+        }
+
+        public void Move()
+        {
+            Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
+
+            gameObject.transform.position += movement * movementSpeed * Time.deltaTime;
+        }
+
+
         #region Routine Functions
         /// <summary>
         /// Called after routine is unpaused to allow the NPC to return to their correct step.
@@ -109,7 +153,7 @@ namespace Assets.Scripts
                     return step;
                 }
             }
-            return routineSteps[routineSteps.Count-1];
+            return routineSteps[routineSteps.Count - 1];
         }
 
         /// <summary>
@@ -121,7 +165,7 @@ namespace Assets.Scripts
             if (m_currentStep.TransitionCondition.CheckCondition())
             {
                 SetUpNavMesh(true, m_currentStep.NextStep.TargetLocation, 0f);
-                followAgent.Resume();
+                followAgent.isStopped = false;
             }
         }
 
@@ -148,39 +192,10 @@ namespace Assets.Scripts
         }
 
         #endregion
-        void Start()
-        {
-            followAgent = GetComponent<NavMeshAgent>();
-            followAgent.speed = movementSpeed;
-            followAgent.isStopped = false;
 
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if (m_followPlayer)
-            {
-                //Follow the player
-                followAgent.destination = transformToFollow.position;
-            }
-            //If we were transitioning to the next step and we've arrived, update current step.
-            else if (m_transitioningToNextStep 
-                && !followAgent.pathPending 
-                && followAgent.remainingDistance <= followAgent.stoppingDistance
-                && (!followAgent.hasPath || followAgent.velocity.sqrMagnitude == 0f))
-            {
-                BeginIdleInRoutine();
-            }
-
-        }
-
-        public void Move()
-        {
-            Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
-
-            gameObject.transform.position += movement * movementSpeed * Time.deltaTime;
-        }
+        /// <summary>
+        /// Toggles whether or not the NPC is following the player; pauses routine if they are.
+        /// </summary>
         public void ToggleFollowPlayer()
         {
             m_followPlayer = !m_followPlayer;

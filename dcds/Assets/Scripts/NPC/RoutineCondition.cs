@@ -35,6 +35,7 @@ namespace Assets.Scripts
 
         public RoutineCondition()
         {
+            currentProgress = 0f;
             conditionMet = false;
         }
 

@@ -6325,8 +6325,30 @@ MonoBehaviour:
   stance: 0
   currentMood: 0
   movementSpeed: 5
-  followPlayer: 0
-  routine: {fileID: 0}
+  m_followPlayer: 0
+  m_stoppingDistance: 3
+  routineSteps:
+  - m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
+    m_animationOnRest: {fileID: 0}
+    transitionCondition:
+      conditionToTransition: 0
+      conditionThreshold: 1
+  - m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
+    m_animationOnRest: {fileID: 0}
+    transitionCondition:
+      conditionToTransition: 0
+      conditionThreshold: 2
+  - m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
+    m_animationOnRest: {fileID: 0}
+    transitionCondition:
+      conditionToTransition: 0
+      conditionThreshold: 3
+  - m_targetLocation: {x: 0.17, y: 0.54, z: 2.77}
+    m_animationOnRest: {fileID: 0}
+    transitionCondition:
+      conditionToTransition: 0
+      conditionThreshold: 4
+  m_routinePaused: 0
 --- !u!195 &1222979861
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10924,7 +10946,7 @@ PrefabInstance:
     - target: {fileID: 63637088145337672, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.83
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 63637088145337672, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
@@ -10934,7 +10956,7 @@ PrefabInstance:
     - target: {fileID: 63637088145337672, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.832
+      value: 2.77
       objectReference: {fileID: 0}
     - target: {fileID: 63637088145337672, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
@@ -11651,8 +11673,10 @@ MonoBehaviour:
   stance: 0
   currentMood: 0
   movementSpeed: 5
-  followPlayer: 1
-  routine: {fileID: 0}
+  m_followPlayer: 0
+  m_stoppingDistance: 3
+  routineSteps: []
+  m_routinePaused: 0
 --- !u!1001 &8831628785724218652
 PrefabInstance:
   m_ObjectHideFlags: 0
