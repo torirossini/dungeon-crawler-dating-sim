@@ -45,14 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sunDirLight: {fileID: 0}
   currentState: 1
-  morningLight: {x: 28, y: 0, z: 0, w: 0}
-  transitionTimeMorning: 3
-  middayLight: {x: 90, y: 0, z: 0, w: 0}
-  transitionTimeMidday: 3
-  eveningLight: {x: 155, y: 0, z: 0, w: 0}
-  transitionTimeEvening: 3
-  nightLight: {x: 250, y: 0, z: 0, w: 0}
-  transitionTimeNight: 3
+  currentLerpTime: 0
+  totalLerpTime: 0
+  percentage: 0
+  QuaternionThirdParameter: 0
 --- !u!1 &8831628787036816451
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,8 +95,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   playerCamera: {fileID: 0}
+  npcs: []
   rightBridge: {fileID: 0}
   leftBridge: {fileID: 0}
   screenCanvas: {fileID: 0}
   lightManager: {fileID: 1341201531}
-  timePoints: 3
+  timePoints: 0
