@@ -6330,11 +6330,11 @@ MonoBehaviour:
   - m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_targetTimePoints: 0
+    m_targetTimePoints: 4
   - m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_targetTimePoints: 4
+    m_targetTimePoints: 3
   - m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0

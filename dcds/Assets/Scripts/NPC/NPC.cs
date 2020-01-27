@@ -103,6 +103,7 @@ namespace Assets.Scripts
             followAgent.isStopped = false;
             m_currentStep = routineSteps[0];
             SetUpRoutine();
+
         }
 
         // Update is called once per frame
@@ -152,6 +153,8 @@ namespace Assets.Scripts
                 routineSteps[i - 1].NextStep = routineSteps[i];
             }
             routineSteps[routineSteps.Count - 1].NextStep = routineSteps[0];
+            m_currentStep = FindCurrentStep();
+            m_currentStep.ResetCondition();
         }
 
         /// <summary>
