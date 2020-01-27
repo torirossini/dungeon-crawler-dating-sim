@@ -21,7 +21,7 @@ namespace Assets.Scripts
             { 
                 TownManager.Instance.Player.transform.position = new Vector3(targetPortal.transform.position.x + xOffset,
                     targetPortal.transform.position.y + yOffset,
-                    targetPortal.transform.position.z + zOffset);
+                   targetPortal.transform.position.z + zOffset);
             }
         }
     }

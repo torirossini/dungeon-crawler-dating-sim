@@ -9,17 +9,11 @@ namespace Assets.Scripts
     {
         Morning=1,Midday=2,Evening=3,Night=4
     }
+    /// <summary>
+    /// Singleton in charge of handling the town functionality and holds town references
+    /// </summary>
     public class TownManager : Singleton<TownManager>
     {
-
-        public Player Player { get => player; set => player = value; }
-        public CameraManager PlayerCamera { get => playerCamera; set => playerCamera = value; }
-        public GameObject RightBridge { get => rightBridge; set => rightBridge = value; }
-        public GameObject LeftBridge { get => leftBridge; set => leftBridge = value; }
-        public Canvas ScreenCanvas { get => screenCanvas;}
-        public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
-        public List<NPC> Npcs { get => npcs; set => npcs = value; }
-
         [Header("Important Objects")]
         [SerializeField]
         Player player;
@@ -47,15 +41,28 @@ namespace Assets.Scripts
         const int MAX_TIME_POINTS = 5;
         [SerializeField]
         int m_currentTimePoints;
-        float timeIncrements;
+        float m_timeIncrements;
 
-        TimeOfDay currentTime;
+        TimeOfDay m_currentTime;
+
+        #region Getters/Setters
+
+        public Player Player { get => player; set => player = value; }
+        public CameraManager PlayerCamera { get => playerCamera; set => playerCamera = value; }
+        public GameObject RightBridge { get => rightBridge; set => rightBridge = value; }
+        public GameObject LeftBridge { get => leftBridge; set => leftBridge = value; }
+        public Canvas ScreenCanvas { get => screenCanvas; }
+        public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
+        public List<NPC> NPCs { get => npcs; set => npcs = value; }
+
+
+        #endregion
 
         void Awake()
         {
             m_currentTimePoints = 0;
-            currentTime = TimeOfDay.Morning;
-            timeIncrements = MAX_TIME_POINTS / Enum.GetNames(typeof(TimeOfDay)).Length;
+            m_currentTime = TimeOfDay.Morning;
+            m_timeIncrements = MAX_TIME_POINTS / Enum.GetNames(typeof(TimeOfDay)).Length;
         }
 
         public bool FacingRight(GameObject one, GameObject two)
@@ -77,18 +84,18 @@ namespace Assets.Scripts
             }
             m_currentTimePoints += numberToUse;
 
-            if (m_currentTimePoints >= timeIncrements * (int)currentTime)
+            if (m_currentTimePoints >= m_timeIncrements * (int)m_currentTime)
             {
-                if (currentTime == TimeOfDay.Night)
+                if (m_currentTime == TimeOfDay.Night)
                 {
                     ChangeTimeOfDay(TimeOfDay.Morning);
                     m_currentTimePoints = 0; 
                 }
                 else
                 {
-                    ChangeTimeOfDay(currentTime + 1);
+                    ChangeTimeOfDay(m_currentTime + 1);
                 }
-                Debug.Log("Changing time to " + currentTime);
+                Debug.Log("Changing time to " + m_currentTime);
             }
 
             if (m_currentTimePoints >= MAX_TIME_POINTS)
@@ -108,7 +115,7 @@ namespace Assets.Scripts
 
         public void ChangeTimeOfDay(TimeOfDay toTime)
         {
-            currentTime = toTime;
+            m_currentTime = toTime;
             CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime));
             lightManager.UpdateLighting((int)toTime);
 

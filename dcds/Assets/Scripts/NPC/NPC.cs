@@ -13,7 +13,7 @@ namespace Assets.Scripts
     public class NPC:MonoBehaviour
     {
         [SerializeField]
-        string name = "";
+        string m_name = "";
 
         #region Relationship Variables
         // Enum for NPC's stance
@@ -31,7 +31,7 @@ namespace Assets.Scripts
         [SerializeField]
         float movementSpeed = 5f;
 
-        [SerializeField]
+        [ReadOnly]
         bool m_followPlayer = false;
 
         [SerializeField]
@@ -60,7 +60,7 @@ namespace Assets.Scripts
         /// </summary>
         public NavMeshAgent FollowAgent { get => followAgent; set => followAgent = value; }
 
-        public string Name { get => name; set => name = value; }
+        public string Name { get => m_name; set => m_name = value; }
 
         /// <summary>
         /// The game object the NPC is currently following
@@ -90,6 +90,7 @@ namespace Assets.Scripts
         [ReadOnly]
         private NPCRoutineStep m_currentStep;
 
+        [ReadOnly]
         private bool m_transitioningToNextStep;
 
 
@@ -100,7 +101,8 @@ namespace Assets.Scripts
             followAgent = GetComponent<NavMeshAgent>();
             followAgent.speed = movementSpeed;
             followAgent.isStopped = false;
-
+            m_currentStep = routineSteps[0];
+            SetUpRoutine();
         }
 
         // Update is called once per frame
@@ -124,8 +126,12 @@ namespace Assets.Scripts
                 //If we aren't transitioning, check to see if we need to transition.
                 else
                 {
+                    if (m_currentStep == null)
+                    {
+                        m_currentStep = routineSteps[0];
+                    }
                     UpdateTransitionCondition();
-                    m_currentStep.TransitionCondition.CheckCondition();
+                    m_currentStep.CheckCondition();
                 }
             }
 
@@ -140,6 +146,15 @@ namespace Assets.Scripts
 
 
         #region Routine Functions
+        public void SetUpRoutine()
+        {
+            for (int i = 1; i < routineSteps.Count; i++)
+            {
+                routineSteps[i - 1].NextStep = routineSteps[i];
+            }
+            routineSteps[routineSteps.Count - 1].NextStep = routineSteps[0];
+        }
+
         /// <summary>
         /// Called after routine is unpaused to allow the NPC to return to their correct step.
         /// </summary>
@@ -148,7 +163,7 @@ namespace Assets.Scripts
         {
             foreach (NPCRoutineStep step in routineSteps)
             {
-                if (step.TransitionCondition.ConditionThreshold >= TownManager.Instance.CurrentTimePoints)
+                if (step.ConditionThreshold >= TownManager.Instance.CurrentTimePoints)
                 {
                     return step;
                 }
@@ -161,8 +176,8 @@ namespace Assets.Scripts
         /// </summary>
         private void UpdateTransitionCondition()
         {
-            m_currentStep.TransitionCondition.CurrentProgress = TownManager.Instance.CurrentTimePoints;
-            if (m_currentStep.TransitionCondition.CheckCondition())
+            m_currentStep.CurrentTimePoints = TownManager.Instance.CurrentTimePoints;
+            if (m_currentStep.CheckCondition())
             {
                 SetUpNavMesh(true, m_currentStep.NextStep.TargetLocation, 0f);
                 followAgent.isStopped = false;
@@ -188,6 +203,7 @@ namespace Assets.Scripts
         private void BeginIdleInRoutine()
         {
             m_transitioningToNextStep = false;
+            m_currentStep.ResetCondition();
             m_currentStep = m_currentStep.NextStep;
         }
 

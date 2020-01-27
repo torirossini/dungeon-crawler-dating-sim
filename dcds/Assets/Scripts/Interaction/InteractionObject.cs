@@ -11,7 +11,6 @@ namespace Assets.Scripts
 {
     public abstract class InteractionObject : MonoBehaviour
     {
-
         SphereCollider interactRadius;
         bool inRange = false;
         private bool interacted = false;
