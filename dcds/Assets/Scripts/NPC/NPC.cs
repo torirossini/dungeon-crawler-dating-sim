@@ -130,7 +130,6 @@ namespace Assets.Scripts
                     {
                         m_currentStep = routineSteps[0];
                     }
-                    UpdateTransitionCondition();
                     m_currentStep.CheckCondition();
                 }
             }
@@ -163,7 +162,7 @@ namespace Assets.Scripts
         {
             foreach (NPCRoutineStep step in routineSteps)
             {
-                if (step.ConditionThreshold >= TownManager.Instance.CurrentTimePoints)
+                if (step.TargetTimePoints >= TownManager.Instance.CurrentTimePoints)
                 {
                     return step;
                 }
@@ -174,13 +173,14 @@ namespace Assets.Scripts
         /// <summary>
         /// Called whenever TimePoints are updated
         /// </summary>
-        private void UpdateTransitionCondition()
+        public void UpdateTransitionCondition()
         {
             m_currentStep.CurrentTimePoints = TownManager.Instance.CurrentTimePoints;
-            if (m_currentStep.CheckCondition())
+            if (m_currentStep.CheckCondition() && !m_transitioningToNextStep)
             {
                 SetUpNavMesh(true, m_currentStep.NextStep.TargetLocation, 0f);
                 followAgent.isStopped = false;
+                Debug.Log("The next transition should occur.");
             }
         }
 
@@ -203,8 +203,10 @@ namespace Assets.Scripts
         private void BeginIdleInRoutine()
         {
             m_transitioningToNextStep = false;
+            Debug.Log("Arrived at target for " + m_currentStep.TargetTimePoints + ". Idling until timepoints = " + m_currentStep.NextStep.TargetTimePoints);
             m_currentStep.ResetCondition();
             m_currentStep = m_currentStep.NextStep;
+           
         }
 
         #endregion

@@ -6330,19 +6330,19 @@ MonoBehaviour:
   - m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_conditionThreshold: 1
+    m_targetTimePoints: 0
   - m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_conditionThreshold: 2
+    m_targetTimePoints: 4
   - m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_conditionThreshold: 3
+    m_targetTimePoints: 2
   - m_targetLocation: {x: 0.17, y: 0.54, z: 2.77}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_conditionThreshold: 4
+    m_targetTimePoints: 1
   m_routinePaused: 0
 --- !u!195 &1222979861
 NavMeshAgent:
@@ -11631,6 +11631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
+      propertyPath: npcs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1759532801}
@@ -11654,6 +11659,11 @@ PrefabInstance:
       propertyPath: screenCanvas
       value: 
       objectReference: {fileID: 319851390}
+    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: npcs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1222979860}
     - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
       propertyPath: directionalLight1
       value: 

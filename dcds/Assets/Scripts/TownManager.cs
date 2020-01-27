@@ -118,7 +118,16 @@ namespace Assets.Scripts
             m_currentTime = toTime;
             CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime));
             lightManager.UpdateLighting((int)toTime);
+            UpdateNPCs();
 
+        }
+
+        public void UpdateNPCs()
+        {
+            foreach (NPC npc in npcs)
+            {
+                npc.UpdateTransitionCondition();
+            }
         }
         void Update()
         {

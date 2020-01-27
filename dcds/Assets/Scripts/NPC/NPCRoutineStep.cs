@@ -22,7 +22,7 @@ namespace Assets.Scripts
         [SerializeField]
         Condition m_conditionToTransition;
         [SerializeField]
-        float m_conditionThreshold;
+        float m_targetTimePoints;
 
         float m_currentTimePoints;
 
@@ -37,7 +37,7 @@ namespace Assets.Scripts
         public bool ConditionMet { get => m_conditionMet; set => m_conditionMet = value; }
         public float CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
         public Condition ConditionToTransition { get => m_conditionToTransition; set => m_conditionToTransition = value; }
-        public float ConditionThreshold { get => m_conditionThreshold; set => m_conditionThreshold = value; }
+        public float TargetTimePoints { get => m_targetTimePoints; set => m_targetTimePoints = value; }
 
         #endregion
 
@@ -74,7 +74,7 @@ namespace Assets.Scripts
         /// <returns>True if transition condition is met, false otherwise</returns>
         public bool CheckCondition()
         {
-            if (m_currentTimePoints == m_conditionThreshold && m_conditionMet == false)
+            if (m_currentTimePoints == m_targetTimePoints && m_conditionMet == false)
             {
                 m_conditionMet = true;
             }
