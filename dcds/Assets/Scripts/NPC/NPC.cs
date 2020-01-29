@@ -146,6 +146,9 @@ namespace Assets.Scripts
 
 
         #region Routine Functions
+        /// <summary>
+        /// Sets up a routine when game starts
+        /// </summary>
         public void SetUpRoutine()
         {
             for (int i = 1; i < routineSteps.Count; i++)
@@ -154,6 +157,7 @@ namespace Assets.Scripts
             }
             routineSteps[routineSteps.Count - 1].NextStep = routineSteps[0];
             m_currentStep = FindCurrentStep();
+            //Make sure the NPC is poised at its first routine step on play
             gameObject.transform.position = m_currentStep.TargetLocation;
             m_currentStep.ResetCondition();
         }

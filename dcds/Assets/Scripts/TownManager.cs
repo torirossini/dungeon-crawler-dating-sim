@@ -75,6 +75,12 @@ namespace Assets.Scripts
             return false;
         }
 
+        /// <summary>
+        /// Expends timepoints if possible. 
+        /// Also changes time UI, and triggers any lighting changes.
+        /// </summary>
+        /// <param name="numberToUse"></param>
+        /// <returns></returns>
         public bool ExpendTimePoints(int numberToUse)
         {
             if(m_currentTimePoints+numberToUse > MAX_TIME_POINTS)
@@ -100,19 +106,17 @@ namespace Assets.Scripts
 
             if (m_currentTimePoints >= MAX_TIME_POINTS)
             {
-                Debug.Log("Day ended. Resetting time points...");
-                m_currentTimePoints = 0;
-                // Reroll each npc's mood for the new day
-                foreach(NPC npc in npcs)
-                {
-                    npc.MoodOfTheDay();
-                }
+                ResetDay();
             }
             return true;
 
 
         }
 
+        /// <summary>
+        /// Updates anything which changes when the time changes
+        /// </summary>
+        /// <param name="toTime"></param>
         public void ChangeTimeOfDay(TimeOfDay toTime)
         {
             m_currentTime = toTime;
@@ -123,6 +127,24 @@ namespace Assets.Scripts
 
         }
 
+        /// <summary>
+        /// Anything which should be run when the day ends should be run here.
+        /// </summary>
+        private void ResetDay()
+        {
+            Debug.Log("Day ended. Resetting time points...");
+            m_currentTimePoints = 0;
+            // Reroll each npc's mood for the new day
+            foreach (NPC npc in npcs)
+            {
+                npc.MoodOfTheDay();
+            }
+        }
+
+        /// <summary>
+        /// Updates variables for each NPC whenever the time is updated.
+        /// This may need to change to every frame, with this specific check moved to when the time is updated.
+        /// </summary>
         public void UpdateNPCs()
         {
             foreach (NPC npc in npcs)
@@ -130,12 +152,5 @@ namespace Assets.Scripts
                 npc.UpdateTransitionCondition();
             }
         }
-        void Update()
-        {
-            
-
-        }
-
-
     }
 }

@@ -11212,6 +11212,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6666636003404543692, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9999999
+      objectReference: {fileID: 0}
     - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
       propertyPath: playerObject
@@ -11633,11 +11638,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
-      propertyPath: npcs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1759532801}
@@ -11646,6 +11646,11 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 905428123}
+    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: npcs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1222979860}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: rightBridge
@@ -11661,34 +11666,13 @@ PrefabInstance:
       propertyPath: screenCanvas
       value: 
       objectReference: {fileID: 319851390}
-    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
-      propertyPath: npcs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1222979860}
-    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
-      propertyPath: directionalLight1
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
       propertyPath: sunDirLight
       value: 
       objectReference: {fileID: 656832250}
     - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
-      propertyPath: transitionTimeMorning
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
-      propertyPath: transitionTimeMidday
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
-      propertyPath: transitionTimeNight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
-      propertyPath: transitionTimeEvening
-      value: 1
+      propertyPath: totalLerpTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}

@@ -21,13 +21,12 @@ namespace Assets
         Vector3 prevRotation;
 
 
-        public float currentLerpTime;
-        public float totalLerpTime;
-        public float percentage;
+        float currentLerpTime;
+        float totalLerpTime;
+        float percentage;
         Vector3 newRot;
 
         public bool AllowTransition { get => transitioning; set => transitioning = value; }
-        public float QuaternionThirdParameter = 0;
 
         void Awake()
         {
@@ -86,14 +85,13 @@ namespace Assets
                 targetRotation = new Vector3(170, 0, 0);
             }
             prevRotation = sunDirLight.transform.rotation.eulerAngles;
-            SetupRotation(sunDirLight, 1f);
+            SetupRotation(sunDirLight, 2f);
             transitioning = true;
         }
 
         void SetupRotation(Light sun, float time)
         {
             currentLerpTime = 0.0f;
-            
             totalLerpTime = time;
         }
     }
