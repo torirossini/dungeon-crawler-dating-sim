@@ -6330,19 +6330,19 @@ MonoBehaviour:
   - m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_targetTimePoints: 4
+    m_targetTimePoints: 1
   - m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_targetTimePoints: 3
+    m_targetTimePoints: 2
   - m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_targetTimePoints: 2
+    m_targetTimePoints: 3
   - m_targetLocation: {x: 0.17, y: 0.54, z: 2.77}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
-    m_targetTimePoints: 1
+    m_targetTimePoints: 4
   m_routinePaused: 0
 --- !u!195 &1222979861
 NavMeshAgent:
@@ -8105,7 +8105,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Morning
 
-    Time Left: 4'
+    Time Left: 4
+
+    Time Points: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4b12982930104c4bb8dc3fab2c8bc4e, type: 2}
   m_sharedMaterial: {fileID: -1980005517662338374, guid: b4b12982930104c4bb8dc3fab2c8bc4e,
@@ -8151,7 +8153,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 21
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -8175,12 +8177,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 76.86624, w: 0}
   m_textInfo:
     textComponent: {fileID: 1564148713}
-    characterCount: 20
+    characterCount: 35
     spriteCount: 0
-    spaceCount: 3
-    wordCount: 4
+    spaceCount: 6
+    wordCount: 7
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -11324,6 +11326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5560892386145379455, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11428,11 +11435,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ed44cd7d2c61e4d9037a28fac3b748, type: 3}

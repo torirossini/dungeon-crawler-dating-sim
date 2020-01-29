@@ -116,7 +116,8 @@ namespace Assets.Scripts
         public void ChangeTimeOfDay(TimeOfDay toTime)
         {
             m_currentTime = toTime;
-            CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime));
+            CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime)
+                +"\nTime Points: " + (int)toTime);
             lightManager.UpdateLighting((int)toTime);
             UpdateNPCs();
 

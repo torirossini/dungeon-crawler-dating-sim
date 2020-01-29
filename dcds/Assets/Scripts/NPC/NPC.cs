@@ -154,6 +154,7 @@ namespace Assets.Scripts
             }
             routineSteps[routineSteps.Count - 1].NextStep = routineSteps[0];
             m_currentStep = FindCurrentStep();
+            gameObject.transform.position = m_currentStep.TargetLocation;
             m_currentStep.ResetCondition();
         }
 
@@ -206,10 +207,12 @@ namespace Assets.Scripts
         private void BeginIdleInRoutine()
         {
             m_transitioningToNextStep = false;
-            Debug.Log("Arrived at target for " + m_currentStep.TargetTimePoints + ". Idling until timepoints = " + m_currentStep.NextStep.TargetTimePoints);
+            Debug.Log("Arrived at target for " + m_currentStep.TargetTimePoints + ".");
             m_currentStep.ResetCondition();
             m_currentStep = m_currentStep.NextStep;
-           
+            Debug.Log("Idling until timepoints = " + m_currentStep.TargetTimePoints);
+
+
         }
 
         #endregion
