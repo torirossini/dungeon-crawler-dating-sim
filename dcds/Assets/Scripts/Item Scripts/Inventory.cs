@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Assets.Scripts
 {
     // very basic inventory backend that allows items to be added/removed from a list
-    public class PlayerInventory : MonoBehaviour
+    public class Inventory : MonoBehaviour
     {
         public int inventorySize = 4;
         public List<Item> inventory;
