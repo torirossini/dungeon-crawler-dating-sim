@@ -395,8 +395,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -414,8 +414,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -898,8 +898,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a0f323aac3deb4db5a0ceb886fa1cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   targetPortal: {fileID: 1168015736}
   zOffset: 0
   xOffset: -4
@@ -3013,8 +3013,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   selectedFlowchart: {fileID: 0}
 --- !u!4 &682794400
 Transform:
@@ -4150,8 +4150,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 545c4ee9ed06add4f9918b3f56e767c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   playerObject: {fileID: 1759532800}
   dungeonEntrance: {fileID: 2112203825}
   rightCameraOffset: {x: -11, y: 5, z: 0}
@@ -5292,12 +5292,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d15d619789c01d4099941916a19a46d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   timeDisplay: {fileID: 1564148713}
 --- !u!224 &1031721194 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5560892386145379455, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
+    type: 3}
+  m_PrefabInstance: {fileID: 8405342635593931121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &1031721196 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
     type: 3}
   m_PrefabInstance: {fileID: 8405342635593931121}
   m_PrefabAsset: {fileID: 0}
@@ -6157,8 +6163,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49a0f323aac3deb4db5a0ceb886fa1cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   targetPortal: {fileID: 277710386}
   zOffset: 0
   xOffset: -4
@@ -6218,8 +6224,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc6241df79aa19941871707c8f33e269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
     type: 3}
   bobSpeed: 3
@@ -6319,9 +6325,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_name: 
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name:
   stance: 0
   currentMood: 0
   movementSpeed: 5
@@ -8093,8 +8099,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -9247,8 +9253,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af70e974809834f44975c95c2b02c37b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &1759532806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7062032216894789994, guid: fa1fbc4e65514e4479c68305f63d4c4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7062032218641698414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759532800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af70e974809834f44975c95c2b02c37b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &1764821856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10889,7 +10907,7 @@ PrefabInstance:
     - target: {fileID: 63637088145337678, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 13722f43d100d0b478018f5239900113, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2815f05045eadfc4983b42be87060143, type: 3}
@@ -11220,7 +11238,7 @@ PrefabInstance:
     - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
       propertyPath: playerObject
-      value: 
+      value:
       objectReference: {fileID: 1759532800}
     - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
@@ -11331,11 +11349,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 5560892386145379455, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11441,6 +11454,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ed44cd7d2c61e4d9037a28fac3b748, type: 3}
 --- !u!1001 &8586114458948544739
@@ -11518,7 +11536,7 @@ PrefabInstance:
     - target: {fileID: 63637088145337678, guid: 2815f05045eadfc4983b42be87060143,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: 13722f43d100d0b478018f5239900113, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2815f05045eadfc4983b42be87060143, type: 3}
@@ -11560,9 +11578,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_name: 
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name:
   stance: 0
   currentMood: 0
   movementSpeed: 5
@@ -11639,36 +11657,44 @@ PrefabInstance:
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: player
-      value: 
+      value:
       objectReference: {fileID: 1759532801}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: playerCamera
-      value: 
+      value:
       objectReference: {fileID: 905428123}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: npcs.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 1222979860}
-    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
       propertyPath: rightBridge
-      value: 
+      value:
       objectReference: {fileID: 573640916}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: leftBridge
-      value: 
+      value:
+      objectReference: {fileID: 582472911}
+    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: rightBridge
+      value:
+      objectReference: {fileID: 573640916}
+    - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: leftBridge
+      value:
       objectReference: {fileID: 582472911}
     - target: {fileID: 8831628787036816508, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: screenCanvas
-      value: 
+      value:
       objectReference: {fileID: 319851390}
     - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
       propertyPath: sunDirLight
-      value: 
+      value:
       objectReference: {fileID: 656832250}
     - target: {fileID: 1341201531, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
       propertyPath: totalLerpTime
