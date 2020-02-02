@@ -7,7 +7,7 @@ namespace Assets.Scripts
     // very basic inventory backend that allows items to be added/removed from a list
     public class Inventory : MonoBehaviour
     {
-        public int inventorySize = 4;
+        public int inventorySize = 6;
         public List<Item> inventory;
 
         public void AddItem(Item itemToAdd)

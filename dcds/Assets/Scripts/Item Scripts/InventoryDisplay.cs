@@ -8,32 +8,14 @@ namespace Assets.Scripts
     {
         // gameObject with an inventory to track
         public GameObject charToTrack;
-        // placeholder gameObject used to help instantiate item pictures in the UI
-        public GameObject itemImagePlaceholder;
 
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-        // when the parent panel is activated, grab a reference to the character's inventory and display it
+        // when the parent panel is activated, grab a reference to the character's inventory and display its icon GameObject
         void OnEnable()
         {
-
-            //foreach (Item i in charToTrack.GetComponent<Inventory>().inventory)
-            //{
-
-            //}
-            for (int i = 0; i < 4; i++) // placeholder until I can grab info from items properly
+            foreach (Item i in charToTrack.GetComponent<Inventory>().inventory)
             {
-                Instantiate(itemImagePlaceholder, gameObject.transform);
+                if(i) // make sure an item is filling this slot
+                    Instantiate(i.Icon, gameObject.transform);
             }
         }
 
