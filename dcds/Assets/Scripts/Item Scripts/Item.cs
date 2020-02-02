@@ -15,7 +15,7 @@ namespace Assets.Scripts
     public abstract class Item : MonoBehaviour
     {
         [SerializeField]
-        GameObject icon; // store as GO so it can be rendered in UI as its own object
+        Sprite icon;
         [SerializeField]
         string name;
         [SerializeField]
@@ -26,7 +26,7 @@ namespace Assets.Scripts
         int purchasePrice;
 
         // getters for these variables
-        public GameObject Icon { get => icon; }
+        public Sprite Icon { get => icon; }
         public string Name { get => name; }
         public string Description { get => description; }
         public int SellPrice { get => sellPrice; }

@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeb29849cff4ae4db0f7d6b7886a80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 7236117979781798981, guid: eebd16ca3dbefab4a9bbdac98b07c9ba, type: 3}
+  icon: {fileID: 21300000, guid: e566118bf584bec418980ca6d34d0b4f, type: 3}
   name: Bread
   description: mmmmmm, loaf
   sellPrice: 69

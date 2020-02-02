@@ -6788,7 +6788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charToTrack: {fileID: 1759532800}
-  itemImagePlaceholder: {fileID: 8275568041319961370, guid: 108ae63862c777442982b6d7cdef7286,
+  inventoryItemPrefab: {fileID: 6532773263394358971, guid: 2f467ad568ff0054fa1cc207a80c4d5b,
     type: 3}
 --- !u!114 &1204490714
 MonoBehaviour:
