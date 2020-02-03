@@ -24,6 +24,7 @@ namespace Assets.Scripts
         // var for this NPC's mood
         public Mood currentMood;
 
+        []
         bool romanceable;
         #endregion
 
@@ -76,6 +77,7 @@ namespace Assets.Scripts
         /// NPC's current Mood indicator
         /// </summary>
         public Mood CurrentMood { get => currentMood; set => currentMood = value; }
+        public bool Romanceable { get => romanceable; set => romanceable = value; }
 
 
         #endregion
