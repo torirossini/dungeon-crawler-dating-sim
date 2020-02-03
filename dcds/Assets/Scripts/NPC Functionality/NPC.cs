@@ -188,7 +188,7 @@ namespace Assets.Scripts
             {
                 SetUpNavMesh(true, m_currentStep.NextStep.TargetLocation, 0f);
                 followAgent.isStopped = false;
-                Debug.Log("The next transition should occur.");
+                //Debug.Log("The next transition should occur.");
             }
         }
 
@@ -211,10 +211,10 @@ namespace Assets.Scripts
         private void BeginIdleInRoutine()
         {
             m_transitioningToNextStep = false;
-            Debug.Log("Arrived at target for " + m_currentStep.TargetTimePoints + ".");
+            //Debug.Log("Arrived at target for " + m_currentStep.TargetTimePoints + ".");
             m_currentStep.ResetCondition();
             m_currentStep = m_currentStep.NextStep;
-            Debug.Log("Idling until timepoints = " + m_currentStep.TargetTimePoints);
+            //Debug.Log("Idling until timepoints = " + m_currentStep.TargetTimePoints);
 
 
         }
