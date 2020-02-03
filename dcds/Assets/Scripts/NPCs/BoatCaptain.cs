@@ -5,5 +5,8 @@ using Assets.Scripts;
 
 public class BoatCaptain : NPC
 {
-    
+    void Awake()
+    {
+        Romanceable = false;
+    }
 }

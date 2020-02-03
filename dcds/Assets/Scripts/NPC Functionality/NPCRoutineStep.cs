@@ -12,7 +12,8 @@ namespace Assets.Scripts
     public class NPCRoutineStep
     {
         NPCRoutineStep m_nextStep;
-
+        [SerializeField]
+        string m_routineStepName = "";
         [SerializeField]
         Vector3 m_targetLocation;
         [SerializeField]

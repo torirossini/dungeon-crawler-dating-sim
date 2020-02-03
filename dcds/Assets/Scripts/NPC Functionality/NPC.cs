@@ -24,7 +24,6 @@ namespace Assets.Scripts
         // var for this NPC's mood
         public Mood currentMood;
 
-        []
         bool romanceable;
         #endregion
 
@@ -118,13 +117,22 @@ namespace Assets.Scripts
             }
             else if (!m_routinePaused && routineSteps.Count != 0)
             {
-                //If we were transitioning to the next step and we've arrived, update current step.
-                if (m_transitioningToNextStep
-                    && !followAgent.pathPending
+                //If we were transitioning
+                if (m_transitioningToNextStep)
+                {
+                    // we've arrived, update current step.
+                    if (!followAgent.pathPending
                     && followAgent.remainingDistance <= followAgent.stoppingDistance
                     && (!followAgent.hasPath || followAgent.velocity.sqrMagnitude == 0f))
-                {
-                    BeginIdleInRoutine();
+                    {
+                        BeginIdleInRoutine();
+                    }
+                    //If we're transitioning and the time doesnt match the target, uodate our current step and swap transition targets.
+                    else if (m_currentStep.TargetTimePoints != m_currentStep.CurrentTimePoints)
+                    {
+                        m_currentStep = FindCurrentStep();
+                        SetUpNavMesh(true, m_currentStep.TargetLocation, 0);
+                    }
                 }
                 //If we aren't transitioning, check to see if we need to transition.
                 else
