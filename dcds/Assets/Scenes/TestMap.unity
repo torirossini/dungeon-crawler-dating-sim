@@ -6458,19 +6458,23 @@ MonoBehaviour:
   movementSpeed: 5
   m_stoppingDistance: 3
   routineSteps:
-  - m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
+  - m_routineStepName: 
+    m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
     m_targetTimePoints: 1
-  - m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
+  - m_routineStepName: 
+    m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
     m_targetTimePoints: 2
-  - m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
+  - m_routineStepName: 
+    m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
     m_targetTimePoints: 3
-  - m_targetLocation: {x: 0.17, y: 0.54, z: 2.77}
+  - m_routineStepName: 
+    m_targetLocation: {x: 0.17, y: 0.54, z: 2.77}
     m_animationOnRest: {fileID: 0}
     m_conditionToTransition: 0
     m_targetTimePoints: 4
@@ -11559,6 +11563,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoatCaptainNPC
       objectReference: {fileID: 0}
+    - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
+      propertyPath: m_routinePaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
+      propertyPath: routineSteps.Array.data[1].m_targetLocation.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
+      propertyPath: routineSteps.Array.data[1].m_targetLocation.z
+      value: -10.17
+      objectReference: {fileID: 0}
     - target: {fileID: 7464711525682680987, guid: 6aac77d07e8d23c4080699a0b17ef623,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11629,20 +11645,77 @@ PrefabInstance:
       propertyPath: avoidancePriority
       value: 99
       objectReference: {fileID: 0}
-    - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
-      propertyPath: m_routinePaused
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
-      propertyPath: routineSteps.Array.data[1].m_targetLocation.x
-      value: 0.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
-      propertyPath: routineSteps.Array.data[1].m_targetLocation.z
-      value: -10.17
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
+--- !u!1001 &8169396335890417526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8169396337315324724, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.748407
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17e93abaa8af13243bf5eb5f4a1cb984, type: 3}
 --- !u!1001 &8405342635593931121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11654,11 +11727,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5560892386145379455, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
         type: 3}
@@ -11764,6 +11832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ed44cd7d2c61e4d9037a28fac3b748, type: 3}
