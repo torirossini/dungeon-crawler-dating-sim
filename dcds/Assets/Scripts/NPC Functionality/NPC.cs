@@ -180,7 +180,7 @@ namespace Assets.Scripts
         {
             foreach (NPCRoutineStep step in routineSteps)
             {
-                if (step.TargetTimePoints >= TownManager.Instance.CurrentTimePoints)
+                if (step.TargetTimePoints >= GameManager.Instance.CurrentTimePoints)
                 {
                     return step;
                 }
@@ -193,7 +193,7 @@ namespace Assets.Scripts
         /// </summary>
         public void UpdateTransitionCondition()
         {
-            m_currentStep.CurrentTimePoints = TownManager.Instance.CurrentTimePoints;
+            m_currentStep.CurrentTimePoints = GameManager.Instance.CurrentTimePoints;
             if (m_currentStep.CheckCondition() && !m_transitioningToNextStep)
             {
                 SetUpNavMesh(true, m_currentStep.NextStep.TargetLocation, 0f);

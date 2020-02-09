@@ -52,7 +52,7 @@ namespace Assets.Scripts
             }
             if(other.gameObject.CompareTag("Bridge"))
             {
-                TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Forward);
+                GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Forward);
             }
             
         }
@@ -80,13 +80,13 @@ namespace Assets.Scripts
             }
             if (other.gameObject.CompareTag("Bridge"))
             {
-                if (TownManager.Instance.FacingRight(TownManager.Instance.LeftBridge, TownManager.Instance.RightBridge))
+                if (GameManager.Instance.TownManager.FacingRight(GameManager.Instance.TownManager.LeftBridge, GameManager.Instance.TownManager.RightBridge))
                 {
-                    TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
+                    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
                 }
                 else
                 {
-                    TownManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
+                    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
 
                 }
             }

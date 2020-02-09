@@ -17,9 +17,9 @@ namespace Assets.Scripts
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject == TownManager.Instance.Player.gameObject)
+            if (collision.gameObject == GameManager.Instance.Player.gameObject)
             { 
-                TownManager.Instance.Player.transform.position = new Vector3(targetPortal.transform.position.x + xOffset,
+                GameManager.Instance.Player.transform.position = new Vector3(targetPortal.transform.position.x + xOffset,
                     targetPortal.transform.position.y + yOffset,
                    targetPortal.transform.position.z + zOffset);
             }

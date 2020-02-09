@@ -35,7 +35,7 @@ namespace Assets.Scripts
             interactRadius = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
             interactRadius.radius = 2.5f;
             interactRadius.isTrigger = true;
-            interactIconObject = GameObject.Instantiate(interactIcon, TownManager.Instance.ScreenCanvas.transform);
+            interactIconObject = GameObject.Instantiate(interactIcon, GameManager.Instance.ScreenCanvas.transform);
             interactIconObject.gameObject.SetActive(false);
         }
 
