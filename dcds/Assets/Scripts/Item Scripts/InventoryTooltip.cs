@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Assets.Scripts;
 
 public class InventoryTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -15,19 +16,15 @@ public class InventoryTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
         tooltipInstance = Instantiate(tooltipPrefab, GameObject.Find("Canvas").transform);
-        foreach (Text txt in gameObject.GetComponentsInChildren<Text>(true))
-        {
-            if (txt.name == "ItemDescription")
-                tooltipInstance.GetComponentInChildren<Text>().text += "Description: " + txt.text + "\n";
-            if (txt.name == "ItemSellPrice")
-                tooltipInstance.GetComponentInChildren<Text>().text += "Sell Price: " + txt.text;
-        }
+
+        // use the tracked item's info to fill out the tooltip text
+        tooltipInstance.GetComponentInChildren<Text>().text += "Description: " + gameObject.GetComponent<UseItemFromInventory>().trackedItem.Description + "\n";
+        tooltipInstance.GetComponentInChildren<Text>().text += "Sell Price: " + gameObject.GetComponent<UseItemFromInventory>().trackedItem.SellPrice.ToString();
     }
 
     // UI version of OnMousExit, use this destroy the prefab instance
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Despawning");
         Destroy(tooltipInstance);
     }
 }
