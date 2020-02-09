@@ -17,19 +17,22 @@ namespace Assets.Scripts
         {
             foreach (Item i in charToTrack.GetComponent<Inventory>().inventory)
             {
-                if(i) // make sure an item is filling this slot
+                if (i) // make sure an item is filling this slot
                 {
                     // create the prefab in the scene, then modify its contents based on the item in question
                     GameObject itemInstance = Instantiate(inventoryItemPrefab, gameObject.transform);
                     itemInstance.GetComponent<Image>().sprite = i.Icon;
                     // handle the title and tooltip text contained within the prefab appropriately
-                    Text[] textComponents = itemInstance.GetComponentsInChildren<Text>();
-                    foreach(Text txt in textComponents)
+                    Text[] textComponents = itemInstance.GetComponentsInChildren<Text>(true);
+                    foreach (Text txt in textComponents)
                     {
+                        Debug.Log(txt.name);
                         if (txt.name == "ItemTitle")
                             txt.text = i.Name;
-                        else if (txt.name == "ToolTipText")
-                            txt.text = i.Description + "\n" + i.SellPrice;
+                        if (txt.name == "ItemDescription")
+                            txt.text = i.Description;
+                        if (txt.name == "ItemSellPrice")
+                            txt.text = i.SellPrice.ToString();
                     }
                 }
             }
