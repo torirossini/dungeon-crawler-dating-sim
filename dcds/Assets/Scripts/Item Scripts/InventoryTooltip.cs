@@ -27,4 +27,10 @@ public class InventoryTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
     {
         Destroy(tooltipInstance);
     }
+
+    // if the GO this script is attached to is destroyed, the tooltip instance must be destroyed too
+    public void OnDestroy()
+    {
+        Destroy(tooltipInstance);
+    }
 }
