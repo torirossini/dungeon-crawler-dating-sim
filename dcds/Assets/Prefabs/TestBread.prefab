@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2778857853641214576}
   - component: {fileID: 4474366019718352145}
   - component: {fileID: 8445085958481541491}
-  - component: {fileID: 1416638794678166171}
   - component: {fileID: 402942768902826495}
+  - component: {fileID: 4633029019990050730}
   m_Layer: 0
   m_Name: TestBread
   m_TagString: Untagged
@@ -93,23 +93,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1416638794678166171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6157383575712048497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feeb29849cff4ae4db0f7d6b7886a80b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: e566118bf584bec418980ca6d34d0b4f, type: 3}
-  name: Bread
-  description: mmmmmm, loaf
-  sellPrice: 69
-  purchasePrice: 420
 --- !u!54 &402942768902826495
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,3 +109,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4633029019990050730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157383575712048497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feeb29849cff4ae4db0f7d6b7886a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: e566118bf584bec418980ca6d34d0b4f, type: 3}
+  name: Bread
+  description: mmmm, loaf
+  sellPrice: 69
+  purchasePrice: 420
