@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fungus;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -97,6 +98,14 @@ namespace Assets.Scripts
 
         #endregion
 
+        #region Fungus
+        //dialogue flowchart reference for this npc
+        public Flowchart flowchart;
+
+        //fungus character object reference for this npc
+        public Character character;
+        #endregion
+
         void Start()
         {
             followAgent = GetComponent<NavMeshAgent>();
@@ -104,7 +113,6 @@ namespace Assets.Scripts
             followAgent.isStopped = false;
             m_currentStep = routineSteps[0];
             SetUpRoutine();
-
         }
 
         // Update is called once per frame
