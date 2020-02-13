@@ -30,7 +30,7 @@ namespace Assets.Scripts
 
         public bool Interacted { get => interacted; set => interacted = value; }
 
-        void Awake()
+        protected virtual void Awake()
         {
             interactRadius = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
             interactRadius.radius = 2.5f;

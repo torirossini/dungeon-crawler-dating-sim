@@ -11,7 +11,7 @@ using UnityEngine.AI;
 namespace Assets.Scripts
 {
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
-    public class NPC:MonoBehaviour
+    public class NPC:InteractionObject
     {
         [SerializeField]
         string m_name = "";
@@ -314,5 +314,15 @@ namespace Assets.Scripts
             }
         }
         #endregion
+
+        public override void Interact()
+        {
+            flowchart.SendFungusMessage("Start Dialogue");
+
+            //VVVVV End all Interact methods with this VVVVVV
+            StartCoroutine(TriggerInteract());
+            ///^^^ This thing ^^^
+        }
+
     }
 }
