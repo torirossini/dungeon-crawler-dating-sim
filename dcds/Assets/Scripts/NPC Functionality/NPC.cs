@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fungus;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,7 +11,7 @@ using UnityEngine.AI;
 namespace Assets.Scripts
 {
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
-    public class NPC:MonoBehaviour
+    public class NPC:InteractionObject
     {
         [SerializeField]
         string m_name = "";
@@ -97,6 +98,14 @@ namespace Assets.Scripts
 
         #endregion
 
+        #region Fungus
+        //dialogue flowchart reference for this npc
+        public Flowchart flowchart;
+
+        //fungus character object reference for this npc
+        public Character character;
+        #endregion
+
         void Start()
         {
             followAgent = GetComponent<NavMeshAgent>();
@@ -104,7 +113,6 @@ namespace Assets.Scripts
             followAgent.isStopped = false;
             m_currentStep = routineSteps[0];
             SetUpRoutine();
-
         }
 
         // Update is called once per frame
@@ -306,5 +314,15 @@ namespace Assets.Scripts
             }
         }
         #endregion
+
+        public override void Interact()
+        {
+            flowchart.SendFungusMessage("Start Dialogue");
+
+            //VVVVV End all Interact methods with this VVVVVV
+            StartCoroutine(TriggerInteract());
+            ///^^^ This thing ^^^
+        }
+
     }
 }
