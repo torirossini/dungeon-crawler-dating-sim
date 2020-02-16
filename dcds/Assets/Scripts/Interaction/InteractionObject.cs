@@ -11,8 +11,10 @@ namespace Assets.Scripts
 {
     public abstract class InteractionObject : MonoBehaviour
     {
-        SphereCollider interactRadius;
-        bool inRange = false;
+        [SerializeField]
+        float m_interactRadius = 2.5f;
+        SphereCollider m_interactRadiusCollider;
+        bool m_inRange = false;
         private bool interacted = false;
 
         [SerializeField]
@@ -32,9 +34,9 @@ namespace Assets.Scripts
 
         protected virtual void Awake()
         {
-            interactRadius = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
-            interactRadius.radius = 2.5f;
-            interactRadius.isTrigger = true;
+            m_interactRadiusCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
+            m_interactRadiusCollider.radius = m_interactRadius;
+            m_interactRadiusCollider.isTrigger = true;
             interactIconObject = GameObject.Instantiate(interactIcon, GameManager.Instance.ScreenCanvas.transform);
             interactIconObject.gameObject.SetActive(false);
         }
@@ -44,12 +46,12 @@ namespace Assets.Scripts
         {
             if (able)
             {
-                inRange = able;
+                m_inRange = able;
                 interactIconObject.gameObject.SetActive(true);
             }
             else
             {
-                inRange = false;
+                m_inRange = false;
                 interacted = false;
                 interactIconObject.gameObject.SetActive(false);
             }
@@ -65,7 +67,7 @@ namespace Assets.Scripts
 
         void Update()
         {
-            if (inRange)
+            if (m_inRange)
             {
                 Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
                 float newY = Mathf.Sin(Time.time * bobSpeed);

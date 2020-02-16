@@ -89,7 +89,6 @@ namespace Assets.Scripts
         [SerializeField]
         private bool m_routinePaused;
 
-        [ReadOnly]
         private NPCRoutineStep m_currentStep;
 
         [ReadOnly]
