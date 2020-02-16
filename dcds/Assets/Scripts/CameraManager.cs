@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static Utility;
 
 namespace Assets
@@ -52,7 +53,14 @@ namespace Assets
             isTransitioning = false;
             currentPositionOffset = rightCameraOffset;
             StartCoroutine(ChangeCameraFocusTo(playerObject));
-            
+        }
+
+        // called when a scene loads
+        void OnSceneLoaded()
+        {
+            Debug.Log("New scene loaded!");
+            playerObject = GameManager.Instance.Player.gameObject;
+            ChangeCameraFocusTo(playerObject);
         }
 
         private void FixedUpdate()

@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3307009843304357688}
   - component: {fileID: 3307009843304357691}
+  - component: {fileID: -2964185987781110105}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +55,18 @@ MonoBehaviour:
   - {fileID: 0}
   m_currentTimePoints: 0
   townManager: {fileID: 3307009842752266266}
+--- !u!114 &-2964185987781110105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307009843304357690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fdca8bfdf7fc541bab028267dd3f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3307009843487923007
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,11 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3307009843304357688}
     m_Modifications:
-    - target: {fileID: 8831628787036816451, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
-      propertyPath: m_Name
-      value: TownManager
-      objectReference: {fileID: 0}
     - target: {fileID: 8831628787036816509, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -165,6 +173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831628787036816451, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: m_Name
+      value: TownManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
