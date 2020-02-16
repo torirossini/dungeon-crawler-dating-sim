@@ -47,10 +47,16 @@ namespace Assets
         GameObject cameraFocus;
         float xzTransitionSmoothTime = .03f;
 
+        private void Awake()
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+
         private void Start()
         {
             isTransitioning = false;
             currentPositionOffset = rightCameraOffset;
+            playerObject = GameManager.Instance.Player.gameObject;
             StartCoroutine(ChangeCameraFocusTo(playerObject));
             
         }

@@ -28,9 +28,11 @@ namespace Assets
 
         public bool AllowTransition { get => transitioning; set => transitioning = value; }
 
-        void Awake()
+        private void Awake()
         {
+            DontDestroyOnLoad(this.gameObject);
         }
+
         void Start()
         {
             currentLerpTime = 0.0f;

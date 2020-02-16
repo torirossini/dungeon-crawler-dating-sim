@@ -9,7 +9,7 @@ namespace Assets.Scripts
     /// <summary>
     /// Singleton in charge of handling the town functionality and holds town references
     /// </summary>
-    public class TownManager : MonoBehaviour
+    public class TownManager : Singleton<TownManager>
     {
         [SerializeField]
         GameObject rightBridge;

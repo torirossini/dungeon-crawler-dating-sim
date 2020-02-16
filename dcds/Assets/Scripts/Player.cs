@@ -80,7 +80,7 @@ namespace Assets.Scripts
             }
             if (other.gameObject.CompareTag("Bridge"))
             {
-                if (GameManager.Instance.TownManager.FacingRight(GameManager.Instance.TownManager.LeftBridge, GameManager.Instance.TownManager.RightBridge))
+                if (TownManager.Instance.FacingRight(TownManager.Instance.LeftBridge, TownManager.Instance.RightBridge))
                 {
                     GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
                 }
