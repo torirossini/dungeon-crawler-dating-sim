@@ -42,8 +42,8 @@ public class GameManager : Singleton<GameManager>
 
     TimeOfDay m_currentTime;
 
-    [SerializeField]
-    TownManager townManager;
+    //[SerializeField]
+    //TownManager townManager;
 
 
     #region Getters/Setters
@@ -52,7 +52,7 @@ public class GameManager : Singleton<GameManager>
     public Canvas ScreenCanvas { get => screenCanvas; }
     public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
     public List<NPC> NPCs { get => npcs; set => npcs = value; }
-    public TownManager TownManager { get => townManager; set => townManager = value; }
+    //public TownManager TownManager { get => townManager; set => townManager = value; }
 
     #endregion
 

@@ -48,19 +48,19 @@ namespace Assets
         GameObject cameraFocus;
         float xzTransitionSmoothTime = .03f;
 
+        // called when a scene loads before first frame
+        void Awake()
+        {
+            // reassign key vars here in case a scene switch has occurred
+            playerObject = GameManager.Instance.Player.gameObject;
+            GameManager.Instance.PlayerCamera = gameObject.GetComponent<CameraManager>();
+        }
+
         private void Start()
         {
             isTransitioning = false;
             currentPositionOffset = rightCameraOffset;
             StartCoroutine(ChangeCameraFocusTo(playerObject));
-        }
-
-        // called when a scene loads
-        void OnSceneLoaded()
-        {
-            Debug.Log("New scene loaded!");
-            playerObject = GameManager.Instance.Player.gameObject;
-            ChangeCameraFocusTo(playerObject);
         }
 
         private void FixedUpdate()
