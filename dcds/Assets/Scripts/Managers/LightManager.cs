@@ -28,9 +28,11 @@ namespace Assets
 
         public bool AllowTransition { get => transitioning; set => transitioning = value; }
 
-        private void Awake()
+        // called when a scene loads before first frame
+        void Awake()
         {
-            DontDestroyOnLoad(this.gameObject);
+            // reassign key vars here in case a scene switch has occurred
+            sunDirLight = GameObject.Find("Sun").GetComponent<Light>();
         }
 
         void Start()
