@@ -30,8 +30,8 @@ namespace Assets.Scripts
         // Update is called once per frame
         void FixedUpdate()
         {
-            moveZAxis = Input.GetAxis("Vertical") * playerZMultipler;
-            moveXAxis = -Input.GetAxis("Horizontal") * playerXMultipler;
+            moveZAxis = Input.GetAxis("Horizontal") * playerZMultipler;
+            moveXAxis = Input.GetAxis("Vertical") * playerXMultipler;
             PlayerMove(playerSpeed);
         }
 

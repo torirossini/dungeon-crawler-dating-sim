@@ -14,7 +14,28 @@ public enum TimeOfDay
 }
 public class GameManager : Singleton<GameManager>
 {
+    [SerializeField]
+    Player playerReference;
 
+    [SerializeField]
+    PlayerFollowCamera followCamera;
+
+    public Player PlayerReference { get => playerReference; set => playerReference = value; }
+
+    private void Start()
+    {
+        
+    }
+    public void FindReferences()
+    {
+        GameObject obj;
+        obj = GameObject.FindGameObjectWithTag("MainCamera");
+        followCamera = obj.GetComponent<PlayerFollowCamera>();
+        
+        obj = GameObject.FindGameObjectWithTag("Player");
+        playerReference = obj.GetComponent<Player>();
+        
+    }
 
     /*
     [Header("Important Objects")]

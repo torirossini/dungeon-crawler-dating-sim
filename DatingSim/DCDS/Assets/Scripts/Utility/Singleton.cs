@@ -9,63 +9,66 @@ namespace Assets
 {
     public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        // Check to see if we're about to be destroyed.
-        private static bool m_ShuttingDown = false;
-        private static T m_Instance;
+        private static T _instance;
 
-        /// <summary>
-        /// Access singleton instance through this propriety.
-        /// </summary>
+        private static object _lock = new object();
+
         public static T Instance
         {
             get
             {
-                if (m_ShuttingDown)
+                if (applicationIsQuitting)
                 {
                     Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
-                        "' already destroyed. Returning null.");
+                    "' already destroyed on application quit." +
+                    " Won't create again - returning null.");
                     return null;
                 }
 
-                return m_Instance;
+                lock (_lock)
+                {
+                    if (_instance == null)
+                    {
+                        _instance = (T)FindObjectOfType(typeof(T));
+
+                        if (FindObjectsOfType(typeof(T)).Length > 1)
+                        {
+                            Debug.LogError("[Singleton] Something went really wrong " +
+                            " - there should never be more than 1 singleton!" +
+                            " Reopenning the scene might fix it.");
+                            return _instance;
+                        }
+
+                        if (_instance == null)
+                        {
+                            GameObject singleton = new GameObject();
+                            singleton.name = "(singleton)" + typeof(T).ToString();
+
+
+                            Debug.Log("[Singleton] An instance of " + typeof(T) +
+                            " is needed in the scene, so '" + singleton +
+                            "' was created with DontDestroyOnLoad.");
+                        }
+                        else
+                        {
+                            Debug.Log("[Singleton] Using instance already created: " +  _instance.gameObject.name);
+                        }
+                    }
+
+                    return _instance;
+                }
             }
         }
 
         private void Awake()
         {
-            if (m_Instance != null)
-            {
-                Destroy(gameObject);
-            }
-            else
-            {
-                // Search for existing instance.
-                m_Instance = (T)FindObjectOfType(typeof(T));
-
-                // Create new instance if one doesn't already exist.
-                if (m_Instance == null)
-                {
-                    // Need to create a new GameObject to attach the singleton to.
-                    var singletonObject = new GameObject();
-                    m_Instance = singletonObject.AddComponent<T>();
-                    singletonObject.name = typeof(T).ToString() + " (Singleton)";
-                }
-
-                // Make instance persistent.
-                DontDestroyOnLoad(m_Instance);
-            }
+            DontDestroyOnLoad(gameObject);
         }
 
-
-        private void OnApplicationQuit()
+        private static bool applicationIsQuitting = false;
+        public void OnDestroy()
         {
-            m_ShuttingDown = true;
-        }
-
-
-        private void OnDestroy()
-        {
-            m_ShuttingDown = true;
+            applicationIsQuitting = true;
         }
     }
 }
