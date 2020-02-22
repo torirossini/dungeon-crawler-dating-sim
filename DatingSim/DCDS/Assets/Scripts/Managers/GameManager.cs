@@ -14,6 +14,9 @@ public enum TimeOfDay
 }
 public class GameManager : Singleton<GameManager>
 {
+
+
+    /*
     [Header("Important Objects")]
     [SerializeField]
     Player player;
@@ -21,13 +24,14 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     CameraManager playerCamera;
 
+
     [SerializeField]
     Canvas screenCanvas;
 
     [SerializeField]
     GameObject interactIcons;
 
-    [SerializeField]
+    /*[SerializeField]
     LightManager lightManager;
 
     // List of NPCs to be managed
@@ -52,7 +56,7 @@ public class GameManager : Singleton<GameManager>
 
     #region Getters/Setters
     public Player Player { get => player; set => player = value; }
-    public CameraManager PlayerCamera { get => playerCamera; set => playerCamera = value; }
+    //public CameraManager PlayerCamera { get => playerCamera; set => playerCamera = value; }
     public Canvas ScreenCanvas { get => screenCanvas; }
     public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
     public List<NPC> NPCs { get => npcs; set => npcs = value; }
@@ -71,71 +75,74 @@ public class GameManager : Singleton<GameManager>
         m_timeIncrements = MAX_TIME_POINTS / Enum.GetNames(typeof(TimeOfDay)).Length;
     }
 
-    /// <summary>
-    /// Expends timepoints if possible. 
-    /// Also changes time UI, and triggers any lighting changes.
-    /// </summary>
-    /// <param name="numberToUse"></param>
-    /// <returns></returns>
-    public bool ExpendTimePoints(int numberToUse)
-    {
-        if (m_currentTimePoints + numberToUse > MAX_TIME_POINTS)
-        {
-            Debug.Log("Cannot perform this action - Not enough time left!");
-            return false;
-        }
-        m_currentTimePoints += numberToUse;
+    /*
 
-        if (m_currentTimePoints >= m_timeIncrements * (int)m_currentTime)
-        {
-            if (m_currentTime == TimeOfDay.Night)
-            {
-                ChangeTimeOfDay(TimeOfDay.Morning);
-                m_currentTimePoints = 0;
-            }
-            else
-            {
-                ChangeTimeOfDay(m_currentTime + 1);
-            }
-            Debug.Log("Changing time to " + m_currentTime);
-        }
+  /// <summary>
+  /// Expends timepoints if possible. 
+  /// Also changes time UI, and triggers any lighting changes.
+  /// </summary>
+  /// <param name="numberToUse"></param>
+  /// <returns></returns>
+  public bool ExpendTimePoints(int numberToUse)
+  {
+      if (m_currentTimePoints + numberToUse > MAX_TIME_POINTS)
+      {
+          Debug.Log("Cannot perform this action - Not enough time left!");
+          return false;
+      }
+      m_currentTimePoints += numberToUse;
 
-        if (m_currentTimePoints >= MAX_TIME_POINTS)
-        {
-            ResetDay();
-        }
-        return true;
+      if (m_currentTimePoints >= m_timeIncrements * (int)m_currentTime)
+      {
+          if (m_currentTime == TimeOfDay.Night)
+          {
+              ChangeTimeOfDay(TimeOfDay.Morning);
+              m_currentTimePoints = 0;
+          }
+          else
+          {
+              ChangeTimeOfDay(m_currentTime + 1);
+          }
+          Debug.Log("Changing time to " + m_currentTime);
+      }
+
+      if (m_currentTimePoints >= MAX_TIME_POINTS)
+      {
+          ResetDay();
+      }
+      return true;
 
 
-    }
+  }
 
-    /// <summary>
-    /// Updates anything which changes when the time changes
-    /// </summary>
-    /// <param name="toTime"></param>
-    public void ChangeTimeOfDay(TimeOfDay toTime)
-    {
-        m_currentTime = toTime;
-        CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime)
-            + "\nTime Points: " + (int)toTime);
-        lightManager.UpdateLighting((int)toTime);
-        UpdateNPCs();
 
-    }
+  /// <summary>
+  /// Updates anything which changes when the time changes
+  /// </summary>
+  /// <param name="toTime"></param>
+  public void ChangeTimeOfDay(TimeOfDay toTime)
+  {
+      m_currentTime = toTime;
+      CanvasManager.Instance.TimeDisplay.SetText(toTime.ToString() + "\nTime Left: " + (MAX_TIME_POINTS - (int)toTime)
+          + "\nTime Points: " + (int)toTime);
+      lightManager.UpdateLighting((int)toTime);
+      UpdateNPCs();
 
-    /// <summary>
-    /// Anything which should be run when the day ends should be run here.
-    /// </summary>
-    private void ResetDay()
-    {
-        Debug.Log("Day ended. Resetting time points...");
-        m_currentTimePoints = 0;
-        // Reroll each npc's mood for the new day
-        foreach (NPC npc in npcs)
-        {
-            npc.MoodOfTheDay();
-        }
-    }
+  }
+
+  /// <summary>
+  /// Anything which should be run when the day ends should be run here.
+  /// </summary>
+  private void ResetDay()
+  {
+      Debug.Log("Day ended. Resetting time points...");
+      m_currentTimePoints = 0;
+      // Reroll each npc's mood for the new day
+      foreach (NPC npc in npcs)
+      {
+          npc.MoodOfTheDay();
+      }
+  }
 
     /// <summary>
     /// Updates variables for each NPC whenever the time is updated.
@@ -159,4 +166,5 @@ public class GameManager : Singleton<GameManager>
             npcs.Add(npc.GetComponent<NPC>());
         }
     }
+    */
 }

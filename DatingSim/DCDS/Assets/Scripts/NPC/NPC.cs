@@ -10,7 +10,6 @@ using UnityEngine.AI;
 
 namespace Assets.Scripts
 {
-    [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
     public class NPC : InteractionObject
     {
         [SerializeField]
@@ -32,7 +31,6 @@ namespace Assets.Scripts
         [SerializeField]
         float movementSpeed = 5f;
 
-        [ReadOnly]
         bool m_followPlayer = false;
 
         [SerializeField]
@@ -110,7 +108,7 @@ namespace Assets.Scripts
             followAgent.speed = movementSpeed;
             followAgent.isStopped = false;
             m_currentStep = routineSteps[0];
-            SetUpRoutine();
+            //SetUpRoutine();
         }
 
         // Update is called once per frame
@@ -131,13 +129,13 @@ namespace Assets.Scripts
                     && followAgent.remainingDistance <= followAgent.stoppingDistance
                     && (!followAgent.hasPath || followAgent.velocity.sqrMagnitude == 0f))
                     {
-                        BeginIdleInRoutine();
+                        //BeginIdleInRoutine();
                     }
                     //If we're transitioning and the time doesnt match the target, uodate our current step and swap transition targets.
                     else if (m_currentStep.TargetTimePoints != m_currentStep.CurrentTimePoints)
                     {
-                        m_currentStep = FindCurrentStep();
-                        SetUpNavMesh(true, m_currentStep.TargetLocation, 0);
+                        //m_currentStep = FindCurrentStep();
+                        //SetUpNavMesh(true, m_currentStep.TargetLocation, 0);
                     }
                 }
                 //If we aren't transitioning, check to see if we need to transition.
@@ -160,7 +158,7 @@ namespace Assets.Scripts
             gameObject.transform.position += movement * movementSpeed * Time.deltaTime;
         }
 
-
+        /*
         #region Routine Functions
         /// <summary>
         /// Sets up a routine when game starts
@@ -236,6 +234,7 @@ namespace Assets.Scripts
         }
 
         #endregion
+        */
 
         /// <summary>
         /// Toggles whether or not the NPC is following the player; pauses routine if they are.

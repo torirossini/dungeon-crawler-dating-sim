@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fungus;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,8 +38,8 @@ namespace Assets.Scripts
             m_interactRadiusCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
             m_interactRadiusCollider.radius = m_interactRadius;
             m_interactRadiusCollider.isTrigger = true;
-            interactIconObject = GameObject.Instantiate(interactIcon, GameManager.Instance.InteractIcons.transform);
-            interactIconObject.gameObject.SetActive(false);
+            //interactIconObject = GameObject.Instantiate(interactIcon, GameManager.Instance.InteractIcons.transform);
+            //interactIconObject.gameObject.SetActive(false);
         }
 
 
