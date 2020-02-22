@@ -78,7 +78,7 @@ namespace Assets.Scripts
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(false);
             }
-            if (other.gameObject.CompareTag("Bridge"))
+            /*if (other.gameObject.CompareTag("Bridge"))
             {
                 //if (GameManager.Instance.TownManager.FacingRight(GameManager.Instance.TownManager.LeftBridge, GameManager.Instance.TownManager.RightBridge))
                 //{
@@ -89,7 +89,7 @@ namespace Assets.Scripts
                 //    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
 
                 //}
-            }
+            }*/
         }
 
     }

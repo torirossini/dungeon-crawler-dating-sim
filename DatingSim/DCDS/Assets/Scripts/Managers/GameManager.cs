@@ -15,16 +15,23 @@ public enum TimeOfDay
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField]
-    Player playerReference;
+    Player playerRef;
+
+    [SerializeField]
+    Inventory playerInventory;
 
     [SerializeField]
     PlayerFollowCamera followCamera;
 
-    public Player PlayerReference { get => playerReference; set => playerReference = value; }
+    [SerializeField]
+    Canvas canvasRef;
+
+    public Player PlayerReference { get => playerRef; set => playerRef = value; }
+    public Inventory PlayerInventory { get => playerInventory; set => playerInventory = value; }
 
     private void Start()
     {
-        
+        FindReferences();
     }
     public void FindReferences()
     {
@@ -33,7 +40,11 @@ public class GameManager : Singleton<GameManager>
         followCamera = obj.GetComponent<PlayerFollowCamera>();
         
         obj = GameObject.FindGameObjectWithTag("Player");
-        playerReference = obj.GetComponent<Player>();
+        playerRef = obj.GetComponent<Player>();
+        playerInventory = obj.GetComponent<Inventory>();
+
+        canvasRef = GameObject.FindObjectOfType<Canvas>();
+
         
     }
 

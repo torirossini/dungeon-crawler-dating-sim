@@ -42,7 +42,8 @@ namespace Assets
                         if (_instance == null)
                         {
                             GameObject singleton = new GameObject();
-                            singleton.name = "(singleton)" + typeof(T).ToString();
+                            _instance = singleton.AddComponent<T>();
+                            singleton.name = "(Singleton)" + typeof(T).ToString();
 
 
                             Debug.Log("[Singleton] An instance of " + typeof(T) +
@@ -60,7 +61,7 @@ namespace Assets
             }
         }
 
-        private void Awake()
+        protected virtual void Awake()
         {
             DontDestroyOnLoad(gameObject);
         }
