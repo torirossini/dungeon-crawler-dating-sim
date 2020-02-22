@@ -108,7 +108,7 @@ namespace Assets
             isTransitioning = false;
             
         }
-
+        /*
         public void ChangeView(CurrentView toView)
         {
             switch(toView)
@@ -128,5 +128,6 @@ namespace Assets
             }
 
         }
+        */
     }
 }

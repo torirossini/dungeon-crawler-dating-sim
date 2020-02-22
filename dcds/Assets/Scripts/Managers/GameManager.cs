@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Assets;
 using Assets.Scripts;
+using UnityEngine.SceneManagement;
 
 public enum TimeOfDay
 {
@@ -22,6 +23,9 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField]
     Canvas screenCanvas;
+
+    [SerializeField]
+    GameObject interactIcons;
 
     [SerializeField]
     LightManager lightManager;
@@ -52,16 +56,19 @@ public class GameManager : Singleton<GameManager>
     public Canvas ScreenCanvas { get => screenCanvas; }
     public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
     public List<NPC> NPCs { get => npcs; set => npcs = value; }
+    public GameObject InteractIcons { get => interactIcons; set => interactIcons = value; }
+
     //public TownManager TownManager { get => townManager; set => townManager = value; }
 
     #endregion
+
+
 
     void Awake()
     {
         m_currentTimePoints = 0;
         m_currentTime = TimeOfDay.Morning;
         m_timeIncrements = MAX_TIME_POINTS / Enum.GetNames(typeof(TimeOfDay)).Length;
-        DontDestroyOnLoad(this.gameObject);
     }
 
     /// <summary>
@@ -141,5 +148,64 @@ public class GameManager : Singleton<GameManager>
             npc.UpdateTransitionCondition();
         }
     }
-}
 
+    private void FindNPCsInScene()
+    {
+        GameObject[] npcObjs;
+        npcObjs = GameObject.FindGameObjectsWithTag("NPC");
+        npcs.Clear();
+        foreach (GameObject npc in npcObjs)
+        {
+            npcs.Add(npc.GetComponent<NPC>());
+        }
+    }
+
+    private void FindLightManagerInScene()
+    {
+        LightManager lightMan = GameObject.FindObjectOfType<LightManager>();
+        if (lightMan)
+        {
+            lightManager = lightMan;
+        }
+        else
+        {
+            Debug.LogWarning("No LightManager found in current scene.");
+        }
+    }
+
+    private void FindCanvasInScene()
+    {
+        CanvasManager lightMan = GameObject.FindObjectOfType<CanvasManager>();
+        if (lightMan)
+        {
+            screenCanvas = lightMan.GetComponent<Canvas>();
+        }
+        else
+        {
+            Debug.LogWarning("No Canvas found in current scene.");
+        }
+    }
+
+    private void FindPlayerInScene()
+    {
+        Player lightMan = GameObject.FindObjectOfType<Player>();
+        if (lightMan)
+        {
+            player = lightMan;
+        }
+        else
+        {
+            Debug.LogWarning("No Player found in current scene.");
+        }
+    }
+
+    public void FixReferences()
+    {
+        FindNPCsInScene();
+        FindLightManagerInScene();
+        FindCanvasInScene();
+        FindPlayerInScene();
+
+    }
+    
+}

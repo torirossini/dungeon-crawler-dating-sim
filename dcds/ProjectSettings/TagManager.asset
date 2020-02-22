@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bridge
+  - Canvas
+  - GameManager
+  - NPC
   layers:
   - Default
   - TransparentFX

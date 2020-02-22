@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 63637088145337677}
   - component: {fileID: 63637088145337674}
   - component: {fileID: 6808517322143667923}
+  - component: {fileID: 1222979860}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63637088145337676}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.6, z: -2.53}
   m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children: []
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaa9bbaf51d3a794995bb6025bb7a8e8, type: 2}
+  - {fileID: 2100000, guid: 13722f43d100d0b478018f5239900113, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,3 +132,50 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1222979860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63637088145337676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_interactRadius: 2.5
+  interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
+    type: 3}
+  bobSpeed: 3
+  bobAmplitude: 6
+  offset: {x: 0, y: 100, z: 0}
+  m_name: 
+  stance: 0
+  currentMood: 0
+  movementSpeed: 5
+  m_stoppingDistance: 3
+  routineSteps:
+  - m_routineStepName: 
+    m_targetLocation: {x: 4.83, y: 0.54, z: 3.8}
+    m_animationOnRest: {fileID: 0}
+    m_conditionToTransition: 0
+    m_targetTimePoints: 0
+  - m_routineStepName: 
+    m_targetLocation: {x: 4.83, y: 0.54, z: -1.67}
+    m_animationOnRest: {fileID: 0}
+    m_conditionToTransition: 0
+    m_targetTimePoints: 0
+  - m_routineStepName: 
+    m_targetLocation: {x: 0.17, y: 0.54, z: -1.6}
+    m_animationOnRest: {fileID: 0}
+    m_conditionToTransition: 0
+    m_targetTimePoints: 0
+  - m_routineStepName: 
+    m_targetLocation: {x: 0.17, y: 0.54, z: 2.77}
+    m_animationOnRest: {fileID: 0}
+    m_conditionToTransition: 0
+    m_targetTimePoints: 0
+  m_routinePaused: 0
+  flowchart: {fileID: 0}
+  character: {fileID: 0}

@@ -50,10 +50,10 @@ namespace Assets.Scripts
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(true);
             }
-            if(other.gameObject.CompareTag("Bridge"))
+            /*if(other.gameObject.CompareTag("Bridge"))
             {
                 GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Forward);
-            }
+            }*/
             
         }
 

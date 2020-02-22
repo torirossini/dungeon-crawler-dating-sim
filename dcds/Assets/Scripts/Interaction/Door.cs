@@ -15,7 +15,12 @@ namespace Assets.Scripts.Interaction
         public int SceneToLoad = 0;
         public override void Interact()
         {
+            foreach (Transform child in GameManager.Instance.InteractIcons.transform)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
             SceneManager.LoadScene(SceneToLoad);
+            GameManager.Instance.FixReferences();
         }
     }
 }

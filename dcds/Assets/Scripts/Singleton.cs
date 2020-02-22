@@ -53,10 +53,6 @@ namespace Assets
             }
         }
 
-        private void Awake()
-        {
-            DontDestroyOnLoad(this.gameObject);
-        }
 
         private void OnApplicationQuit()
         {
