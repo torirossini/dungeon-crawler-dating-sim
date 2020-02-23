@@ -23,7 +23,7 @@ public class PartyDisplay : MonoBehaviour
                 // create the prefab in the scene, then modify its contents based on the member in question
                 GameObject memberInstance = Instantiate(partyMemberPrefab, gameObject.transform);
                 memberInstance.GetComponent<UseMemberFromParty>().trackedMember = i;
-                memberInstance.GetComponent<Image>().sprite = i.Icon;
+                //memberInstance.GetComponent<Image>().sprite = i.Icon; //NEED THIS IN NPC CLASS!
                 // handle the title text contained within the prefab appropriately
                 memberInstance.GetComponentInChildren<Text>().text = i.Name;
             }

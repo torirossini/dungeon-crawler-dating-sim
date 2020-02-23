@@ -397,8 +397,8 @@ GameObject:
   - component: {fileID: 96242585}
   - component: {fileID: 96242584}
   - component: {fileID: 96242583}
-  - component: {fileID: 96242582}
   - component: {fileID: 96242581}
+  - component: {fileID: 96242582}
   m_Layer: 5
   m_Name: Party Panel
   m_TagString: Untagged
@@ -458,11 +458,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 96242579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0032d8709b1651b4a907d953e8b08c9b, type: 3}
+  m_Script: {fileID: 11500000, guid: 519e254f5ff32fe4696e8a72e314b3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charToTrack: {fileID: 1759532800}
-  inventoryItemPrefab: {fileID: 6532773263394358971, guid: 2f467ad568ff0054fa1cc207a80c4d5b,
+  partyMemberPrefab: {fileID: 7887579263551359510, guid: bc97c63a562dd2d47bf6e0971ca2953f,
     type: 3}
 --- !u!225 &96242583
 CanvasGroup:
@@ -10622,6 +10622,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af70e974809834f44975c95c2b02c37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1759532802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759532800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c208ff7d0f945304bb9c357a13a1a248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partySize: 4
+  party:
+  - {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &1764821856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14051,6 +14069,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TownManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6165492047755391878, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: rightBridge
+      value: 
+      objectReference: {fileID: 573640916}
+    - target: {fileID: 6165492047755391878, guid: 93624a1034fa02c449c01f442a14f65d,
+        type: 3}
+      propertyPath: leftBridge
+      value: 
+      objectReference: {fileID: 582472911}
     - target: {fileID: 6165492047755391879, guid: 93624a1034fa02c449c01f442a14f65d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14106,16 +14134,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6165492047755391878, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
-      propertyPath: rightBridge
-      value: 
-      objectReference: {fileID: 573640916}
-    - target: {fileID: 6165492047755391878, guid: 93624a1034fa02c449c01f442a14f65d,
-        type: 3}
-      propertyPath: leftBridge
-      value: 
-      objectReference: {fileID: 582472911}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93624a1034fa02c449c01f442a14f65d, type: 3}
 --- !u!1001 &6666636003043068497

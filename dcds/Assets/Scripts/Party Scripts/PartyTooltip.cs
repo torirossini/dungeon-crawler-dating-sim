@@ -15,11 +15,11 @@ public class PartyTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     // UI version of OnMouseEnter, use this to instantiate the prefab with the relevant data found in the parent
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
-        tooltipInstance = Instantiate(tooltipPrefab, GameObject.Find("Canvas").transform);
+        tooltipInstance = Instantiate(tooltipPrefab, GameObject.Find("PersistantCanvas").transform);
 
         // use the tracked member's info to fill out the tooltip text
-        //tooltipInstance.GetComponentInChildren<Text>().text += "Description: " + gameObject.GetComponent<UseMemberFromParty>().trackedMember.Description + "\n";
-        //tooltipInstance.GetComponentInChildren<Text>().text += "Sell Price: " + gameObject.GetComponent<UseMemberFromParty>().trackedMember.SellPrice.ToString();
+        tooltipInstance.GetComponentInChildren<Text>().text += "Current Stance w/ u: " + gameObject.GetComponent<UseMemberFromParty>().trackedMember.Stance + "\n";
+        tooltipInstance.GetComponentInChildren<Text>().text += "Current Mood: " + gameObject.GetComponent<UseMemberFromParty>().trackedMember.CurrentMood;
     }
 
     // UI version of OnMousExit, use this destroy the prefab instance

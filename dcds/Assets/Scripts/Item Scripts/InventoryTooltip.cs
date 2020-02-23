@@ -15,7 +15,7 @@ public class InventoryTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExi
     // UI version of OnMouseEnter, use this to instantiate the prefab with the relevant data found in the parent
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
-        tooltipInstance = Instantiate(tooltipPrefab, GameObject.Find("Canvas").transform);
+        tooltipInstance = Instantiate(tooltipPrefab, GameObject.Find("PersistantCanvas").transform);
 
         // use the tracked item's info to fill out the tooltip text
         tooltipInstance.GetComponentInChildren<Text>().text += "Description: " + gameObject.GetComponent<UseItemFromInventory>().trackedItem.Description + "\n";
