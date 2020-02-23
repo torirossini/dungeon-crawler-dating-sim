@@ -7,11 +7,8 @@ using UnityEngine;
 using Assets;
 using Assets.Scripts;
 using UnityEngine.SceneManagement;
+using Assets.Scripts.Managers;
 
-public enum TimeOfDay
-{
-    Morning = 1, Midday = 2, Evening = 3, Night = 4
-}
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField]
@@ -26,11 +23,15 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     Canvas canvasRef;
 
+    SceneSwitchManager sceneSwitcher;
+
     public Player PlayerReference { get => playerRef; set => playerRef = value; }
     public Inventory PlayerInventory { get => playerInventory; set => playerInventory = value; }
+    public SceneSwitchManager SceneSwitcher { get => sceneSwitcher; set => sceneSwitcher = value; }
 
     private void Start()
     {
+        sceneSwitcher = GetComponent<SceneSwitchManager>();
         FindReferences();
     }
     public void FindReferences()
@@ -43,7 +44,7 @@ public class GameManager : Singleton<GameManager>
         playerRef = obj.GetComponent<Player>();
         playerInventory = obj.GetComponent<Inventory>();
 
-        canvasRef = GameObject.FindObjectOfType<Canvas>();
+        canvasRef = CanvasManager.Instance.GetComponent<Canvas>();
 
         
     }

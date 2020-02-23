@@ -1,38 +1,18 @@
-﻿using System;
+﻿using Assets.Scripts.Managers;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Utility;
 
-public static class SceneSwitchManager
+public class SceneSwitchManager:MonoBehaviour
 {
-    public enum GameScene
+    public void Transition(Locations locationToGo)
     {
-        Manager,
-        Loading,
-        Overworld,
+        CanvasManager.Instance.DestroyIcons();
+        LoadingScreen.Instance.Show(SceneManager.LoadSceneAsync((int)locationToGo));
+        
 
-    }
-
-    private static Action onLoaderCallback;
-
-    public static void LoadScene(Scene sceneToLoad)
-    {
-        onLoaderCallback = () =>
-        {
-            SceneManager.LoadScene(GameScene.Loading.ToString());
-        };
-
-        SceneManager.LoadScene(sceneToLoad.name);
-        SceneManager.LoadScene(sceneToLoad.name);
-    }
-
-    public static void LoaderCallback()
-    {
-        if (onLoaderCallback != null)
-        {
-            onLoaderCallback();
-            onLoaderCallback = null;
-        }
     }
 }

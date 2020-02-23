@@ -20,4 +20,17 @@ public class Utility
         CurrentTimePoints,
     }
 
+    //Ints should correspond with the scene numbers
+    [System.Serializable]
+    public enum Locations
+    {
+        Overworld = 1,
+        Guildhall = 2,
+    }
+
+    public enum TimeOfDay
+    {
+        Morning = 1, Midday = 2, Evening = 3, Night = 4
+    }
+
 }

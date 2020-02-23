@@ -55,6 +55,9 @@ namespace Assets.Scripts
         }
         private void Start()
         {
+            GameManager.Instance.FindReferences();
+            playerObject = GameManager.Instance.PlayerReference.gameObject;
+            rightCameraOffset = transform.position;
             isTransitioning = false;
             currentPositionOffset = rightCameraOffset;
             StartCoroutine(ChangeCameraFocusTo(playerObject));

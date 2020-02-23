@@ -34,7 +34,7 @@ namespace Assets.Scripts
 
         public bool Interacted { get => interacted; set => interacted = value; }
 
-        protected virtual void Awake()
+        protected void Start()
         {
             m_interactRadiusCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
             m_interactRadiusCollider.radius = m_interactRadius;
@@ -69,12 +69,15 @@ namespace Assets.Scripts
 
         void Update()
         {
-            if (m_inRange)
+            if (!LoadingScreen.Instance.IsLoading)
             {
-                Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
-                float newY = Mathf.Sin(Time.time * bobSpeed);
-                pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
-                interactIconObject.transform.position = pos;
+                if (m_inRange)
+                {
+                    Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+                    float newY = Mathf.Sin(Time.time * bobSpeed);
+                    pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
+                    interactIconObject.transform.position = pos;
+                }
             }
         }
 

@@ -44,6 +44,7 @@ namespace Assets
                             GameObject singleton = new GameObject();
                             _instance = singleton.AddComponent<T>();
                             singleton.name = "(Singleton)" + typeof(T).ToString();
+                            DontDestroyOnLoad(singleton);
 
 
                             Debug.Log("[Singleton] An instance of " + typeof(T) +
@@ -54,6 +55,7 @@ namespace Assets
                         {
                             Debug.Log("[Singleton] Using instance already created: " +  _instance.gameObject.name);
                         }
+
                     }
 
                     return _instance;
@@ -63,7 +65,7 @@ namespace Assets
 
         protected virtual void Awake()
         {
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(_instance);
         }
 
         private static bool applicationIsQuitting = false;
