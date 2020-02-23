@@ -23,9 +23,9 @@ namespace Assets.Scripts
         [SerializeField]
         Condition m_conditionToTransition;
         [SerializeField]
-        float m_targetTimePoints;
+        int m_targetTimePoints;
 
-        float m_currentTimePoints;
+        int m_currentTimePoints;
 
         bool m_conditionMet = false;
 
@@ -36,9 +36,9 @@ namespace Assets.Scripts
         public Vector3 TargetLocation { get => m_targetLocation; set => m_targetLocation = value; }
         public bool TransitioningToNextStep { get => m_transitioningToNextStep; set => m_transitioningToNextStep = value; }
         public bool ConditionMet { get => m_conditionMet; set => m_conditionMet = value; }
-        public float CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
+        public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
         public Condition ConditionToTransition { get => m_conditionToTransition; set => m_conditionToTransition = value; }
-        public float TargetTimePoints { get => m_targetTimePoints; set => m_targetTimePoints = value; }
+        public int TargetTimePoints { get => m_targetTimePoints; set => m_targetTimePoints = value; }
 
         #endregion
 
@@ -46,7 +46,7 @@ namespace Assets.Scripts
         {
             m_targetLocation = Vector3.zero;
             m_nextStep = null;
-            m_currentTimePoints = 0f;
+            m_currentTimePoints = 0;
             m_conditionToTransition = Condition.CurrentTimePoints;
         }
 
@@ -54,7 +54,7 @@ namespace Assets.Scripts
         {
             m_targetLocation = target;
             m_nextStep = next;
-            m_currentTimePoints = 0f;
+            m_currentTimePoints = 0;
             m_conditionToTransition = condition;
 
 
@@ -65,7 +65,7 @@ namespace Assets.Scripts
         /// </summary>
         public void ResetCondition()
         {
-            m_currentTimePoints = 0f;
+            m_currentTimePoints = 0;
             m_conditionMet = false;
         }
 
