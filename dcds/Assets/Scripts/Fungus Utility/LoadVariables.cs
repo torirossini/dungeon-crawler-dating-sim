@@ -19,6 +19,10 @@ namespace Assets.Scripts
         [VariableProperty(typeof(IntegerVariable))]
         [SerializeField] protected IntegerVariable stance;
 
+        [Tooltip("Animator for text box")]
+        [VariableProperty(typeof(AnimatorVariable))]
+        [SerializeField] protected AnimatorVariable textBoxAnim;
+
         public override void OnEnter()
         {
             thisNPC = gameObject.GetComponentInParent<NPC>();
@@ -33,6 +37,11 @@ namespace Assets.Scripts
                 stance.Value = thisNPC.stance;
             }
 
+            if (textBoxAnim != null)
+            {
+                textBoxAnim.Value.SetInteger("Stance", stance.Value);
+            }
+
             if (mood.Value == 0)
             {
                 stance.Value += 10;
@@ -40,32 +49,6 @@ namespace Assets.Scripts
             else if (mood.Value == 2)
             {
                 stance.Value -= 10;
-            }
-            
-            //lover
-            if(stance.Value <= -17)
-            {
-                
-            }
-            //like
-            else if (-17 < stance.Value && stance.Value < -5)
-            {
-
-            }
-            //neutral
-            else if (-5 <= stance.Value && stance.Value <= 5)
-            {
-
-            }
-            //dislike
-            else if (5 < stance.Value && stance.Value < 17)
-            {
-
-            }
-            //hate
-            else if (17 <= stance.Value)
-            {
-
             }
 
             Continue();
