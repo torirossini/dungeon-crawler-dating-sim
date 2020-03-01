@@ -5246,32 +5246,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6173584, y: 2.012907, z: 2.1517608}
   m_Center: {x: 0.14191058, y: 0.12104565, z: 0.03813743}
---- !u!1 &905428122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6666636003404543691, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 6666636003043068497}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &905428123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905428122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545c4ee9ed06add4f9918b3f56e767c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObject: {fileID: 1759532800}
-  dungeonEntrance: {fileID: 2112203825}
-  rightCameraOffset: {x: -11, y: 5, z: 0}
-  centerCameraOffset: {x: 0, y: 3, z: -15}
-  leftCameraOffset: {x: 11, y: 5, z: 0}
-  xzPositionSmoothTime: 0.1
-  yPositionSmoothTime: 0.03
-  cameraRotationSmoothTime: 0.05
 --- !u!4 &905535279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4702229198241056, guid: 0ba258545da721e488ecb71ffd143b6f,
@@ -14034,7 +14008,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerCamera
       value: 
-      objectReference: {fileID: 905428123}
+      objectReference: {fileID: 0}
     - target: {fileID: 2661138480876961039, guid: cf95ecf45c923dc4f8b800224085b642,
         type: 3}
       propertyPath: screenCanvas
@@ -14237,6 +14211,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.x
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: centerCameraOffset.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: centerCameraOffset.z
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: leftCameraOffset.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: leftCameraOffset.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: xzPositionSmoothTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: yPositionSmoothTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: cameraRotationSmoothTime
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc, type: 3}

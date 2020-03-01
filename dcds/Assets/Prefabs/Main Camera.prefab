@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6666636003404543692}
   - component: {fileID: 6666636003404543693}
   - component: {fileID: 6666636003404543690}
-  - component: {fileID: 6666636003404543695}
+  - component: {fileID: 279112246269470107}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -84,7 +84,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6666636003404543691}
   m_Enabled: 1
---- !u!114 &6666636003404543695
+--- !u!114 &279112246269470107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,13 +93,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6666636003404543691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ac00b7430353b4e88ee5fcdf16691c, type: 3}
+  m_Script: {fileID: 11500000, guid: 545c4ee9ed06add4f9918b3f56e767c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
-  currentlyFacing: 2
-  rightCameraOffset: {x: -11, y: 5, z: 0}
-  centerCameraOffset: {x: 0, y: 5, z: -10}
-  leftCameraOffset: {x: 11, y: 5, z: 0}
-  defaultCameraRotation: {x: 14, y: -3, z: 9, w: 0}
-  centerCameraRotation: {x: 0, y: -1, z: 0, w: 0}
+  dungeonEntrance: {fileID: 0}
+  rightCameraOffset: {x: 0, y: 0, z: 0}
+  centerCameraOffset: {x: 0, y: 0, z: 0}
+  leftCameraOffset: {x: 0, y: 0, z: 0}
+  xzPositionSmoothTime: 0.03
+  yPositionSmoothTime: 0.05
+  cameraRotationSmoothTime: 0.5
