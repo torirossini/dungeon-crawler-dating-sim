@@ -10,76 +10,76 @@ TextureImporter:
     second: Text Box Thorns_1
   - first:
       213: 6814947388889317921
-    second: Text Box Thorns_2
-  - first:
-      213: -1305563565446039412
-    second: Text Box Thorns_3
-  - first:
-      213: 1932354675905571995
-    second: Text Box Thorns_4
-  - first:
-      213: -629822595899884281
-    second: Text Box Thorns_5
-  - first:
-      213: -6793720407238745424
-    second: Text Box Thorns_6
-  - first:
-      213: 6541544602718090507
     second: Text Box Thorns_7
   - first:
+      213: -1305563565446039412
+    second: Text Box Thorn_15
+  - first:
+      213: 1932354675905571995
+    second: Text Box Thorns_18
+  - first:
+      213: -629822595899884281
+    second: Text Box Thorns_1
+  - first:
+      213: -6793720407238745424
+    second: Text Box Thorns_2
+  - first:
+      213: 6541544602718090507
+    second: Text Box Thorns_3
+  - first:
       213: -505939663728967292
-    second: Text Box Thorns_8
+    second: Text Box Thorns_4
   - first:
       213: 1621926737100162688
-    second: Text Box Thorns_9
+    second: Text Box Thorns_6
   - first:
       213: 5365889287351595531
-    second: Text Box Thorns_10
+    second: Text Box Thorns_7
   - first:
       213: -4225136569003230088
-    second: Text Box Thorns_11
+    second: Text Box Thorns_8
   - first:
       213: 3073180765073795650
-    second: Text Box Thorns_12
+    second: Text Box Thorns_9
   - first:
       213: -1906079788307359176
-    second: Text Box Thorns_13
+    second: Text Box Thorns_11
   - first:
       213: -1410676739332492922
-    second: Text Box Thorns_14
+    second: Text Box Thorns_12
   - first:
       213: -531565438706405192
-    second: Text Box Thorns_15
+    second: Text Box Thorns_13
   - first:
       213: -2347875622477967278
-    second: Text Box Thorns_16
+    second: Text Box Thorns_14
   - first:
       213: -5943270625297956557
     second: Text Box Thorns_17
   - first:
       213: -9107629956323302122
-    second: Text Box Thorns_18
+    second: Text Box Thorns_16
   - first:
       213: 8487894529032844417
-    second: Text Box Thorns_19
+    second: Text Box Thorns_17
   - first:
       213: -6205558097688059560
-    second: Text Box Thorns_20
+    second: Text Box Thorns_18
   - first:
       213: -5462878266731512968
-    second: Text Box Thorns_21
+    second: Text Box Thorns_19
   - first:
       213: -7670704073031826252
-    second: Text Box Thorns_22
+    second: Text Box Thorns_21
   - first:
       213: 5094205988679238575
-    second: Text Box Thorns_23
+    second: Text Box Thorns_22
   - first:
       213: -6450977913798168427
-    second: Text Box Thorns_24
+    second: Text Box Thorns_23
   - first:
       213: 7940069366450241063
-    second: Text Box Thorns_25
+    second: Text Box Thorns_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -125,7 +125,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -183,7 +183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_1
+      name: Text Box Thorns_5
       rect:
         serializedVersion: 2
         x: 0
@@ -204,7 +204,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_2
+      name: Text Box Thorns_10
       rect:
         serializedVersion: 2
         x: 0
@@ -225,7 +225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_3
+      name: Text Box Thorn_15
       rect:
         serializedVersion: 2
         x: 0
@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_4
+      name: Text Box Thorns_20
       rect:
         serializedVersion: 2
         x: 0
@@ -267,7 +267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_5
+      name: Text Box Thorns_1
       rect:
         serializedVersion: 2
         x: 160
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_6
+      name: Text Box Thorns_2
       rect:
         serializedVersion: 2
         x: 320
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_7
+      name: Text Box Thorns_3
       rect:
         serializedVersion: 2
         x: 480
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_8
+      name: Text Box Thorns_4
       rect:
         serializedVersion: 2
         x: 640
@@ -351,7 +351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_9
+      name: Text Box Thorns_6
       rect:
         serializedVersion: 2
         x: 160
@@ -372,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_10
+      name: Text Box Thorns_7
       rect:
         serializedVersion: 2
         x: 320
@@ -393,7 +393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_11
+      name: Text Box Thorns_8
       rect:
         serializedVersion: 2
         x: 480
@@ -414,7 +414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_12
+      name: Text Box Thorns_9
       rect:
         serializedVersion: 2
         x: 640
@@ -435,7 +435,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_13
+      name: Text Box Thorns_11
       rect:
         serializedVersion: 2
         x: 160
@@ -456,7 +456,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_14
+      name: Text Box Thorns_12
       rect:
         serializedVersion: 2
         x: 320
@@ -477,7 +477,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_15
+      name: Text Box Thorns_13
       rect:
         serializedVersion: 2
         x: 480
@@ -498,7 +498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_16
+      name: Text Box Thorns_14
       rect:
         serializedVersion: 2
         x: 640
@@ -519,7 +519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_18
+      name: Text Box Thorns_16
       rect:
         serializedVersion: 2
         x: 160
@@ -540,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_19
+      name: Text Box Thorns_17
       rect:
         serializedVersion: 2
         x: 320
@@ -561,7 +561,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_20
+      name: Text Box Thorns_18
       rect:
         serializedVersion: 2
         x: 480
@@ -582,7 +582,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_21
+      name: Text Box Thorns_19
       rect:
         serializedVersion: 2
         x: 640
@@ -603,7 +603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_22
+      name: Text Box Thorns_21
       rect:
         serializedVersion: 2
         x: 160
@@ -624,7 +624,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_23
+      name: Text Box Thorns_22
       rect:
         serializedVersion: 2
         x: 320
@@ -645,7 +645,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_24
+      name: Text Box Thorns_23
       rect:
         serializedVersion: 2
         x: 480
@@ -666,7 +666,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Thorns_25
+      name: Text Box Thorns_24
       rect:
         serializedVersion: 2
         x: 640

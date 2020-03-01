@@ -33,6 +33,41 @@ namespace Assets.Scripts
                 stance.Value = thisNPC.stance;
             }
 
+            if (mood.Value == 0)
+            {
+                stance.Value += 10;
+            }
+            else if (mood.Value == 2)
+            {
+                stance.Value -= 10;
+            }
+            
+            //lover
+            if(stance.Value <= -17)
+            {
+                
+            }
+            //like
+            else if (-17 < stance.Value && stance.Value < -5)
+            {
+
+            }
+            //neutral
+            else if (-5 <= stance.Value && stance.Value <= 5)
+            {
+
+            }
+            //dislike
+            else if (5 < stance.Value && stance.Value < 17)
+            {
+
+            }
+            //hate
+            else if (17 <= stance.Value)
+            {
+
+            }
+
             Continue();
         }
     }

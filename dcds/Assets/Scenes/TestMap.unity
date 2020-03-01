@@ -741,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967405344751, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -787,7 +787,7 @@ PrefabInstance:
         type: 3}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 1262608233}
+      objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933702, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: commandList.Array.size
@@ -797,7 +797,7 @@ PrefabInstance:
         type: 3}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 1262608232}
+      objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933702, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: commandList.Array.data[2]
@@ -828,6 +828,7 @@ PrefabInstance:
     - {fileID: 2745395967054933750, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 2745395967054933744, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 2745395967054933736, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 3460451860830475219, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
 --- !u!114 &141277518 stripped
 MonoBehaviour:
@@ -7842,7 +7843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43fd756e5d9c874b830383ff0f27063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 65
+  itemId: 66
   indentLevel: 0
   thisNPC: {fileID: 901263930}
   mood: {fileID: 1262608229}
@@ -7861,6 +7862,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 67
   indentLevel: 0
+  errorMessage: 
+  referencedVariables: []
+  <CommandIndex>k__BackingField: 1
+  <IsExecuting>k__BackingField: 0
+  <ExecutingIconTimer>k__BackingField: 0
+  <ParentBlock>k__BackingField: {fileID: 1262608278}
   mood: {fileID: 1262608229}
   stance: {fileID: 1262608230}
 --- !u!114 &1262608233
@@ -7877,8 +7884,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 0
+  errorMessage: 
+  referencedVariables: []
+  <CommandIndex>k__BackingField: 1
+  <IsExecuting>k__BackingField: 0
+  <ExecutingIconTimer>k__BackingField: 0
+  <ParentBlock>k__BackingField: {fileID: 1262608281}
   mood: {fileID: 1262608229}
   stance: {fileID: 1262608230}
+--- !u!114 &1262608278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2745395967054933702, guid: 0a7ef349e679dc940ae09749039d78be,
+    type: 3}
+  m_PrefabInstance: {fileID: 141277517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262608227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1262608281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
+    type: 3}
+  m_PrefabInstance: {fileID: 141277517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262608227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1299747716
 GameObject:
   m_ObjectHideFlags: 0

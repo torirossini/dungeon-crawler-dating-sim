@@ -23,8 +23,18 @@ namespace Assets.Scripts
         {
             thisNPC = gameObject.GetComponentInParent<NPC>();
 
+            //reset stance from mood
+            if (mood.Value == 0)
+            {
+                stance.Value -= 10;
+            }
+            else if (mood.Value == 2)
+            {
+                stance.Value += 10;
+            }
+
             //set min and max limits to stance
-            if(stance.Value > 20)
+            if (stance.Value > 20)
             {
                 stance.Value = 20;
             }
@@ -32,6 +42,8 @@ namespace Assets.Scripts
             {
                 stance.Value = -20;
             }
+
+
 
             //save mood and stance values back into NPC class
             if (mood != null)
