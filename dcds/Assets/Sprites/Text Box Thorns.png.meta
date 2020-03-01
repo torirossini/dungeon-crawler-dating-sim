@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: 25c0c19d4bf502e44ac294400f28b40a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5764613534434317219
+    second: Text Box Thorns_0
+  - first:
+      213: -7175768607605688180
+    second: Text Box Thorns_1
+  - first:
+      213: 6814947388889317921
+    second: Text Box Thorns_2
+  - first:
+      213: -1305563565446039412
+    second: Text Box Thorns_3
+  - first:
+      213: 1932354675905571995
+    second: Text Box Thorns_4
+  - first:
+      213: -629822595899884281
+    second: Text Box Thorns_5
+  - first:
+      213: -6793720407238745424
+    second: Text Box Thorns_6
+  - first:
+      213: 6541544602718090507
+    second: Text Box Thorns_7
+  - first:
+      213: -505939663728967292
+    second: Text Box Thorns_8
+  - first:
+      213: 1621926737100162688
+    second: Text Box Thorns_9
+  - first:
+      213: 5365889287351595531
+    second: Text Box Thorns_10
+  - first:
+      213: -4225136569003230088
+    second: Text Box Thorns_11
+  - first:
+      213: 3073180765073795650
+    second: Text Box Thorns_12
+  - first:
+      213: -1906079788307359176
+    second: Text Box Thorns_13
+  - first:
+      213: -1410676739332492922
+    second: Text Box Thorns_14
+  - first:
+      213: -531565438706405192
+    second: Text Box Thorns_15
+  - first:
+      213: -2347875622477967278
+    second: Text Box Thorns_16
+  - first:
+      213: -5943270625297956557
+    second: Text Box Thorns_17
+  - first:
+      213: -9107629956323302122
+    second: Text Box Thorns_18
+  - first:
+      213: 8487894529032844417
+    second: Text Box Thorns_19
+  - first:
+      213: -6205558097688059560
+    second: Text Box Thorns_20
+  - first:
+      213: -5462878266731512968
+    second: Text Box Thorns_21
+  - first:
+      213: -7670704073031826252
+    second: Text Box Thorns_22
+  - first:
+      213: 5094205988679238575
+    second: Text Box Thorns_23
+  - first:
+      213: -6450977913798168427
+    second: Text Box Thorns_24
+  - first:
+      213: 7940069366450241063
+    second: Text Box Thorns_25
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Text Box Thorns_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0205929d9394b53449ccca482d1278a2
+      internalID: 5764613534434317219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea16be24eac2e2a42b871a0d89fe1f36
+      internalID: -7175768607605688180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0611bd5ebe2aee428bf737529d64648
+      internalID: 6814947388889317921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd64b0804298e8f4686831e96ee18a5a
+      internalID: -1305563565446039412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf73c066cc589084a8665440fdf964e4
+      internalID: 1932354675905571995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1273063d3980f47bf5d4a3837801df
+      internalID: -629822595899884281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30de195deaea63048a42b5adc256aed7
+      internalID: -6793720407238745424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5ac689233f4ab4abc7b74abb24a8c6
+      internalID: 6541544602718090507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090e22ce3021d3342bdd5b287fc6566e
+      internalID: -505939663728967292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de26b73b214aecc4db148f95af6dc08b
+      internalID: 1621926737100162688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5528e0892d5806040a0ae19a491720ce
+      internalID: 5365889287351595531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c00167b349b444fb698c30c1563604
+      internalID: -4225136569003230088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df796cc9ab9f6d49a39b5fd3a58fb43
+      internalID: 3073180765073795650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111987af030df694f8153998021f8f5f
+      internalID: -1906079788307359176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9965b06819f52be49b43a7e9d28b71f4
+      internalID: -1410676739332492922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fa298881d12bd46be1c59f9c4fb5e5
+      internalID: -531565438706405192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d754460003c41439b53141194177ff
+      internalID: -2347875622477967278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02400cfe6502735468f6fd5692e2c038
+      internalID: -9107629956323302122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e528ccdfd8ebef4889585036425c61f
+      internalID: 8487894529032844417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_20
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2205264766c969448f42cb9c42ecfac
+      internalID: -6205558097688059560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c522d037502fe48a0b88a945ceb713
+      internalID: -5462878266731512968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a2f77b4d654b1449145388809f3945
+      internalID: -7670704073031826252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0c78ddf21725d408f472b4615a5443
+      internalID: 5094205988679238575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_24
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2a49f942c80c74cbdebdb84e392603
+      internalID: -6450977913798168427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Thorns_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b28ba676155b2459a842559963a8b6
+      internalID: 7940069366450241063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a0dd1ec53bf47174990e89572b407693
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

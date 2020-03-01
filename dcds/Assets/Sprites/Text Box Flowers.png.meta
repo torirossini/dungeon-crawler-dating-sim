@@ -1,0 +1,701 @@
+fileFormatVersion: 2
+guid: a26e98f0a0d0cfd4b83657ed2b224827
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8573600976624115347
+    second: Text Box Flowers_0
+  - first:
+      213: -2909329135181531412
+    second: Text Box Flowers_1
+  - first:
+      213: 2286312149806325356
+    second: Text Box Flowers_2
+  - first:
+      213: 4530745653114512689
+    second: Text Box Flowers_3
+  - first:
+      213: -5026295560615385671
+    second: Text Box Flowers_4
+  - first:
+      213: 6537358033898147250
+    second: Text Box Flowers_5
+  - first:
+      213: 7439720590244174713
+    second: Text Box Flowers_6
+  - first:
+      213: 3065284148568235392
+    second: Text Box Flowers_7
+  - first:
+      213: 5708911361254172789
+    second: Text Box Flowers_8
+  - first:
+      213: -154641780970557992
+    second: Text Box Flowers_9
+  - first:
+      213: 2673659528740597103
+    second: Text Box Flowers_10
+  - first:
+      213: 4435716611159648771
+    second: Text Box Flowers_11
+  - first:
+      213: 6130899500205491774
+    second: Text Box Flowers_12
+  - first:
+      213: -4842686223421476197
+    second: Text Box Flowers_13
+  - first:
+      213: -8148194273267939186
+    second: Text Box Flowers_14
+  - first:
+      213: -437243309211088362
+    second: Text Box Flowers_15
+  - first:
+      213: 2542288199549119901
+    second: Text Box Flowers_16
+  - first:
+      213: 3504520058525855844
+    second: Text Box Flowers_17
+  - first:
+      213: -638749242905184923
+    second: Text Box Flowers_18
+  - first:
+      213: -4614323708647082414
+    second: Text Box Flowers_19
+  - first:
+      213: -5004895125825722623
+    second: Text Box Flowers_20
+  - first:
+      213: 3713970786752814038
+    second: Text Box Flowers_21
+  - first:
+      213: -950631414179370704
+    second: Text Box Flowers_22
+  - first:
+      213: -1506931536621226494
+    second: Text Box Flowers_23
+  - first:
+      213: 2180731069758046272
+    second: Text Box Flowers_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Text Box Flowers_0
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2318996074c2443b4bbe1c258d7ee2
+      internalID: -8573600976624115347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41af05f579835ce4d842d1366a46dd50
+      internalID: -2909329135181531412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74750a62777f774e94c0c5fa1cdad2b
+      internalID: 2286312149806325356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d88f8d004898f4c9d38d4467d486c1
+      internalID: 4530745653114512689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43a656a3bcfc4b4cad065ebce78ad9c
+      internalID: -5026295560615385671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731ffa0eb6e2a5545bf82216df021fcf
+      internalID: 6537358033898147250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fac5553de4f7c4b91af713525f211e
+      internalID: 7439720590244174713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227fa6fa0cffe6c4aa9f85d49b4f834e
+      internalID: 3065284148568235392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 493
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c567a356882450e48b48f481c93a4b32
+      internalID: 5708911361254172789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_9
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9560a3b25781d4c4ab6c893265987497
+      internalID: -154641780970557992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2901166df9581174ebca3436d69d3e51
+      internalID: 2673659528740597103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997dc1803ea34fb4fb88dd838543e0f6
+      internalID: 4435716611159648771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6ef76402ad1ba44a6c7366256b4ddc
+      internalID: 6130899500205491774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bca3ad23bb6d0b40b0b3d960887ec4a
+      internalID: -4842686223421476197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26bb47e9c254424ebaf36e9b9b26ba8
+      internalID: -8148194273267939186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9904878b35767e448e4e60457ec9e3c
+      internalID: -437243309211088362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e352415726214b343b8cf40039b0c524
+      internalID: 2542288199549119901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ece03ce76280b499fdc66bb363c4e1
+      internalID: 3504520058525855844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d4caeaec2e4a543b7208d08ddacadc
+      internalID: -638749242905184923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a9979be6bccd14283ccf85567f8971
+      internalID: -4614323708647082414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3985b6dbcd5ebbf49a5788a584813fd6
+      internalID: -5004895125825722623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3463c176e338944aba156ea206b626a
+      internalID: 3713970786752814038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739b84ead1ef45a40a0da5f873f366c5
+      internalID: -950631414179370704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55306862bb9fe9b4ab5d87985be4cf3a
+      internalID: -1506931536621226494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text Box Flowers_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 160
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90662694168e604f948dafb0be57629
+      internalID: 2180731069758046272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ac0540c4a157e6648947e4518f6e28f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
