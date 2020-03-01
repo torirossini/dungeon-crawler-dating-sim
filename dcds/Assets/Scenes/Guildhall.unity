@@ -187,35 +187,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.75000006
       objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.y
+      value: 3.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.x
+      value: -8.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.z
+      value: -0.07
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc, type: 3}
---- !u!1 &919960913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6666636003404543691, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 919960912}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &919960914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919960913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545c4ee9ed06add4f9918b3f56e767c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObject: {fileID: 0}
-  dungeonEntrance: {fileID: 0}
-  rightCameraOffset: {x: -8.17, y: 3.95, z: -0.07}
-  centerCameraOffset: {x: 0, y: 0, z: 0}
-  leftCameraOffset: {x: 0, y: 0, z: 0}
-  xzPositionSmoothTime: 0.03
-  yPositionSmoothTime: 0.05
-  cameraRotationSmoothTime: 0.5
 --- !u!1 &1407551467
 GameObject:
   m_ObjectHideFlags: 0

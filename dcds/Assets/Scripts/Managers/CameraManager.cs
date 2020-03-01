@@ -15,8 +15,6 @@ namespace Assets
         [Header("Object References")]
         [SerializeField]
         GameObject playerObject;
-        [SerializeField]
-        GameObject dungeonEntrance;
 
         [Header("Camera Offsets")]
         public Vector3 rightCameraOffset;
@@ -48,16 +46,11 @@ namespace Assets
         GameObject cameraFocus;
         float xzTransitionSmoothTime = .03f;
 
-        // called when a scene loads before first frame
-        void Awake()
+        private void Start()
         {
             // reassign key vars here in case a scene switch has occurred
             playerObject = GameManager.Instance.Player.gameObject;
             GameManager.Instance.PlayerCamera = gameObject.GetComponent<CameraManager>();
-        }
-
-        private void Start()
-        {
             isTransitioning = false;
             currentPositionOffset = rightCameraOffset;
             playerObject = GameManager.Instance.Player.gameObject;
@@ -113,16 +106,8 @@ namespace Assets
         {
             switch(toView)
             {
-                case CurrentView.Forward:
-                    currentPositionOffset = centerCameraOffset;
-                    StartCoroutine(ChangeCameraFocusTo(dungeonEntrance));
-                    break;
                 case CurrentView.Right:
                     currentPositionOffset = rightCameraOffset;
-                    StartCoroutine(ChangeCameraFocusTo(playerObject));
-                    break;
-                case CurrentView.Left:
-                    currentPositionOffset = leftCameraOffset;
                     StartCoroutine(ChangeCameraFocusTo(playerObject));
                     break;
             }
