@@ -14182,21 +14182,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999999
       objectReference: {fileID: 0}
-    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: playerObject
-      value: 
-      objectReference: {fileID: 1759532800}
-    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: currentlyFacing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: transitionTimeScalar
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6666636003404543693, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
       propertyPath: m_BackGroundColor.r
@@ -14211,6 +14196,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1759532800}
+    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: currentlyFacing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: transitionTimeScalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
@@ -14250,12 +14250,12 @@ PrefabInstance:
     - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
       propertyPath: yPositionSmoothTime
-      value: 0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
       propertyPath: cameraRotationSmoothTime
-      value: 0.05
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc, type: 3}
@@ -14341,6 +14341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoatCaptainNPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324721, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: m_interactRadius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 459700085, guid: 6aac77d07e8d23c4080699a0b17ef623, type: 3}
       propertyPath: m_routinePaused
       value: 0
@@ -14422,11 +14427,6 @@ PrefabInstance:
         type: 3}
       propertyPath: avoidancePriority
       value: 99
-      objectReference: {fileID: 0}
-    - target: {fileID: 8169396337315324721, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
-        type: 3}
-      propertyPath: m_interactRadius
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17e93abaa8af13243bf5eb5f4a1cb984, type: 3}
