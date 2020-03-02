@@ -15,6 +15,7 @@ namespace Assets.Scripts.Interaction
         public int SceneToLoad = 0;
         public override void Interact()
         {
+            CanvasManager.Instance.DestroyIcons();
             SceneManager.LoadScene(SceneToLoad);
         }
     }

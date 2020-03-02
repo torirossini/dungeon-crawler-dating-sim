@@ -15,7 +15,18 @@ namespace Assets
         [SerializeField]
         TextMeshProUGUI timeDisplay;
 
-        public TextMeshProUGUI TimeDisplay { get => timeDisplay; set => timeDisplay = value; }
+        [SerializeField]
+        GameObject interactIcons;
 
+        public TextMeshProUGUI TimeDisplay { get => timeDisplay; set => timeDisplay = value; }
+        public GameObject InteractIcons { get => interactIcons; set => interactIcons = value; }
+
+        public void DestroyIcons()
+        {
+            foreach(Transform obj in InteractIcons.transform)
+            {
+                Destroy(obj);
+            }
+        }
     }
 }
