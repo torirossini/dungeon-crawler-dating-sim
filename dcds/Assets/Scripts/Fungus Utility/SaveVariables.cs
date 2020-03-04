@@ -15,6 +15,10 @@ namespace Assets.Scripts
         [VariableProperty(typeof(IntegerVariable))]
         [SerializeField] protected IntegerVariable mood;
 
+        [Tooltip("Has the player spoken to me yet?")]
+        [VariableProperty(typeof(BooleanVariable))]
+        [SerializeField] protected BooleanVariable spokenTo;
+
         [Tooltip("Stance scale from -20 to 20")]
         [VariableProperty(typeof(IntegerVariable))]
         [SerializeField] protected IntegerVariable stance;
@@ -22,6 +26,9 @@ namespace Assets.Scripts
         public override void OnEnter()
         {
             thisNPC = gameObject.GetComponentInParent<NPC>();
+
+            //mark spoken to
+            thisNPC.spokenTo = spokenTo.Value;
 
             //reset stance from mood
             if (mood.Value == 0)
@@ -42,8 +49,6 @@ namespace Assets.Scripts
             {
                 stance.Value = -20;
             }
-
-
 
             //save mood and stance values back into NPC class
             if (mood != null)

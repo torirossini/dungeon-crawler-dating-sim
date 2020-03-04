@@ -103,6 +103,9 @@ namespace Assets.Scripts
 
         //fungus character object reference for this npc
         public Character character;
+
+        //if spoken to already
+        public bool spokenTo = false;
         #endregion
 
         void Start()

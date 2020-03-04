@@ -4,67 +4,67 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8573600976624115347
-    second: Text Box Flowers_0
+    second: Text Box Flowers_20
   - first:
       213: -2909329135181531412
-    second: Text Box Flowers_1
-  - first:
-      213: 2286312149806325356
-    second: Text Box Flowers_2
-  - first:
-      213: 4530745653114512689
-    second: Text Box Flowers_3
-  - first:
-      213: -5026295560615385671
-    second: Text Box Flowers_4
-  - first:
-      213: 6537358033898147250
-    second: Text Box Flowers_5
-  - first:
-      213: 7439720590244174713
-    second: Text Box Flowers_6
-  - first:
-      213: 3065284148568235392
-    second: Text Box Flowers_7
-  - first:
-      213: 5708911361254172789
     second: Text Box Flowers_8
   - first:
+      213: 2286312149806325356
+    second: Text Box Flowers_12
+  - first:
+      213: 4530745653114512689
+    second: Text Box Flowers_16
+  - first:
+      213: -5026295560615385671
+    second: Text Box Flowers_20
+  - first:
+      213: 6537358033898147250
+    second: Text Box Flowers_3
+  - first:
+      213: 7439720590244174713
+    second: Text Box Flowers_2
+  - first:
+      213: 3065284148568235392
+    second: Text Box Flowers_1
+  - first:
+      213: 5708911361254172789
+    second: Text Box Flowers_0
+  - first:
       213: -154641780970557992
-    second: Text Box Flowers_9
+    second: Text Box Flowers_8
   - first:
       213: 2673659528740597103
-    second: Text Box Flowers_10
+    second: Text Box Flowers_7
   - first:
       213: 4435716611159648771
-    second: Text Box Flowers_11
+    second: Text Box Flowers_6
   - first:
       213: 6130899500205491774
-    second: Text Box Flowers_12
+    second: Text Box Flowers_5
   - first:
       213: -4842686223421476197
     second: Text Box Flowers_13
   - first:
       213: -8148194273267939186
-    second: Text Box Flowers_14
+    second: Text Box Flowers_12
   - first:
       213: -437243309211088362
-    second: Text Box Flowers_15
+    second: Text Box Flowers_11
   - first:
       213: 2542288199549119901
-    second: Text Box Flowers_16
+    second: Text Box Flowers_10
   - first:
       213: 3504520058525855844
     second: Text Box Flowers_17
   - first:
       213: -638749242905184923
-    second: Text Box Flowers_18
+    second: Text Box Flowers_17
   - first:
       213: -4614323708647082414
-    second: Text Box Flowers_19
+    second: Text Box Flowers_16
   - first:
       213: -5004895125825722623
-    second: Text Box Flowers_20
+    second: Text Box Flowers_15
   - first:
       213: 3713970786752814038
     second: Text Box Flowers_21
@@ -73,10 +73,10 @@ TextureImporter:
     second: Text Box Flowers_22
   - first:
       213: -1506931536621226494
-    second: Text Box Flowers_23
+    second: Text Box Flowers_21
   - first:
       213: 2180731069758046272
-    second: Text Box Flowers_24
+    second: Text Box Flowers_20
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -159,7 +159,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Text Box Flowers_0
+      name: Text Box Flowers_4
       rect:
         serializedVersion: 2
         x: 640
@@ -167,7 +167,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_1
+      name: Text Box Flowers_9
       rect:
         serializedVersion: 2
         x: 640
@@ -188,7 +188,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_2
+      name: Text Box Flowers_14
       rect:
         serializedVersion: 2
         x: 640
@@ -209,7 +209,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_3
+      name: Text Box Flowers_19
       rect:
         serializedVersion: 2
         x: 640
@@ -230,7 +230,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_4
+      name: Text Box Flowers_24
       rect:
         serializedVersion: 2
         x: 640
@@ -251,7 +251,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_5
+      name: Text Box Flowers_3
       rect:
         serializedVersion: 2
         x: 480
@@ -272,7 +272,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,7 +285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_6
+      name: Text Box Flowers_2
       rect:
         serializedVersion: 2
         x: 320
@@ -293,7 +293,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -306,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_7
+      name: Text Box Flowers_1
       rect:
         serializedVersion: 2
         x: 160
@@ -314,7 +314,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -327,7 +327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_8
+      name: Text Box Flowers_0
       rect:
         serializedVersion: 2
         x: 0
@@ -335,7 +335,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -348,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_9
+      name: Text Box Flowers_8
       rect:
         serializedVersion: 2
         x: 480
@@ -356,7 +356,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -369,7 +369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_10
+      name: Text Box Flowers_7
       rect:
         serializedVersion: 2
         x: 320
@@ -377,7 +377,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_11
+      name: Text Box Flowers_6
       rect:
         serializedVersion: 2
         x: 160
@@ -398,7 +398,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -411,7 +411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_12
+      name: Text Box Flowers_5
       rect:
         serializedVersion: 2
         x: 0
@@ -419,7 +419,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,7 +440,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -453,7 +453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_14
+      name: Text Box Flowers_12
       rect:
         serializedVersion: 2
         x: 320
@@ -461,7 +461,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -474,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_15
+      name: Text Box Flowers_11
       rect:
         serializedVersion: 2
         x: 160
@@ -482,7 +482,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -495,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_16
+      name: Text Box Flowers_10
       rect:
         serializedVersion: 2
         x: 0
@@ -503,7 +503,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -516,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_17
+      name: Text Box Flowers_18
       rect:
         serializedVersion: 2
         x: 480
@@ -524,7 +524,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -537,7 +537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_18
+      name: Text Box Flowers_17
       rect:
         serializedVersion: 2
         x: 320
@@ -545,7 +545,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -558,7 +558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_19
+      name: Text Box Flowers_16
       rect:
         serializedVersion: 2
         x: 160
@@ -566,7 +566,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -579,7 +579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_20
+      name: Text Box Flowers_15
       rect:
         serializedVersion: 2
         x: 0
@@ -587,7 +587,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -600,7 +600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_21
+      name: Text Box Flowers_23
       rect:
         serializedVersion: 2
         x: 480
@@ -608,7 +608,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,7 +629,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -642,7 +642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_23
+      name: Text Box Flowers_21
       rect:
         serializedVersion: 2
         x: 160
@@ -650,7 +650,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -663,7 +663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Text Box Flowers_24
+      name: Text Box Flowers_20
       rect:
         serializedVersion: 2
         x: 0
@@ -671,7 +671,7 @@ TextureImporter:
         width: 160
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
