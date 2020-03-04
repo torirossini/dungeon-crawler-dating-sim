@@ -21,10 +21,17 @@ namespace Assets.Scripts
         float moveZAxis;
         float moveXAxis;
 
+        private Rigidbody rb;
+
 
         public float PlayerSpeed
         {
             get { return playerSpeed; }
+        }
+
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody>();    
         }
 
         // Update is called once per frame
@@ -32,15 +39,15 @@ namespace Assets.Scripts
         {
             moveZAxis = Input.GetAxis("Vertical") * playerZMultipler;
             moveXAxis = -Input.GetAxis("Horizontal") * playerXMultipler;
-            PlayerMove(playerSpeed);
+            PlayerMove();
         }
 
         //moveMethod
-        public void PlayerMove(float speed)
+        public void PlayerMove()
         {
-            Vector3 movement = new Vector3(moveZAxis, 0.0f, moveXAxis);
+            Vector3 movement = new Vector3(moveZAxis, 0, moveXAxis) * playerSpeed;
 
-            gameObject.transform.position += movement * speed * Time.deltaTime;
+            rb.MovePosition(transform.position + movement * Time.deltaTime);
 
         }
         public void OnTriggerEnter(Collider other)
