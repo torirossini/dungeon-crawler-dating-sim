@@ -22,6 +22,10 @@ namespace Assets.Scripts
         float moveXAxis;
 
         private Rigidbody rb;
+        private Vector3 velocityVector;
+
+        private Animator animator;
+        private Sprite playerSprite;
 
 
         public float PlayerSpeed
@@ -31,23 +35,27 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            rb = GetComponent<Rigidbody>();    
+            rb = GetComponent<Rigidbody>();
+            animator = GetComponent<Animator>();
+            playerSprite = GetComponent<SpriteRenderer>().sprite;
+            velocityVector = Vector3.zero;
         }
 
         // Update is called once per frame
         void FixedUpdate()
         {
-            moveZAxis = Input.GetAxis("Vertical") * playerZMultipler;
-            moveXAxis = -Input.GetAxis("Horizontal") * playerXMultipler;
+            moveZAxis = Input.GetAxis("Horizontal") * playerZMultipler;
+            moveXAxis = Input.GetAxis("Vertical") * playerXMultipler;
             PlayerMove();
+            IsWalking();
         }
 
         //moveMethod
         public void PlayerMove()
         {
-            Vector3 movement = new Vector3(moveZAxis, 0, moveXAxis) * playerSpeed;
+            velocityVector = new Vector3(moveZAxis, 0, moveXAxis) * playerSpeed;
 
-            rb.MovePosition(transform.position + movement * Time.deltaTime);
+            rb.MovePosition(transform.position + velocityVector * Time.deltaTime);
 
         }
         public void OnTriggerEnter(Collider other)
@@ -96,6 +104,20 @@ namespace Assets.Scripts
                 //    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
 
                 //}
+            }
+        }
+
+        private bool IsWalking()
+        {
+            if (velocityVector.magnitude > 0)
+            {
+                animator.SetBool("IsWalking", true);
+                return true;
+            }
+            else
+            {
+                animator.SetBool("IsWalking", false);
+                return false;
             }
         }
 
