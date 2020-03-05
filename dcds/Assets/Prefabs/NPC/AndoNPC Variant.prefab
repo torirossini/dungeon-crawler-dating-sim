@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 59
+  itemId: 146
   indentLevel: 0
   storyText: Sorry to bother then!
   description: 
@@ -218,7 +218,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Why do you want to explore the Dungeon?
   description: 
-  targetBlock: {fileID: 4558283722402132237}
+  targetBlock: {fileID: 2082925669398418675}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -372,27 +372,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &1764512101942103934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 84
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 5038112387158154489}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &1791157437737505323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +452,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -232.03345
     y: 448.59796
-    width: 214.3836
+    width: 207.89479
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -482,11 +461,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 5840574974785948891}
+  - {fileID: 0}
   - {fileID: 3239164743880338698}
   - {fileID: 3157802176228275787}
   - {fileID: 6073769534316657410}
-  - {fileID: 3384023955644728009}
+  - {fileID: 0}
 --- !u!114 &2131544364076427852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +536,34 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &3157802176228275787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 140
+  indentLevel: 0
+  storyText: My family did not want me to go for the longest time; too dangerous instead
+    of just working for the family business.
+  description: 
+  character: {fileID: 1601592981071687000}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &3209701525784057046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,27 +613,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &3384023955644728009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 107
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 5656506578813373801}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &3438296487157073617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,8 +655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -1039.196
-    y: 900.34607
+    x: -899.7219
+    y: 902.97766
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -698,7 +684,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -320.72394
     y: 701.063
-    width: 170.54797
+    width: 165.78952
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -707,7 +693,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 6097860974304764769}
+  - {fileID: 0}
   - {fileID: 5824578776721672455}
   - {fileID: 7925633995229078043}
 --- !u!114 &3599589072123789754
@@ -726,7 +712,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -79.75153
     y: 700.3967
-    width: 137.67126
+    width: 134.21056
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -735,7 +721,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 6771690606672027742}
+  - {fileID: 0}
   - {fileID: 7771161852274590344}
   - {fileID: 6822491463044220551}
 --- !u!114 &3741513564538451604
@@ -845,8 +831,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 510.7871
-    y: 448.4484
+    x: 512.1029
+    y: 449.7642
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -856,10 +842,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 7021704349728525814}
+  - {fileID: 0}
   - {fileID: 7920726072446731285}
   - {fileID: 7873814054333771534}
-  - {fileID: 1764512101942103934}
+  - {fileID: 0}
 --- !u!114 &4257875143600194698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +909,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 179.40787
     y: 347.99866
-    width: 192.46579
+    width: 186.84215
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -948,9 +934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -622.9394
-    y: 461.22275
-    width: 188.3562
+    x: -522.939
+    y: 459.90692
+    width: 182.89478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1058,7 +1044,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -267.9265
     y: 835.55646
-    width: 154.10962
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1117,7 +1103,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -225.27246
     y: 218.06876
-    width: 136.30139
+    width: 132.89476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1169,7 +1155,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.49567
     y: 741.4328
-    width: 155.47949
+    width: 151.31583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1224,7 +1210,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -359.565
     y: 558.65674
-    width: 200.68498
+    width: 194.7369
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1233,7 +1219,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 7657061217424620272}
   - {fileID: 6758982373093945759}
   - {fileID: 8094821291447791308}
   - {fileID: 426743429948968130}
@@ -1250,7 +1235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 68
+  itemId: 147
   indentLevel: 0
   storyText: The Spirit Dungeon. At the heart of the town, behind the waterfall, under
     the big statue...?
@@ -1307,7 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 69
+  itemId: 148
   indentLevel: 0
   text: Team up!
   description: 
@@ -1359,9 +1344,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -604.8512
-    y: 719.26764
-    width: 167.80826
+    x: -594.3248
+    y: 703.4781
+    width: 163.15793
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1370,7 +1355,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 9147569356491865806}
+  - {fileID: 0}
   - {fileID: 2453306949611525827}
   - {fileID: 8323422047609714154}
 --- !u!114 &6063092544828072416
@@ -1389,7 +1374,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 330.42365
     y: 240.85364
-    width: 189.72607
+    width: 184.21057
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1401,7 +1386,7 @@ MonoBehaviour:
   - {fileID: 6113252500155484228}
   - {fileID: 4098323187377355760}
   - {fileID: 4756557957769278451}
---- !u!114 &6097860974304764769
+--- !u!114 &6073769534316657410
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1410,61 +1395,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601592982306446532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 122
+  itemId: 142
   indentLevel: 0
-  variable: {fileID: 1601592982306446349}
-  setOperator: 2
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 1
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
+  storyText: But I finally convinced them, though I still have to work at the forge
+    sometimes.
+  description: 
+  character: {fileID: 1601592981071687000}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &6113252500155484228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,7 +1453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 54
+  itemId: 149
   indentLevel: 0
   text: Spirit Dungeon?
   description: 
@@ -1529,7 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 70
+  itemId: 150
   indentLevel: 0
   storyText: I am looking for people to team up with to explore the Dungeon. Or you
     in the Guild Hall for a different reason?
@@ -1561,7 +1510,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.938354
     y: 811.92456
-    width: 159.58908
+    width: 155.26318
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1613,7 +1562,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 702.27655
     y: 410.30704
-    width: 199.31511
+    width: 193.4211
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1651,70 +1600,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &6771690606672027742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 123
-  indentLevel: 0
-  variable: {fileID: 1601592982306446349}
-  setOperator: 2
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 2
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &6822491463044220551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1789,70 +1674,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &7021704349728525814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 124
-  indentLevel: 0
-  variable: {fileID: 1601592982306446349}
-  setOperator: 2
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 1
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &7234590399962007387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1867,8 +1688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -450.58856
-    y: 357.30908
+    x: -417.69385
+    y: 319.1512
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2013,36 +1834,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &7657061217424620272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 93
-  indentLevel: 0
-  storyText: For a long time, it felt like a tug in my chest, telling me to go to
-    the dungeon. My family did not want me to go for the longest time; too dangerous
-    instead of just working for the family business. But I finally convinced them,
-    though I still have to work at the forge sometimes.
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &7686274174764665701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2231,7 +2022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 71
+  itemId: 151
   indentLevel: 0
   text: I am putting out a quest.
   description: 
@@ -2244,6 +2035,34 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &8201042817431620658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 139
+  indentLevel: 0
+  storyText: But I imagine that if you don't have someone shielding you, then you
+    might not last too long in the Dungeon!
+  description: 
+  character: {fileID: 1601592981071687000}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &8323422047609714154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,7 +2160,7 @@ MonoBehaviour:
   indentLevel: 0
   text: What skills do you bring to the table?
   description: 
-  targetBlock: {fileID: 2082925669398418675}
+  targetBlock: {fileID: 4558283722402132237}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -2390,70 +2209,6 @@ MonoBehaviour:
   scope: 0
   key: SpokenTo
   value: 0
---- !u!114 &9147569356491865806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 121
-  indentLevel: 0
-  variable: {fileID: 1601592982306446349}
-  setOperator: 3
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 1
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &9147920171402078445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2470,7 +2225,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -174.63936
     y: 353.51166
-    width: 188.3562
+    width: 182.89478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2481,154 +2236,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 6953729530202697701}
   - {fileID: 3209701525784057046}
---- !u!114 &8201042817431620658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 139
-  indentLevel: 0
-  storyText: But I imagine that if you don't have someone shielding you, then you
-    might not last too long in the Dungeon!
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &3157802176228275787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 140
-  indentLevel: 0
-  storyText: My family did not want me to go for the longest time; too dangerous instead
-    of just working for the family business.
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &5840574974785948891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 141
-  indentLevel: 0
-  variable: {fileID: 1601592982306446349}
-  setOperator: 2
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 1
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &6073769534316657410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 142
-  indentLevel: 0
-  storyText: But I finally convinced them, though I still have to work at the forge
-    sometimes.
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!1001 &3468786849688531684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2714,17 +2321,17 @@ PrefabInstance:
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: scrollPos.x
-      value: 1156.3181
+      value: 1255.6409
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: scrollPos.y
-      value: -327.4551
+      value: -360.97644
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: zoom
-      value: 0.7299998
+      value: 0.75999975
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2735,12 +2342,17 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 5656506578813373801}
+      objectReference: {fileID: 3451392085148116835}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
       objectReference: {fileID: 8094821291447791308}
+    - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: hideComponents
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5594785675852462665, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_Controller
@@ -2794,7 +2406,7 @@ PrefabInstance:
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: nodeRect.width
-      value: 128.08221
+      value: 125.00002
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2841,6 +2453,16 @@ PrefabInstance:
       propertyPath: commandList.Array.data[9]
       value: 
       objectReference: {fileID: 6652719354959475631}
+    - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: -435.02423
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 208.58665
+      objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933754, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: targetBlock
@@ -2861,62 +2483,36 @@ PrefabInstance:
       propertyPath: spokenTo
       value: 
       objectReference: {fileID: 8977295774134841066}
+    - target: {fileID: 6642152320040037967, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: itemId
+      value: 143
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: spokenTo
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 6270250277458771018, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 749962785838045662, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933696, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933697, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933708, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933709, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933710, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933752, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933703, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933702, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 1787360282907973287, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933704, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933705, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933706, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933711, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 8895328933355774642, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933716, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933717, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933718, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933707, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 9102303621808510223, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933712, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933713, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933714, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933719, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2275238989081104840, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933540, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933541, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933542, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933723, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 306169049405391795, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 4522306412207802384, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 1159886708518640693, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 3687528896622690795, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 271903700987157467, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 3111766193988868801, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933725, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933727, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933720, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933721, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933722, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933724, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 7085963606613099804, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 5242744975306923100, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933698, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933699, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933715, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933726, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933701, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933753, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933700, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933755, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933754, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2745395967054933747, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
-    - {fileID: 2520909854320580376, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 5050681102764955015, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 3994641380010920537, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 3053700840781615662, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 9196666784022529493, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 1395565521239928124, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 1771306005074684463, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 4855758508248729887, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 5032582662201759764, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 7506262100136290967, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 9189172838620874803, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 6988270085072954020, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 2577944041008261190, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 1483994096124333584, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
 --- !u!114 &1601592982306446349 stripped
 MonoBehaviour:
