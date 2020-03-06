@@ -1,5 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!212 &1063015582564283449
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646089633060672412}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -8070545305880243302, guid: b9379f846db217d47a96a5e2e430bdf9,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.26, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &7301164492823293224
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646089633060672412}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 34e1dfb385880c24ea2e62a7cdf73041, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &30552068083824208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,7 +84,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -47.89831
     y: 639.21295
-    width: 134.21056
+    width: 144.54547
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -45,8 +113,9 @@ MonoBehaviour:
   storyText: If I got to know you a little more, I could see myself saying yes. But
     I cannot say yes just yet.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -93,7 +162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -230.35254
     y: 440.45407
-    width: 207.89479
+    width: 219.09093
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -151,8 +220,9 @@ MonoBehaviour:
   storyText: Oh! So you also have some sort of... you know... tug. Ach, I've never
     had a good way of explaining it, but... you too! I'm happy you understand.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -275,6 +345,20 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &554352060834611880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 190
+  indentLevel: 0
 --- !u!114 &701772832888563819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,8 +377,9 @@ MonoBehaviour:
     every week! But that's part of why there is so much excitement still, even after
     20 years of people exploring.\r"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 3d4773034e3be66468f865bce8369f6f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -320,7 +405,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 486.06122
     y: 407.00137
-    width: 120
+    width: 122.72728
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -350,8 +435,9 @@ MonoBehaviour:
   storyText: I don't know about you, but if you wanted to team up and look for more
     people, then I would like that too!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -378,8 +464,9 @@ MonoBehaviour:
   storyText: Ah, listening to you is just like listening to the rowdy dungeon divers
     of the town. It seems like you'll fit right in.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -471,8 +558,9 @@ MonoBehaviour:
   storyText: Amazing! I'm so excited to be in a party, and to get tp work alongside
     you!!!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -519,8 +607,9 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Sorry for prying.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: f362baf7439f5814f8b716d744fcd575, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -719,7 +808,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -308.60764
     y: 667.51056
-    width: 165.78952
+    width: 173.63638
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -841,6 +930,70 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &3341260113738499521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 189
+  indentLevel: 0
+  compareOperator: 3
+  variable: {fileID: 1601592982306446349}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 5
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &3438296487157073617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,8 +1011,9 @@ MonoBehaviour:
   storyText: Hi! I'm Ando, and I'm looking for teammates to explore the Spirit Dungeon.
     Are you also...?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -910,7 +1064,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -571.68225
     y: 669.926
-    width: 163.15793
+    width: 175.45456
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -964,8 +1118,9 @@ MonoBehaviour:
   storyText: Oh! Yes, I apologize, sorry... that's perfectly fine! You seem great,
     so I hope you have great luck finding the team mates you do want.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: f362baf7439f5814f8b716d744fcd575, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1053,7 +1208,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 179.40787
     y: 347.99866
-    width: 186.84215
+    width: 197.27274
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1080,7 +1235,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -526.8866
     y: 452.01218
-    width: 182.89478
+    width: 193.63638
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1110,8 +1265,9 @@ MonoBehaviour:
     in the context of an adventuring party exploring a mystical dungeon rumored to
     be endless."'
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 3d4773034e3be66468f865bce8369f6f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1190,8 +1346,9 @@ MonoBehaviour:
   storyText: Thanks for talking with me. I wish you the best of luck with making your
     team!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1217,7 +1374,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -267.9265
     y: 835.55646
-    width: 150.00003
+    width: 159.09091
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1248,7 +1405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 581.2286
+    x: 582.5444
     y: 1048.5107
     width: 120
     height: 40
@@ -1274,9 +1431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -225.27246
-    y: 218.06876
-    width: 132.89476
+    x: -85.58238
+    y: 239.48785
+    width: 142.72728
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1328,7 +1485,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.49567
     y: 741.4328
-    width: 151.31583
+    width: 159.09091
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1356,8 +1513,9 @@ MonoBehaviour:
   storyText: Hello again! Did you change your mind about looking for teammates to
     explore the Spirit Dungeon?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1384,8 +1542,9 @@ MonoBehaviour:
   storyText: But I finally convinced them, though I still have to work at the forge
     sometimes.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1409,9 +1568,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -359.565
+    x: -360.8808
     y: 558.65674
-    width: 194.7369
+    width: 206.36365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1420,7 +1579,11 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 3341260113738499521}
   - {fileID: 6758982373093945759}
+  - {fileID: 554352060834611880}
+  - {fileID: 5725615343655212820}
+  - {fileID: 7380755366790007227}
   - {fileID: 8094821291447791308}
   - {fileID: 426743429948968130}
   - {fileID: 7363033647048035521}
@@ -1436,13 +1599,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 147
+  itemId: 186
   indentLevel: 0
   storyText: The Spirit Dungeon. At the heart of the town, behind the waterfall, under
     the big statue...?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 0620f60f176b20a4396603d96edc467c, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &5725615343655212820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 192
+  indentLevel: 1
+  storyText: So, what brought you to Sylmys and the Spirit Dungeon?
+  description: 
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1518,7 +1710,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 330.42365
     y: 240.85364
-    width: 184.21057
+    width: 191.81819
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1565,8 +1757,9 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Ah, a quest! Would you mind if I say?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 3d4773034e3be66468f865bce8369f6f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1613,13 +1806,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 150
+  itemId: 159
   indentLevel: 0
   storyText: I am looking for people to team up with to explore the Dungeon. Or you
     in the Guild Hall for a different reason?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 0620f60f176b20a4396603d96edc467c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1645,7 +1839,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.938354
     y: 811.92456
-    width: 155.26318
+    width: 166.36365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1668,12 +1862,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 159
+  itemId: 188
   indentLevel: 0
   storyText: Hm! Sounds like a cool quest. What-- or, where is Stardew Valley?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1751,7 +1946,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 704.90814
     y: 394.51755
-    width: 193.4211
+    width: 204.54547
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1775,11 +1970,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 103
-  indentLevel: 0
+  indentLevel: 1
   storyText: So, what brought you to Sylmys and the Spirit Dungeon?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1831,8 +2027,9 @@ MonoBehaviour:
   storyText: Oh, um... th-thanks hahaha... m-maybe we can take a walk around town
     later to g-get to know each other, if you'd want...
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 2084187e230f02c4387a25dacf9db383, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1895,6 +2092,20 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &7380755366790007227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 191
+  indentLevel: 0
 --- !u!114 &7391455164026581070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,7 +2593,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -174.63936
     y: 353.51166
-    width: 182.89478
+    width: 191.81819
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2425,6 +2636,12 @@ PrefabInstance:
       propertyPath: description
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2745395967372971087, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+        type: 3}
     - target: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_Name
@@ -2433,7 +2650,7 @@ PrefabInstance:
     - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: -7.22
       objectReference: {fileID: 0}
     - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2443,7 +2660,7 @@ PrefabInstance:
     - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.77
+      value: -0.39717302
       objectReference: {fileID: 0}
     - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2485,6 +2702,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: selectedBlocks.Array.size
@@ -2503,17 +2735,17 @@ PrefabInstance:
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: scrollPos.x
-      value: 691.1657
+      value: 1302.0398
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: scrollPos.y
-      value: -245.18634
+      value: -156.95787
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: zoom
-      value: 0.75999975
+      value: 0.54999995
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2524,7 +2756,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 834926224170129339}
+      objectReference: {fileID: 5038112387158154489}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
@@ -2533,7 +2765,7 @@ PrefabInstance:
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: hideComponents
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5594785675852462665, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2563,7 +2795,7 @@ PrefabInstance:
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: nodeRect.width
-      value: 125.00002
+      value: 133.63637
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2655,6 +2887,11 @@ PrefabInstance:
       propertyPath: spokenTo
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2745395967405344751, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5050681102764955015, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 3994641380010920537, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
@@ -2670,10 +2907,12 @@ PrefabInstance:
     - {fileID: 6988270085072954020, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 2577944041008261190, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 1483994096124333584, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 2808995533907288442, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
+    - {fileID: 2808995533907288443, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
---- !u!114 &1601592982306446349 stripped
+--- !u!114 &1601592982306446350 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2745395967054933737, guid: 0a7ef349e679dc940ae09749039d78be,
+  m_CorrespondingSourceObject: {fileID: 2745395967054933738, guid: 0a7ef349e679dc940ae09749039d78be,
     type: 3}
   m_PrefabInstance: {fileID: 3468786849688531684}
   m_PrefabAsset: {fileID: 0}
@@ -2683,9 +2922,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1601592982306446350 stripped
+--- !u!114 &1601592982306446349 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2745395967054933738, guid: 0a7ef349e679dc940ae09749039d78be,
+  m_CorrespondingSourceObject: {fileID: 2745395967054933737, guid: 0a7ef349e679dc940ae09749039d78be,
     type: 3}
   m_PrefabInstance: {fileID: 3468786849688531684}
   m_PrefabAsset: {fileID: 0}
@@ -2701,15 +2940,15 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 3468786849688531684}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1646089633060672412}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1601592982306446532 stripped
+--- !u!1 &1646089633060672412 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2745395967054933536, guid: 0a7ef349e679dc940ae09749039d78be,
+  m_CorrespondingSourceObject: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
     type: 3}
   m_PrefabInstance: {fileID: 3468786849688531684}
   m_PrefabAsset: {fileID: 0}
@@ -2725,3 +2964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1601592982306446532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2745395967054933536, guid: 0a7ef349e679dc940ae09749039d78be,
+    type: 3}
+  m_PrefabInstance: {fileID: 3468786849688531684}
+  m_PrefabAsset: {fileID: 0}
