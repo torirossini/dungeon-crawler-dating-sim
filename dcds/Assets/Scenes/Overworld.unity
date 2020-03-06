@@ -92919,6 +92919,11 @@ PrefabInstance:
       propertyPath: selectedBlocks.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1601592982306446362, guid: edc4d2ec1d88fba43996343596305bab,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1601592981579068683, guid: edc4d2ec1d88fba43996343596305bab,
         type: 3}
       propertyPath: m_LocalPosition.z

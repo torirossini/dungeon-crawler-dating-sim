@@ -61,6 +61,10 @@ namespace Assets.Scripts
                     }
                 }
             }
+            else
+            {
+                print("Animator inaccessible");
+            }
 
             Continue();
         }
