@@ -10,7 +10,6 @@ using UnityEngine.AI;
 
 namespace Assets.Scripts
 {
-    [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
     public class NPC:InteractionObject
     {
         [SerializeField]
