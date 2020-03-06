@@ -19,7 +19,7 @@ namespace Assets.Scripts
 
         [SerializeField]
         Image interactIcon;
-        Image interactIconObject;
+        GameObject interactIconObject;
 
         [Header("UI Position Variables")]
         [SerializeField]
@@ -37,8 +37,8 @@ namespace Assets.Scripts
             m_interactRadiusCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
             m_interactRadiusCollider.radius = m_interactRadius;
             m_interactRadiusCollider.isTrigger = true;
-            interactIconObject = GameObject.Instantiate(interactIcon, CanvasManager.Instance.InteractIcons.transform);
-            interactIconObject.gameObject.SetActive(false);
+            interactIconObject = GameObject.Instantiate(interactIcon, CanvasManager.Instance.InteractIcons.transform).gameObject;
+            interactIconObject.SetActive(false);
         }
 
 
@@ -47,13 +47,13 @@ namespace Assets.Scripts
             if (able)
             {
                 m_inRange = able;
-                interactIconObject.gameObject.SetActive(true);
+                interactIconObject.SetActive(true);
             }
             else
             {
                 m_inRange = false;
                 interacted = false;
-                interactIconObject.gameObject.SetActive(false);
+                interactIconObject.SetActive(false);
             }
         }
 
@@ -65,14 +65,18 @@ namespace Assets.Scripts
             interacted = false;
         }
 
-        void Update()
+        protected virtual void Update()
         {
-            if (m_inRange)
+            //Check that the icon isn't null before accessing it
+            if (interactIconObject)
             {
-                Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
-                float newY = Mathf.Sin(Time.time * bobSpeed);
-                pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
-                interactIconObject.transform.position = pos;
+                if (m_inRange)
+                {
+                    Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+                    float newY = Mathf.Sin(Time.time * bobSpeed);
+                    pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
+                    interactIconObject.transform.position = pos;
+                }
             }
         }
 
@@ -82,7 +86,7 @@ namespace Assets.Scripts
                       new System.Collections.Hashtable();
             hash.Add("amount", new Vector3(1f, 1f, 0f));
             hash.Add("time", 1f);
-            iTween.PunchScale(interactIconObject.gameObject, hash);
+            iTween.PunchScale(interactIconObject, hash);
         }
 
         public abstract void Interact();

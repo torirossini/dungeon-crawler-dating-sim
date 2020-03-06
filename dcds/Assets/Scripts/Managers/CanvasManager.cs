@@ -25,7 +25,7 @@ namespace Assets
         {
             foreach(Transform obj in InteractIcons.transform)
             {
-                Destroy(obj);
+                GameObject.Destroy(obj.gameObject);
             }
         }
     }

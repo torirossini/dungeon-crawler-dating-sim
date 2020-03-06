@@ -115,9 +115,9 @@ TextureImporter:
       name: Ando Idle_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 26
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -126,7 +126,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae10d177cadb2449a1b6b263612fc1e
+      spriteID: da23fba0f2b43514287f2f3171701bbe
       internalID: -8070545305880243302
       vertices: []
       indices: 
@@ -136,9 +136,9 @@ TextureImporter:
       name: Ando Idle_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 32
         y: 0
-        width: 26
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -147,7 +147,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 469da85d138d33945b6a7253f6fbf407
+      spriteID: 2d014e484c3eedb49a14ab5844b6855e
       internalID: -4709544590785882482
       vertices: []
       indices: 
@@ -156,7 +156,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ab802ca40b4c01e44b580bca104e157d
+    spriteID: 33e1089511036164a841177cff87f22d
     internalID: 0
     vertices: []
     indices: 
