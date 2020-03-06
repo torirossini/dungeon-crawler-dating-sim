@@ -16,6 +16,9 @@ namespace Assets.Scripts
         [SerializeField]
         string m_name = "";
 
+        Sprite characterSprite;
+        Animator animator;
+
         #region Relationship Variables
         // Enum for NPC's stance
         public enum Mood { Good, Neutral, Bad };
@@ -110,6 +113,8 @@ namespace Assets.Scripts
 
         void Start()
         {
+            characterSprite = GetComponent<SpriteRenderer>().sprite;
+            animator = GetComponent<Animator>();
             followAgent = GetComponent<NavMeshAgent>();
             followAgent.speed = movementSpeed;
             followAgent.isStopped = false;
@@ -120,6 +125,7 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update()
         {
+            transform.rotation = Quaternion.identity;
             if (m_followPlayer)
             {
                 //Follow the player
@@ -154,6 +160,8 @@ namespace Assets.Scripts
                     m_currentStep.CheckCondition();
                 }
             }
+
+            IsWalking();
 
         }
 
@@ -325,6 +333,20 @@ namespace Assets.Scripts
             //VVVVV End all Interact methods with this VVVVVV
             StartCoroutine(TriggerInteract());
             ///^^^ This thing ^^^
+        }
+
+        private bool IsWalking()
+        {
+            if (followAgent.velocity.magnitude > 0)
+            {
+                animator.SetBool("IsWalking", true);
+                return true;
+            }
+            else
+            {
+                animator.SetBool("IsWalking", false);
+                return false;
+            }
         }
 
     }
