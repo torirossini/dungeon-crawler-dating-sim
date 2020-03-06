@@ -327,8 +327,15 @@ namespace Assets.Scripts
 
         public override void Interact()
         {
-            flowchart.SendFungusMessage("Start Dialogue");
-            GetComponentInChildren<SayDialog>().gameObject.SetActive(true);
+            if (flowchart)
+            {
+                flowchart.SendFungusMessage("Start Dialogue");
+                GetComponentInChildren<SayDialog>().gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("No flowchart/SayDialog found on NPC.");
+            }
 
             //VVVVV End all Interact methods with this VVVVVV
             StartCoroutine(TriggerInteract());
