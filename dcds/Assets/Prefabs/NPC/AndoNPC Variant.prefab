@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &30552068083824208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -47.89831
+    y: 639.21295
+    width: 134.21056
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 100
+  blockName: An inner calling!
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 7391455164026581070}
+  - {fileID: 385275050424306640}
+  - {fileID: 179594735493913076}
 --- !u!114 &123882310494290080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,7 +45,7 @@ MonoBehaviour:
   storyText: If I got to know you a little more, I could see myself saying yes. But
     I cannot say yes just yet.
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -28,7 +56,7 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &251011345933786344
+--- !u!114 &179594735493913076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,24 +65,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601592982306446532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 146
+  itemId: 168
   indentLevel: 0
-  storyText: Sorry to bother then!
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5035838187739195328}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &281883502710982507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -230.35254
+    y: 440.45407
+    width: 207.89479
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 92
+  blockName: Why do you want to explore?
   description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 6094444461783350986}
+  - {fileID: 8596254181713890559}
+  - {fileID: 7952121972851783906}
+  - {fileID: 5552609699438168688}
+  - {fileID: 8460517288462373442}
 --- !u!114 &373821369918647384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +134,34 @@ MonoBehaviour:
   commandList:
   - {fileID: 123882310494290080}
   - {fileID: 5161950602825912135}
+--- !u!114 &385275050424306640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 167
+  indentLevel: 0
+  storyText: Oh! So you also have some sort of... you know... tug. Ach, I've never
+    had a good way of explaining it, but... you too! I'm happy you understand.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &385656895700967772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +220,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Rumors and mystery!
   description: 
-  targetBlock: {fileID: 3579529330839328794}
+  targetBlock: {fileID: 2238952913702310377}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -149,6 +229,27 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &437312162992555287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 172
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5035838187739195328}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &460471918454524381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +275,64 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &701772832888563819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 171
+  indentLevel: 0
+  storyText: "Yes, it seems like there are new rumors about the Dungeon's mysteries
+    every week! But that's part of why there is so much excitement still, even after
+    20 years of people exploring.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &834926224170129339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 486.06122
+    y: 407.00137
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 81
+  blockName: Take a look.
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2239555280550873659}
+  - {fileID: 4737158247598813072}
+  - {fileID: 6639903510038569149}
+  - {fileID: 2704168467235886379}
 --- !u!114 &887781709036185658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +350,7 @@ MonoBehaviour:
   storyText: I don't know about you, but if you wanted to team up and look for more
     people, then I would like that too!
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -202,6 +361,53 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &916061033577574299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 163
+  indentLevel: 0
+  storyText: Ah, listening to you is just like listening to the rowdy dungeon divers
+    of the town. It seems like you'll fit right in.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1021270288098119718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 153
+  indentLevel: 0
+  mood: {fileID: 0}
+  stance: {fileID: 0}
+  stanceChangeValue: -1
+  changeMood: 0
+  newMood: 0
 --- !u!114 &1057604494917272185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +424,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Why do you want to explore the Dungeon?
   description: 
-  targetBlock: {fileID: 2082925669398418675}
+  targetBlock: {fileID: 281883502710982507}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -265,7 +471,7 @@ MonoBehaviour:
   storyText: Amazing! I'm so excited to be in a party, and to get tp work alongside
     you!!!
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -313,7 +519,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Sorry for prying.
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -340,7 +546,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: This is just a proof-of-concept demo! P-please try to relax!
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -351,6 +557,34 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1547426073891506876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -834.974
+    y: 806.2677
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 58
+  blockName: Nope!
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1021270288098119718}
+  - {fileID: 6656821962878027668}
+  - {fileID: 2495568838073499696}
 --- !u!114 &1563751722912015629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,36 +670,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &2082925669398418675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -232.03345
-    y: 448.59796
-    width: 207.89479
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 92
-  blockName: Why do you want to explore?
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 0}
-  - {fileID: 3239164743880338698}
-  - {fileID: 3157802176228275787}
-  - {fileID: 6073769534316657410}
-  - {fileID: 0}
 --- !u!114 &2131544364076427852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 52
   indentLevel: 0
---- !u!114 &2453306949611525827
+--- !u!114 &2224517806057774293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -489,25 +693,105 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601592982306446532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 101
+  itemId: 162
   indentLevel: 0
-  storyText: Ah, listening to you is just like listening to the rowdy dungeon divers
-    of the town. It seems like you'll fit right in.
+  mood: {fileID: 0}
+  stance: {fileID: 0}
+  stanceChangeValue: -1
+  changeMood: 0
+  newMood: 0
+--- !u!114 &2238952913702310377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -308.60764
+    y: 667.51056
+    width: 165.78952
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 99
+  blockName: Rumors and mystery!
   description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 8098290688585381176}
+  - {fileID: 701772832888563819}
+  - {fileID: 437312162992555287}
+--- !u!114 &2239555280550873659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 157
+  indentLevel: 0
+  mood: {fileID: 0}
+  stance: {fileID: 0}
+  stanceChangeValue: 1
+  changeMood: 0
+  newMood: 0
+--- !u!114 &2495568838073499696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 155
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5038112387158154489}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &2704168467235886379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 160
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5038112387158154489}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &2874186964659744647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,35 +809,7 @@ MonoBehaviour:
   storyText: Yes!! And your name is... "MAGIC Maker Program"? That is not a name you
     hear every day!
   description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &3157802176228275787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 140
-  indentLevel: 0
-  storyText: My family did not want me to go for the longest time; too dangerous instead
-    of just working for the family business.
-  description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -585,34 +841,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &3239164743880338698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 106
-  indentLevel: 0
-  storyText: For a long time, it felt like a tug in my chest, telling me to go to
-    the dungeon.
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &3438296487157073617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +858,7 @@ MonoBehaviour:
   storyText: Hi! I'm Ando, and I'm looking for teammates to explore the Spirit Dungeon.
     Are you also...?
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -641,89 +869,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &3451392085148116835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -899.7219
-    y: 902.97766
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 58
-  blockName: Nope!
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 251011345933786344}
-  - {fileID: 7686274174764665701}
---- !u!114 &3579529330839328794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -320.72394
-    y: 701.063
-    width: 165.78952
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 99
-  blockName: Rumors and mystery!
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 0}
-  - {fileID: 5824578776721672455}
-  - {fileID: 7925633995229078043}
---- !u!114 &3599589072123789754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -79.75153
-    y: 700.3967
-    width: 134.21056
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 100
-  blockName: An inner calling!
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 0}
-  - {fileID: 7771161852274590344}
-  - {fileID: 6822491463044220551}
 --- !u!114 &3741513564538451604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +894,34 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &4022890787964686740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -571.68225
+    y: 669.926
+    width: 163.15793
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 98
+  blockName: Glory and adventure!
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2224517806057774293}
+  - {fileID: 916061033577574299}
+  - {fileID: 8383442729394761365}
 --- !u!114 &4098323187377355760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,7 +938,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Take a look.
   description: 
-  targetBlock: {fileID: 4229912092012982129}
+  targetBlock: {fileID: 834926224170129339}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -791,7 +964,7 @@ MonoBehaviour:
   storyText: Oh! Yes, I apologize, sorry... that's perfectly fine! You seem great,
     so I hope you have great luck finding the team mates you do want.
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -817,35 +990,6 @@ MonoBehaviour:
   itemId: 45
   indentLevel: 0
   sayDialog: {fileID: 1601592981579068684}
---- !u!114 &4229912092012982129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 512.1029
-    y: 449.7642
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 81
-  blockName: Take a look.
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 0}
-  - {fileID: 7920726072446731285}
-  - {fileID: 7873814054333771534}
-  - {fileID: 0}
 --- !u!114 &4257875143600194698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,8 +1078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -522.939
-    y: 459.90692
+    x: -526.8866
+    y: 452.01218
     width: 182.89478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -948,6 +1092,35 @@ MonoBehaviour:
   - {fileID: 7506223329740923433}
   - {fileID: 8201042817431620658}
   - {fileID: 1442614552749212415}
+--- !u!114 &4737158247598813072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 158
+  indentLevel: 0
+  storyText: '"In search of: A game that puts Stardew Valley''s relationship system
+    in the context of an adventuring party exploring a mystical dungeon rumored to
+    be endless."'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &4756557957769278451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1017,7 +1190,7 @@ MonoBehaviour:
   storyText: Thanks for talking with me. I wish you the best of luck with making your
     team!
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1183,7 +1356,35 @@ MonoBehaviour:
   storyText: Hello again! Did you change your mind about looking for teammates to
     explore the Spirit Dungeon?
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &5552609699438168688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 177
+  indentLevel: 0
+  storyText: But I finally convinced them, though I still have to work at the forge
+    sometimes.
+  description: 
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1240,36 +1441,7 @@ MonoBehaviour:
   storyText: The Spirit Dungeon. At the heart of the town, behind the waterfall, under
     the big statue...?
   description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &5824578776721672455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 110
-  indentLevel: 0
-  storyText: "Yes, it seems like there are new rumors about the Dungeon's mysteries
-    every week! But that's part of why there is so much excitement still, even after
-    20 years of people exploring.\r"
-  description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1330,34 +1502,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &6052035485751710608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -594.3248
-    y: 703.4781
-    width: 163.15793
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 98
-  blockName: Glory and adventure!
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 0}
-  - {fileID: 2453306949611525827}
-  - {fileID: 8323422047609714154}
 --- !u!114 &6063092544828072416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,7 +1530,7 @@ MonoBehaviour:
   - {fileID: 6113252500155484228}
   - {fileID: 4098323187377355760}
   - {fileID: 4756557957769278451}
---- !u!114 &6073769534316657410
+--- !u!114 &6094444461783350986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1395,25 +1539,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601592982306446532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 142
+  itemId: 174
   indentLevel: 0
-  storyText: But I finally convinced them, though I still have to work at the forge
-    sometimes.
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  mood: {fileID: 0}
+  stance: {fileID: 0}
+  stanceChangeValue: 1
+  changeMood: 0
+  newMood: 0
 --- !u!114 &6113252500155484228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,7 +1565,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Ah, a quest! Would you mind if I say?
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1483,7 +1618,7 @@ MonoBehaviour:
   storyText: I am looking for people to team up with to explore the Dungeon. Or you
     in the Guild Hall for a different reason?
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1521,6 +1656,33 @@ MonoBehaviour:
   commandList:
   - {fileID: 4166838201542665949}
   - {fileID: 406112946964556433}
+--- !u!114 &6639903510038569149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 159
+  indentLevel: 0
+  storyText: Hm! Sounds like a cool quest. What-- or, where is Stardew Valley?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &6652719354959475631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1537,7 +1699,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Nope!
   description: 
-  targetBlock: {fileID: 3451392085148116835}
+  targetBlock: {fileID: 1547426073891506876}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1546,6 +1708,33 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &6656821962878027668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 154
+  indentLevel: 0
+  storyText: Sorry to bother then!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &6699927736858507804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,8 +1749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 702.27655
-    y: 410.30704
+    x: 704.90814
+    y: 394.51755
     width: 193.4211
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1589,7 +1778,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: So, what brought you to Sylmys and the Spirit Dungeon?
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1600,27 +1789,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &6822491463044220551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 113
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 5035838187739195328}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &6924656778331806201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,7 +1831,7 @@ MonoBehaviour:
   storyText: Oh, um... th-thanks hahaha... m-maybe we can take a walk around town
     later to g-get to know each other, if you'd want...
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1718,7 +1886,7 @@ MonoBehaviour:
   indentLevel: 0
   text: An inner calling!
   description: 
-  targetBlock: {fileID: 3599589072123789754}
+  targetBlock: {fileID: 30552068083824208}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1727,6 +1895,25 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &7391455164026581070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 166
+  indentLevel: 0
+  mood: {fileID: 0}
+  stance: {fileID: 0}
+  stanceChangeValue: 2
+  changeMood: 0
+  newMood: 0
 --- !u!114 &7506223329740923433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,7 +1932,7 @@ MonoBehaviour:
     I am kind of strong. And I have been practicing some healing magic, thanks to
     the mentors at the temple. '
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1834,132 +2021,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &7686274174764665701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 60
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 5038112387158154489}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &7771161852274590344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 112
-  indentLevel: 0
-  storyText: Oh! So you also have some sort of... you know... tug. Ach, I've never
-    had a good way of explaining it, but... you too! I'm happy you understand.
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &7873814054333771534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 85
-  indentLevel: 0
-  storyText: Hm! Sounds like a cool quest. What-- or, where is Stardew Valley?
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &7920726072446731285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 83
-  indentLevel: 0
-  storyText: '"In search of: A game that puts Stardew Valley''s relationship system
-    in the context of an adventuring party exploring a mystical dungeon rumored to
-    be endless."'
-  description: 
-  character: {fileID: 1601592981071687000}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &7925633995229078043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 111
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 5035838187739195328}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &7947623434425843572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,6 +2046,34 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &7952121972851783906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 176
+  indentLevel: 0
+  storyText: My family did not want me to go for the longest time; too dangerous instead
+    of just working for the family business.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &8094821291447791308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2001,7 +2090,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Glory and adventure!
   description: 
-  targetBlock: {fileID: 6052035485751710608}
+  targetBlock: {fileID: 4022890787964686740}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -2010,6 +2099,25 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &8098290688585381176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 170
+  indentLevel: 0
+  mood: {fileID: 0}
+  stance: {fileID: 0}
+  stanceChangeValue: 1
+  changeMood: 0
+  newMood: 0
 --- !u!114 &8186997754171484278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,7 +2160,7 @@ MonoBehaviour:
   storyText: But I imagine that if you don't have someone shielding you, then you
     might not last too long in the Dungeon!
   description: 
-  character: {fileID: 1601592981071687000}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2063,27 +2171,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &8323422047609714154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601592982306446532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 109
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 5035838187739195328}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &8368662555940902324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2105,6 +2192,27 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &8383442729394761365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 164
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5035838187739195328}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &8460198583637467407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2119,6 +2227,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 50
   indentLevel: 0
+--- !u!114 &8460517288462373442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 178
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 5656506578813373801}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &8596254181713890559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 175
+  indentLevel: 0
+  storyText: For a long time, it felt like a tug in my chest, telling me to go to
+    the dungeon.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &8659629667732255756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2243,6 +2400,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameText
+      value: Ando
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameColor.r
+      value: 0.2830189
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameColor.g
+      value: 0.25657052
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameColor.b
+      value: 0.22561412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: description
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_Name
@@ -2321,12 +2503,12 @@ PrefabInstance:
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: scrollPos.x
-      value: 1255.6409
+      value: 691.1657
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: scrollPos.y
-      value: -360.97644
+      value: -245.18634
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -2342,7 +2524,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 3451392085148116835}
+      objectReference: {fileID: 834926224170129339}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
@@ -2358,31 +2540,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1f9c43eafdc1be64c95187cde87ea65a, type: 2}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameText
-      value: Ando
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameColor.r
-      value: 0.2830189
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameColor.g
-      value: 0.25657052
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameColor.b
-      value: 0.22561412
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: description
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2566,17 +2723,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1601592981071687000 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-    type: 3}
-  m_PrefabInstance: {fileID: 3468786849688531684}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
