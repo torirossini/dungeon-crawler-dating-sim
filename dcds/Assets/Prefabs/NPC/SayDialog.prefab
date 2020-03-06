@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 0.25
+  fadeDuration: 0
   continueButton: {fileID: 3310440901189577875}
   dialogCanvas: {fileID: 3310440901141637531}
   nameText: {fileID: 3310440900932893926}
@@ -511,7 +511,7 @@ MonoBehaviour:
   storyText: {fileID: 3310440901297690653}
   storyTextGO: {fileID: 0}
   characterImage: {fileID: 1147677814599488442}
-  fitTextWithImage: 1
+  fitTextWithImage: 0
   closeOtherDialogs: 1
 --- !u!114 &3310440901141637524
 MonoBehaviour:

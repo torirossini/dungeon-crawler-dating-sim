@@ -91261,16 +91261,6 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1601592981579068684, guid: edc4d2ec1d88fba43996343596305bab,
-        type: 3}
-      propertyPath: fadeDuration
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1601592981579068684, guid: edc4d2ec1d88fba43996343596305bab,
-        type: 3}
-      propertyPath: fitTextWithImage
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc4d2ec1d88fba43996343596305bab, type: 3}
 --- !u!114 &574157160 stripped
