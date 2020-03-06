@@ -65,6 +65,7 @@ MonoBehaviour:
   bobAmplitude: 6
   offset: {x: 0, y: 100, z: 0}
   SceneToLoad: 1
+  CanEnter: 1
 --- !u!212 &1107012265
 SpriteRenderer:
   m_ObjectHideFlags: 0

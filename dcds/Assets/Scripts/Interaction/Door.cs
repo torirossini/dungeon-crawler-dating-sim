@@ -13,10 +13,22 @@ namespace Assets.Scripts.Interaction
         [Header("Door Variables")]
         [SerializeField]
         public int SceneToLoad = 0;
+
+        [SerializeField]
+        bool CanEnter;
+
         public override void Interact()
         {
-            CanvasManager.Instance.DestroyIcons();
-            SceneManager.LoadScene(SceneToLoad);
+            if (CanEnter)
+            {
+                CanvasManager.Instance.DestroyIcons();
+                SceneManager.LoadScene(SceneToLoad);
+            }
+            else
+            {
+
+            }
+
         }
     }
 }
