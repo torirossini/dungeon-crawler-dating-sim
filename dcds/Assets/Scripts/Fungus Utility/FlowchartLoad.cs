@@ -43,7 +43,7 @@ public class FlowchartLoad : MonoBehaviour
             {
                 textBoxAnim.runtimeAnimatorController = like;
             }
-            else if(stance < 15)
+            else if(stance > 15)
             {
                 textBoxAnim.runtimeAnimatorController = love;
             }

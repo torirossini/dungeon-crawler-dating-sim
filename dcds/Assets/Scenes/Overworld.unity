@@ -91181,15 +91181,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: AndoNPC Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1601592982306446362, guid: edc4d2ec1d88fba43996343596305bab,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1646089633060672408, guid: edc4d2ec1d88fba43996343596305bab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.07
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 1646089633060672408, guid: edc4d2ec1d88fba43996343596305bab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1646089633060672408, guid: edc4d2ec1d88fba43996343596305bab,
         type: 3}
@@ -91245,6 +91250,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601592981519171243, guid: edc4d2ec1d88fba43996343596305bab,
+        type: 3}
+      propertyPath: currentMood
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601592981579068681, guid: edc4d2ec1d88fba43996343596305bab,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601592981579068684, guid: edc4d2ec1d88fba43996343596305bab,
+        type: 3}
+      propertyPath: fadeDuration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601592981579068684, guid: edc4d2ec1d88fba43996343596305bab,
+        type: 3}
+      propertyPath: fitTextWithImage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc4d2ec1d88fba43996343596305bab, type: 3}
@@ -94042,6 +94067,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: centerCameraOffset.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: centerCameraOffset.z
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: leftCameraOffset.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: leftCameraOffset.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: xzPositionSmoothTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: yPositionSmoothTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: cameraRotationSmoothTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
+        type: 3}
+      propertyPath: rightCameraOffset.z
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 6666636003404543692, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -94136,56 +94211,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AllowDynamicResolution
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: rightCameraOffset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: rightCameraOffset.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: centerCameraOffset.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: centerCameraOffset.z
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: leftCameraOffset.x
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: leftCameraOffset.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: xzPositionSmoothTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: yPositionSmoothTime
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: cameraRotationSmoothTime
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
-        type: 3}
-      propertyPath: rightCameraOffset.z
-      value: -30
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6666636003404543695, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc, type: 3}
@@ -94421,11 +94446,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    - target: {fileID: 8169396337315324721, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
-        type: 3}
-      propertyPath: CanEnter
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -94479,6 +94499,11 @@ PrefabInstance:
     - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169396337315324721, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+        type: 3}
+      propertyPath: CanEnter
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1107012265, guid: 17e93abaa8af13243bf5eb5f4a1cb984, type: 3}

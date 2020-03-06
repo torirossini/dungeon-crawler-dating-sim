@@ -17,6 +17,9 @@ namespace Assets.Scripts.Interaction
         [SerializeField]
         bool CanEnter;
 
+        [SerializeField]
+        
+
         public override void Interact()
         {
             if (CanEnter)
