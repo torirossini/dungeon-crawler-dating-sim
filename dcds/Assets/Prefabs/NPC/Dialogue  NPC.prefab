@@ -13,9 +13,6 @@ GameObject:
   - component: {fileID: 2745395967054933759}
   - component: {fileID: 2745395967054933543}
   - component: {fileID: 2745395967054933756}
-  - component: {fileID: 2745395967054933737}
-  - component: {fileID: 2745395967054933738}
-  - component: {fileID: 363025639492738851}
   - component: {fileID: 5032582662201759764}
   - component: {fileID: 6552691983092365118}
   - component: {fileID: 5050681102764955015}
@@ -29,7 +26,6 @@ GameObject:
   - component: {fileID: 9196666784022529493}
   - component: {fileID: 7506262100136290967}
   - component: {fileID: 9189172838620874803}
-  - component: {fileID: 1483994096124333584}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -65,11 +61,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 845.0853, y: 64.25965}
+  scrollPos: {x: 1500.2218, y: 172.13303}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 0.8500001
+  zoom: 0.54999995
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -79,10 +75,10 @@ MonoBehaviour:
   selectedBlocks: []
   selectedCommands: []
   variables:
-  - {fileID: 2745395967054933737}
-  - {fileID: 2745395967054933738}
-  - {fileID: 363025639492738851}
-  - {fileID: 1483994096124333584}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -109,7 +105,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -317.91876
     y: 117.79724
-    width: 134.70587
+    width: 133.63637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -151,54 +147,9 @@ MonoBehaviour:
   itemId: 44
   indentLevel: 0
   thisNPC: {fileID: 2745395967372971087}
-  mood: {fileID: 2745395967054933738}
+  mood: {fileID: 0}
   spokenTo: {fileID: 0}
-  stance: {fileID: 2745395967054933737}
---- !u!114 &2745395967054933737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: Stance
-  value: 0
---- !u!114 &2745395967054933738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: Mood
-  value: 0
---- !u!114 &363025639492738851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cbd0c93fbe0e46f78685c33d82bcc7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: TextBoxAnim
-  value: {fileID: 6642152320040037967}
+  stance: {fileID: 0}
 --- !u!114 &5032582662201759764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,9 +191,9 @@ MonoBehaviour:
   itemId: 57
   indentLevel: 0
   thisNPC: {fileID: 2745395967372971087}
-  mood: {fileID: 2745395967054933738}
+  mood: {fileID: 0}
   spokenTo: {fileID: 0}
-  stance: {fileID: 2745395967054933738}
+  stance: {fileID: 0}
 --- !u!114 &5050681102764955015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,8 +398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 69
   indentLevel: 0
-  mood: {fileID: 2745395967054933738}
-  stance: {fileID: 2745395967054933737}
+  mood: {fileID: 0}
+  stance: {fileID: 0}
   stanceChangeValue: 5
   changeMood: 1
   newMood: 0
@@ -466,8 +417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 0
-  mood: {fileID: 2745395967054933738}
-  stance: {fileID: 2745395967054933737}
+  mood: {fileID: 0}
+  stance: {fileID: 0}
   stanceChangeValue: -5
   changeMood: 1
   newMood: 2
@@ -498,21 +449,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1483994096124333584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: SpokenTo
-  value: 0
 --- !u!114 &4878879175323773432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,9 +800,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &6642152320040037967 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6324528545435549753, guid: cddf5f3e049da0e458c2ed7e79719d5d,
-    type: 3}
-  m_PrefabInstance: {fileID: 858102184339107446}
-  m_PrefabAsset: {fileID: 0}

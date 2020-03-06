@@ -17,9 +17,6 @@ namespace Assets.Scripts
         [VariableProperty(typeof(AnimatorVariable))]
         [SerializeField] protected AnimatorVariable anim;
 
-        [Tooltip("Will there be an interaction animation?")]
-        [SerializeField] protected bool doAnim;
-
         [Tooltip("Is this a positive(true) or negative(false) interaction?")]
         [SerializeField] protected bool triggerType;
 
@@ -28,37 +25,13 @@ namespace Assets.Scripts
             //set up correct text box animation loop based on stance
             if (anim != null)
             {
-                if (stance.Value < -15)
+                if (triggerType)
                 {
-                    anim.Value.SetTrigger("Hate");
+                    anim.Value.SetTrigger("Positive");
                 }
-                else if (-15 <= stance.Value && stance.Value < -5)
+                else
                 {
-                    anim.Value.SetTrigger("Dislike");
-                }
-                else if (-5 <= stance.Value && stance.Value <= 5)
-                {
-                    anim.Value.SetTrigger("Neutral");
-                }
-                else if (5 < stance.Value && stance.Value <= 15)
-                {
-                    anim.Value.SetTrigger("Like");
-                }
-                else if (stance.Value < 15)
-                {
-                    anim.Value.SetTrigger("Love");
-                }
-
-                if (doAnim)
-                {
-                    if (triggerType)
-                    {
-                        anim.Value.SetTrigger("Positive");
-                    }
-                    else
-                    {
-                        anim.Value.SetTrigger("Negative");
-                    }
+                    anim.Value.SetTrigger("Negative");
                 }
             }
             else

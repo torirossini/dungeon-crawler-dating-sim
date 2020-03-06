@@ -363,7 +363,7 @@ Animator:
   m_GameObject: {fileID: 3310440901003950123}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1f9c43eafdc1be64c95187cde87ea65a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4ab781bc34987a844b038aae7e6fcfc6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
   nameTextGO: {fileID: 0}
   storyText: {fileID: 3310440901297690653}
   storyTextGO: {fileID: 0}
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 1147677814599488442}
   fitTextWithImage: 1
   closeOtherDialogs: 0
 --- !u!114 &3310440901141637524

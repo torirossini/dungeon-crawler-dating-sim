@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TB Dislike
+  m_Controller: {fileID: 9100000, guid: 4ab781bc34987a844b038aae7e6fcfc6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: cdddfcec98547b44f92a579fe7bb24d6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f3d1877cd9a28174683da1ee99ee220c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 88d7c08e4caae7949ab8b688c4e840e3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 930d5e57f9c49e5499fe2ccf76089f8e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5c293690999b2e841b17c47bd5d76a17, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5d6de73b4b80eed4784dba9798958cbc, type: 2}

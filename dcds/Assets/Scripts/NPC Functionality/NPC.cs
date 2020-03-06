@@ -328,7 +328,7 @@ namespace Assets.Scripts
         public override void Interact()
         {
             flowchart.SendFungusMessage("Start Dialogue");
-            GetComponentInChildren<SayDialog>().gameObject.SetActive(true);
+            //GetComponentInChildren<SayDialog>().gameObject.SetActive(true);
 
             //VVVVV End all Interact methods with this VVVVVV
             StartCoroutine(TriggerInteract());
