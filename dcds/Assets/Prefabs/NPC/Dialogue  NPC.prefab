@@ -13,9 +13,6 @@ GameObject:
   - component: {fileID: 2745395967054933759}
   - component: {fileID: 2745395967054933543}
   - component: {fileID: 2745395967054933756}
-  - component: {fileID: 2745395967054933737}
-  - component: {fileID: 2745395967054933738}
-  - component: {fileID: 363025639492738851}
   - component: {fileID: 5032582662201759764}
   - component: {fileID: 6552691983092365118}
   - component: {fileID: 5050681102764955015}
@@ -29,7 +26,7 @@ GameObject:
   - component: {fileID: 9196666784022529493}
   - component: {fileID: 7506262100136290967}
   - component: {fileID: 9189172838620874803}
-  - component: {fileID: 1483994096124333584}
+  - component: {fileID: 3437962202679979274}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -65,11 +62,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 845.0853, y: 64.25965}
+  scrollPos: {x: 1500.2218, y: 172.13303}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 0.8500001
+  zoom: 0.54999995
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -78,11 +75,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks: []
   selectedCommands: []
-  variables:
-  - {fileID: 2745395967054933737}
-  - {fileID: 2745395967054933738}
-  - {fileID: 363025639492738851}
-  - {fileID: 1483994096124333584}
+  variables: []
   description: 
   stepPause: 0
   colorCommands: 1
@@ -109,7 +102,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -317.91876
     y: 117.79724
-    width: 134.70587
+    width: 133.63637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -151,54 +144,9 @@ MonoBehaviour:
   itemId: 44
   indentLevel: 0
   thisNPC: {fileID: 2745395967372971087}
-  mood: {fileID: 2745395967054933738}
+  mood: {fileID: 0}
   spokenTo: {fileID: 0}
-  stance: {fileID: 2745395967054933737}
---- !u!114 &2745395967054933737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: Stance
-  value: 0
---- !u!114 &2745395967054933738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: Mood
-  value: 0
---- !u!114 &363025639492738851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967054933536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cbd0c93fbe0e46f78685c33d82bcc7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: TextBoxAnim
-  value: {fileID: 6642152320040037967}
+  stance: {fileID: 0}
 --- !u!114 &5032582662201759764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,9 +188,9 @@ MonoBehaviour:
   itemId: 57
   indentLevel: 0
   thisNPC: {fileID: 2745395967372971087}
-  mood: {fileID: 2745395967054933738}
+  mood: {fileID: 0}
   spokenTo: {fileID: 0}
-  stance: {fileID: 2745395967054933738}
+  stance: {fileID: 0}
 --- !u!114 &5050681102764955015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,8 +395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 69
   indentLevel: 0
-  mood: {fileID: 2745395967054933738}
-  stance: {fileID: 2745395967054933737}
+  mood: {fileID: 0}
+  stance: {fileID: 0}
   stanceChangeValue: 5
   changeMood: 1
   newMood: 0
@@ -466,8 +414,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 0
-  mood: {fileID: 2745395967054933738}
-  stance: {fileID: 2745395967054933737}
+  mood: {fileID: 0}
+  stance: {fileID: 0}
   stanceChangeValue: -5
   changeMood: 1
   newMood: 2
@@ -498,7 +446,7 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1483994096124333584
+--- !u!114 &3437962202679979274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -507,33 +455,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2745395967054933536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 51423c74f70ae8a4cb757d7cc3e5a74a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
-  key: SpokenTo
-  value: 0
---- !u!114 &4878879175323773432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967405344745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f6478b25a400c642b2dee75f022ab12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portraitCanvas: {fileID: 2745395967405344749}
-  dimPortraits: 0
-  dimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  fadeDuration: 0.5
-  moveDuration: 1
-  fadeEaseType: 0
-  shiftOffset: {x: 0, y: 0}
-  defaultPosition: {fileID: 0}
-  positions: []
+  flowchart: {fileID: 2745395967054933758}
+  textBoxAnim: {fileID: 6642152320040037967}
+  neutral: {fileID: 9100000, guid: 4ab781bc34987a844b038aae7e6fcfc6, type: 2}
+  like: {fileID: 22100000, guid: a974a922648e70644bd59f71e623d920, type: 2}
+  love: {fileID: 22100000, guid: 0f0e657864a0e0942a7a4b021b650a16, type: 2}
+  dislike: {fileID: 22100000, guid: cb91d18358143c840b4e35c26bb8f693, type: 2}
+  hate: {fileID: 22100000, guid: 5fced63a51662d44893d96e461a60e63, type: 2}
 --- !u!1 &2808995533907288440
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_interactRadius: 2.5
+  m_interactRadius: 1
   interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
     type: 3}
   bobSpeed: 3
@@ -834,21 +765,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cddf5f3e049da0e458c2ed7e79719d5d, type: 3}
---- !u!1 &2745395967405344745 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3310440901141637535, guid: cddf5f3e049da0e458c2ed7e79719d5d,
-    type: 3}
-  m_PrefabInstance: {fileID: 858102184339107446}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2745395967405344751 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3310440901141637529, guid: cddf5f3e049da0e458c2ed7e79719d5d,
-    type: 3}
-  m_PrefabInstance: {fileID: 858102184339107446}
-  m_PrefabAsset: {fileID: 0}
---- !u!223 &2745395967405344749 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 3310440901141637531, guid: cddf5f3e049da0e458c2ed7e79719d5d,
     type: 3}
   m_PrefabInstance: {fileID: 858102184339107446}
   m_PrefabAsset: {fileID: 0}
@@ -858,7 +777,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 858102184339107446}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2745395967405344745}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
