@@ -65,7 +65,7 @@ namespace Assets.Scripts
             interacted = false;
         }
 
-        void Update()
+        protected virtual void Update()
         {
             //Check that the icon isn't null before accessing it
             if (interactIconObject)
