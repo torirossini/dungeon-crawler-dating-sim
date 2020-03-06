@@ -23,10 +23,6 @@ namespace Assets.Scripts
         [VariableProperty(typeof(IntegerVariable))]
         [SerializeField] protected IntegerVariable stance;
 
-        [Tooltip("Animator for text box")]
-        [VariableProperty(typeof(AnimatorVariable))]
-        [SerializeField] protected AnimatorVariable textBoxAnim;
-
         public override void OnEnter()
         {
             thisNPC = gameObject.GetComponentInParent<NPC>();
@@ -44,11 +40,6 @@ namespace Assets.Scripts
             if (stance != null)
             {
                 stance.Value = thisNPC.stance;
-            }
-
-            if (textBoxAnim != null)
-            {
-                textBoxAnim.Value.SetInteger("Stance", stance.Value);
             }
 
             if (mood.Value == 0)
