@@ -48,6 +48,7 @@ namespace Assets.Scripts
             moveXAxis = Input.GetAxis("Vertical") * playerXMultipler;
             PlayerMove();
             IsWalking();
+
         }
 
         //moveMethod
@@ -112,6 +113,41 @@ namespace Assets.Scripts
             if (velocityVector.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
+                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                {
+                    animator.SetBool("Up", true);
+                }
+                else
+                {
+                    animator.SetBool("Up", false);
+                }
+
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                {
+                    animator.SetBool("Left", true);
+                }
+                else
+                {
+                    animator.SetBool("Left", false);
+                }
+
+                if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                {
+                    animator.SetBool("Right", true);
+                }
+                else
+                {
+                    animator.SetBool("Right", false);
+                }
+
+                if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                {
+                    animator.SetBool("Down", true);
+                }
+                else
+                {
+                    animator.SetBool("Down", false);
+                }
                 return true;
             }
             else

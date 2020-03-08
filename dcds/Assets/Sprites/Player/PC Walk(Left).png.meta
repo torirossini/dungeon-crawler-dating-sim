@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 226b4313852a92b4a93248301974ac2e
+guid: db7b4e105ffc5904cbd7f29782a3804d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3533317605870013198
-    second: PC Idle_0
+      213: 114069563791734359
+    second: PC Walk(Left)_0
   - first:
-      213: -4636715358752944944
-    second: PC Idle_1
+      213: -7186464816853723827
+    second: PC Walk(Left)_1
+  - first:
+      213: 2753362604772973184
+    second: PC Walk(Left)_2
+  - first:
+      213: -4593880701890657323
+    second: PC Walk(Left)_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -86,43 +92,11 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8389a3d1493bd747a6548888c098bce
-      internalID: 3533317605870013198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC Idle_1
+      name: PC Walk(Left)_0
       rect:
         serializedVersion: 2
         x: 32
@@ -136,8 +110,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bfa91a7a87d07f499b5d9c6e48baeb1
-      internalID: -4636715358752944944
+      spriteID: 468aea71c81ab824aafe43d14d223034
+      internalID: 114069563791734359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Walk(Left)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04932448769c7dc47bb143a115cbb593
+      internalID: -7186464816853723827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Walk(Left)_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011a31acc30f5d24498a31ffb46713f1
+      internalID: 2753362604772973184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Walk(Left)_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c2d4f8fc289c642ae24cff55402cb7
+      internalID: -4593880701890657323
       vertices: []
       indices: 
       edges: []
@@ -145,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2b11c45a46b5a9f4b8043fd2864a7d8f
+    spriteID: c23cf41b8f6ffaa48b464cb24f312548
     internalID: 0
     vertices: []
     indices: 
