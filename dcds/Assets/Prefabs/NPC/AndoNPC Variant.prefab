@@ -84,7 +84,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -47.89831
     y: 639.21295
-    width: 147.53427
+    width: 137.67126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -230.35254
     y: 439.23456
-    width: 227.5343
+    width: 214.3836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 486.06122
     y: 407.00137
-    width: 127.80824
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 135
   indentLevel: 0
-  storyText: Amazing! I'm so excited to be in a party, and to get tp work alongside
+  storyText: Amazing! I'm so excited to be in a party, and to get to work alongside
     you!!!
   description: 
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
@@ -927,7 +927,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -308.60767
     y: 667.51056
-    width: 181.50688
+    width: 170.54797
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1229,7 +1229,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -572.8587
     y: 669.926
-    width: 178.21922
+    width: 167.80826
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1438,7 +1438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177.58969
     y: 347.99866
-    width: 203.4247
+    width: 192.46579
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1465,7 +1465,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -526.8866
     y: 452.01218
-    width: 203.4247
+    width: 188.3562
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -267.9265
     y: 835.55646
-    width: 166.16443
+    width: 154.10962
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1663,7 +1663,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -85.58238
     y: 239.48785
-    width: 146.43839
+    width: 136.30139
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.49567
     y: 741.4328
-    width: 166.16443
+    width: 155.47949
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1861,7 +1861,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -360.8808
     y: 558.65674
-    width: 213.28772
+    width: 200.68498
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2080,7 +2080,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 330.42365
     y: 240.85364
-    width: 205.61649
+    width: 189.72607
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2226,7 +2226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.938354
     y: 811.92456
-    width: 171.64388
+    width: 159.58908
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2334,7 +2334,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 704.90814
     y: 394.51755
-    width: 216.5754
+    width: 199.31511
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3061,7 +3061,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -174.63936
     y: 353.51166
-    width: 199.04114
+    width: 188.3562
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3096,11 +3096,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: m_Name
-      value: AndoNPC Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 2745395967372971087, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: character
@@ -3182,6 +3177,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_Name
+      value: AndoNPC Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 2808995533907288441, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_Size.x
@@ -3221,7 +3221,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 5035838187739195328}
+      objectReference: {fileID: 373821369918647384}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: variables.Array.data[0]
@@ -3290,7 +3290,7 @@ PrefabInstance:
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: nodeRect.width
-      value: 136.57538
+      value: 128.08221
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
