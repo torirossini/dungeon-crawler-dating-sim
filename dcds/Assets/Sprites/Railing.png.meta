@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 1d023a8bea2ac294f9e04883df7af8c4
+guid: a3dd2996aa8afc34bafb2b0e9ca07c90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1714756807398554617
-    second: Signs_0
+      213: 4193726631227913137
+    second: Railing_0
   - first:
-      213: 8051134168378353487
-    second: Signs_1
-  - first:
-      213: -5459743574113085061
-    second: Signs_2
-  - first:
-      213: -2742302684088697420
-    second: Signs_3
-  - first:
-      213: 8814233360100005479
-    second: Signs_4
+      213: -3333726271206988317
+    second: Railing_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -75,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -86,7 +77,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -99,28 +90,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Signs_0
+      name: Railing_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff04661402f7b3b4d9e7f5872e33d598
-      internalID: 1714756807398554617
+      spriteID: 759b9aa7b0d27924a8b799419a499cb7
+      internalID: 4193726631227913137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Signs_1
+      name: Railing_1
       rect:
         serializedVersion: 2
         x: 32
@@ -128,77 +119,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc8f1d00885a334c9f23f2a0e509de7
-      internalID: 8051134168378353487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Signs_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5db46e23e4580b64b928848df0aa435f
-      internalID: -5459743574113085061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Signs_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 708ac94929e626d43aefabae4daf7d38
-      internalID: -2742302684088697420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Signs_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b38fdd5f1c414444a32a2536dc206da
-      internalID: 8814233360100005479
+      spriteID: c0941107d6fef0a4eb3d348dedce7f9c
+      internalID: -3333726271206988317
       vertices: []
       indices: 
       edges: []
@@ -206,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a8c498b67ed87df48ab621f6bc70d8be
+    spriteID: 0408724eb1b2e0d42a1c996b9a077a07
     internalID: 0
     vertices: []
     indices: 

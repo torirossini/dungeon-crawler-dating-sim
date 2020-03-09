@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Signs_4
+  m_Name: Shingles_22
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 8814233360100005479, guid: 1d023a8bea2ac294f9e04883df7af8c4,
-    type: 3}
+  m_Sprite: {fileID: 380129620073247112, guid: 2c73bb9d6432a2c45a7b2db8bcb2bd64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
