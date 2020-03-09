@@ -84,7 +84,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -47.89831
     y: 639.21295
-    width: 144.54547
+    width: 147.53427
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -162,8 +162,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -230.35254
-    y: 440.45407
-    width: 219.09093
+    y: 439.23456
+    width: 227.5343
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -174,9 +174,15 @@ MonoBehaviour:
   commandList:
   - {fileID: 6094444461783350986}
   - {fileID: 8165112042394722927}
+  - {fileID: 4089291842092903595}
   - {fileID: 8596254181713890559}
   - {fileID: 7952121972851783906}
   - {fileID: 5552609699438168688}
+  - {fileID: 1333239849139677368}
+  - {fileID: 5559923595163390971}
+  - {fileID: 3888381850827844384}
+  - {fileID: 1297161630881931537}
+  - {fileID: 667859837683217046}
   - {fileID: 8460517288462373442}
 --- !u!114 &373821369918647384
 MonoBehaviour:
@@ -361,6 +367,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 190
   indentLevel: 0
+--- !u!114 &667859837683217046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 202
+  indentLevel: 0
 --- !u!114 &701772832888563819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +427,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 486.06122
     y: 407.00137
-    width: 122.72728
+    width: 127.80824
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -557,6 +577,23 @@ MonoBehaviour:
   stance: {fileID: 2560026055994995352}
   anim: {fileID: 9188393657815595795}
   triggerType: 1
+--- !u!114 &1217604684718746464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d74c73c251b79249a331d839c69732d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 207
+  indentLevel: 0
+  stance: {fileID: 2560026055994995352}
+  anim: {fileID: 9188393657815595795}
+  triggerType: 0
 --- !u!114 &1221977522597584478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +615,49 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &1297161630881931537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 205
+  indentLevel: 1
+  storyText: But I finally convinced them, though I still have to work at the forge
+    sometimes.
+  description: 
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1333239849139677368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 201
+  indentLevel: 0
 --- !u!114 &1334177541368025814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,7 +927,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -308.60767
     y: 667.51056
-    width: 173.63638
+    width: 181.50688
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -876,7 +956,7 @@ MonoBehaviour:
   indentLevel: 0
   mood: {fileID: 5645319249533181841}
   stance: {fileID: 2560026055994995352}
-  stanceChangeValue: 1
+  stanceChangeValue: 2
   changeMood: 0
   newMood: 0
 --- !u!114 &2495568838073499696
@@ -1104,6 +1184,35 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &3888381850827844384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 204
+  indentLevel: 1
+  storyText: My family did not want me to go for the longest time; too dangerous instead
+    of just working for the family business.
+  description: 
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &4022890787964686740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,9 +1227,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -571.68225
+    x: -572.8587
     y: 669.926
-    width: 175.45456
+    width: 178.21922
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1133,6 +1242,70 @@ MonoBehaviour:
   - {fileID: 9124116200130618723}
   - {fileID: 916061033577574299}
   - {fileID: 8383442729394761365}
+--- !u!114 &4089291842092903595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 200
+  indentLevel: 0
+  compareOperator: 3
+  variable: {fileID: 2560026055994995352}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 5
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &4098323187377355760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,7 +1438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177.58969
     y: 347.99866
-    width: 197.27274
+    width: 203.4247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1292,7 +1465,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -526.8866
     y: 452.01218
-    width: 193.63638
+    width: 203.4247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1431,7 +1604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -267.9265
     y: 835.55646
-    width: 159.09091
+    width: 166.16443
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1490,7 +1663,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -85.58238
     y: 239.48785
-    width: 142.72728
+    width: 146.43839
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1542,7 +1715,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.49567
     y: 741.4328
-    width: 159.09091
+    width: 166.16443
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1553,6 +1726,23 @@ MonoBehaviour:
   commandList:
   - {fileID: 1334177541368025814}
   - {fileID: 1221977522597584478}
+--- !u!114 &5299652305130351516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d74c73c251b79249a331d839c69732d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 209
+  indentLevel: 0
+  stance: {fileID: 2560026055994995352}
+  anim: {fileID: 9188393657815595795}
+  triggerType: 1
 --- !u!114 &5313455369883158172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,9 +1785,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 177
-  indentLevel: 0
+  indentLevel: 1
   storyText: But I finally convinced them, though I still have to work at the forge
     sometimes.
+  description: 
+  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
+    type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &5559923595163390971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 203
+  indentLevel: 1
+  storyText: For a long time, it felt like a tug in my chest, telling me to go to
+    the dungeon.
   description: 
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
     type: 3}
@@ -1642,7 +1861,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -360.8808
     y: 558.65674
-    width: 206.36365
+    width: 213.28772
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1781,6 +2000,70 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &5995122196744200498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 199
+  indentLevel: 0
+  variable: {fileID: 5906756941777986176}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &6063092544828072416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,7 +2080,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 330.42365
     y: 240.85364
-    width: 191.81819
+    width: 205.61649
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1842,7 +2125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 0
-  storyText: Ah, a quest! Would you mind if I say?
+  storyText: Ah, a quest! Would you mind if I see?
   description: 
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
     type: 3}
@@ -1895,8 +2178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 0
-  storyText: I am looking for people to team up with to explore the Dungeon. Or you
-    in the Guild Hall for a different reason?
+  storyText: I am looking for people to team up with to explore the Dungeon. Or are
+    you at the Guild Hall for a different reason?
   description: 
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
     type: 3}
@@ -1943,7 +2226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.938354
     y: 811.92456
-    width: 166.36365
+    width: 171.64388
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2051,7 +2334,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 704.90814
     y: 394.51755
-    width: 204.54547
+    width: 216.5754
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2060,6 +2343,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 8429640219742119128}
+  - {fileID: 1217604684718746464}
   - {fileID: 1496373413555938139}
   - {fileID: 385656895700967772}
 --- !u!114 &6758982373093945759
@@ -2247,6 +2532,25 @@ MonoBehaviour:
   stanceChangeValue: 2
   changeMood: 0
   newMood: 0
+--- !u!114 &7420836373180734641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 208
+  indentLevel: 0
+  mood: {fileID: 5645319249533181841}
+  stance: {fileID: 2560026055994995352}
+  stanceChangeValue: 1
+  changeMood: 0
+  newMood: 0
 --- !u!114 &7506223329740923433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2312,7 +2616,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 5
+    integerVal: 4
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -2393,13 +2697,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 176
-  indentLevel: 0
+  indentLevel: 1
   storyText: My family did not want me to go for the longest time; too dangerous instead
     of just working for the family business.
   description: 
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
     type: 3}
-  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2566,6 +2870,25 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &8429640219742119128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601592982306446532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f73f28707e2844a8f3fcda23ed8acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 206
+  indentLevel: 0
+  mood: {fileID: 5645319249533181841}
+  stance: {fileID: 2560026055994995352}
+  stanceChangeValue: -1
+  changeMood: 0
+  newMood: 0
 --- !u!114 &8460198583637467407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2614,13 +2937,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 175
-  indentLevel: 0
+  indentLevel: 1
   storyText: For a long time, it felt like a tug in my chest, telling me to go to
     the dungeon.
   description: 
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
     type: 3}
-  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
+  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2738,7 +3061,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -174.63936
     y: 353.51166
-    width: 191.81819
+    width: 199.04114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2747,6 +3070,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 7420836373180734641}
+  - {fileID: 5299652305130351516}
   - {fileID: 6953729530202697701}
   - {fileID: 3209701525784057046}
 --- !u!114 &9188393657815595795
@@ -2771,12 +3096,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_Name
+      value: AndoNPC Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 2745395967372971087, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: character
       value: 
       objectReference: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
         type: 3}
+    - target: {fileID: 2745395967372971087, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_interactRadius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2847,11 +3182,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: m_Name
-      value: AndoNPC Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 2808995533907288441, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_Size.x
@@ -2872,46 +3202,6 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameText
-      value: Ando
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameColor.r
-      value: 0.2830189
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameColor.g
-      value: 0.25657052
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: nameColor.b
-      value: 0.22561412
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: description
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: selectedBlocks.Array.size
@@ -2931,7 +3221,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 4022890787964686740}
+      objectReference: {fileID: 5035838187739195328}
     - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: variables.Array.data[0]
@@ -2952,6 +3242,26 @@ PrefabInstance:
       propertyPath: variables.Array.data[3]
       value: 
       objectReference: {fileID: 5906756941777986176}
+    - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: scrollPos.x
+      value: 1048.4122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: scrollPos.y
+      value: -31.391525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: zoom
+      value: 0.7299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933758, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 6656821962878027668}
     - target: {fileID: 2745395967405344751, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2975,12 +3285,12 @@ PrefabInstance:
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: commandList.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: nodeRect.width
-      value: 133.63637
+      value: 136.57538
       objectReference: {fileID: 0}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -3016,17 +3326,17 @@ PrefabInstance:
         type: 3}
       propertyPath: commandList.Array.data[7]
       value: 
-      objectReference: {fileID: 3741513564538451604}
+      objectReference: {fileID: 5995122196744200498}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: commandList.Array.data[8]
       value: 
-      objectReference: {fileID: 6210203483757120353}
+      objectReference: {fileID: 3741513564538451604}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: commandList.Array.data[9]
       value: 
-      objectReference: {fileID: 6652719354959475631}
+      objectReference: {fileID: 6210203483757120353}
     - target: {fileID: 2745395967054933759, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
       propertyPath: nodeRect.x
@@ -3046,41 +3356,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: itemId
-      value: 143
-      objectReference: {fileID: 0}
-    - target: {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: spokenTo
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046042749937092108, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: portraitCanvas
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5594785675852462665, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1f9c43eafdc1be64c95187cde87ea65a, type: 2}
-    - target: {fileID: 2745395967054933754, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: targetBlock
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967054933755, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: targetBlock
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2745395967054933700, guid: 0a7ef349e679dc940ae09749039d78be,
-        type: 3}
-      propertyPath: targetBlock
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6345243479027197980, guid: 0a7ef349e679dc940ae09749039d78be,
         type: 3}
@@ -3124,6 +3399,81 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666,
         type: 3}
+    - target: {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: itemId
+      value: 143
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552691983092365118, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: spokenTo
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926515, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameText
+      value: Ando
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameColor.r
+      value: 0.2830189
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameColor.g
+      value: 0.25657052
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: nameColor.b
+      value: 0.22561412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967970926524, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: description
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046042749937092108, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: portraitCanvas
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594785675852462665, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933754, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: targetBlock
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933755, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: targetBlock
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745395967054933700, guid: 0a7ef349e679dc940ae09749039d78be,
+        type: 3}
+      propertyPath: targetBlock
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5050681102764955015, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 3994641380010920537, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
@@ -3141,18 +3491,6 @@ PrefabInstance:
     - {fileID: 2808995533907288442, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
     - {fileID: 2808995533907288443, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0a7ef349e679dc940ae09749039d78be, type: 3}
---- !u!1 &1646089633060672412 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
-    type: 3}
-  m_PrefabInstance: {fileID: 3468786849688531684}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1646089633060672408 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
-    type: 3}
-  m_PrefabInstance: {fileID: 3468786849688531684}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1601592981519171243 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2745395967372971087, guid: 0a7ef349e679dc940ae09749039d78be,
@@ -3165,6 +3503,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1601592982306446532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2745395967054933536, guid: 0a7ef349e679dc940ae09749039d78be,
+    type: 3}
+  m_PrefabInstance: {fileID: 3468786849688531684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1646089633060672412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2808995533907288440, guid: 0a7ef349e679dc940ae09749039d78be,
+    type: 3}
+  m_PrefabInstance: {fileID: 3468786849688531684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1601592981579068684 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2745395967405344744, guid: 0a7ef349e679dc940ae09749039d78be,
@@ -3183,9 +3533,9 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 3468786849688531684}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1601592982306446532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2745395967054933536, guid: 0a7ef349e679dc940ae09749039d78be,
+--- !u!4 &1646089633060672408 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2808995533907288444, guid: 0a7ef349e679dc940ae09749039d78be,
     type: 3}
   m_PrefabInstance: {fileID: 3468786849688531684}
   m_PrefabAsset: {fileID: 0}
