@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overworld.unity
     guid: 52985789bac13fe4d8516bff36b8fd60
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Guildhall.unity
     guid: 04e7de63ed6b1af49b0890c3b92f9895
   m_configObjects: {}

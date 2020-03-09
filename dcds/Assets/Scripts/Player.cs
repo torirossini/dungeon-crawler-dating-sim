@@ -46,6 +46,12 @@ namespace Assets.Scripts
         {
             moveZAxis = Input.GetAxis("Horizontal") * playerZMultipler;
             moveXAxis = Input.GetAxis("Vertical") * playerXMultipler;
+
+            if(Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+            
             PlayerMove();
             IsWalking();
 

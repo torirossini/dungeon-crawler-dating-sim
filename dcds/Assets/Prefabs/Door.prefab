@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b371fe5ca6f6964cbe4df3e05eb6614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_interactRadius: 1
+  m_interactRadius: 0.5
   interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
     type: 3}
   bobSpeed: 3

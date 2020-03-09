@@ -91850,7 +91850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6241df79aa19941871707c8f33e269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_interactRadius: 2.5
+  m_interactRadius: 1
   interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
     type: 3}
   bobSpeed: 3
@@ -92073,7 +92073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19180e3335b8114a95691ad83220c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_interactRadius: 1
+  m_interactRadius: 0.5
   interactIcon: {fileID: 943881993793422851, guid: 675cb429a02902f4cb3bf4f355892e5e,
     type: 3}
   bobSpeed: 3
@@ -94733,6 +94733,10 @@ PrefabInstance:
     - target: {fileID: 1564148712, guid: c3ed44cd7d2c61e4d9037a28fac3b748, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564148712, guid: c3ed44cd7d2c61e4d9037a28fac3b748, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.400024
       objectReference: {fileID: 0}
     - target: {fileID: 430711043, guid: c3ed44cd7d2c61e4d9037a28fac3b748, type: 3}
       propertyPath: m_RootOrder
