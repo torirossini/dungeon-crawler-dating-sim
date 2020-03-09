@@ -113,7 +113,8 @@ namespace Assets.Scripts
             if (velocityVector.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
-                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                if ((Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) || 
+                    (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
                 {
                     animator.SetBool("Up", true);
                 }
@@ -140,7 +141,8 @@ namespace Assets.Scripts
                     animator.SetBool("Right", false);
                 }
 
-                if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                if ((Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
+                    (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
                 {
                     animator.SetBool("Down", true);
                 }
