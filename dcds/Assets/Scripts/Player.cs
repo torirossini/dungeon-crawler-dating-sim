@@ -19,10 +19,10 @@ namespace Assets.Scripts
 
 
         float moveZAxis;
-        float moveXAxis;
+        float moveYAxis;
 
-        private Rigidbody rb;
-        private Vector3 velocityVector;
+        private Rigidbody2D rb;
+        private Vector2 velocityVector;
 
         private Animator animator;
         private Sprite playerSprite;
@@ -35,7 +35,7 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            rb = GetComponent<Rigidbody>();
+            rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             playerSprite = GetComponent<SpriteRenderer>().sprite;
             velocityVector = Vector3.zero;
@@ -45,7 +45,7 @@ namespace Assets.Scripts
         void FixedUpdate()
         {
             moveZAxis = Input.GetAxis("Horizontal") * playerZMultipler;
-            moveXAxis = Input.GetAxis("Vertical") * playerXMultipler;
+            moveYAxis = Input.GetAxis("Vertical") * playerXMultipler;
 
             if(Input.GetKey(KeyCode.Escape))
             {
@@ -60,11 +60,12 @@ namespace Assets.Scripts
         //moveMethod
         public void PlayerMove()
         {
-            velocityVector = new Vector3(moveZAxis, 0, moveXAxis) * playerSpeed;
+            velocityVector = new Vector2(moveZAxis, moveYAxis) * playerSpeed;
 
-            rb.MovePosition(transform.position + velocityVector * Time.deltaTime);
+            rb.MovePosition(rb.position + velocityVector * Time.fixedDeltaTime);
 
         }
+
         public void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.GetComponent<InteractionObject>())
@@ -76,6 +77,7 @@ namespace Assets.Scripts
             {
                 GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Forward);
             }
+            
             
         }
 

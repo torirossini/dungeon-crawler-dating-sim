@@ -13,7 +13,7 @@ namespace Assets.Scripts
     {
         [SerializeField]
         float m_interactRadius = 2.5f;
-        SphereCollider m_interactRadiusCollider;
+        CircleCollider2D m_interactRadiusCollider;
         bool m_inRange = false;
         private bool interacted = false;
 
@@ -34,7 +34,7 @@ namespace Assets.Scripts
 
         protected virtual void Awake()
         {
-            m_interactRadiusCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
+            m_interactRadiusCollider = gameObject.AddComponent(typeof(CircleCollider2D)) as CircleCollider2D;
             m_interactRadiusCollider.radius = m_interactRadius;
             m_interactRadiusCollider.isTrigger = true;
             interactIconObject = GameObject.Instantiate(interactIcon, CanvasManager.Instance.InteractIcons.transform).gameObject;
