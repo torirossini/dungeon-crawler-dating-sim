@@ -165,14 +165,6 @@ namespace Assets.Scripts
 
         }
 
-        public void Move()
-        {
-            Vector3 movement = new Vector3(0.0f, 0.0f, 0.0f);
-
-            gameObject.transform.position += movement * movementSpeed * Time.deltaTime;
-        }
-
-
         #region Routine Functions
         /// <summary>
         /// Sets up a routine when game starts
@@ -226,7 +218,7 @@ namespace Assets.Scripts
         /// <param name="transitioning">True if transitioning to next routine step, false otherwise.</param>
         /// <param name="targetLocation"></param>
         /// <param name="stoppingDistance">How far the nav mesh should stop from the target location</param>
-        private void SetUpNavMesh(bool transitioning, Vector3 targetLocation, float stoppingDistance)
+        private void SetUpNavMesh(bool transitioning, Vector2 targetLocation, float stoppingDistance)
         {
             m_transitioningToNextStep = transitioning;
             followAgent.destination = targetLocation;

@@ -38,7 +38,7 @@ namespace Assets.Scripts
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             playerSprite = GetComponent<SpriteRenderer>().sprite;
-            velocityVector = Vector3.zero;
+            velocityVector = Vector2.zero;
         }
 
         // Update is called once per frame

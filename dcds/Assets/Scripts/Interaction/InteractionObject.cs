@@ -28,7 +28,7 @@ namespace Assets.Scripts
         float bobAmplitude = 6f;
 
         [SerializeField]
-        Vector3 offset = new Vector3(0, 100, 0);
+        Vector2 offset = new Vector2(0, 100);
 
         public bool Interacted { get => interacted; set => interacted = value; }
 
@@ -72,9 +72,9 @@ namespace Assets.Scripts
             {
                 if (m_inRange)
                 {
-                    Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+                    Vector2 pos = Camera.main.WorldToScreenPoint(transform.position);
                     float newY = Mathf.Sin(Time.time * bobSpeed);
-                    pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
+                    pos = new Vector2(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y);
                     interactIconObject.transform.position = pos;
                 }
             }
@@ -84,7 +84,7 @@ namespace Assets.Scripts
         {
             System.Collections.Hashtable hash =
                       new System.Collections.Hashtable();
-            hash.Add("amount", new Vector3(1f, 1f, 0f));
+            hash.Add("amount", new Vector2(1f, 1f));
             hash.Add("time", 1f);
             iTween.PunchScale(interactIconObject, hash);
         }

@@ -9,8 +9,6 @@ namespace Assets.Scripts
         [SerializeField]
         GameObject targetPortal;
         [SerializeField]
-        float zOffset = -2f;
-        [SerializeField]
         float xOffset = 0f;
         [SerializeField]
         float yOffset = 0f;
@@ -19,9 +17,8 @@ namespace Assets.Scripts
         {
             if (collision.gameObject == GameManager.Instance.Player.gameObject)
             { 
-                GameManager.Instance.Player.transform.position = new Vector3(targetPortal.transform.position.x + xOffset,
-                    targetPortal.transform.position.y + yOffset,
-                   targetPortal.transform.position.z + zOffset);
+                GameManager.Instance.Player.transform.position = new Vector2(targetPortal.transform.position.x + xOffset,
+                    targetPortal.transform.position.y + yOffset);
             }
         }
     }
