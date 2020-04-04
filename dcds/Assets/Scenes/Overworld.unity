@@ -92655,6 +92655,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af70e974809834f44975c95c2b02c37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1770767889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8169396337315324724, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
+    type: 3}
+  m_PrefabInstance: {fileID: 7455126498270482080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1770767890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770767889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  Event: event:/Sound Effects/Door
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &1800252424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795964362247778088, guid: ec66929eff232424b974719707e3f61f,

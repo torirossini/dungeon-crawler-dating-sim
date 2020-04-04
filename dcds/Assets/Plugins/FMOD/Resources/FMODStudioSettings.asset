@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\Audio\DescendateAudioCues\DescendateAudioCues.fspro
-  sourceBankPath: Assets\Audio\DescendateAudioCues\Build
+  sourceProjectPath: ../../../source/repos/DescendateSoundDesign/FMOD/DescendateAudioCues.fspro
+  sourceBankPath: ..\..\..\source\repos\DescendateSoundDesign\FMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -58,7 +58,9 @@ MonoBehaviour:
     Value: 0
   - Platform: 20
     Value: 0
-  BankDirectorySettings: []
+  BankDirectorySettings:
+  - Platform: 2
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024

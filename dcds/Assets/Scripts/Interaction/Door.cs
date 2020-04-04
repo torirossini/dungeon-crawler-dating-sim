@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 namespace Assets.Scripts.Interaction
 {
@@ -22,6 +23,8 @@ namespace Assets.Scripts.Interaction
 
         public override void Interact()
         {
+            // play the door open sound from the FMOD StudioEventEmitter component that should be attached to this GO
+            GetComponent<StudioEventEmitter>().Play();
             if (CanEnter)
             {
                 CanvasManager.Instance.DestroyIcons();
