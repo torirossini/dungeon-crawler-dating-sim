@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class Player : MonoBehaviour
     {
 
@@ -12,14 +13,10 @@ namespace Assets.Scripts
         float playerSpeed = 0.15f;
 
         [SerializeField]
-        float playerXMultipler = 1f;
+        float jumpForce = 10f;
 
-        [SerializeField]
-        float playerZMultipler = 1f;
-
-
-        float moveZAxis;
-        float moveYAxis;
+        float xMovement;
+        float yMovement;
 
         private Rigidbody2D rb;
         private Vector2 velocityVector;
@@ -33,6 +30,21 @@ namespace Assets.Scripts
             get { return playerSpeed; }
         }
 
+        float isGroundedRayLength = 1f;
+        LayerMask layerMaskForGrounded = 9;
+        public bool isGrounded
+        {
+            get
+            {
+                Vector2 position = transform.position;
+                position.y = GetComponent<BoxCollider2D>().bounds.min.y + 0.1f;
+                float length = isGroundedRayLength + 0.1f;
+                Debug.DrawRay(position, Vector2.down * length);
+                bool grounded = Physics2D.Raycast(position, Vector2.down, length, layerMaskForGrounded.value);
+                return grounded;
+            }
+        }
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -44,8 +56,7 @@ namespace Assets.Scripts
         // Update is called once per frame
         void FixedUpdate()
         {
-            moveZAxis = Input.GetAxis("Horizontal") * playerZMultipler;
-            moveYAxis = Input.GetAxis("Vertical") * playerXMultipler;
+            
 
             if(Input.GetKey(KeyCode.Escape))
             {
@@ -57,12 +68,26 @@ namespace Assets.Scripts
 
         }
 
+
         //moveMethod
         public void PlayerMove()
         {
-            velocityVector = new Vector2(moveZAxis, moveYAxis) * playerSpeed;
+            if(rb)
+            {
+                xMovement = Input.GetAxis("Horizontal");
+                yMovement = Input.GetAxis("Vertical");
+                Vector2 velocity = rb.velocity;
+                float xForce = xMovement * playerSpeed * Time.fixedDeltaTime;
+                velocity.x = xForce;
 
-            rb.MovePosition(rb.position + velocityVector * Time.fixedDeltaTime);
+                if (isGrounded)
+                {
+                    velocity.y = jumpForce;
+                }
+                rb.velocity = velocity;
+
+                
+            }
 
         }
 

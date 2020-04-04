@@ -61,7 +61,6 @@ public class GameManager : Singleton<GameManager>
         m_currentTimePoints = 0;
         m_currentTime = TimeOfDay.Morning;
         m_timeIncrements = MAX_TIME_POINTS / Enum.GetNames(typeof(TimeOfDay)).Length;
-        DontDestroyOnLoad(this.gameObject);
     }
 
     /// <summary>
