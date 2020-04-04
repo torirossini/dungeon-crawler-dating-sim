@@ -30,17 +30,17 @@ namespace Assets.Scripts
             get { return playerSpeed; }
         }
 
-        float isGroundedRayLength = 1f;
+        float isGroundedRayLength = .1f;
         LayerMask layerMaskForGrounded = 9;
         public bool isGrounded
         {
             get
             {
-                Vector2 position = transform.position;
-                position.y = GetComponent<BoxCollider2D>().bounds.min.y + 0.1f;
+                Vector3 position = transform.position;
+                position.y = GetComponent<Collider2D>().bounds.min.y + 0.1f;
                 float length = isGroundedRayLength + 0.1f;
-                Debug.DrawRay(position, Vector2.down * length);
-                bool grounded = Physics2D.Raycast(position, Vector2.down, length, layerMaskForGrounded.value);
+                Debug.DrawRay(position, Vector3.down * length);
+                bool grounded = Physics2D.Raycast(position, Vector3.down, length, layerMaskForGrounded.value);
                 return grounded;
             }
         }
@@ -77,16 +77,15 @@ namespace Assets.Scripts
                 xMovement = Input.GetAxis("Horizontal");
                 yMovement = Input.GetAxis("Vertical");
                 Vector2 velocity = rb.velocity;
-                float xForce = xMovement * playerSpeed * Time.fixedDeltaTime;
+                float xForce = xMovement * playerSpeed * Time.deltaTime;
                 velocity.x = xForce;
 
-                if (isGrounded)
-                {
+                if (Input.GetButtonDown("Vertical") && isGrounded)
+                { 
                     velocity.y = jumpForce;
                 }
-                rb.velocity = velocity;
 
-                
+                rb.velocity = velocity;
             }
 
         }
@@ -127,23 +126,11 @@ namespace Assets.Scripts
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(false);
             }
-            if (other.gameObject.CompareTag("Bridge"))
-            {
-                //if (GameManager.Instance.TownManager.FacingRight(GameManager.Instance.TownManager.LeftBridge, GameManager.Instance.TownManager.RightBridge))
-                //{
-                //    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
-                //}
-                //else
-                //{
-                //    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
-
-                //}
-            }
         }
 
         private bool IsWalking()
         {
-            if (velocityVector.magnitude > 0)
+            if (rb.velocity.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
                 if ((Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) || 

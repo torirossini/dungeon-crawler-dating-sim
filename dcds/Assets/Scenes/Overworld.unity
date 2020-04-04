@@ -385,7 +385,7 @@ PrefabInstance:
     - target: {fileID: 4795964362247778088, guid: ec66929eff232424b974719707e3f61f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4795964362247778088, guid: ec66929eff232424b974719707e3f61f,
         type: 3}
@@ -2613,11 +2613,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176458528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.14, y: 0.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.14, y: 0.43000007, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1599568162}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220204920
 GameObject:
@@ -3086,10 +3086,10 @@ Transform:
   - {fileID: 1308619871}
   - {fileID: 365942048}
   - {fileID: 1863420708}
-  - {fileID: 1176458533}
   - {fileID: 105672003}
   - {fileID: 1800252424}
   - {fileID: 1155184242}
+  - {fileID: 1176458533}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3143,7 +3143,7 @@ PrefabInstance:
     - target: {fileID: 4795964362247778088, guid: ec66929eff232424b974719707e3f61f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4795964362247778088, guid: ec66929eff232424b974719707e3f61f,
         type: 3}
@@ -4894,7 +4894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1759532807, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
       propertyPath: jumpForce
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7062032216894789994, guid: fa1fbc4e65514e4479c68305f63d4c4f,
         type: 3}
@@ -4965,11 +4965,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1759532809, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
       propertyPath: m_Mass
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1759532809, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
       propertyPath: m_GravityScale
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759532809, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759532808, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759532808, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fbc4e65514e4479c68305f63d4c4f, type: 3}
@@ -5102,7 +5114,7 @@ PrefabInstance:
     - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8169396337315324720, guid: 17e93abaa8af13243bf5eb5f4a1cb984,
         type: 3}
