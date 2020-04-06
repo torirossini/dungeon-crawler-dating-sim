@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+
 
 namespace Assets.Scripts
 {
@@ -26,6 +28,7 @@ namespace Assets.Scripts
 
         private Animator animator;
         private Sprite playerSprite;
+
 
 
         public float PlayerSpeed
@@ -63,7 +66,6 @@ namespace Assets.Scripts
             velocityVector = new Vector3(moveZAxis, 0, moveXAxis) * playerSpeed;
 
             rb.MovePosition(transform.position + velocityVector * Time.deltaTime);
-
         }
         public void OnTriggerEnter(Collider other)
         {
@@ -90,6 +92,16 @@ namespace Assets.Scripts
                     interactable.Interact();
                     interactable.DoPulse();
                 }
+            }
+            // if inside a recognized walking area while walking, set the FMOD walking noises appropriately
+            if (IsWalking())
+            {
+                if(other.gameObject.CompareTag("DirtZone"))
+                    GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("DirtWalk", 1.0f);
+                if (other.gameObject.CompareTag("GravelZone"))
+                    GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("GravelWalk", 1.0f);
+                if (other.gameObject.CompareTag("WoodZone"))
+                    GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("WoodZone", 1.0f);
             }
         }
 
@@ -161,6 +173,10 @@ namespace Assets.Scripts
             else
             {
                 animator.SetBool("IsWalking", false);
+                // reset the walking sound effects when not moving
+                GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("DirtWalk", 0.0f);
+                GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("GravelWalk", 0.0f);
+                GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("WoodZone", 0.0f);
                 return false;
             }
         }

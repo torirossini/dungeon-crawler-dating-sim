@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bridge
+  - Canvas
+  - GameManager
+  - DirtZone
+  - GravelZone
+  - WoodZone
   layers:
   - Default
   - TransparentFX

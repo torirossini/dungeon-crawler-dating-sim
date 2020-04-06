@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Assets.Scripts;
+using FMODUnity;
+
 
 public class UseMemberFromParty : MonoBehaviour, IPointerClickHandler
 {
@@ -14,6 +16,8 @@ public class UseMemberFromParty : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         gameObject.GetComponentInParent<PartyDisplay>().charToTrack.GetComponent<Party>().RemoveMember(trackedMember);
+        // play the npc removal sound from the FMOD StudioEventEmitter component that should be attached to this GO
+        GetComponent<StudioEventEmitter>().Play();
         Destroy(gameObject);
     }
 }

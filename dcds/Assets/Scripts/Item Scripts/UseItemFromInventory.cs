@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Assets.Scripts;
+using FMODUnity;
 
 public class UseItemFromInventory : MonoBehaviour, IPointerClickHandler
 {
@@ -14,6 +15,8 @@ public class UseItemFromInventory : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         gameObject.GetComponentInParent<InventoryDisplay>().charToTrack.GetComponent<Inventory>().RemoveItem(trackedItem);
+        // play the item removal sound from the FMOD StudioEventEmitter component that should be attached to this GO
+        GetComponent<StudioEventEmitter>().Play();
         Destroy(gameObject);
     }
 }
