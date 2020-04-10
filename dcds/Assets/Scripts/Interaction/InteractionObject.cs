@@ -84,7 +84,7 @@ namespace Assets.Scripts
         {
             System.Collections.Hashtable hash =
                       new System.Collections.Hashtable();
-            hash.Add("amount", new Vector2(1f, 1f));
+            hash.Add("amount", new Vector3(1f, 1f, 0f));
             hash.Add("time", 1f);
             iTween.PunchScale(interactIconObject, hash);
         }

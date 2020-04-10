@@ -25,7 +25,7 @@ namespace Assets.Scripts
 
         public override void OnEnter()
         {
-            thisNPC = gameObject.GetComponentInParent<NPC>();
+            thisNPC = gameObject.transform.parent.GetComponentInChildren<NPC>();
 
             //mark spoken to
             thisNPC.spokenTo = spokenTo.Value;

@@ -322,7 +322,7 @@ namespace Assets.Scripts
             if (flowchart)
             {
                 flowchart.SendFungusMessage("Start Dialogue");
-                GetComponentInChildren<SayDialog>().gameObject.SetActive(true);
+                flowchart.GetComponentInChildren<SayDialog>().gameObject.SetActive(true);
             }
             else
             {
