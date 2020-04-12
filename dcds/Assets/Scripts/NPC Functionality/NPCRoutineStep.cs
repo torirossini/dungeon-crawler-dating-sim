@@ -15,7 +15,7 @@ namespace Assets.Scripts
         [SerializeField]
         string m_routineStepName = "";
         [SerializeField]
-        Vector3 m_targetLocation;
+        Vector2 m_targetLocation;
         [SerializeField]
         AnimationClip m_animationOnRest;
 
@@ -33,7 +33,7 @@ namespace Assets.Scripts
 
         #region Getters/Setters
         public NPCRoutineStep NextStep { get => m_nextStep; set => m_nextStep = value; }
-        public Vector3 TargetLocation { get => m_targetLocation; set => m_targetLocation = value; }
+        public Vector2 TargetLocation { get => m_targetLocation; set => m_targetLocation = value; }
         public bool TransitioningToNextStep { get => m_transitioningToNextStep; set => m_transitioningToNextStep = value; }
         public bool ConditionMet { get => m_conditionMet; set => m_conditionMet = value; }
         public int CurrentTimePoints { get => m_currentTimePoints; set => m_currentTimePoints = value; }
@@ -44,13 +44,13 @@ namespace Assets.Scripts
 
         public NPCRoutineStep()
         {
-            m_targetLocation = Vector3.zero;
+            m_targetLocation = Vector2.zero;
             m_nextStep = null;
             m_currentTimePoints = 0;
             m_conditionToTransition = Condition.CurrentTimePoints;
         }
 
-        public NPCRoutineStep(Vector3 target, NPCRoutineStep next, Condition condition)
+        public NPCRoutineStep(Vector2 target, NPCRoutineStep next, Condition condition)
         {
             m_targetLocation = target;
             m_nextStep = next;

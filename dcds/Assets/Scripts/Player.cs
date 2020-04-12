@@ -6,6 +6,7 @@ using FMODUnity;
 
 namespace Assets.Scripts
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class Player : MonoBehaviour
     {
 
@@ -14,17 +15,13 @@ namespace Assets.Scripts
         float playerSpeed = 0.15f;
 
         [SerializeField]
-        float playerXMultipler = 1f;
+        float jumpForce = 10f;
 
-        [SerializeField]
-        float playerZMultipler = 1f;
+        float xMovement;
+        float yMovement;
 
-
-        float moveZAxis;
-        float moveXAxis;
-
-        private Rigidbody rb;
-        private Vector3 velocityVector;
+        private Rigidbody2D rb;
+        private Vector2 velocityVector;
 
         private Animator animator;
         private Sprite playerSprite;
@@ -36,19 +33,33 @@ namespace Assets.Scripts
             get { return playerSpeed; }
         }
 
+        float isGroundedRayLength = .1f;
+        LayerMask layerMaskForGrounded = 9;
+        public bool isGrounded
+        {
+            get
+            {
+                Vector3 position = transform.position;
+                position.y = GetComponent<Collider2D>().bounds.min.y + 0.1f;
+                float length = isGroundedRayLength + 0.1f;
+                Debug.DrawRay(position, Vector3.down * length);
+                bool grounded = Physics2D.Raycast(position, Vector3.down, length, layerMaskForGrounded.value);
+                return grounded;
+            }
+        }
+
         private void Start()
         {
-            rb = GetComponent<Rigidbody>();
+            rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             playerSprite = GetComponent<SpriteRenderer>().sprite;
-            velocityVector = Vector3.zero;
+            velocityVector = Vector2.zero;
         }
 
         // Update is called once per frame
         void FixedUpdate()
         {
-            moveZAxis = Input.GetAxis("Horizontal") * playerZMultipler;
-            moveXAxis = Input.GetAxis("Vertical") * playerXMultipler;
+            
 
             if(Input.GetKey(KeyCode.Escape))
             {
@@ -60,28 +71,37 @@ namespace Assets.Scripts
 
         }
 
+
         //moveMethod
         public void PlayerMove()
         {
-            velocityVector = new Vector3(moveZAxis, 0, moveXAxis) * playerSpeed;
+            if(rb)
+            {
+                xMovement = Input.GetAxis("Horizontal");
+                yMovement = Input.GetAxis("Vertical");
+                Vector2 velocity = rb.velocity;
+                float xForce = xMovement * playerSpeed * Time.deltaTime;
+                velocity.x = xForce;
 
-            rb.MovePosition(transform.position + velocityVector * Time.deltaTime);
+                if (Input.GetButtonDown("Vertical") && isGrounded)
+                { 
+                    velocity.y = jumpForce;
+                }
+
+                rb.velocity = velocity;
+            }
+
         }
-        public void OnTriggerEnter(Collider other)
+
+        public void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.GetComponent<InteractionObject>())
             {
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(true);
-            }
-            if(other.gameObject.CompareTag("Bridge"))
-            {
-                GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Forward);
-            }
-            
-        }
+            }        }
 
-        public void OnTriggerStay(Collider other)
+        public void OnTriggerStay2D(Collider2D other)
         {
             if (other.gameObject.GetComponent<InteractionObject>())
             {
@@ -105,30 +125,18 @@ namespace Assets.Scripts
             }
         }
 
-        public void OnTriggerExit(Collider other)
+        public void OnTriggerExit2D(Collider2D other)
         {
             if (other.gameObject.GetComponent<InteractionObject>())
             {
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(false);
             }
-            if (other.gameObject.CompareTag("Bridge"))
-            {
-                //if (GameManager.Instance.TownManager.FacingRight(GameManager.Instance.TownManager.LeftBridge, GameManager.Instance.TownManager.RightBridge))
-                //{
-                //    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Left);
-                //}
-                //else
-                //{
-                //    GameManager.Instance.PlayerCamera.ChangeView(Utility.CurrentView.Right);
-
-                //}
-            }
         }
 
         private bool IsWalking()
         {
-            if (velocityVector.magnitude > 0)
+            if (rb.velocity.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
                 if ((Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) || 

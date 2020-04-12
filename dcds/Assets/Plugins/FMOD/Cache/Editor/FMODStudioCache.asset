@@ -437,6 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/TavernMusic/TavernMusicMain
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Name: TavernMusicMain
   Min: 0
   Max: 1
@@ -3118,3 +3119,12 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+=======
+  EditorBanks: []
+  EditorEvents: []
+  EditorParameters: []
+  MasterBanks: []
+  StringsBanks: []
+  stringsBankWriteTime: 0
+  cacheVersion: 3
+>>>>>>> origin/master
