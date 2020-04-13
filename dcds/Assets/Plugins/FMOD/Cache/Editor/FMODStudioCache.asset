@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8821981316094142307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/BlacksmithMusicMain
+  m_EditorClassIdentifier: 
+  Name: BlacksmithMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8486844470168665062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayerInventory/InventoryManipulation
+  m_EditorClassIdentifier: 
+  Name: InventoryManipulation
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8400096771800645080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/RiverFlowing
+  m_EditorClassIdentifier: 
+  Name: RiverFlowing
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8232166835213114050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,15 +66,83 @@ MonoBehaviour:
   Path: event:/Music/TavernMusic
   guid: fb32f8d9505ff84895eb9483514e8573
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 852819534937383089}
+  - {fileID: -7139453415152958040}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-8194997647128199005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnAmbiance/WoodCreaking
+  m_EditorClassIdentifier: 
+  Name: WoodCreaking
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-8037263956746561593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/BattleMusicMain
+  m_EditorClassIdentifier: 
+  Name: BattleMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-7591332678087902998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/DoorSwinging
+  m_EditorClassIdentifier: 
+  Name: DoorSwinging
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-7568183158940676427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/BattleMusicMain
+  m_EditorClassIdentifier: 
+  Name: BattleMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-7520926845320029850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +159,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &-7514172860890039077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/GravelWalk
+  m_EditorClassIdentifier: 
+  Name: GravelWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7383819760556003038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +190,91 @@ MonoBehaviour:
   m_Name: parameter:/Walking/DirtWalk
   m_EditorClassIdentifier: 
   Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-7139453415152958040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/TavernMusicMain
+  m_EditorClassIdentifier: 
+  Name: TavernMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-6978176266412662570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Exclamation/C1Exclamation
+  m_EditorClassIdentifier: 
+  Name: C1Exclamation
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6956668750370528041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/TavernChatter
+  m_EditorClassIdentifier: 
+  Name: TavernChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6749838766205141628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleAmbiance/DungeonNoises
+  m_EditorClassIdentifier: 
+  Name: DungeonNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-6601858745400002771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Exclamation/C1Exclamation
+  m_EditorClassIdentifier: 
+  Name: C1Exclamation
   Min: 0
   Max: 1
   Default: 0
@@ -74,6 +295,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &-5823481896872603139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IdleChatter/Walla
+  m_EditorClassIdentifier: 
+  Name: Walla
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &-5780219701292433952
 MonoBehaviour:
@@ -90,12 +328,12 @@ MonoBehaviour:
   Path: event:/Ambiance/InnAmbiance
   guid: 1e69922a234a9e4e8427dbfb84512c10
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5860914707554480678}
+  - {fileID: -8194997647128199005}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -114,12 +352,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/PartyMenu
   guid: 8a45e48fdc8ff94aa9ca74f05ad8bfc6
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 6859804054893228787}
+  - {fileID: -510125173008177292}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -140,6 +378,40 @@ MonoBehaviour:
   lastModified: 637217250400350387
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &-4879325032765946975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/WoodWalk
+  m_EditorClassIdentifier: 
+  Name: WoodWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4676954284303445494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/DirtWalk
+  m_EditorClassIdentifier: 
+  Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &-4200093757815896605
 MonoBehaviour:
@@ -157,7 +429,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4007256846772421894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +443,23 @@ MonoBehaviour:
   m_Name: parameter:/BattleAmbiance/DungeonNoises
   m_EditorClassIdentifier: 
   Name: DungeonNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-3947241561882499805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Greeting/C1Greeting
+  m_EditorClassIdentifier: 
+  Name: C1Greeting
   Min: 0
   Max: 1
   Default: 0
@@ -191,7 +480,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3060951845305882434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,15 +496,32 @@ MonoBehaviour:
   Path: event:/Music/InnMusic
   guid: 239e88bcc4328f499b47191a7f72d331
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -3074602491009571079}
+  - {fileID: 5311746871612947672}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-2909594219195099610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/BlacksmithMusicMain
+  m_EditorClassIdentifier: 
+  Name: BlacksmithMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1320652797736614227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,11 +537,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Greeting
   guid: 317a2654fb12ba41aa69ceb55f4a9e05
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -3947241561882499805}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -255,6 +562,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &-1068917491686450037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Goodbye/C1Goodbye
+  m_EditorClassIdentifier: 
+  Name: C1Goodbye
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &-962802386587899280
 MonoBehaviour:
@@ -270,12 +594,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../../../source/repos/DescendateSoundDesign/FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637217250400447365
+  lastModified: 637223237800269434
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2686
+    Value: 2830
   Exists: 1
+--- !u!114 &-510125173008177292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PartyMenu/PartyManipulation
+  m_EditorClassIdentifier: 
+  Name: PartyManipulation
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-157903850719890100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/OverworldMusicMain
+  m_EditorClassIdentifier: 
+  Name: OverworldMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-76327825856659332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Greeting/C1Greeting
+  m_EditorClassIdentifier: 
+  Name: C1Greeting
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-51463524609493635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +666,7 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Goodbye
   guid: e18bf533785e7c4baa77be0ef3191dee
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -313,7 +688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -962802386587899280}
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   EditorEvents:
   - {fileID: 1008670554739967455}
   - {fileID: 768167368737804344}
@@ -339,11 +714,46 @@ MonoBehaviour:
   - {fileID: 734949401161488889}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   StringsBanks:
   - {fileID: -962802386587899280}
-  stringsBankWriteTime: 637217250400447365
+  stringsBankWriteTime: 637223237800269434
   cacheVersion: 3
+--- !u!114 &153240797897709773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/WoodWalk
+  m_EditorClassIdentifier: 
+  Name: WoodWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &186238320816090597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../source/repos/DescendateSoundDesign/FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223133942287611
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &213513400689461765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +767,40 @@ MonoBehaviour:
   m_Name: parameter:/BlacksmithAmbiance/SmithyNoises
   m_EditorClassIdentifier: 
   Name: SmithyNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &281598111053775925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/RiverFlowing
+  m_EditorClassIdentifier: 
+  Name: RiverFlowing
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &390525461478474043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/OverworldMusicMain
+  m_EditorClassIdentifier: 
+  Name: OverworldMusicMain
   Min: 0
   Max: 1
   Default: 0
@@ -376,12 +820,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/PlayerInventory
   guid: ff3569295a4d91449f6aacda0f8afe5e
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -4200093757815896605}
+  - {fileID: 1572543430914981428}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -400,12 +844,12 @@ MonoBehaviour:
   Path: event:/Sound Effects/Door
   guid: 140f331381c2c048a05d5d58a93cf1cb
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 2818964492993437681}
+  - {fileID: 3409459991026914615}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -425,7 +869,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &859629399635141757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,12 +885,12 @@ MonoBehaviour:
   Path: event:/Ambiance/BattleAmbiance
   guid: d7847a2ea3c8df418ee91aba535cc7de
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -4007256846772421894}
+  - {fileID: -6749838766205141628}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -465,15 +909,32 @@ MonoBehaviour:
   Path: event:/Ambiance/IdleChatter
   guid: 8bdc256ccc290e45adf60544ac876d32
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7520926845320029850}
+  - {fileID: -5823481896872603139}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &920709241224763404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/SmithyNoises
+  m_EditorClassIdentifier: 
+  Name: SmithyNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &1008670554739967455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +950,7 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Exclamation
   guid: 0ae01ada8343d542bec9582a52ff014e
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -497,6 +958,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1106668485205472072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IdleChatter/Walla
+  m_EditorClassIdentifier: 
+  Name: Walla
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &1390281275135485371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,15 +990,66 @@ MonoBehaviour:
   Path: event:/Music/BlacksmithMusic
   guid: 467a1385fd748e4a94f73f05a7bd5c1d
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 8888178243620819274}
+  - {fileID: -2909594219195099610}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1472588533136462940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/TavernChatter
+  m_EditorClassIdentifier: 
+  Name: TavernChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &1523840123590742144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnMusic/InnMusicMain
+  m_EditorClassIdentifier: 
+  Name: InnMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &1572543430914981428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayerInventory/InventoryManipulation
+  m_EditorClassIdentifier: 
+  Name: InventoryManipulation
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &1957970597494809868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,12 +1065,12 @@ MonoBehaviour:
   Path: event:/Ambiance/OverworldAmbiance
   guid: bb1bd9b95bbf044d86dfca18bdf101ce
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -1257292205811289224}
+  - {fileID: 281598111053775925}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -560,12 +1089,12 @@ MonoBehaviour:
   Path: event:/Ambiance/TavernAmbiance
   guid: ce969cbc6f3b3c459998514d008ad62a
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 7182261477582185925}
+  - {fileID: 1472588533136462940}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -584,14 +1113,14 @@ MonoBehaviour:
   Path: event:/Sound Effects/Walking
   guid: e637023920b4ac4ebcb68512a0bc3808
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3015273339256678770}
-  - {fileID: -7383819760556003038}
-  - {fileID: 5268165020473703732}
+  - {fileID: 153240797897709773}
+  - {fileID: -4676954284303445494}
+  - {fileID: 5575182006560015485}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -611,6 +1140,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &2768212472645600637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../source/repos/DescendateSoundDesign/FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223237800179480
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &2818964492993437681
 MonoBehaviour:
@@ -628,7 +1175,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3015273339256678770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,7 +1192,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3280647449494559494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +1208,7 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Greeting
   guid: 53a21a94d808b54e8171db7c23ee8e45
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -669,6 +1216,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3409459991026914615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/DoorSwinging
+  m_EditorClassIdentifier: 
+  Name: DoorSwinging
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &3701288846566869704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,15 +1248,49 @@ MonoBehaviour:
   Path: event:/Ambiance/BlacksmithAmbiance
   guid: 65884d991b73234486242135da641d9f
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 213513400689461765}
+  - {fileID: 920709241224763404}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3861791558865436205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/TavernMusicMain
+  m_EditorClassIdentifier: 
+  Name: TavernMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &4793217735015616798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PartyMenu/PartyManipulation
+  m_EditorClassIdentifier: 
+  Name: PartyManipulation
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5110076905625641619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,11 +1306,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Exclamation
   guid: e1daf9eca8759d458457aee38dedaaeb
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -6601858745400002771}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -731,15 +1330,32 @@ MonoBehaviour:
   Path: event:/Music/OverworldMusic
   guid: 9748130fcb2f6b42bdc2d1c8b6cd4c9e
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6935552781089982373}
+  - {fileID: 390525461478474043}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &5235785536307563265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Goodbye/C1Goodbye
+  m_EditorClassIdentifier: 
+  Name: C1Goodbye
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5268165020473703732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +1369,23 @@ MonoBehaviour:
   m_Name: parameter:/Walking/GravelWalk
   m_EditorClassIdentifier: 
   Name: GravelWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &5311746871612947672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnMusic/InnMusicMain
+  m_EditorClassIdentifier: 
+  Name: InnMusicMain
   Min: 0
   Max: 1
   Default: 0
@@ -772,7 +1405,7 @@ MonoBehaviour:
   Path: event:/Interface Sounds/RelationshipStatusChange
   guid: e2716f98c9523744b571953e921d0682
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -780,6 +1413,57 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &5573031648630244634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/DirtWalk
+  m_EditorClassIdentifier: 
+  Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &5575182006560015485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/GravelWalk
+  m_EditorClassIdentifier: 
+  Name: GravelWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &6712192606204876773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/SmithyNoises
+  m_EditorClassIdentifier: 
+  Name: SmithyNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &6859804054893228787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,7 +1480,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6935552781089982373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +1497,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &6944079699292182387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnAmbiance/WoodCreaking
+  m_EditorClassIdentifier: 
+  Name: WoodCreaking
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &7182261477582185925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,7 +1531,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8351734844912596363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,12 +1547,12 @@ MonoBehaviour:
   Path: event:/Music/BattleMusic
   guid: 8fd5e8c79f9b0744a9ae1e5e108c5f92
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 2591110063902791136}
+  - {fileID: -7568183158940676427}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -870,11 +1571,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Goodbye
   guid: 5ade5f7672160e40827ff1244e693055
   Banks:
-  - {fileID: -5227614809691532649}
+  - {fileID: 2768212472645600637}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -1068917491686450037}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -894,4 +1596,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &8896628274967586188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleAmbiance/DungeonNoises
+  m_EditorClassIdentifier: 
+  Name: DungeonNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
