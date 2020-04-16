@@ -17,9 +17,9 @@ public class NPCSoundReactions : MonoBehaviour
     public float happyValue = 1.0f;
 
     // emitters for the different 
-    StudioEventEmitter greetingEmitter;
-    StudioEventEmitter exclamationEmitter;
-    StudioEventEmitter goodbyeEmitter;
+    FMOD.Studio.EventInstance greetingEvent;
+    FMOD.Studio.EventInstance exclamationEvent;
+    FMOD.Studio.EventInstance goodbyeEvent;
 
     private void Start()
     {
@@ -28,15 +28,15 @@ public class NPCSoundReactions : MonoBehaviour
         {
             if(e.Event == greetingEventName)
             {
-                greetingEmitter = e;
+                greetingEvent = e.EventInstance;
             }
             else if (e.Event == exclamationEventName)
             {
-                exclamationEmitter = e;
+                exclamationEvent = e.EventInstance;
             }
             else if (e.Event == goodbyeEventName)
             {
-                goodbyeEmitter = e;
+                goodbyeEvent = e.EventInstance;
             }
         }
     }
@@ -46,18 +46,18 @@ public class NPCSoundReactions : MonoBehaviour
     {
         if (name == greetingEventName)
         {
-            greetingEmitter.SetParameter("C1Greeting", value);
-            greetingEmitter.Play();
+            greetingEvent.setParameterByName("C1Greeting", value);
+            RuntimeManager.PlayOneShot(greetingEventName);
         }
         else if (name == exclamationEventName)
         {
-            exclamationEmitter.SetParameter("C1Exclamation", value);
-            exclamationEmitter.Play();
+            exclamationEvent.setParameterByName("C1Exclamation", value);
+            RuntimeManager.PlayOneShot(exclamationEventName);
         }
         else if (name == goodbyeEventName)
         {
-            goodbyeEmitter.SetParameter("C1Goodbye", value);
-            goodbyeEmitter.Play();
+            goodbyeEvent.setParameterByName("C1Goodbye", value);
+            RuntimeManager.PlayOneShot(goodbyeEventName);
         }
     }
 }

@@ -2389,14 +2389,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 807812937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
+  description: 
   targetObject: {fileID: 1011826204}
-  methodName: Bark(greetingEventName, 0.5f)
-  delay: 0
+  targetComponentAssemblyName: NPCSoundReactions, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: NPCSoundReactions
+  targetMethod: Bark
+  targetMethodText: 'Bark (String, Single): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: event:/Dialog/Character1Greeting
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Single
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &807812939 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5753883659421383347, guid: 2355a2837629eb9468e8c9c04a1bcc39,
@@ -4903,6 +4948,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ando NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 7994326549995801390, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994326549995801390, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
+        type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639617997508722483, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639617997508722483, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
+        type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094877774709412906, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
+        type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094877774709412906, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
+        type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1119015120719706490, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
         type: 3}
       propertyPath: character
@@ -5103,16 +5178,6 @@ PrefabInstance:
       propertyPath: portrait
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6094877774709412906, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-        type: 3}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6094877774709412906, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-        type: 3}
-      propertyPath: portrait
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6323749616452389560, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
         type: 3}
       propertyPath: nodeRect.x
@@ -5149,26 +5214,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4931776592131700302, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-        type: 3}
-      propertyPath: portrait
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8639617997508722483, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-        type: 3}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8639617997508722483, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-        type: 3}
-      propertyPath: portrait
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994326549995801390, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-        type: 3}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994326549995801390, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
         type: 3}
       propertyPath: portrait
       value: 

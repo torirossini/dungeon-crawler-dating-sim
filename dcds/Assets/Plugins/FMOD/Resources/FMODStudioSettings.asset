@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: ../../../source/repos/DescendateSoundDesign/FMOD/DescendateAudioCues.fspro
-  sourceBankPath: ..\..\..\source\repos\DescendateSoundDesign\FMOD\Build
+  sourceBankPath: Assets\Audio\FMODBuild\Desktop
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
