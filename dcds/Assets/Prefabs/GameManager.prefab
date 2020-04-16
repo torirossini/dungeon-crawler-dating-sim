@@ -93,11 +93,11 @@ MonoBehaviour:
   player: {fileID: 0}
   playerCamera: {fileID: 0}
   screenCanvas: {fileID: 0}
-  lightManager: {fileID: 2661138480796154121}
+  lightManager: {fileID: 0}
   npcs:
   - {fileID: 0}
+  - {fileID: 0}
   m_currentTimePoints: 0
-  townManager: {fileID: 0}
 --- !u!114 &6906129547544409235
 MonoBehaviour:
   m_ObjectHideFlags: 0

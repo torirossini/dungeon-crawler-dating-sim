@@ -13,7 +13,7 @@ namespace Assets.Scripts
     {
         [SerializeField]
         float m_interactRadius = 2.5f;
-        SphereCollider m_interactRadiusCollider;
+        CircleCollider2D m_interactRadiusCollider;
         bool m_inRange = false;
         private bool interacted = false;
 
@@ -28,13 +28,13 @@ namespace Assets.Scripts
         float bobAmplitude = 6f;
 
         [SerializeField]
-        Vector3 offset = new Vector3(0, 100, 0);
+        Vector2 offset = new Vector2(0, 100);
 
         public bool Interacted { get => interacted; set => interacted = value; }
 
         protected virtual void Awake()
         {
-            m_interactRadiusCollider = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
+            m_interactRadiusCollider = gameObject.AddComponent(typeof(CircleCollider2D)) as CircleCollider2D;
             m_interactRadiusCollider.radius = m_interactRadius;
             m_interactRadiusCollider.isTrigger = true;
             interactIconObject = GameObject.Instantiate(interactIcon, CanvasManager.Instance.InteractIcons.transform).gameObject;
@@ -72,9 +72,9 @@ namespace Assets.Scripts
             {
                 if (m_inRange)
                 {
-                    Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+                    Vector2 pos = Camera.main.WorldToScreenPoint(transform.position);
                     float newY = Mathf.Sin(Time.time * bobSpeed);
-                    pos = new Vector3(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y, pos.z + offset.z);
+                    pos = new Vector2(pos.x + offset.x, pos.y + (newY * bobAmplitude) + offset.y);
                     interactIconObject.transform.position = pos;
                 }
             }
