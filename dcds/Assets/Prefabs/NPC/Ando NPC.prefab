@@ -104,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109468576738464845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1854790380509277331}
@@ -178,8 +178,7 @@ MonoBehaviour:
     m_targetTimePoints: 4
   m_routinePaused: 0
   flowchart: {fileID: 1119015121039842251}
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
+  character: {fileID: 0}
   spokenTo: 0
 --- !u!50 &7244737818924607330
 Rigidbody2D:
@@ -283,7 +282,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.003251344, y: 0.030000001}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -294,8 +293,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.64}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.24847049, y: 0.64904237}
+  m_EdgeRadius: 0.1
 --- !u!1 &1119015119750373267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,6 +1300,8 @@ GameObject:
   - component: {fileID: 7431736882017378994}
   - component: {fileID: 7444022386123452220}
   - component: {fileID: 7367380326335675586}
+  - component: {fileID: 891500775}
+  - component: {fileID: 891500776}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1336,11 +1337,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1048.4122, y: -31.391525}
+  scrollPos: {x: 882.1051, y: -152.24585}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 0.7299998
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1546,7 +1547,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -230.35254
     y: 439.23456
-    width: 214.3836
+    width: 217.05879
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1558,10 +1559,12 @@ MonoBehaviour:
   - {fileID: 5561482596771035419}
   - {fileID: 7560915000887289278}
   - {fileID: 2413260097198566266}
+  - {fileID: 891500775}
   - {fileID: 7994326549995801390}
   - {fileID: 8639617997508722483}
   - {fileID: 6103326495317036449}
   - {fileID: 809826126009544553}
+  - {fileID: 891500776}
   - {fileID: 6094877774709412906}
   - {fileID: 3191861051370499313}
   - {fileID: 846109001338283712}
@@ -1809,7 +1812,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 486.06122
-    y: 407.00137
+    y: 408.2209
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2058,9 +2061,8 @@ MonoBehaviour:
   storyText: Amazing! I'm so excited to be in a party, and to get to work alongside
     you!!!
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3201,9 +3203,8 @@ MonoBehaviour:
   storyText: For a long time, it felt like a tug in my chest, telling me to go to
     the dungeon.
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3242,8 +3243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -360.8808
-    y: 558.65674
+    x: -359.8808
+    y: 557.65674
     width: 200.68498
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3306,9 +3307,8 @@ MonoBehaviour:
   indentLevel: 1
   storyText: So, what brought you to Sylmys and the Spirit Dungeon?
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 7f3ff1bd3679f4344b057eb5d73c1666, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3510,9 +3510,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Ah, a quest! Would you mind if I see?
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 3d4773034e3be66468f865bce8369f6f, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3746,9 +3745,8 @@ MonoBehaviour:
   indentLevel: 1
   storyText: So, what brought you to Sylmys and the Spirit Dungeon?
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -4084,9 +4082,8 @@ MonoBehaviour:
   storyText: My family did not want me to go for the longest time; too dangerous instead
     of just working for the family business.
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -4324,9 +4321,8 @@ MonoBehaviour:
   storyText: For a long time, it felt like a tug in my chest, telling me to go to
     the dungeon.
   description: 
-  character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
-    type: 3}
-  portrait: {fileID: 21300000, guid: 41ddd1094a58f154f812c21a38c10092, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -4472,6 +4468,40 @@ MonoBehaviour:
   scope: 0
   key: TextBoxAnim
   value: {fileID: 8481328213946162042}
+--- !u!114 &891500775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119015121039842069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 210
+  indentLevel: 1
+  targetObject: {fileID: 1854790380509277330}
+  methodName: Bark(exclamationEventName, 1.0f)
+  delay: 0
+--- !u!114 &891500776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119015121039842069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 211
+  indentLevel: 1
+  targetObject: {fileID: 1854790380509277330}
+  methodName: Bark(exclamationEventName, 0.5f)
+  delay: 0
 --- !u!1 &1854790380509277330
 GameObject:
   m_ObjectHideFlags: 0
@@ -4481,9 +4511,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1854790380509277331}
-  - component: {fileID: 9202183704762819315}
-  - component: {fileID: 5119528397614857380}
-  - component: {fileID: 7444619206708354428}
   - component: {fileID: 5535024976004676946}
   m_Layer: 0
   m_Name: Ando NPC
@@ -4499,7 +4526,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854790380509277330}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.6, y: 0.3, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
@@ -4509,81 +4536,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9202183704762819315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854790380509277330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Dialog/Character1Greeting
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: C1Greeting
-    Value: 0.5
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!114 &5119528397614857380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854790380509277330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Dialog/Character1Exclamation
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: C1Exclamation
-    Value: 0.5
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!114 &7444619206708354428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854790380509277330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Dialog/Character1Goodbye
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: C1Goodbye
-    Value: 0.5
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!114 &5535024976004676946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4599,10 +4551,10 @@ MonoBehaviour:
   greetingEventName: event:/Dialog/Character1Greeting
   exclamationEventName: event:/Dialog/Character1Exclamation
   goodbyeEventName: event:/Dialog/Character1Goodbye
-  angryValue: 0
-  sadValue: 0.25
-  neutralValue: 0.5
-  happyValue: 1
+  neutralValue: 0
+  angryValue: 1
+  sadValue: 2
+  happyValue: 3
 --- !u!1 &2336842429007459112
 GameObject:
   m_ObjectHideFlags: 0

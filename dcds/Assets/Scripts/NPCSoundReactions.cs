@@ -11,53 +11,40 @@ public class NPCSoundReactions : MonoBehaviour
     public string goodbyeEventName;
 
     // vars to use to set the tone based on npc mood (defaults based on FMOD setup)
-    public float angryValue = 0.0f;
-    public float sadValue = 0.25f;
-    public float neutralValue = 0.5f;
-    public float happyValue = 1.0f;
+    public int neutralValue = 0;
+    public int angryValue = 1;
+    public int sadValue = 2;
+    public int happyValue = 3;
 
-    // emitters for the different 
+    // emitters for the different character interactions from FMOD
     FMOD.Studio.EventInstance greetingEvent;
     FMOD.Studio.EventInstance exclamationEvent;
     FMOD.Studio.EventInstance goodbyeEvent;
 
     private void Start()
     {
-        // assign the emitters based on the events attached to the found emitters
-        foreach(StudioEventEmitter e in GetComponents<StudioEventEmitter>())
-        {
-            if(e.Event == greetingEventName)
-            {
-                greetingEvent = e.EventInstance;
-            }
-            else if (e.Event == exclamationEventName)
-            {
-                exclamationEvent = e.EventInstance;
-            }
-            else if (e.Event == goodbyeEventName)
-            {
-                goodbyeEvent = e.EventInstance;
-            }
-        }
+        greetingEvent = RuntimeManager.CreateInstance(greetingEventName);
+        exclamationEvent = RuntimeManager.CreateInstance(exclamationEventName);
+        goodbyeEvent = RuntimeManager.CreateInstance(goodbyeEventName);
     }
 
     // helper function to set and call an FMOD event
-    public void Bark(string name, float value)
+    public void Bark(string name, int mood)
     {
         if (name == greetingEventName)
         {
-            greetingEvent.setParameterByName("C1Greeting", value);
-            RuntimeManager.PlayOneShot(greetingEventName);
+            greetingEvent.setParameterByName("CharacterInteraction", mood);
+            greetingEvent.start();
         }
         else if (name == exclamationEventName)
         {
-            exclamationEvent.setParameterByName("C1Exclamation", value);
-            RuntimeManager.PlayOneShot(exclamationEventName);
+            exclamationEvent.setParameterByName("CharacterInteraction", mood);
+            exclamationEvent.start();
         }
         else if (name == goodbyeEventName)
         {
-            goodbyeEvent.setParameterByName("C1Goodbye", value);
-            RuntimeManager.PlayOneShot(goodbyeEventName);
+            goodbyeEvent.setParameterByName("CharacterInteraction", mood);
+            goodbyeEvent.start();
         }
     }
 }
