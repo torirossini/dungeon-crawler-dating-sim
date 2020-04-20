@@ -7,17 +7,126 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000029211D4A898 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000020C16B5C048 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12473760
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40160
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000072AD22F2BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE90558630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE90558600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE90558700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE905587C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020C2C5E1E88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='DoorClose', format=2, channels=2, frequency=48000, lengthbytes=9088, lengthpcm=36185, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.794328.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12473760
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40160
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000072AD22F2BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE90558630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE90558600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE90558700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE905587C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020C2C5E1E88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='DoorOpen', format=2, channels=2, frequency=48000, lengthbytes=13184, lengthpcm=38140, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SoundI::release                          :  (0000020C0F1586C8)
+[LOG] SoundI::release                          :     townMusic (0000020C21A36AA8)
+[LOG] SoundI::release                          :  (0000020C1DBEB698)
+[LOG] SoundI::release                          :     RiverNoise (0000020C21A36DE8)
+[LOG] SoundI::release                          :  (0000020C6B3D1858)
+[LOG] SoundI::release                          :     1AExclamationSingle (0000020C21A358C8)
+[LOG] SoundI::release                          :  (0000020C6B3D0438)
+[LOG] SoundI::release                          :     1NExclamationSingle (0000020C21A35588)
+[LOG] SoundI::release                          :  (0000020C16D42BC8)
+[LOG] SoundI::release                          :     1SExclamationSingle (0000020C21A343A8)
+[LOG] SoundI::release                          :  (0000020C16D41918)
+[LOG] SoundI::release                          :     1HExclamationSingle (0000020C21A34208)
+[LOG] SoundI::release                          :  (0000020C16D421B8)
+[LOG] SoundI::release                          :     1AGoodbyeSingle (0000020C21A36428)
+[LOG] SoundI::release                          :  (0000020C1DBEB248)
+[LOG] SoundI::release                          :     1NGoodbyeSingle (0000020C21A34068)
+[LOG] SoundI::release                          :  (0000020C16D41638)
+[LOG] SoundI::release                          :     1HGoodbyeSingle (0000020C21A384A8)
+[LOG] SoundI::release                          :  (0000020C6B3D1128)
+[LOG] SoundI::release                          :     1SGoodbyeSingle (0000020C21A350A8)
+[LOG] SoundI::release                          :  (0000020C1DBEC668)
+[LOG] SoundI::release                          :     WhooshOpen (0000020C21A3A6C8)
+[LOG] SoundI::release                          :  (0000020C2157E928)
+[LOG] SoundI::release                          :     WhooshClose (0000020C0D066C08)
+[LOG] SoundI::release                          :  (0000020C1DBEAB18)
+[LOG] SoundI::release                          :     BagAdd (0000020C21A3A388)
+[LOG] SoundI::release                          :  (0000020C6B3D0FB8)
+[LOG] SoundI::release                          :     BagRemove (0000020C21A365C8)
+[LOG] SoundI::release                          :  (0000020C1DBEBF38)
+[LOG] SoundI::release                          :     BagMove (0000020C21A37128)
+[LOG] SoundI::release                          :  (0000020C0F157868)
+[LOG] SoundI::release                          :     BagOpen (0000020C21A35F48)
+[LOG] SoundI::release                          :  (0000020C16D42EA8)
+[LOG] SoundI::release                          :     BagClose (0000020C21A35248)
+[LOG] SoundI::release                          :  (0000020C2157E648)
+[LOG] SoundI::release                          :     WoodStep1 (0000020C0D067DE8)
+[LOG] SoundI::release                          :  (0000020C6B3D1298)
+[LOG] SoundI::release                          :     WoodStep2 (0000020C21A35DA8)
+[LOG] SoundI::release                          :  (0000020C6B3D1CA8)
+[LOG] SoundI::release                          :     WoodStep3 (0000020C21A387E8)
+[LOG] SoundI::release                          :  (0000020C16D42328)
+[LOG] SoundI::release                          :     WoodStep4 (0000020C21A34F08)
+[LOG] SoundI::release                          :  (0000020C16D414C8)
+[LOG] SoundI::release                          :     DirtStep1 (0000020C21A372C8)
+[LOG] SoundI::release                          :  (0000020C2157E088)
+[LOG] SoundI::release                          :     DirtStep2 (0000020C0D066F48)
+[LOG] SoundI::release                          :  (0000020C6B3D02C8)
+[LOG] SoundI::release                          :     DirtStep3 (0000020C21A38988)
+[LOG] SoundI::release                          :  (0000020C1DBEC218)
+[LOG] SoundI::release                          :     GravelStep1 (0000020C21A34548)
+[LOG] SoundI::release                          :  (0000020C6B3D05A8)
+[LOG] SoundI::release                          :     GravelStep2 (0000020C21A36908)
+[LOG] SoundI::release                          :  (0000020C1DBEAC88)
+[LOG] SoundI::release                          :     GravelStep3 (0000020C21A37E28)
+[LOG] SoundI::release                          :  (0000020C1DBEB0D8)
+[LOG] SoundI::release                          :     GravelStep4 (0000020C21A38168)
+[LOG] SoundI::release                          :  (0000020C1DBEC4F8)
+[LOG] SoundI::release                          :     DirtStep4 (0000020C21A3A1E8)
+[LOG] SoundI::release                          :  (0000020C16D428E8)
+[LOG] SoundI::release                          :     FailureJingle (0000020C21A34D68)
+[LOG] SoundI::release                          :  (0000020C0F158558)
+[LOG] SoundI::release                          :     SuccessJingle (0000020C21A37468)
+[LOG] SoundI::release                          :  (0000020C211DD818)
+[LOG] SoundI::release                          :     DoorClose (0000020C1729FF68)
+[LOG] SoundI::release                          :  (0000020C211DDF48)
+[LOG] SoundI::release                          :     DoorOpen (0000020C1729A128)
+[LOG] SoundI::release                          :  (0000020C1DBEAF68)
+[LOG] SoundI::release                          :     1AGreetingSingle (0000020C21A3A528)
+[LOG] SoundI::release                          :  (0000020C16D42D38)
+[LOG] SoundI::release                          :     1NGreetingSingle (0000020C21A36C48)
+[LOG] SoundI::release                          :  (0000020C2157E7B8)
+[LOG] SoundI::release                          :     1SGreetingSingle (0000020C0D066728)
+[LOG] SoundI::release                          :  (0000020C2157EC08)
+[LOG] SoundI::release                          :     1HGreetingSingle (0000020C0D066248)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

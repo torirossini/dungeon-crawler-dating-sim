@@ -105,7 +105,22 @@ namespace Assets.Scripts
             {
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(true);
-            }        }
+            }
+            // change the walking sound depending on the ground zone type walked into
+            if (other.gameObject.CompareTag("DirtZone"))
+            {
+                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 0);
+            }
+            else if (other.gameObject.CompareTag("GravelZone"))
+            {
+                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 1);
+            }
+            else if (other.gameObject.CompareTag("WoodZone"))
+            {
+                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 2);
+            }
+            GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Walking");
+        }
 
         public void OnTriggerStay2D(Collider2D other)
         {
@@ -117,18 +132,6 @@ namespace Assets.Scripts
                 {
                     Interact(interactable);
                 }
-            }
-            // if inside a recognized walking area while walking, set the FMOD walking noises appropriately
-            if (IsWalking())
-            {
-                if(other.gameObject.CompareTag("DirtZone")) {
-                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 0);
-                } else if (other.gameObject.CompareTag("GravelZone")) {
-                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 1);
-                } else if (other.gameObject.CompareTag("WoodZone")) {
-                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 2);
-                }
-                GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Walking");
             }
         }
 
@@ -199,7 +202,9 @@ namespace Assets.Scripts
             if (rb.velocity.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
+                // unpause the walking noise
                 GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", false);
+                // handle which animation to draw onscreen
                 if ((Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) || 
                     (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
                 {
@@ -242,6 +247,7 @@ namespace Assets.Scripts
             else
             {
                 animator.SetBool("IsWalking", false);
+                // pause the walking sound
                 GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", true);
                 return false;
             }
