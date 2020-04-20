@@ -116,12 +116,14 @@ namespace Assets.Scripts
             // if inside a recognized walking area while walking, set the FMOD walking noises appropriately
             if (IsWalking())
             {
-                if(other.gameObject.CompareTag("DirtZone"))
-                    GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("DirtWalk", 1.0f);
-                if (other.gameObject.CompareTag("GravelZone"))
-                    GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("GravelWalk", 1.0f);
-                if (other.gameObject.CompareTag("WoodZone"))
-                    GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("WoodZone", 1.0f);
+                if(other.gameObject.CompareTag("DirtZone")) {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 0);
+                } else if (other.gameObject.CompareTag("GravelZone")) {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 1);
+                } else if (other.gameObject.CompareTag("WoodZone")) {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 2);
+                }
+                GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Walking");
             }
         }
 
@@ -139,6 +141,7 @@ namespace Assets.Scripts
             if (rb.velocity.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
+                GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", false);
                 if ((Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) || 
                     (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
                 {
@@ -181,10 +184,7 @@ namespace Assets.Scripts
             else
             {
                 animator.SetBool("IsWalking", false);
-                // reset the walking sound effects when not moving
-                GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("DirtWalk", 0.0f);
-                GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("GravelWalk", 0.0f);
-                GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("WoodZone", 0.0f);
+                GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", true);
                 return false;
             }
         }

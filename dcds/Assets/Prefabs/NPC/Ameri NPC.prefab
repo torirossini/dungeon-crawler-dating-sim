@@ -449,11 +449,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 579.63617, y: 26.944302}
+  scrollPos: {x: 787.02527, y: -55.490585}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 1
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -493,7 +493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -316.91876
     y: 117.79724
-    width: 132
+    width: 139.7727
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -998,12 +998,12 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 4293308488949010121}
-  targetComponentAssemblyName: NPCSoundReactions, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: FMODCustomEvent, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: NPCSoundReactions
-  targetMethod: Bark
-  targetMethodText: 'Bark (String, Int32): Void'
+  targetComponentText: FMODCustomEvent
+  targetMethod: SetEventParam
+  targetMethodText: 'SetEventParam (String, Single): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -1012,7 +1012,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: event:/Dialog/Character1Greeting
+      stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -1023,10 +1023,10 @@ MonoBehaviour:
       vector3Value: {x: 0, y: 0, z: 0}
     variableKey: 
   - objValue:
-      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      typeAssemblyname: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      typeFullname: System.Int32
-      intValue: 1
+      typeFullname: System.Single
+      intValue: 0
       boolValue: 0
       floatValue: 0
       stringValue: 
@@ -1942,13 +1942,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01024206d63d0134492ee8da5d710485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greetingEventName: event:/Dialog/Character1Greeting
-  exclamationEventName: event:/Dialog/Character1Exclamation
-  goodbyeEventName: event:/Dialog/Character1Goodbye
-  neutralValue: 0
-  angryValue: 1
-  sadValue: 2
-  happyValue: 3
+  eventPaths:
+  - event:/Dialog/Character2Greeting
+  - event:/Dialog/Character2Exclamation
+  - event:/Dialog/Character2Goodbye
+  - event:/Interface Sounds/RelationshipStatusChange
 --- !u!1 &7635184234100165479
 GameObject:
   m_ObjectHideFlags: 0

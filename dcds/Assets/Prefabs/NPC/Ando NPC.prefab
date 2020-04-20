@@ -1337,18 +1337,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 882.1051, y: -152.24585}
+  scrollPos: {x: 1061.1453, y: -76.68715}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 0.85000014
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 6323749616452389560}
   selectedCommands: []
   variables:
   - {fileID: 4195806896863573321}
@@ -1381,7 +1382,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -435.02423
     y: 208.58665
-    width: 128.08221
+    width: 128.08215
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1468,7 +1469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -47.89831
     y: 639.21295
-    width: 137.67126
+    width: 137.6712
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1547,7 +1548,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -230.35254
     y: 439.23456
-    width: 217.05879
+    width: 214.3835
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2312,7 +2313,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -308.60767
     y: 667.51056
-    width: 170.54797
+    width: 170.54791
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2614,7 +2615,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -572.8587
     y: 669.926
-    width: 167.80826
+    width: 167.80817
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2823,7 +2824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177.58969
     y: 347.99866
-    width: 192.46579
+    width: 192.4657
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2850,7 +2851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -526.8866
     y: 452.01218
-    width: 188.3562
+    width: 188.35611
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2989,7 +2990,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -267.9265
     y: 835.55646
-    width: 154.10962
+    width: 154.10956
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3048,7 +3049,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -85.58238
     y: 239.48785
-    width: 136.30139
+    width: 136.30133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3100,7 +3101,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.49567
     y: 741.4328
-    width: 155.47949
+    width: 155.47942
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3245,7 +3246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -359.8808
     y: 557.65674
-    width: 200.68498
+    width: 200.68488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3463,7 +3464,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 330.42365
     y: 240.85364
-    width: 189.72607
+    width: 189.72598
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3608,7 +3609,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.938354
     y: 811.92456
-    width: 159.58908
+    width: 159.589
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3716,7 +3717,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 704.90814
     y: 394.51755
-    width: 199.31511
+    width: 199.31502
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4440,7 +4441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -174.63936
     y: 353.51166
-    width: 188.3562
+    width: 188.35611
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4548,13 +4549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01024206d63d0134492ee8da5d710485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greetingEventName: event:/Dialog/Character1Greeting
-  exclamationEventName: event:/Dialog/Character1Exclamation
-  goodbyeEventName: event:/Dialog/Character1Goodbye
-  neutralValue: 0
-  angryValue: 1
-  sadValue: 2
-  happyValue: 3
+  eventPaths:
+  - event:/Dialog/Character1Greeting
+  - event:/Dialog/Character1Exclamation
+  - event:/Dialog/Character1Goodbye
+  - event:/Interface Sounds/RelationshipStatusChange
 --- !u!1 &2336842429007459112
 GameObject:
   m_ObjectHideFlags: 0

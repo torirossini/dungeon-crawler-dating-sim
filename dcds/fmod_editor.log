@@ -7,72 +7,17 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000020940D90D48 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000029211D4A898 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SystemI::mixerSuspend                    : Suspending output.
-[LOG] SystemI::mixerResume                     : Resuming output.
-[LOG] SoundI::release                          :  (00000209147C50C8)
-[LOG] SoundI::release                          :     townMusic (000002093FB62E08)
-[LOG] SoundI::release                          :  (00000209147C5DB8)
-[LOG] SoundI::release                          :     1AExclamationSingle (000002093FB64328)
-[LOG] SoundI::release                          :  (00000209147C6AA8)
-[LOG] SoundI::release                          :     1NExclamationSingle (000002093FB64CE8)
-[LOG] SoundI::release                          :  (00000209412A70D8)
-[LOG] SoundI::release                          :     1SExclamationSingle (000002093FB64E88)
-[LOG] SoundI::release                          :  (00000209412A8668)
-[LOG] SoundI::release                          :     1HExclamationSingle (000002093FB651C8)
-[LOG] SoundI::release                          :  (0000020947554298)
-[LOG] SoundI::release                          :     WoodStep1 (000002093FB65D28)
-[LOG] SoundI::release                          :  (00000209147C6C18)
-[LOG] SoundI::release                          :     WoodStep2 (000002093FB65848)
-[LOG] SoundI::release                          :  (00000209147C57F8)
-[LOG] SoundI::release                          :     WoodStep3 (000002093FB649A8)
-[LOG] SoundI::release                          :  (00000209412A7978)
-[LOG] SoundI::release                          :     WoodStep4 (000002093FB656A8)
-[LOG] SoundI::release                          :  (00000209412A7C58)
-[LOG] SoundI::release                          :     DirtStep1 (000002093FB65028)
-[LOG] SoundI::release                          :  (0000020947B2FF58)
-[LOG] SoundI::release                          :     DirtStep2 (000002093FB65B88)
-[LOG] SoundI::release                          :  (00000209412A87D8)
-[LOG] SoundI::release                          :     DirtStep4 (0000020940D21CD8)
-[LOG] SoundI::release                          :  (00000209412A7248)
-[LOG] SoundI::release                          :     GravelStep1 (0000020940E17BC8)
-[LOG] SoundI::release                          :  (00000209147C6D88)
-[LOG] SoundI::release                          :     GravelStep2 (000002093FB63628)
-[LOG] SoundI::release                          :  (00000209412A8F08)
-[LOG] SoundI::release                          :     GravelStep3 (000002093FB63FE8)
-[LOG] SoundI::release                          :  (00000209412A8C28)
-[LOG] SoundI::release                          :     GravelStep4 (000002093FB64808)
-[LOG] SoundI::release                          :  (00000209147C67C8)
-[LOG] SoundI::release                          :     DirtStep3 (000002093FB65508)
-[LOG] SoundI::release                          :  (00000209412A7808)
-[LOG] SoundI::release                          :     1AGoodbyeSingle (000002093FB644C8)
-[LOG] SoundI::release                          :  (00000209412A7698)
-[LOG] SoundI::release                          :     1NGoodbyeSingle (000002093FB64B48)
-[LOG] SoundI::release                          :  (00000209412A7DC8)
-[LOG] SoundI::release                          :     1HGoodbyeSingle (000002093FB64668)
-[LOG] SoundI::release                          :  (00000209147C5F28)
-[LOG] SoundI::release                          :     1SGoodbyeSingle (000002093FB622A8)
-[LOG] SoundI::release                          :  (00000209412A84F8)
-[LOG] SoundI::release                          :     1AGreetingSingle (000002093FB65368)
-[LOG] SoundI::release                          :  (00000209412A8388)
-[LOG] SoundI::release                          :     1NGreetingSingle (000002093FB63CA8)
-[LOG] SoundI::release                          :  (0000020947B2ECA8)
-[LOG] SoundI::release                          :     1SGreetingSingle (000002093FB659E8)
-[LOG] SoundI::release                          :  (0000020947B2E128)
-[LOG] SoundI::release                          :     1HGreetingSingle (000002093FB63E48)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
