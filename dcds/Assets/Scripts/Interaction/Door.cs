@@ -13,13 +13,12 @@ namespace Assets.Scripts.Interaction
     {
         [Header("Door Variables")]
         [SerializeField]
-        public int SceneToLoad = 0;
-
+        GameObject targetObject;
+        [SerializeField]
+        Vector2 mapLoc;
         [SerializeField]
         bool CanEnter;
 
-        [SerializeField]
-        
 
         public override void Interact()
         {
@@ -27,8 +26,14 @@ namespace Assets.Scripts.Interaction
             GetComponent<StudioEventEmitter>().Play();
             if (CanEnter)
             {
-                CanvasManager.Instance.DestroyIcons();
-                SceneManager.LoadScene(SceneToLoad);
+                if (targetObject)
+                {
+                    Player.Instance.TeleportTo(targetObject);
+                }
+                else
+                {
+                    Player.Instance.TeleportTo(mapLoc);
+                }
             }
             else
             {
