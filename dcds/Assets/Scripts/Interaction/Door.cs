@@ -22,8 +22,6 @@ namespace Assets.Scripts.Interaction
 
         public override void Interact()
         {
-            // play the door open sound from the FMOD StudioEventEmitter component that should be attached to this GO
-            //GetComponent<StudioEventEmitter>().Play();
             if (CanEnter)
             {
                 if (targetObject)

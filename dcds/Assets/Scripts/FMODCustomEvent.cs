@@ -42,6 +42,16 @@ public class FMODCustomEvent : MonoBehaviour
         }
     }
 
+    // helper function for stopping an event instance
+    public void StopEvent(string eventPath)
+    {
+        int eventIndex = FindEvent(eventPath);
+        if (eventIndex != -1)
+        {
+            instances[eventIndex].stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+    }
+
     // helper function for pausing/unpausing an event instance
     public void PauseEvent(string eventPath, bool pause)
     {

@@ -35,6 +35,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-9062651257806486500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8985319551437229516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +136,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8659768048671281085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +222,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-8575349955798635510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/DoorSwinging
+  m_EditorClassIdentifier: 
+  Name: DoorSwinging
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
 --- !u!114 &-8486844470168665062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +256,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8455215367533642227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8400096771800645080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +288,23 @@ MonoBehaviour:
   Name: RiverFlowing
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-8397137457256117208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 0
 --- !u!114 &-8384985309689370580
@@ -289,7 +357,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8336031075843026738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,6 +467,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-8047576781808777067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-8037263956746561593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,12 +550,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Greeting
   guid: 53a21a94d808b54e8171db7c23ee8e45
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -7134244842009649244}
+  - {fileID: -3768692693039483499}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -504,6 +589,23 @@ MonoBehaviour:
   m_Name: parameter:/Walking/DirtWalk
   m_EditorClassIdentifier: 
   Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-7711725464088135762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
   Min: 0
   Max: 1
   Default: 0
@@ -748,7 +850,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7121648906210687910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,7 +904,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6981343587102075773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +1025,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-6793551884414105903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-6749838766205141628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,7 +1127,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6532553572669509573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1145,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-6502066536155286053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PartyMenu/PartyManipulation
+  m_EditorClassIdentifier: 
+  Name: PartyManipulation
+  Min: 0
+  Max: 5
+  Default: 4
+  Exists: 0
 --- !u!114 &-6380623030252011009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,12 +1177,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Greeting
   guid: 317a2654fb12ba41aa69ceb55f4a9e05
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -7036503660958018046}
+  - {fileID: 5045720988421984303}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1117,7 +1253,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6196936834852760164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,15 +1412,32 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Exclamation
   guid: 0ae01ada8343d542bec9582a52ff014e
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2838885443105946772}
+  - {fileID: 5306996232079595105}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5519681226713856010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &-5395058242958399960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1455,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-5358149113905134800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &-5337601954690121519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,12 +1511,12 @@ MonoBehaviour:
   Path: event:/Ambiance/BattleAmbiance
   guid: d7847a2ea3c8df418ee91aba535cc7de
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3061400592733329458}
+  - {fileID: -4947482653769776337}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1402,7 +1572,7 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 4
-  Exists: 1
+  Exists: 0
 --- !u!114 &-5169366555532134289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,6 +1586,40 @@ MonoBehaviour:
   m_Name: parameter:/Walking/DirtWalk
   m_EditorClassIdentifier: 
   Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-5115617138964373452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-5025687010230304404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
   Min: 0
   Max: 1
   Default: 0
@@ -1436,7 +1640,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4966053090530695330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,6 +1654,57 @@ MonoBehaviour:
   m_Name: parameter:/Walking/DirtWalk
   m_EditorClassIdentifier: 
   Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-4947482653769776337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-4939918317184427507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PartyMenu/PartyManipulation
+  m_EditorClassIdentifier: 
+  Name: PartyManipulation
+  Min: 0
+  Max: 5
+  Default: 4
+  Exists: 1
+--- !u!114 &-4932548386962896026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
   Min: 0
   Max: 1
   Default: 0
@@ -1469,12 +1724,12 @@ MonoBehaviour:
   Path: event:/Ambiance/TavernAmbiance
   guid: ce969cbc6f3b3c459998514d008ad62a
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 5823865465035600361}
+  - {fileID: -197049172845606087}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1614,6 +1869,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4621451452567276969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4575665060110457205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,6 +1920,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4435896327666846925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayerInventory/InventoryManipulation
+  m_EditorClassIdentifier: 
+  Name: InventoryManipulation
+  Min: 0
+  Max: 5
+  Default: 4
+  Exists: 0
 --- !u!114 &-4433553923366317068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,12 +1952,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/RelationshipStatusChange
   guid: e2716f98c9523744b571953e921d0682
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -1401135777676228529}
+  - {fileID: 7913098592326998272}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1688,7 +1977,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4200093757815896605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,12 +2010,12 @@ MonoBehaviour:
   Path: event:/Sound Effects/Door
   guid: 140f331381c2c048a05d5d58a93cf1cb
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8796289106603955770}
+  - {fileID: -8575349955798635510}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1764,6 +2053,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-4080571811253241423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-4030712712098111781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,15 +2085,32 @@ MonoBehaviour:
   Path: event:/Interface Sounds/PlayerInventory
   guid: ff3569295a4d91449f6aacda0f8afe5e
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -3478060962289605802}
+  - {fileID: 7667209196355430632}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-4021351412558511305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4007256846772421894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1801,6 +2124,23 @@ MonoBehaviour:
   m_Name: parameter:/BattleAmbiance/DungeonNoises
   m_EditorClassIdentifier: 
   Name: DungeonNoises
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-3968721270162895094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
   Min: 0
   Max: 1
   Default: 0
@@ -1890,6 +2230,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-3768692693039483499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &-3726659106101632313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/WalkingSurfaces
+  m_EditorClassIdentifier: 
+  Name: WalkingSurfaces
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &-3716831610444989313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,7 +2348,7 @@ MonoBehaviour:
   Min: 0
   Max: 5
   Default: 4
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3384214602467476660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,12 +2364,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Goodbye
   guid: e18bf533785e7c4baa77be0ef3191dee
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 6606837128677732436}
+  - {fileID: 1841045569214139431}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2083,7 +2457,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3060951845305882434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2174,12 +2548,12 @@ MonoBehaviour:
   Path: event:/Ambiance/InnAmbiance
   guid: 1e69922a234a9e4e8427dbfb84512c10
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 728380506753188793}
+  - {fileID: -538436789998900886}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -2211,6 +2585,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Character2Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-2821892748875935818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Exclamation/CharacterInteraction
   m_EditorClassIdentifier: 
   Name: CharacterInteraction
   Min: 0
@@ -2266,12 +2657,12 @@ MonoBehaviour:
   Path: event:/Music/OverworldMusic
   guid: 9748130fcb2f6b42bdc2d1c8b6cd4c9e
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: -6231451050535153576}
+  - {fileID: -4021351412558511305}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2324,6 +2715,23 @@ MonoBehaviour:
   Name: C1Greeting
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-2089619544667597825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 0
 --- !u!114 &-2075254881025231942
@@ -2411,6 +2819,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-1998614888461472273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODBuild/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637230839795604208
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1941431477155419468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1912554144500420190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2461,7 +2904,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1516910207736933325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2496,6 +2939,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-1481936913143252782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-1424990782851748638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/DoorSwinging
+  m_EditorClassIdentifier: 
+  Name: DoorSwinging
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 0
 --- !u!114 &-1401135777676228529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2512,7 +2989,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1363778484121683975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2605,6 +3082,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-989929101488375898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-973870999736276720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2728,6 +3222,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-538436789998900886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-520615920460854246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2743,12 +3254,12 @@ MonoBehaviour:
   Path: event:/Music/TavernMusic
   guid: fb32f8d9505ff84895eb9483514e8573
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: 6678337682750540087}
+  - {fileID: -5115617138964373452}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2769,6 +3280,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-502455054051521863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-469973781028012448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2801,12 +3329,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/PartyMenu
   guid: 8a45e48fdc8ff94aa9ca74f05ad8bfc6
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -5197293559122363758}
+  - {fileID: -4939918317184427507}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2840,6 +3368,23 @@ MonoBehaviour:
   m_Name: parameter:/OverworldMusic/OverworldMusicMain
   m_EditorClassIdentifier: 
   Name: OverworldMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-197049172845606087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
   Min: 0
   Max: 1
   Default: 0
@@ -2933,12 +3478,12 @@ MonoBehaviour:
   Path: event:/Ambiance/BlacksmithAmbiance
   guid: 65884d991b73234486242135da641d9f
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 5426613169227396833}
+  - {fileID: -8455215367533642227}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -2956,7 +3501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 8684903294026636234}
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   EditorEvents:
   - {fileID: -5739546171776907565}
   - {fileID: -4183138726277795079}
@@ -2980,13 +3525,31 @@ MonoBehaviour:
   - {fileID: 8981645767889912031}
   - {fileID: -520615920460854246}
   - {fileID: -4030712712098111781}
+  - {fileID: 988342211799554154}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   StringsBanks:
   - {fileID: 8684903294026636234}
-  stringsBankWriteTime: 637229109631248737
+  stringsBankWriteTime: 637232011060892421
   cacheVersion: 3
+--- !u!114 &31183992236089353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &86078170258029754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,6 +3671,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &303794245767710282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &390525461478474043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3125,6 +3705,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &426057824437601511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayerInventory/InventoryManipulation
+  m_EditorClassIdentifier: 
+  Name: InventoryManipulation
+  Min: 0
+  Max: 5
+  Default: 4
+  Exists: 0
 --- !u!114 &441457454125287798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3192,7 +3789,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &734949401161488889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3340,6 +3937,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &988342211799554154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Menu
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Menu
+  guid: c0ea91abc05bd24a864f6e7633e57cf8
+  Banks:
+  - {fileID: 8624534344532563680}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &1008670554739967455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3627,7 +4247,7 @@ MonoBehaviour:
   lastModified: 637229109631218762
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &1572543430914981428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3645,6 +4265,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &1576771539908397204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &1588788925735733414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3661,6 +4298,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &1641655217840478860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PartyMenu/PartyManipulation
+  m_EditorClassIdentifier: 
+  Name: PartyManipulation
+  Min: 0
+  Max: 5
+  Default: 4
   Exists: 0
 --- !u!114 &1648176138222686128
 MonoBehaviour:
@@ -3679,6 +4333,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &1841045569214139431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &1875470109492152961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3863,6 +4534,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2336531978171078301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/WalkingSurfaces
+  m_EditorClassIdentifier: 
+  Name: WalkingSurfaces
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
 --- !u!114 &2424432328689519820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,12 +4609,12 @@ MonoBehaviour:
   Path: event:/Music/InnMusic
   guid: 239e88bcc4328f499b47191a7f72d331
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: 5707041998626146350}
+  - {fileID: 6681211914173646211}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -4135,6 +4823,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &3238085029976566717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &3280647449494559494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4191,7 +4896,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3399207961421597127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4241,12 +4946,12 @@ MonoBehaviour:
   Path: event:/Ambiance/OverworldAmbiance
   guid: bb1bd9b95bbf044d86dfca18bdf101ce
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -1826246442307114822}
+  - {fileID: 8404447099981840023}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -4267,6 +4972,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &3524715054255409646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &3526019864342417907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4283,7 +5005,7 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3553671006128019501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4359,6 +5081,41 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3723284682000154097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODBuild/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637230841176121374
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3781829965943369963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &3801178190834006542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4374,15 +5131,49 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Goodbye
   guid: 5ade5f7672160e40827ff1244e693055
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -8342066482597374537}
+  - {fileID: -5519681226713856010}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3820237399369150617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RelationshipStatusChange/RelationshipChange
+  m_EditorClassIdentifier: 
+  Name: RelationshipChange
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 0
+--- !u!114 &3838874723824881517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RelationshipStatusChange/RelationshipChange
+  m_EditorClassIdentifier: 
+  Name: RelationshipChange
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 0
 --- !u!114 &3861791558865436205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4396,6 +5187,23 @@ MonoBehaviour:
   m_Name: parameter:/TavernMusic/TavernMusicMain
   m_EditorClassIdentifier: 
   Name: TavernMusicMain
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &4019645790412977738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IdleChatter/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
   Min: 0
   Max: 1
   Default: 0
@@ -4415,6 +5223,23 @@ MonoBehaviour:
   Name: InnMusicMain
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &4412157571695720224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 0
 --- !u!114 &4420511297783536754
@@ -4466,12 +5291,12 @@ MonoBehaviour:
   Path: event:/Music/BlacksmithMusic
   guid: 467a1385fd748e4a94f73f05a7bd5c1d
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: -5019300706281233454}
+  - {fileID: -4621451452567276969}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -4561,6 +5386,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5045720988421984303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &5048467245693163700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &5070902885777396833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4634,12 +5493,12 @@ MonoBehaviour:
   Path: event:/Ambiance/IdleChatter
   guid: 8bdc256ccc290e45adf60544ac876d32
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3338266005091590079}
+  - {fileID: 5669168620403305586}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -4752,6 +5611,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5306996232079595105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &5311746871612947672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4769,6 +5645,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &5335982538794707499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5394335965854232360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4808,7 +5701,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &5573031648630244634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4843,6 +5736,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &5669168620403305586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IdleChatter/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &5707041998626146350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4859,7 +5769,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &5712023103852975854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4927,7 +5837,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &5995218197187198869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4962,6 +5872,23 @@ MonoBehaviour:
   Max: 5
   Default: 4
   Exists: 0
+--- !u!114 &6009591638488095161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &6035685733389263723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4994,12 +5921,12 @@ MonoBehaviour:
   Path: event:/Music/BattleMusic
   guid: 8fd5e8c79f9b0744a9ae1e5e108c5f92
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6596006203261042374}
+  - {fileID: 8361079010120526932}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -5053,7 +5980,7 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6634973958164186955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5121,7 +6048,41 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &6681211914173646211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/InnMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
+--- !u!114 &6689223550042118729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IdleChatter/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &6712192606204876773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,6 +6115,23 @@ MonoBehaviour:
   Name: MusicLoop
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &6816260621939910416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 0
 --- !u!114 &6859804054893228787
@@ -5207,6 +6185,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &6993175350643083189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/DoorSwinging
+  m_EditorClassIdentifier: 
+  Name: DoorSwinging
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 0
 --- !u!114 &6996426118255740730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5237,6 +6232,23 @@ MonoBehaviour:
   m_Name: parameter:/TavernAmbiance/TavernChatter
   m_EditorClassIdentifier: 
   Name: TavernChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7215721290538489444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
   Min: 0
   Max: 1
   Default: 0
@@ -5292,6 +6304,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7408970401742503710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &7423358820060501963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5339,6 +6368,40 @@ MonoBehaviour:
   m_Name: parameter:/Walking/WoodWalk
   m_EditorClassIdentifier: 
   Name: WoodWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7667209196355430632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayerInventory/InventoryManipulation
+  m_EditorClassIdentifier: 
+  Name: InventoryManipulation
+  Min: 0
+  Max: 5
+  Default: 4
+  Exists: 1
+--- !u!114 &7708883478716714505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
   Min: 0
   Max: 1
   Default: 0
@@ -5411,6 +6474,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7913098592326998272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RelationshipStatusChange/RelationshipChange
+  m_EditorClassIdentifier: 
+  Name: RelationshipChange
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
 --- !u!114 &7932273465674584826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5511,15 +6591,32 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Exclamation
   guid: e1daf9eca8759d458457aee38dedaaeb
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -4366297889124878227}
+  - {fileID: -2821892748875935818}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8266815197751685206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/WalkingSurfaces
+  m_EditorClassIdentifier: 
+  Name: WalkingSurfaces
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &8307442557967626274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5578,6 +6675,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8361079010120526932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8368055398871348992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5595,6 +6709,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8404447099981840023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8470189182743163650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5680,6 +6811,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8624534344532563680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODBuild/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637232011060812467
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8625516286734357923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &8628358703784213653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5704,6 +6870,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8648503819051825676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &8684903294026636234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5718,11 +6901,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/FMODBuild/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637229109631248737
+  lastModified: 637232011060892421
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 2256
+    Value: 2504
   Exists: 1
 --- !u!114 &8718275519467181958
 MonoBehaviour:
@@ -5737,6 +6920,23 @@ MonoBehaviour:
   m_Name: parameter:/Walking/DirtWalk
   m_EditorClassIdentifier: 
   Name: DirtWalk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &8737488545033364549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/MusicLoop
+  m_EditorClassIdentifier: 
+  Name: MusicLoop
   Min: 0
   Max: 1
   Default: 0
@@ -5892,12 +7092,12 @@ MonoBehaviour:
   Path: event:/Sound Effects/Walking
   guid: e637023920b4ac4ebcb68512a0bc3808
   Banks:
-  - {fileID: 1558375973913323906}
+  - {fileID: 8624534344532563680}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3526019864342417907}
+  - {fileID: 2336531978171078301}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
