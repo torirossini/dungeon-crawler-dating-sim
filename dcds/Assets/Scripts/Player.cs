@@ -24,6 +24,8 @@ namespace Assets.Scripts
         private Animator animator;
         private Sprite playerSprite;
 
+        private Party party;
+
         [Header("Interact Vars")]
         [SerializeField]
         float delayBeforeAllowInteract = .5f;
@@ -50,6 +52,8 @@ namespace Assets.Scripts
             }
         }
 
+        public Party Party { get => party; }
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -57,6 +61,7 @@ namespace Assets.Scripts
             playerSprite = GetComponent<SpriteRenderer>().sprite;
             velocityVector = Vector2.zero;
             canInteract = true;
+            party = GetComponent<Party>();
         }
 
         // Update is called once per frame

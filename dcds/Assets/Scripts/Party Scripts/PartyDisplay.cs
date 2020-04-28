@@ -13,6 +13,9 @@ public class PartyDisplay : MonoBehaviour
     [SerializeField]
     GameObject partyMemberPrefab;
 
+    [SerializeField]
+    NPCPanel[] npcDisplayPrefab;
+
     // when the parent panel is activated, grab a reference to the character's party and display its icon GameObject
     void OnEnable()
     {
