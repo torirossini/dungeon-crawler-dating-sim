@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &96242580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25801,6 +25801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PixelPerfect
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837221129438635593, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1010161337
       objectReference: {fileID: 0}
     - target: {fileID: 5560892386145379455, guid: c3ed44cd7d2c61e4d9037a28fac3b748,
         type: 3}
