@@ -90,7 +90,9 @@ namespace Assets.Scripts
                 velocity.x = xForce;
 
                 if (Input.GetButtonDown("Vertical") && isGrounded)
-                { 
+                {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Jumping", "JumpEffects", 0);
+                    GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Jumping");
                     velocity.y = jumpForce;
                 }
 
@@ -106,20 +108,28 @@ namespace Assets.Scripts
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(true);
             }
-            // change the walking sound depending on the ground zone type walked into
-            if (other.gameObject.CompareTag("DirtZone"))
+            // check for collision with ground zones and handle accordingly
+            if(other.gameObject.CompareTag("DirtZone") || other.gameObject.CompareTag("GravelZone") || other.gameObject.CompareTag("WoodZone"))
             {
-                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 0);
+                // play the landing sound effect
+                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Jumping", "JumpEffects", 1);
+                GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Jumping");
+                // set the WalkingSurfaces parameter of the walking event based on which surface is being collided with
+                if (other.gameObject.CompareTag("DirtZone"))
+                {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 0);
+                }
+                else if (other.gameObject.CompareTag("GravelZone"))
+                {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 1);
+                }
+                else if (other.gameObject.CompareTag("WoodZone"))
+                {
+                    GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 2);
+                }
+                // start playing the parameterized walking event
+                GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Walking");
             }
-            else if (other.gameObject.CompareTag("GravelZone"))
-            {
-                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 1);
-            }
-            else if (other.gameObject.CompareTag("WoodZone"))
-            {
-                GetComponent<FMODCustomEvent>().SetEventParam("event:/Sound Effects/Walking", "WalkingSurfaces", 2);
-            }
-            GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Walking");
         }
 
         public void OnTriggerStay2D(Collider2D other)

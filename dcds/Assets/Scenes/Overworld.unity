@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: event:/Ambiance/InnAmbiance
+  Event: event:/Ambiance/GuildhallAmbiance
   PlayEvent: 5
   StopEvent: 6
   AllowFadeout: 1
@@ -561,6 +561,8 @@ MonoBehaviour:
   Params:
   - Name: GenericAmbiance
     Value: 1
+  - Name: IdleChatter
+    Value: 0.6
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -577,15 +579,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: Player
-  Event: event:/Music/InnMusic
+  Event: event:/Music/GuildhallMusic
   PlayEvent: 5
   StopEvent: 6
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params:
-  - Name: MusicLoop
-    Value: 0.75
+  - Name: MusicSection
+    Value: 0
+  - Name: Volume
+    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -2384,8 +2388,6 @@ GameObject:
   m_Component:
   - component: {fileID: 588246810}
   - component: {fileID: 588246811}
-  - component: {fileID: 588246813}
-  - component: {fileID: 588246812}
   m_Layer: 0
   m_Name: WoodZone
   m_TagString: WoodZone
@@ -2433,56 +2435,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 3}
   m_EdgeRadius: 0
---- !u!114 &588246812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588246809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Event: event:/Ambiance/InnAmbiance
-  PlayEvent: 5
-  StopEvent: 6
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: GenericAmbiance
-    Value: 1
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &588246813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588246809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Player
-  Event: event:/Music/InnMusic
-  PlayEvent: 5
-  StopEvent: 6
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: MusicLoop
-    Value: 1
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!114 &608913602 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 279112246269470107, guid: eb3a09d8fd6bb18448b01a3ec0ea69bc,
@@ -2615,7 +2567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2091512176}
+  selectedFlowchart: {fileID: 1253983705}
 --- !u!4 &682794400
 Transform:
   m_ObjectHideFlags: 1
@@ -2923,10 +2875,12 @@ MonoBehaviour:
   Preload: 0
   Params:
   - Name: GenericAmbiance
-    Value: 1
-  OverrideAttenuation: 1
+    Value: 0.75
+  - Name: IdleChatter
+    Value: 0.1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 15
+  OverrideMaxDistance: 20
 --- !u!114 &914648459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,8 +2901,10 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params:
-  - Name: MusicLoop
-    Value: 0.75
+  - Name: Volume
+    Value: 1
+  - Name: MusicSection
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -4608,9 +4564,54 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &1253983686
+--- !u!114 &1253983685
 MonoBehaviour:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253983655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 5753883658891703588}
+  targetComponentAssemblyName: FMODCustomEvent, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: FMODCustomEvent
+  targetMethod: PlayEvent
+  targetMethodText: 'PlayEvent (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: event:/Dialog/Character2Greeting
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1253983686
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4653,9 +4654,54 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &1253983704
+--- !u!114 &1253983687
 MonoBehaviour:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253983655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 107
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 5753883658891703588}
+  targetComponentAssemblyName: FMODCustomEvent, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: FMODCustomEvent
+  targetMethod: PlayEvent
+  targetMethodText: 'PlayEvent (String): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: event:/Dialog/Character2Goodbye
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1253983704
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4698,6 +4744,18 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1253983705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1697426339866903232, guid: 2355a2837629eb9468e8c9c04a1bcc39,
+    type: 3}
+  m_PrefabInstance: {fileID: 5753883658891703587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253983655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1308619870
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,6 +5379,7 @@ MonoBehaviour:
   - event:/Sound Effects/Walking
   - event:/Interface Sounds/PartyMenu
   - event:/Interface Sounds/PlayerInventory
+  - event:/Sound Effects/Jumping
 --- !u!4 &1800252424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795964362247778088, guid: ec66929eff232424b974719707e3f61f,
@@ -10802,18 +10861,6 @@ PrefabInstance:
     - {fileID: 6660264513192129151, guid: 48b08ee67ff9f2446b2a6e7656e448ba, type: 3}
     - {fileID: 8644144233944004773, guid: 48b08ee67ff9f2446b2a6e7656e448ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 48b08ee67ff9f2446b2a6e7656e448ba, type: 3}
---- !u!114 &2091512176 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1119015121039842251, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
-    type: 3}
-  m_PrefabInstance: {fileID: 2091512175}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085650160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2091512177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7339561905621818896, guid: 48b08ee67ff9f2446b2a6e7656e448ba,
@@ -11025,7 +11072,7 @@ PrefabInstance:
     - target: {fileID: 1697426339866903233, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
       propertyPath: commandList.Array.size
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1697426339866903233, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
@@ -11091,15 +11138,20 @@ PrefabInstance:
         type: 3}
       propertyPath: commandList.Array.data[14]
       value: 
-      objectReference: {fileID: 1253983663}
+      objectReference: {fileID: 1253983685}
     - target: {fileID: 1697426339866903233, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
       propertyPath: commandList.Array.data[15]
       value: 
-      objectReference: {fileID: 1253983676}
+      objectReference: {fileID: 1253983663}
     - target: {fileID: 1697426339866903233, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
       propertyPath: commandList.Array.data[16]
+      value: 
+      objectReference: {fileID: 1253983676}
+    - target: {fileID: 1697426339866903233, guid: 2355a2837629eb9468e8c9c04a1bcc39,
+        type: 3}
+      propertyPath: commandList.Array.data[17]
       value: 
       objectReference: {fileID: 1253983675}
     - target: {fileID: 1697426339866903232, guid: 2355a2837629eb9468e8c9c04a1bcc39,
@@ -11185,7 +11237,7 @@ PrefabInstance:
     - target: {fileID: 8376888894630835242, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
       propertyPath: commandList.Array.size
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8376888894630835242, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
@@ -11246,10 +11298,15 @@ PrefabInstance:
         type: 3}
       propertyPath: commandList.Array.data[11]
       value: 
-      objectReference: {fileID: 1253983678}
+      objectReference: {fileID: 1253983687}
     - target: {fileID: 8376888894630835242, guid: 2355a2837629eb9468e8c9c04a1bcc39,
         type: 3}
       propertyPath: commandList.Array.data[12]
+      value: 
+      objectReference: {fileID: 1253983678}
+    - target: {fileID: 8376888894630835242, guid: 2355a2837629eb9468e8c9c04a1bcc39,
+        type: 3}
+      propertyPath: commandList.Array.data[13]
       value: 
       objectReference: {fileID: 1253983686}
     - target: {fileID: 807812940, guid: 2355a2837629eb9468e8c9c04a1bcc39, type: 3}

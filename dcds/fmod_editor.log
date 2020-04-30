@@ -7,21 +7,234 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000188F73C99B8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000013F891355E8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12368032
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53312
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003A4E1FF3BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF891C08630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF891C08600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF891C08700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF891C087C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000013F80B0DAF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='DoorClose', format=2, channels=2, frequency=48000, lengthbytes=5088, lengthpcm=12619, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12368032
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53312
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003A4E1FF3BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF891C08630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF891C08600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF891C08700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF891C087C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000013F80B0DAF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='DoorOpen', format=2, channels=2, frequency=48000, lengthbytes=12224, lengthpcm=34302, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12368032
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53312
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003A4E1FF3BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF891C08630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF891C08600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF891C08700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF891C087C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000013F89483998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='WoodCreak', format=2, channels=2, frequency=48000, lengthbytes=1458688, lengthpcm=6155648, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12368032
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53312
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003A4E1FF3BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF891C08630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF891C08600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF891C08700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF891C087C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000013F89483998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GuildhallMusic', format=2, channels=2, frequency=48000, lengthbytes=1050848, lengthpcm=3987693, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141254.
+[LOG] SoundI::release                          :  (0000013FEFE3C778)
+[LOG] SoundI::release                          :     OverworldMusic (0000013FD7C01468)
+[LOG] SoundI::release                          :  (0000013FFC3BDD48)
+[LOG] SoundI::release                          :     RiverNoise (0000013FD7FBEB48)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12368032
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53312
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003A4E1FF3BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF891C08630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF891C08600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF891C08700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF891C087C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000013F88F0B4A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='RiverNoise', format=2, channels=2, frequency=48000, lengthbytes=907264, lengthpcm=3291925, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.434398.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12368032
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53312
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003A4E1FF3BC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF891C08630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF891C08600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF891C08700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF891C087C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000013F88F0B4A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='OverworldMusic', format=2, channels=2, frequency=48000, lengthbytes=1270080, lengthpcm=4480000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199526.
+[LOG] SoundI::release                          :  (0000013FEFE3BED8)
+[LOG] SoundI::release                          :     GuildhallMusic (0000013FF520A408)
+[LOG] SoundI::release                          :  (0000013FEFE3B358)
+[LOG] SoundI::release                          :     WoodCreak (0000013FF520C968)
+[LOG] SoundI::release                          :  (0000013FEFE3C1B8)
+[LOG] SoundI::release                          :     OverworldMusic (0000013FD7BFFA68)
+[LOG] SoundI::release                          :  (0000013FD7DB6C38)
+[LOG] SoundI::release                          :     2SGoodbyeSingle (0000013FFBFF8628)
+[LOG] SoundI::release                          :  (0000013FD0660908)
+[LOG] SoundI::release                          :     2NGoodbyeSingle (0000013FF35B4258)
+[LOG] SoundI::release                          :  (0000013FEFE3C498)
+[LOG] SoundI::release                          :     2AGoodbyeSingle (0000013FD7C01128)
+[LOG] SoundI::release                          :  (0000013FFC3BD1C8)
+[LOG] SoundI::release                          :     2HGoodbyeSingle (0000013FD7FBF9E8)
+[LOG] SoundI::release                          :  (0000013FD0661BB8)
+[LOG] SoundI::release                          :     1AExclamationSingle (0000013FF35B3078)
+[LOG] SoundI::release                          :  (0000013FD0661488)
+[LOG] SoundI::release                          :     1NExclamationSingle (0000013FF35B36F8)
+[LOG] SoundI::release                          :  (0000013FEFE17CB8)
+[LOG] SoundI::release                          :     BoisterousChatter (0000013FD7C005C8)
+[LOG] SoundI::release                          :  (0000013FEFE3B4C8)
+[LOG] SoundI::release                          :     RiverNoise (0000013FD7C01468)
+[LOG] SoundI::release                          :  (0000013FFC3BC1F8)
+[LOG] SoundI::release                          :     QuietChatter (0000013FFBFFE128)
+[LOG] SoundI::release                          :  (0000013FD7DB71F8)
+[LOG] SoundI::release                          :     1SExclamationSingle (0000013FFBFFC588)
+[LOG] SoundI::release                          :  (0000013FD7DB60B8)
+[LOG] SoundI::release                          :     1HExclamationSingle (0000013FFBFFAD28)
+[LOG] SoundI::release                          :  (0000013FD7DB74D8)
+[LOG] SoundI::release                          :     1AGoodbyeSingle (0000013FFBFFD428)
+[LOG] SoundI::release                          :  (0000013FFC3BC368)
+[LOG] SoundI::release                          :     1NGoodbyeSingle (0000013FFBFFE2C8)
+[LOG] SoundI::release                          :  (0000013FD7DB7648)
+[LOG] SoundI::release                          :     1HGoodbyeSingle (0000013FFBFF87C8)
+[LOG] SoundI::release                          :  (0000013FD0661318)
+[LOG] SoundI::release                          :     1SGoodbyeSingle (0000013FF35B3A38)
+[LOG] SoundI::release                          :  (0000013FFC22B318)
+[LOG] SoundI::release                          :     2AExclaimationSingle (0000013FD7C00C48)
+[LOG] SoundI::release                          :  (0000013FEFE190D8)
+[LOG] SoundI::release                          :     2SExclaimationSingle (0000013FF35B4598)
+[LOG] SoundI::release                          :  (0000013FD7DB7368)
+[LOG] SoundI::release                          :     2NExclaimationSingle (0000013FFBFF8968)
+[LOG] SoundI::release                          :  (0000013FFC3BD618)
+[LOG] SoundI::release                          :     2HExclaimationSingle (0000013FD7FBF6A8)
+[LOG] SoundI::release                          :  (0000013FD0661A48)
+[LOG] SoundI::release                          :     Pop (0000013FF35B4A78)
+[LOG] SoundI::release                          :  (0000013FFC3BD4A8)
+[LOG] SoundI::release                          :     Clasp (0000013FD7FBF1C8)
+[LOG] SoundI::release                          :  (0000013FEFE3C8E8)
+[LOG] SoundI::release                          :     WhooshClose (0000013FD7BFF728)
+[LOG] SoundI::release                          :  (0000013FFC3BCA98)
+[LOG] SoundI::release                          :     WhooshOpen (0000013FD7FBF368)
+[LOG] SoundI::release                          :  (0000013FD7DB5AF8)
+[LOG] SoundI::release                          :     2HGreetingSingle (0000013FFBFF75E8)
+[LOG] SoundI::release                          :  (0000013FD7DB6958)
+[LOG] SoundI::release                          :     2AGreetingSingle (0000013FFBFFE608)
+[LOG] SoundI::release                          :  (0000013FEFE19248)
+[LOG] SoundI::release                          :     2NGreetingSingle (0000013FF35B48D8)
+[LOG] SoundI::release                          :  (0000013FD0662178)
+[LOG] SoundI::release                          :     2SGreetingSingle (0000013FF35B3F18)
+[LOG] SoundI::release                          :  (0000013FFC3BD8F8)
+[LOG] SoundI::release                          :     Jump (0000013FFBFFDDE8)
+[LOG] SoundI::release                          :  (0000013FD0662008)
+[LOG] SoundI::release                          :     Land (0000013FF35B3BD8)
+[LOG] SoundI::release                          :  (0000013FD7DB7088)
+[LOG] SoundI::release                          :     FailureJingle (0000013FFBFFBD68)
+[LOG] SoundI::release                          :  (0000013FEFE19528)
+[LOG] SoundI::release                          :     SuccessJingle (0000013FF35B3898)
+[LOG] SoundI::release                          :  (0000013FFC3BDEB8)
+[LOG] SoundI::release                          :     BagAdd (0000013FD7FBF028)
+[LOG] SoundI::release                          :  (0000013FD0660A78)
+[LOG] SoundI::release                          :     BagRemove (0000013FF35B43F8)
+[LOG] SoundI::release                          :  (0000013FFC3BD058)
+[LOG] SoundI::release                          :     BagMove (0000013FD7FBEE88)
+[LOG] SoundI::release                          :  (0000013FD7DB5DD8)
+[LOG] SoundI::release                          :     BagClose (0000013FF35B40B8)
+[LOG] SoundI::release                          :  (0000013FEFE19698)
+[LOG] SoundI::release                          :     BagOpen (0000013FD7C00288)
+[LOG] SoundI::release                          :  (0000013FEFE3C608)
+[LOG] SoundI::release                          :     WoodStep1 (0000013FD7C012C8)
+[LOG] SoundI::release                          :  (0000013FEFE183E8)
+[LOG] SoundI::release                          :     WoodStep2 (0000013FF35B4738)
+[LOG] SoundI::release                          :  (0000013FD7DB5F48)
+[LOG] SoundI::release                          :     WoodStep3 (0000013FF35B3558)
+[LOG] SoundI::release                          :  (0000013FD7DB5818)
+[LOG] SoundI::release                          :     WoodStep4 (0000013FFBFF7C68)
+[LOG] SoundI::release                          :  (0000013FFC22A4B8)
+[LOG] SoundI::release                          :     DirtStep2 (0000013FD7C00AA8)
+[LOG] SoundI::release                          :  (0000013FD0661038)
+[LOG] SoundI::release                          :     DirtStep3 (0000013FF35B4DB8)
+[LOG] SoundI::release                          :  (0000013FFC3BC928)
+[LOG] SoundI::release                          :     DirtStep4 (0000013FD7FBECE8)
+[LOG] SoundI::release                          :  (0000013FFC3BCC08)
+[LOG] SoundI::release                          :     GravelStep1 (0000013FD7FBE668)
+[LOG] SoundI::release                          :  (0000013FD0661D28)
+[LOG] SoundI::release                          :     GravelStep2 (0000013FF35B3218)
+[LOG] SoundI::release                          :  (0000013FFC3BD338)
+[LOG] SoundI::release                          :     GravelStep3 (0000013FD7FBF508)
+[LOG] SoundI::release                          :  (0000013FFC3BC088)
+[LOG] SoundI::release                          :     GravelStep4 (0000013FFBFFDF88)
+[LOG] SoundI::release                          :  (0000013FD7DB6508)
+[LOG] SoundI::release                          :     DirtStep1 (0000013FFBFFE7A8)
+[LOG] SoundI::release                          :  (0000013FEFE3AF08)
+[LOG] SoundI::release                          :     DoorClose (0000013FFBD73268)
+[LOG] SoundI::release                          :  (0000013FEFE3B078)
+[LOG] SoundI::release                          :     DoorOpen (0000013FFBD735A8)
+[LOG] SoundI::release                          :  (0000013FFC3BD788)
+[LOG] SoundI::release                          :     1AGreetingSingle (0000013FFBFFD908)
+[LOG] SoundI::release                          :  (0000013FD7DB5988)
+[LOG] SoundI::release                          :     1NGreetingSingle (0000013FFBFF7108)
+[LOG] SoundI::release                          :  (0000013FEFE18558)
+[LOG] SoundI::release                          :     1SGreetingSingle (0000013FD7C00908)
+[LOG] SoundI::release                          :  (0000013FFC22A628)
+[LOG] SoundI::release                          :     1HGreetingSingle (0000013FD7BFFC08)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
