@@ -129,6 +129,7 @@ namespace Assets.Scripts
                 }
                 // start playing the parameterized walking event
                 GetComponent<FMODCustomEvent>().PlayEvent("event:/Sound Effects/Walking");
+                GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", false);
             }
         }
 
@@ -143,6 +144,11 @@ namespace Assets.Scripts
                     Interact(interactable);
                 }
             }
+            // unpause the walking sound if it was paused
+            if (other.gameObject.CompareTag("DirtZone") || other.gameObject.CompareTag("GravelZone") || other.gameObject.CompareTag("WoodZone"))
+            {
+                GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", false);
+            }
         }
 
         public void OnTriggerExit2D(Collider2D other)
@@ -151,6 +157,11 @@ namespace Assets.Scripts
             {
                 InteractionObject interactable = other.gameObject.GetComponent<InteractionObject>();
                 interactable.SetAblilityToInteract(false);
+            }
+            // pause the walking sound if not on the ground
+            if (other.gameObject.CompareTag("DirtZone") || other.gameObject.CompareTag("GravelZone") || other.gameObject.CompareTag("WoodZone"))
+            {
+                GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", true);
             }
         }
 
@@ -212,8 +223,6 @@ namespace Assets.Scripts
             if (rb.velocity.magnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
-                // unpause the walking noise
-                GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", false);
                 // handle which animation to draw onscreen
                 if ((Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) || 
                     (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)))
@@ -257,7 +266,7 @@ namespace Assets.Scripts
             else
             {
                 animator.SetBool("IsWalking", false);
-                // pause the walking sound
+                // pause the walking sound effect
                 GetComponent<FMODCustomEvent>().PauseEvent("event:/Sound Effects/Walking", true);
                 return false;
             }

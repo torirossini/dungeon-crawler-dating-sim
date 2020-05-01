@@ -16,7 +16,8 @@ public class UseItemFromInventory : MonoBehaviour, IPointerClickHandler
     {
         gameObject.GetComponentInParent<InventoryDisplay>().charToTrack.GetComponent<Inventory>().RemoveItem(trackedItem);
         // play the item removal sound from the FMOD StudioEventEmitter component that should be attached to this GO
-        GetComponent<StudioEventEmitter>().Play();
+        GetComponent<FMODCustomEvent>().SetEventParam("event:/Interface Sounds/PlayerInventory", "InventoryManipulation", 1);
+        GetComponent<FMODCustomEvent>().PlayEvent("event:/Interface Sounds/PlayerInventory");
         Destroy(gameObject);
     }
 }

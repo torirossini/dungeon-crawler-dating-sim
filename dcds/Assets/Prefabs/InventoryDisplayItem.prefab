@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6532773263394358969}
   - component: {fileID: 3593990514529624640}
   - component: {fileID: 5682670986461803322}
-  - component: {fileID: 2476031815296028683}
+  - component: {fileID: 4564155692099359302}
   m_Layer: 5
   m_Name: InventoryDisplayItem
   m_TagString: Untagged
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedItem: {fileID: 0}
---- !u!114 &2476031815296028683
+--- !u!114 &4564155692099359302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,21 +193,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6532773263394358971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 01024206d63d0134492ee8da5d710485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Interface Sounds/PlayerInventory
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: InventoryOpenClose
-    Value: 0.2
-  - Name: InventoryManipulation
-    Value: 0.2
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  eventPaths:
+  - event:/Interface Sounds/PlayerInventory

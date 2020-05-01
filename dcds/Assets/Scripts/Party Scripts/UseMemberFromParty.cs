@@ -17,7 +17,8 @@ public class UseMemberFromParty : MonoBehaviour, IPointerClickHandler
     {
         gameObject.GetComponentInParent<PartyDisplay>().charToTrack.GetComponent<Party>().RemoveMember(trackedMember);
         // play the npc removal sound from the FMOD StudioEventEmitter component that should be attached to this GO
-        GetComponent<StudioEventEmitter>().Play();
+        GetComponent<FMODCustomEvent>().SetEventParam("event:/Interface Sounds/PartyMenu", "PartyManipulation", 1);
+        GetComponent<FMODCustomEvent>().PlayEvent("event:/Interface Sounds/PartyMenu");
         Destroy(gameObject);
     }
 }
