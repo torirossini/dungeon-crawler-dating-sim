@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Assets.Scripts
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Player : MonoBehaviour
+    public class Player : Singleton<Player>
     {
 
         //variables
@@ -23,6 +23,13 @@ namespace Assets.Scripts
 
         private Animator animator;
         private Sprite playerSprite;
+
+        private Party party;
+
+        [Header("Interact Vars")]
+        [SerializeField]
+        float delayBeforeAllowInteract = .5f;
+        bool canInteract;
 
 
         public float PlayerSpeed
@@ -45,12 +52,16 @@ namespace Assets.Scripts
             }
         }
 
+        public Party Party { get => party; }
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             playerSprite = GetComponent<SpriteRenderer>().sprite;
             velocityVector = Vector2.zero;
+            canInteract = true;
+            party = GetComponent<Party>();
         }
 
         // Update is called once per frame
@@ -106,8 +117,7 @@ namespace Assets.Scripts
                 
                 if (Input.GetKey(KeyCode.E) && !interactable.Interacted)
                 {
-                    interactable.Interact();
-                    interactable.DoPulse();
+                    Interact(interactable);
                 }
             }
         }
@@ -121,6 +131,59 @@ namespace Assets.Scripts
             }
         }
 
+        /// <summary>
+        /// Private method used to handle what happens to the player once they interact with something
+        /// </summary>
+        /// <param name="interactable"></param>
+        /// <returns></returns>
+        private bool Interact(InteractionObject interactable)
+        {
+            if (canInteract)
+            {
+                interactable.Interact();
+                interactable.DoPulse();
+                StartCoroutine(TriggerInteractDelay());
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Resets the can interact boolean once delay ends
+        /// </summary>
+        /// <returns></returns>
+        private IEnumerator TriggerInteractDelay()
+        {
+            canInteract = false;
+            yield return new WaitForSeconds(delayBeforeAllowInteract);
+            canInteract = true;
+        }
+
+
+        #region Teleport Methods
+
+        /// <summary>
+        /// Teleports the player to destination Vector2
+        /// </summary>
+        /// <param name="destination"></param>
+        public void TeleportTo(Vector2 destination)
+        {
+            gameObject.transform.position = destination;
+        }
+        /// <summary>
+        /// Teleports the player to destination game object
+        /// </summary>
+        /// <param name="destination"></param>
+        public void TeleportTo(GameObject destination)
+        {
+            gameObject.transform.position = destination.transform.position;
+        }
+        #endregion
+
+        /// <summary>
+        /// Handles animator changes
+        /// </summary>
+        /// <returns></returns>
         private bool IsWalking()
         {
             if (rb.velocity.magnitude > 0)

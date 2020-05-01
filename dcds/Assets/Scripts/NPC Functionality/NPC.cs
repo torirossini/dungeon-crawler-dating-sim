@@ -15,6 +15,9 @@ namespace Assets.Scripts
         [SerializeField]
         string m_name = "";
 
+        [SerializeField]
+        Sprite headSprite;
+
         Sprite characterSprite;
         Animator animator;
 
@@ -80,6 +83,8 @@ namespace Assets.Scripts
         /// </summary>
         public Mood CurrentMood { get => currentMood; set => currentMood = value; }
         public bool Romanceable { get => romanceable; set => romanceable = value; }
+
+        public Sprite HeadSprite { get => headSprite; set => headSprite = value; }
 
 
         #endregion
