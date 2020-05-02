@@ -151,8 +151,8 @@ MonoBehaviour:
   bobAmplitude: 6
   offset: {x: 0, y: 100}
   m_name: 
-  stance: 0
-  currentMood: 1
+  stance: -10
+  currentMood: 0
   movementSpeed: 5
   m_stoppingDistance: 3
   routineSteps:
@@ -1194,7 +1194,6 @@ GameObject:
   - component: {fileID: 2040573620210338579}
   - component: {fileID: 2282250918975865542}
   - component: {fileID: 2296385848691314188}
-  - component: {fileID: 2165385093977277817}
   - component: {fileID: 1223075835194848583}
   - component: {fileID: 1153124546831396794}
   - component: {fileID: 1309363301430136938}
@@ -1224,7 +1223,6 @@ GameObject:
   - component: {fileID: 4339966883107492602}
   - component: {fileID: 4494209621512595542}
   - component: {fileID: 3834441859671773959}
-  - component: {fileID: 4027062873907528208}
   - component: {fileID: 3894138640942760192}
   - component: {fileID: 3049232464739447109}
   - component: {fileID: 3191861051370499313}
@@ -1253,7 +1251,6 @@ GameObject:
   - component: {fileID: 6333672911054116928}
   - component: {fileID: 6323749616452389560}
   - component: {fileID: 6301610328799747425}
-  - component: {fileID: 6253515091424366789}
   - component: {fileID: 5201023064582834953}
   - component: {fileID: 5207443348977313105}
   - component: {fileID: 5385053291115035129}
@@ -1269,7 +1266,6 @@ GameObject:
   - component: {fileID: 5039175071542097022}
   - component: {fileID: 5033971362052538437}
   - component: {fileID: 4992071693137640909}
-  - component: {fileID: 4931776592131700302}
   - component: {fileID: 8765368960050486824}
   - component: {fileID: 8736163231965161524}
   - component: {fileID: 9069096972506579082}
@@ -1349,8 +1345,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 6323749616452389560}
-  selectedCommands: []
+  - {fileID: 6653912885555764008}
+  selectedCommands:
+  - {fileID: 2460274550567019750}
   variables:
   - {fileID: 4195806896863573321}
   - {fileID: 6333672911054116928}
@@ -1740,20 +1737,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &2165385093977277817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119015121039842069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 190
-  indentLevel: 0
 --- !u!114 &1223075835194848583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2380,7 +2363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: Stance
-  value: 0
+  value: -10
 --- !u!114 &4339966883107492602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2452,70 +2435,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &4027062873907528208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119015121039842069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 189
-  indentLevel: 0
-  compareOperator: 3
-  variable: {fileID: 4195806896863573321}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 5
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &3894138640942760192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2805,9 +2724,9 @@ MonoBehaviour:
   itemId: 47
   indentLevel: 0
   thisNPC: {fileID: 1119015120719706490}
-  mood: {fileID: 6333672911054116928}
-  spokenTo: {fileID: 5207443348977313105}
-  stance: {fileID: 4195806896863573321}
+  mood: {fileID: 0}
+  spokenTo: {fileID: 0}
+  stance: {fileID: 0}
 --- !u!114 &2658889127851938160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3255,10 +3174,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 4027062873907528208}
-  - {fileID: 4931776592131700302}
-  - {fileID: 2165385093977277817}
-  - {fileID: 6253515091424366789}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 9209931471986298474}
   - {fileID: 7632228171248511261}
   - {fileID: 2040573620210338579}
@@ -3283,33 +3202,6 @@ MonoBehaviour:
   character: {fileID: 820900833112792766, guid: adf7843a3bc3cb5469abfc5973ea42e5,
     type: 3}
   portrait: {fileID: 21300000, guid: 0620f60f176b20a4396603d96edc467c, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &6253515091424366789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119015121039842069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 192
-  indentLevel: 1
-  storyText: So, what brought you to Sylmys and the Spirit Dungeon?
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3730,33 +3622,6 @@ MonoBehaviour:
   - {fileID: 673366228533750961}
   - {fileID: 970989400419443850}
   - {fileID: 2082821237428659853}
---- !u!114 &4931776592131700302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119015121039842069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 103
-  indentLevel: 1
-  storyText: So, what brought you to Sylmys and the Spirit Dungeon?
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &8765368960050486824
 MonoBehaviour:
   m_ObjectHideFlags: 0
