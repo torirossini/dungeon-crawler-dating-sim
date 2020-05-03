@@ -117,8 +117,12 @@ namespace Assets.Scripts
             followAgent = GetComponent<NavMeshAgent>();
             followAgent.speed = movementSpeed;
             followAgent.isStopped = false;
-            m_currentStep = routineSteps[0];
-            SetUpRoutine();
+
+
+            //Remove this line and uncomment the following lines to reenable routines.
+            m_routinePaused = true;
+            //m_currentStep = routineSteps[0];
+            //SetUpRoutine();
         }
 
         // Update is called once per frame
