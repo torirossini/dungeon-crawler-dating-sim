@@ -9,7 +9,11 @@ public class EnableOnStart : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            child.gameObject.SetActive(true);
+            if(child.gameObject)
+            {
+                child.gameObject.SetActive(true);
+
+            }
         }
     }
 
