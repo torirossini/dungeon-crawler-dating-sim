@@ -620,6 +620,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-8190531252605917553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/MusicSection
+  m_EditorClassIdentifier: 
+  Name: MusicSection
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &-8117034714109537231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,12 +788,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Greeting
   guid: 53a21a94d808b54e8171db7c23ee8e45
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 4675240425857433377}
+  - {fileID: 5268149684437050518}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -916,6 +933,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-7697164286121518465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayerInventory/InventoryManipulation
+  m_EditorClassIdentifier: 
+  Name: InventoryManipulation
+  Min: 0
+  Max: 5
+  Default: 4
+  Exists: 1
 --- !u!114 &-7658573728054844962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,6 +1070,23 @@ MonoBehaviour:
   Name: BattleMusicMain
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7565608719270436155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 1
 --- !u!114 &-7554206761666469281
@@ -1294,6 +1345,24 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-7185576836448586577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODBuild/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637239568360000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7177652737007661633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,6 +1844,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-6451337269455388501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RelationshipStatusChange/RelationshipChange
+  m_EditorClassIdentifier: 
+  Name: RelationshipChange
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
 --- !u!114 &-6423799484126363055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,12 +1927,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Greeting
   guid: 317a2654fb12ba41aa69ceb55f4a9e05
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 6166754443908749625}
+  - {fileID: -2983256389462717889}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2071,6 +2157,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-6100369265453740760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/IdleChatter
+  m_EditorClassIdentifier: 
+  Name: IdleChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-6066004381832038019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2139,6 +2242,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-5883354417668247724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/MusicSection
+  m_EditorClassIdentifier: 
+  Name: MusicSection
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &-5861611316214920538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2280,12 +2400,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Exclamation
   guid: 0ae01ada8343d542bec9582a52ff014e
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2514918436320291814}
+  - {fileID: 7181185220400676143}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2374,6 +2494,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-5628579332541481723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5547992585492167014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2459,6 +2596,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-5486861810131826742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/DoorSwinging
+  m_EditorClassIdentifier: 
+  Name: DoorSwinging
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
 --- !u!114 &-5395058242958399960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2549,12 +2703,12 @@ MonoBehaviour:
   Path: event:/Ambiance/BattleAmbiance
   guid: d7847a2ea3c8df418ee91aba535cc7de
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 8029377143047944133}
+  - {fileID: 8114044864297479090}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -2764,6 +2918,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-4994744951083686265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernMusic/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4966053090530695330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2864,13 +3035,13 @@ MonoBehaviour:
   Path: event:/Ambiance/TavernAmbiance
   guid: ce969cbc6f3b3c459998514d008ad62a
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6469296314065330706}
-  - {fileID: 6578379392099442416}
+  - {fileID: -2173313487523216142}
+  - {fileID: 5447721300821751109}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -3247,12 +3418,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/RelationshipStatusChange
   guid: e2716f98c9523744b571953e921d0682
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -4234395426186517396}
+  - {fileID: -6451337269455388501}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -3339,12 +3510,12 @@ MonoBehaviour:
   Path: event:/Sound Effects/Door
   guid: 140f331381c2c048a05d5d58a93cf1cb
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 1746814831856234354}
+  - {fileID: -5486861810131826742}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -3465,12 +3636,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/PlayerInventory
   guid: ff3569295a4d91449f6aacda0f8afe5e
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -1483634655783185991}
+  - {fileID: -7697164286121518465}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -3627,6 +3798,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-3799181592431658095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-3768692693039483499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3829,12 +4017,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character2Goodbye
   guid: e18bf533785e7c4baa77be0ef3191dee
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 3803887067994059418}
+  - {fileID: 1503749461455965210}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -4101,6 +4289,23 @@ MonoBehaviour:
   Max: 3
   Default: 0
   Exists: 0
+--- !u!114 &-2983256389462717889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &-2962280803375679676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4279,6 +4484,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-2820130999816151713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GuildhallAmbiance/IdleChatter
+  m_EditorClassIdentifier: 
+  Name: IdleChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-2735096696629595427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4345,13 +4567,13 @@ MonoBehaviour:
   Path: event:/Music/OverworldMusic
   guid: 9748130fcb2f6b42bdc2d1c8b6cd4c9e
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1439806049423441875}
-  - {fileID: -8117034714109537231}
+  - {fileID: 5487431680071732091}
+  - {fileID: -3799181592431658095}
   MinDistance: 0
   MaxDistance: 0
   Length: 93333
@@ -4438,13 +4660,13 @@ MonoBehaviour:
   Path: event:/Music/GuildhallMusic
   guid: 239e88bcc4328f499b47191a7f72d331
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1806996320480158191}
-  - {fileID: -6393497952259001800}
+  - {fileID: 8209290550189401199}
+  - {fileID: -289071119431672630}
   MinDistance: 0
   MaxDistance: 0
   Length: 83076
@@ -4567,6 +4789,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-2173313487523216142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/IdleChatter
+  m_EditorClassIdentifier: 
+  Name: IdleChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-2089619544667597825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5328,6 +5567,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-632880071789613355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-624083780061492399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5394,13 +5650,13 @@ MonoBehaviour:
   Path: event:/Music/TavernMusic
   guid: fb32f8d9505ff84895eb9483514e8573
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8656597269147536602}
-  - {fileID: 4041458210097306534}
+  - {fileID: -5883354417668247724}
+  - {fileID: -4994744951083686265}
   MinDistance: 0
   MaxDistance: 0
   Length: 116350
@@ -5538,12 +5794,12 @@ MonoBehaviour:
   Path: event:/Interface Sounds/PartyMenu
   guid: 8a45e48fdc8ff94aa9ca74f05ad8bfc6
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -485779192583622573}
+  - {fileID: 1217970307840540069}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -5598,6 +5854,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-289071119431672630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GuildhallMusic/MusicSection
+  m_EditorClassIdentifier: 
+  Name: MusicSection
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &-287957034864810264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5840,13 +6113,13 @@ MonoBehaviour:
   Path: event:/Ambiance/BlacksmithAmbiance
   guid: 65884d991b73234486242135da641d9f
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4673335437395853082}
-  - {fileID: 8828801807953805207}
+  - {fileID: -6100369265453740760}
+  - {fileID: -5628579332541481723}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -5864,7 +6137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 8684903294026636234}
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   EditorEvents:
   - {fileID: -5739546171776907565}
   - {fileID: -4183138726277795079}
@@ -5891,10 +6164,10 @@ MonoBehaviour:
   - {fileID: 2152605218981709841}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   StringsBanks:
   - {fileID: 8684903294026636234}
-  stringsBankWriteTime: 637240065991036013
+  stringsBankWriteTime: 637239568360000000
   cacheVersion: 3
 --- !u!114 &24482539850673926
 MonoBehaviour:
@@ -5911,13 +6184,13 @@ MonoBehaviour:
   Path: event:/Ambiance/GuildhallAmbiance
   guid: 1e69922a234a9e4e8427dbfb84512c10
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6721440636232819985}
-  - {fileID: -2538457815254553246}
+  - {fileID: 2144989965655690459}
+  - {fileID: -2820130999816151713}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -6681,7 +6954,7 @@ MonoBehaviour:
   Path: snapshot:/Menu
   guid: c0ea91abc05bd24a864f6e7633e57cf8
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -6866,6 +7139,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &1217970307840540069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PartyMenu/PartyManipulation
+  m_EditorClassIdentifier: 
+  Name: PartyManipulation
+  Min: 0
+  Max: 4
+  Default: 3
+  Exists: 1
 --- !u!114 &1271717994176159515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7093,6 +7383,23 @@ MonoBehaviour:
   Name: TavernChatter
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &1503749461455965210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 1
 --- !u!114 &1523840123590742144
@@ -7477,6 +7784,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &2144989965655690459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GuildhallAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2152605218981709841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7492,12 +7816,12 @@ MonoBehaviour:
   Path: event:/Sound Effects/Jumping
   guid: 3c923aab8809834889f5d66c560dddd3
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 132525588255907231}
+  - {fileID: 9210983459139617366}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -8327,13 +8651,13 @@ MonoBehaviour:
   Path: event:/Ambiance/OverworldAmbiance
   guid: bb1bd9b95bbf044d86dfca18bdf101ce
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4052406690749833554}
-  - {fileID: 8935668880436838251}
+  - {fileID: -632880071789613355}
+  - {fileID: 7414764576539362040}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -8582,12 +8906,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Goodbye
   guid: 5ade5f7672160e40827ff1244e693055
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 8878456629948099897}
+  - {fileID: 6809447554410100229}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -8965,13 +9289,13 @@ MonoBehaviour:
   Path: event:/Music/BlacksmithMusic
   guid: 467a1385fd748e4a94f73f05a7bd5c1d
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7380212933809662257}
-  - {fileID: 3039127369598552964}
+  - {fileID: 6716558006197873358}
+  - {fileID: -8190531252605917553}
   MinDistance: 0
   MaxDistance: 0
   Length: 78367
@@ -9350,6 +9674,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5073931650966929841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &5110076905625641619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9523,6 +9864,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5268149684437050518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Greeting/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &5268165020473703732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9699,6 +10057,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5447721300821751109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TavernAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &5487431680071732091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldMusic/MusicSection
+  m_EditorClassIdentifier: 
+  Name: MusicSection
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &5532620527815802911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10054,13 +10446,13 @@ MonoBehaviour:
   Path: event:/Music/BattleMusic
   guid: 8fd5e8c79f9b0744a9ae1e5e108c5f92
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7535407862058316651}
-  - {fileID: -503114868057312230}
+  - {fileID: 6915354955136055730}
+  - {fileID: 5073931650966929841}
   MinDistance: 0
   MaxDistance: 0
   Length: 33100
@@ -10370,6 +10762,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &6716558006197873358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BlacksmithMusic/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6717806032738065891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10421,6 +10830,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &6809447554410100229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character1Goodbye/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &6816260621939910416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10470,6 +10896,23 @@ MonoBehaviour:
   Name: GenericAmbiance
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &6915354955136055730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleMusic/MusicSection
+  m_EditorClassIdentifier: 
+  Name: MusicSection
+  Min: 0
+  Max: 4
   Default: 0
   Exists: 1
 --- !u!114 &6935552781089982373
@@ -10591,6 +11034,23 @@ MonoBehaviour:
   Max: 2
   Default: 1
   Exists: 0
+--- !u!114 &7181185220400676143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Character2Exclamation/CharacterInteraction
+  m_EditorClassIdentifier: 
+  Name: CharacterInteraction
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &7182261477582185925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10761,6 +11221,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &7414764576539362040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OverworldAmbiance/IdleChatter
+  m_EditorClassIdentifier: 
+  Name: IdleChatter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &7423358820060501963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11050,6 +11527,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7858741302069130819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walking/WalkingSurfaces
+  m_EditorClassIdentifier: 
+  Name: WalkingSurfaces
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
 --- !u!114 &7872276006627094916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11203,6 +11697,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &8114044864297479090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BattleAmbiance/GenericAmbiance
+  m_EditorClassIdentifier: 
+  Name: GenericAmbiance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8114461362551937908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11288,6 +11799,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &8209290550189401199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GuildhallMusic/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8244883641156035617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11303,12 +11831,12 @@ MonoBehaviour:
   Path: event:/Dialog/Character1Exclamation
   guid: e1daf9eca8759d458457aee38dedaaeb
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 532478265264245126}
+  - {fileID: -7565608719270436155}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -11715,7 +12243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/FMODBuild/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637240065991036013
+  lastModified: 637239568360000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -11974,12 +12502,12 @@ MonoBehaviour:
   Path: event:/Sound Effects/Walking
   guid: e637023920b4ac4ebcb68512a0bc3808
   Banks:
-  - {fileID: 139221689593870110}
+  - {fileID: -7185576836448586577}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7662392793730504493}
+  - {fileID: 7858741302069130819}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -12032,6 +12560,23 @@ MonoBehaviour:
   Name: GenericAmbiance
   Min: 0
   Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &9210983459139617366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jumping/JumpEffects
+  m_EditorClassIdentifier: 
+  Name: JumpEffects
+  Min: 0
+  Max: 2
   Default: 0
   Exists: 1
 --- !u!114 &9216049424405315858
